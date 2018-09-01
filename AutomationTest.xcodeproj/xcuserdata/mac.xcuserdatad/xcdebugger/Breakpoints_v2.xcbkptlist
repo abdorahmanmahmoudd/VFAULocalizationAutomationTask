@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AutomationTest/ViewController.swift"
-            timestampString = "557479980.775864"
+            timestampString = "557534150.077903"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "218"
-            endingLineNumber = "218"
+            startingLineNumber = "228"
+            endingLineNumber = "228"
             landmarkName = "getValueMatches(fromDic:forValue:intoDic:withRoot:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -36,11 +36,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AutomationTest/ViewController.swift"
-            timestampString = "557479980.776325"
+            timestampString = "557534150.078383"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "213"
-            endingLineNumber = "213"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
             landmarkName = "getValueMatches(fromDic:forValue:intoDic:withRoot:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -52,11 +52,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AutomationTest/ViewController.swift"
-            timestampString = "557479980.776655"
+            timestampString = "557534150.078752"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "viewDidAppear()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AutomationTest.ViewController.viewDidAppear() -&gt; ()"
+                  moduleName = "AutomationTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/AutomationTest/AutomationTest/ViewController.swift"
+                  timestampString = "557534150.657292"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "10005">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 (Swift.String, Swift.String) -&gt; Swift.Bool in AutomationTest.ViewController.viewDidAppear() -&gt; ()"
+                  moduleName = "AutomationTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/AutomationTest/AutomationTest/ViewController.swift"
+                  timestampString = "557534150.660877"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "59">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AutomationTest/ViewController.swift"
+            timestampString = "557534150.0790761"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "viewDidAppear()"
             landmarkType = "7">
          </BreakpointContent>
