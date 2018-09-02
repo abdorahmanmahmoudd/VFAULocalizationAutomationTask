@@ -1,845 +1,1382 @@
 {
-    "Generic": {
-      "DOLLAR": "$",
-      "UNIT": "UNIT",
-      "Infinite": "Unlimited",
-      "Remaining": "Remaining",
-      "expires": "Expires",
-      "errorTitle": "We're having trouble confirming your details",
-      "internationalUrl": "https://www.vodafone.com.au/support/prepaid/international-call-rates",
-      "plansUrl": "https://www.vodafone.com.au/plans/international-calls",
-      "MBBText": "Mobile Broadband",
-      "NBNText": "Vodafone nbn TM"
+    "International_Call_Overlay": {
+        "internationalCallRatesUrl":
+        "https://www.vodafone.com.au/support/plans/international-calls",
+        "internationalCallHeading": "International Call countries",
+        "internationalCallDescription":
+        "You can use our $5 International Chat Pass to call these countries. If you go over the allocated international minutes or if you make a call to a country that’s not included, then you’ll be charged at our ",
+        "prepaidCallHeading": "Pay As You Go call rates",
+        "internationalCountries": [
+                                   {
+                                   "id": "us",
+                                   "country": "U.S.A"
+                                   },
+                                   {
+                                   "id": "u.k",
+                                   "country": "U.K"
+                                   },
+                                   {
+                                   "id": "afghanistan",
+                                   "country": "Afghanistan"
+                                   },
+                                   {
+                                   "id": "albania",
+                                   "country": "Albania"
+                                   },
+                                   {
+                                   "id": "algeria",
+                                   "country": "Algeria"
+                                   },
+                                   {
+                                   "id": "american samoa",
+                                   "country": "American Samoa"
+                                   },
+                                   {
+                                   "id": "andorra",
+                                   "country": "Andorra"
+                                   },
+                                   {
+                                   "id": "angola",
+                                   "country": "Angola"
+                                   },
+                                   {
+                                   "id": "anguilla",
+                                   "country": "Anguilla"
+                                   },
+                                   {
+                                   "id": "antigua and barbuda",
+                                   "country": "Antigua And Barbuda"
+                                   },
+                                   {
+                                   "id": "argentina",
+                                   "country": "Argentina"
+                                   },
+                                   {
+                                   "id": "armenia",
+                                   "country": "Armenia"
+                                   },
+                                   {
+                                   "id": "aruba",
+                                   "country": "Aruba"
+                                   },
+                                   {
+                                   "id": "ascension",
+                                   "country": "Ascension"
+                                   },
+                                   {
+                                   "id": "austria",
+                                   "country": "Austria"
+                                   },
+                                   {
+                                   "id": "azerbaijan",
+                                   "country": "Azerbaijan"
+                                   },
+                                   {
+                                   "id": "bahamas",
+                                   "country": "Bahamas"
+                                   },
+                                   {
+                                   "id": "bahrain",
+                                   "country": "Bahrain"
+                                   },
+                                   {
+                                   "id": "bangladesh",
+                                   "country": "Bangladesh"
+                                   },
+                                   {
+                                   "id": "barbados",
+                                   "country": "Barbados"
+                                   },
+                                   {
+                                   "id": "belarus",
+                                   "country": "Belarus"
+                                   },
+                                   {
+                                   "id": "belgium",
+                                   "country": "Belgium"
+                                   },
+                                   {
+                                   "id": "belize",
+                                   "country": "Belize"
+                                   },
+                                   {
+                                   "id": "benin",
+                                   "country": "Benin"
+                                   },
+                                   {
+                                   "id": "bermuda",
+                                   "country": "Bermuda"
+                                   },
+                                   {
+                                   "id": "bhutan",
+                                   "country": "Bhutan"
+                                   },
+                                   {
+                                   "id": "bolivia",
+                                   "country": "Bolivia"
+                                   },
+                                   {
+                                   "id": "bosnia",
+                                   "country": "Bosnia And Herzegovina"
+                                   },
+                                   {
+                                   "id": "botswana",
+                                   "country": "Botswana"
+                                   },
+                                   {
+                                   "id": "brazil",
+                                   "country": "Brazil"
+                                   },
+                                   {
+                                   "id": "british indian ocean territory",
+                                   "country": "British Indian Ocean Territory"
+                                   },
+                                   {
+                                   "id": "brunei",
+                                   "country": "Brunei"
+                                   },
+                                   {
+                                   "id": "bulgaria",
+                                   "country": "Bulgaria"
+                                   },
+                                   {
+                                   "id": "burkina faso",
+                                   "country": "Burkina Faso"
+                                   },
+                                   {
+                                   "id": "burundi",
+                                   "country": "Burundi"
+                                   },
+                                   {
+                                   "id": "cambodia",
+                                   "country": "Cambodia"
+                                   },
+                                   {
+                                   "id": "cameroon",
+                                   "country": "Cameroon"
+                                   },
+                                   {
+                                   "id": "canada",
+                                   "country": "Canada"
+                                   },
+                                   {
+                                   "id": "cape verde",
+                                   "country": "Cape Verde"
+                                   },
+                                   {
+                                   "id": "cayman islands",
+                                   "country": "Cayman Islands"
+                                   },
+                                   {
+                                   "id": "central african republic",
+                                   "country": "Central African Republic"
+                                   },
+                                   {
+                                   "id": "chad",
+                                   "country": "Chad"
+                                   },
+                                   {
+                                   "id": "chile",
+                                   "country": "Chile"
+                                   },
+                                   {
+                                   "id": "china",
+                                   "country": "China"
+                                   },
+                                   {
+                                   "id": "cocos",
+                                   "country": "Cocos (Keeling) Islands"
+                                   },
+                                   {
+                                   "id": "colombia",
+                                   "country": "Colombia"
+                                   },
+                                   {
+                                   "id": "comoros",
+                                   "country": "Comoros"
+                                   },
+                                   {
+                                   "id": "congo",
+                                   "country": "Congo"
+                                   },
+                                   {
+                                   "id": "congo, the democratic republic of the",
+                                   "country": "Congo, The Democratic Republic Of The"
+                                   },
+                                   {
+                                   "id": "cook islands",
+                                   "country": "Cook Islands"
+                                   },
+                                   {
+                                   "id": "costa rica",
+                                   "country": "Costa Rica"
+                                   },
+                                   {
+                                   "id": "cote",
+                                   "country": "Cote D'Ivoire"
+                                   },
+                                   {
+                                   "id": "croatia",
+                                   "country": "Croatia"
+                                   },
+                                   {
+                                   "id": "cuba",
+                                   "country": "Cuba"
+                                   },
+                                   {
+                                   "id": "cyprus",
+                                   "country": "Cyprus"
+                                   },
+                                   {
+                                   "id": "czech republic",
+                                   "country": "Czech Republic"
+                                   },
+                                   {
+                                   "id": "denmark",
+                                   "country": "Denmark"
+                                   },
+                                   {
+                                   "id": "djibouti",
+                                   "country": "Djibouti"
+                                   },
+                                   {
+                                   "id": "dominica",
+                                   "country": "Dominica"
+                                   },
+                                   {
+                                   "id": "dominican republic",
+                                   "country": "Dominican Republic"
+                                   },
+                                   {
+                                   "id": "ecuador",
+                                   "country": "Ecuador"
+                                   },
+                                   {
+                                   "id": "egypt",
+                                   "country": "Egypt"
+                                   },
+                                   {
+                                   "id": "el salvador",
+                                   "country": "El Salvador"
+                                   },
+                                   {
+                                   "id": "equatorial guinea",
+                                   "country": "Equatorial Guinea"
+                                   },
+                                   {
+                                   "id": "eritrea",
+                                   "country": "Eritrea"
+                                   },
+                                   {
+                                   "id": "estonia",
+                                   "country": "Estonia"
+                                   },
+                                   {
+                                   "id": "ethiopia",
+                                   "country": "Ethiopia"
+                                   },
+                                   {
+                                   "id": "falkland",
+                                   "country": "Falkland Islands (Malvinas)"
+                                   },
+                                   {
+                                   "id": "faroe",
+                                   "country": "Faroe Islands"
+                                   },
+                                   {
+                                   "id": "fiji",
+                                   "country": "Fiji"
+                                   },
+                                   {
+                                   "id": "finland",
+                                   "country": "Finland"
+                                   },
+                                   {
+                                   "id": "france",
+                                   "country": "France"
+                                   },
+                                   {
+                                   "id": "french guiana",
+                                   "country": "French Guiana"
+                                   },
+                                   {
+                                   "id": "french polynesia",
+                                   "country": "French Polynesia"
+                                   },
+                                   {
+                                   "id": "gabon",
+                                   "country": "Gabon"
+                                   },
+                                   {
+                                   "id": "gambia",
+                                   "country": "Gambia"
+                                   },
+                                   {
+                                   "id": "georgia",
+                                   "country": "Georgia"
+                                   },
+                                   {
+                                   "id": "germany",
+                                   "country": "Germany"
+                                   },
+                                   {
+                                   "id": "ghana",
+                                   "country": "Ghana"
+                                   },
+                                   {
+                                   "id": "gibraltar",
+                                   "country": "Gibraltar"
+                                   },
+                                   {
+                                   "id": "greece",
+                                   "country": "Greece"
+                                   },
+                                   {
+                                   "id": "greenland",
+                                   "country": "Greenland"
+                                   },
+                                   {
+                                   "id": "grenada",
+                                   "country": "Grenada"
+                                   },
+                                   {
+                                   "id": "guadeloupe",
+                                   "country": "Guadeloupe"
+                                   },
+                                   {
+                                   "id": "guam",
+                                   "country": "Guam"
+                                   },
+                                   {
+                                   "id": "guatemala",
+                                   "country": "Guatemala"
+                                   },
+                                   {
+                                   "id": "guinea",
+                                   "country": "Guinea"
+                                   },
+                                   {
+                                   "id": "guinea-bissau",
+                                   "country": "Guinea-Bissau"
+                                   },
+                                   {
+                                   "id": "guyana",
+                                   "country": "Guyana"
+                                   },
+                                   {
+                                   "id": "haiti",
+                                   "country": "Haiti"
+                                   },
+                                   {
+                                   "id": "holy",
+                                   "country": "Holy See (Vatican City State)"
+                                   },
+                                   {
+                                   "id": "honduras",
+                                   "country": "Honduras"
+                                   },
+                                   {
+                                   "id": "hong kong",
+                                   "country": "Hong Kong"
+                                   },
+                                   {
+                                   "id": "hungary",
+                                   "country": "Hungary"
+                                   },
+                                   {
+                                   "id": "iceland",
+                                   "country": "Iceland"
+                                   },
+                                   {
+                                   "id": "india",
+                                   "country": "India"
+                                   },
+                                   {
+                                   "id": "indonesia",
+                                   "country": "Indonesia"
+                                   },
+                                   {
+                                   "id": "iran",
+                                   "country": "Iran, Islamic Republic Of"
+                                   },
+                                   {
+                                   "id": "iraq",
+                                   "country": "Iraq"
+                                   },
+                                   {
+                                   "id": "ireland",
+                                   "country": "Ireland"
+                                   },
+                                   {
+                                   "id": "israel",
+                                   "country": "Israel"
+                                   },
+                                   {
+                                   "id": "italy",
+                                   "country": "Italy"
+                                   },
+                                   {
+                                   "id": "jamaica",
+                                   "country": "Jamaica"
+                                   },
+                                   {
+                                   "id": "japan",
+                                   "country": "Japan"
+                                   },
+                                   {
+                                   "id": "jordan",
+                                   "country": "Jordan"
+                                   },
+                                   {
+                                   "id": "kenya",
+                                   "country": "Kenya"
+                                   },
+                                   {
+                                   "id": "kiribati",
+                                   "country": "Kiribati"
+                                   },
+                                   {
+                                   "id": "korea, democratic people’s republic of (north)",
+                                   "country": "Korea, Democratic People'S Republic Of (North)"
+                                   },
+                                   {
+                                   "id": "argentina",
+                                   "country": "Argentina"
+                                   },
+                                   {
+                                   "id": "korea, republic of - (south)",
+                                   "country": "Korea, Republic Of - (South)"
+                                   },
+                                   {
+                                   "id": "kuwait",
+                                   "country": "Kuwait"
+                                   },
+                                   {
+                                   "id": "kyrgyzstan",
+                                   "country": "Kyrgyzstan"
+                                   },
+                                   {
+                                   "id": "lao people’s democratic republic (laos)",
+                                   "country": "Lao People'S Democratic Republic (Laos)"
+                                   },
+                                   {
+                                   "id": "latvia",
+                                   "country": "Latvia"
+                                   },
+                                   {
+                                   "id": "lebanon",
+                                   "country": "Lebanon"
+                                   },
+                                   {
+                                   "id": "lesotho",
+                                   "country": "Lesotho"
+                                   },
+                                   {
+                                   "id": "liberia",
+                                   "country": "Liberia"
+                                   },
+                                   {
+                                   "id": "libyan arab jamahiriya",
+                                   "country": "Libyan Arab Jamahiriya"
+                                   },
+                                   {
+                                   "id": "liechtenstein",
+                                   "country": "Liechtenstein"
+                                   },
+                                   {
+                                   "id": "lithuania",
+                                   "country": "Lithuania"
+                                   },
+                                   {
+                                   "id": "luxembourg",
+                                   "country": "Luxembourg"
+                                   },
+                                   {
+                                   "id": "macao",
+                                   "country": "Macao"
+                                   },
+                                   {
+                                   "id": "macedonia, the former yugoslav republic of",
+                                   "country": "Macedonia, The Former Yugoslav Republic Of"
+                                   },
+                                   {
+                                   "id": "madagascar",
+                                   "country": "Madagascar"
+                                   },
+                                   {
+                                   "id": "malawi",
+                                   "country": "Malawi"
+                                   },
+                                   {
+                                   "id": "malaysia",
+                                   "country": "Malaysia"
+                                   },
+                                   {
+                                   "id": "maldives",
+                                   "country": "Maldives"
+                                   },
+                                   {
+                                   "id": "mali",
+                                   "country": "Mali"
+                                   },
+                                   {
+                                   "id": "malta",
+                                   "country": "Malta"
+                                   },
+                                   {
+                                   "id": "marshall islands",
+                                   "country": "Marshall Islands"
+                                   },
+                                   {
+                                   "id": "martinique",
+                                   "country": "Martinique"
+                                   },
+                                   {
+                                   "id": "mauritania",
+                                   "country": "Mauritania"
+                                   },
+                                   {
+                                   "id": "mauritius",
+                                   "country": "Mauritius"
+                                   },
+                                   {
+                                   "id": "mexico",
+                                   "country": "Mexico"
+                                   },
+                                   {
+                                   "id": "micronesia, federated states of",
+                                   "country": "Micronesia, Federated States Of"
+                                   },
+                                   {
+                                   "id": "moldova, republic of",
+                                   "country": "Moldova, Republic Of"
+                                   },
+                                   {
+                                   "id": "monaco",
+                                   "country": "Monaco"
+                                   },
+                                   {
+                                   "id": "mongolia",
+                                   "country": "Mongolia"
+                                   },
+                                   {
+                                   "id": "montenegro",
+                                   "country": "Montenegro"
+                                   },
+                                   {
+                                   "id": "montserrat",
+                                   "country": "Montserrat"
+                                   },
+                                   {
+                                   "id": "morocco",
+                                   "country": "Morocco"
+                                   },
+                                   {
+                                   "id": "mozambique",
+                                   "country": "Mozambique"
+                                   },
+                                   {
+                                   "id": "myanmar",
+                                   "country": "Myanmar"
+                                   },
+                                   {
+                                   "id": "namibia",
+                                   "country": "Namibia"
+                                   },
+                                   {
+                                   "id": "nauru",
+                                   "country": "Nauru"
+                                   },
+                                   {
+                                   "id": "nepal",
+                                   "country": "Nepal"
+                                   },
+                                   {
+                                   "id": "netherlands",
+                                   "country": "Netherlands"
+                                   },
+                                   {
+                                   "id": "netherlands antilles",
+                                   "country": "Netherlands Antilles"
+                                   },
+                                   {
+                                   "id": "new caledonia",
+                                   "country": "New Caledonia"
+                                   },
+                                   {
+                                   "id": "new zealand",
+                                   "country": "New Zealand"
+                                   },
+                                   {
+                                   "id": "nicaragua",
+                                   "country": "Nicaragua"
+                                   },
+                                   {
+                                   "id": "niger",
+                                   "country": "Niger"
+                                   },
+                                   {
+                                   "id": "nigeria",
+                                   "country": "Nigeria"
+                                   },
+                                   {
+                                   "id": "niue",
+                                   "country": "Niue"
+                                   },
+                                   {
+                                   "id": "norfolk island",
+                                   "country": "Norfolk Island"
+                                   },
+                                   {
+                                   "id": "northern mariana islands",
+                                   "country": "Northern Mariana Islands"
+                                   },
+                                   {
+                                   "id": "norway",
+                                   "country": "Norway"
+                                   },
+                                   {
+                                   "id": "norway - non standard numbers",
+                                   "country": "Norway - Non Standard Numbers"
+                                   },
+                                   {
+                                   "id": "oman",
+                                   "country": "Oman"
+                                   },
+                                   {
+                                   "id": "pakistan",
+                                   "country": "Pakistan"
+                                   },
+                                   {
+                                   "id": "palau",
+                                   "country": "Palau"
+                                   },
+                                   {
+                                   "id": "palestinian territory",
+                                   "country": "Palestinian Territory"
+                                   },
+                                   {
+                                   "id": "panama",
+                                   "country": "Panama"
+                                   },
+                                   {
+                                   "id": "papua new guinea",
+                                   "country": "Papua New Guinea"
+                                   },
+                                   {
+                                   "id": "paraguay",
+                                   "country": "Paraguay"
+                                   },
+                                   {
+                                   "id": "peru",
+                                   "country": "Peru"
+                                   },
+                                   {
+                                   "id": "philippines",
+                                   "country": "Philippines"
+                                   },
+                                   {
+                                   "id": "poland",
+                                   "country": "Poland"
+                                   },
+                                   {
+                                   "id": "portugal",
+                                   "country": "Portugal"
+                                   },
+                                   {
+                                   "id": "puerto rico",
+                                   "country": "Puerto Rico"
+                                   },
+                                   {
+                                   "id": "qatar",
+                                   "country": "Qatar"
+                                   },
+                                   {
+                                   "id": "reunion",
+                                   "country": "Reunion"
+                                   },
+                                   {
+                                   "id": "romania",
+                                   "country": "Romania"
+                                   },
+                                   {
+                                   "id": "russian federation",
+                                   "country": "Russian Federation"
+                                   },
+                                   {
+                                   "id": "rwanda",
+                                   "country": "Rwanda"
+                                   },
+                                   {
+                                   "id": "saint helena, ascension and tristan da cunha",
+                                   "country": "Saint Helena, Ascension And Tristan Da Cunha"
+                                   },
+                                   {
+                                   "id": "saint kitts and nevis",
+                                   "country": "Saint Kitts And Nevis"
+                                   },
+                                   {
+                                   "id": "saint lucia",
+                                   "country": "Saint Lucia"
+                                   },
+                                   {
+                                   "id": "saint pierre and miquelon",
+                                   "country": "Saint Pierre And Miquelon"
+                                   },
+                                   {
+                                   "id": "saint vincent and the grenadines",
+                                   "country": "Saint Vincent And The Grenadines"
+                                   },
+                                   {
+                                   "id": "samoa",
+                                   "country": "Samoa"
+                                   },
+                                   {
+                                   "id": "san marino",
+                                   "country": "San Marino"
+                                   },
+                                   {
+                                   "id": "sao tome and principe",
+                                   "country": "Sao Tome And Principe"
+                                   },
+                                   {
+                                   "id": "saudi arabia",
+                                   "country": "Saudi Arabia"
+                                   },
+                                   {
+                                   "id": "senegal",
+                                   "country": "Senegal"
+                                   },
+                                   {
+                                   "id": "serbia",
+                                   "country": "Serbia"
+                                   },
+                                   {
+                                   "id": "seychelles",
+                                   "country": "Seychelles"
+                                   },
+                                   {
+                                   "id": "sierra leone",
+                                   "country": "Sierra Leone"
+                                   },
+                                   {
+                                   "id": "singapore",
+                                   "country": "Singapore"
+                                   },
+                                   {
+                                   "id": "slovakia",
+                                   "country": "Slovakia"
+                                   },
+                                   {
+                                   "id": "slovenia",
+                                   "country": "Slovenia"
+                                   },
+                                   {
+                                   "id": "solomon islands",
+                                   "country": "Solomon Islands"
+                                   },
+                                   {
+                                   "id": "somalia",
+                                   "country": "Somalia"
+                                   },
+                                   {
+                                   "id": "south africa",
+                                   "country": "South Africa"
+                                   },
+                                   {
+                                   "id": "south africa - non standard numbers",
+                                   "country": "South Africa - Non Standard Numbers"
+                                   },
+                                   {
+                                   "id": "spain",
+                                   "country": "Spain"
+                                   },
+                                   {
+                                   "id": "spain canary island",
+                                   "country": "Spain Canary Island"
+                                   },
+                                   {
+                                   "id": "sri lanka",
+                                   "country": "Sri Lanka"
+                                   },
+                                   {
+                                   "id": "sudan",
+                                   "country": "Sudan"
+                                   },
+                                   {
+                                   "id": "suriname",
+                                   "country": "Suriname"
+                                   },
+                                   {
+                                   "id": "swaziland",
+                                   "country": "Swaziland"
+                                   },
+                                   {
+                                   "id": "sweden",
+                                   "country": "Sweden"
+                                   },
+                                   {
+                                   "id": "switzerland",
+                                   "country": "Switzerland"
+                                   },
+                                   {
+                                   "id": "syrian arab republic",
+                                   "country": "Syrian Arab Republic"
+                                   },
+                                   {
+                                   "id": "taiwan, province of china",
+                                   "country": "Taiwan, Province Of China"
+                                   },
+                                   {
+                                   "id": "tajikistan",
+                                   "country": "Tajikistan"
+                                   },
+                                   {
+                                   "id": "tanzania",
+                                   "country": "Tanzania"
+                                   },
+                                   {
+                                   "id": "thailand",
+                                   "country": "Thailand"
+                                   },
+                                   {
+                                   "id": "timor-leste",
+                                   "country": "Timor-Leste"
+                                   },
+                                   {
+                                   "id": "togo",
+                                   "country": "Togo"
+                                   },
+                                   {
+                                   "id": "tokelau",
+                                   "country": "Tokelau"
+                                   },
+                                   {
+                                   "id": "tonga",
+                                   "country": "Tonga"
+                                   },
+                                   {
+                                   "id": "trinidad and tobago",
+                                   "country": "Trinidad And Tobago"
+                                   },
+                                   {
+                                   "id": "tunisia",
+                                   "country": "Tunisia"
+                                   },
+                                   {
+                                   "id": "turkey",
+                                   "country": "Turkey"
+                                   },
+                                   {
+                                   "id": "turkmenistan",
+                                   "country": "Turkmenistan"
+                                   },
+                                   {
+                                   "id": "turks and caicos islands",
+                                   "country": "Turks And Caicos Islands"
+                                   },
+                                   {
+                                   "id": "tuvalu",
+                                   "country": "Tuvalu"
+                                   },
+                                   {
+                                   "id": "uganda",
+                                   "country": "Uganda"
+                                   },
+                                   {
+                                   "id": "ukraine",
+                                   "country": "Ukraine"
+                                   },
+                                   {
+                                   "id": "united arab emirates",
+                                   "country": "United Arab Emirates"
+                                   },
+                                   {
+                                   "id": "united kingdom",
+                                   "country": "United Kingdom"
+                                   },
+                                   {
+                                   "id": "united kingdom non-standard numbers",
+                                   "country": "United Kingdom Non-Standard Numbers"
+                                   },
+                                   {
+                                   "id": "united states",
+                                   "country": "United States"
+                                   },
+                                   {
+                                   "id": "uruguay",
+                                   "country": "Uruguay"
+                                   },
+                                   {
+                                   "id": "uzbekistan",
+                                   "country": "Uzbekistan"
+                                   },
+                                   {
+                                   "id": "vanuatu",
+                                   "country": "Vanuatu"
+                                   },
+                                   {
+                                   "id": "venezuela",
+                                   "country": "Venezuela, Bolivarian Republic Of"
+                                   },
+                                   {
+                                   "id": "Vietnam",
+                                   "country": "Vietnam"
+                                   },
+                                   {
+                                   "id": "virgin islands, british",
+                                   "country": "Virgin Islands, British"
+                                   },
+                                   {
+                                   "id": "virgin islands, u.s.",
+                                   "country": "Virgin Islands, U.S."
+                                   },
+                                   {
+                                   "id": "wallis and futuna",
+                                   "country": "Wallis And Futuna"
+                                   },
+                                   {
+                                   "id": "yemen",
+                                   "country": "Yemen"
+                                   },
+                                   {
+                                   "id": "zambia",
+                                   "country": "Zambia"
+                                   },
+                                   {
+                                   "id": "zimbabwe",
+                                   "country": "Zimbabwe"
+                                   }
+                                   ]
     },
-    "Prepaid_XMAS_offer":[
-      {
-        "offerID":"VF_RWD_COUNTER1_BDL",
-        "name": "Recharge Rewards",
-        "overlayMsg": "Get 3.5GB bonus data",
-        "overlayDescTitle": "As you’ve opted-in to Recharge Rewards, you’ll get 3.5GB bonus data to use in Australia each time you recharge on $40 and above Combo for up to 10 recharges before 15/11/18",
-        "overlayTerms": ". T&C apply.",
-        "overlayTermsLink":"",
-        "offerDetails": "Get 3.5GB bonus on your next $40+ Data or Talk Combo recharge.",
-        "offerEndDesc": "Remaining Recharge Rewards available until 15/11/18",
-        "offerEndTerms": ". Data for use in Oz. T&C apply.",
-        "offerEndDescCompleted": "We hope you’ve enjoyed Recharge Rewards.  Stay tuned for future offers.",
-        "offerCount":10,
-        "expiryTime": "07/25/2019"
-      },
-      {
-        "offerID":"VF_RWD_COUNTER2_BDL",
-        "name": "Westpac offer",
-        "overlayMsg": "Get 4GB bonus data",
-        "overlayDescTitle": "As you’re taking part in our Westpac Offer, you’ll get 4GB bonus data to use in Australia each time you recharge on $40 and above Combo to up to 6 recharges by 30/04/18",
-        "overlayTerms": ". T&C apply.",
-        "overlayTermsLink":"",
-        "offerDetails": "Get 4GB bonus data on your next $40+ Data or Talk Combo recharge.",
-        "offerEndDesc": "Offer ends 30/04/18",
-        "offerEndTerms": ". Data for use in Oz. T&C apply.",
-        "offerEndDescCompleted": "We hope you’ve enjoyed our Westpac Offer. Stay tuned for future offers.",
-        "offerCount":6,
-        "expiryTime": "07/25/2020"
-      },
-      {
-        "offerID":"VF_RWD_COUNTER3_BDL",
-        "name": "Bonus Data Offer",
-        "overlayMsg": "Bonus Data Offer",
-        "overlayDescTitle": "As you’ve opted in to this offer, you’ll get Triple Data when you recharge on $30 Data/Talk Combo, or Double Data on $40 or above Data/Talk Combo, for up to 3 recharges made by 17/07/18.",
-        "overlayTerms": " T&C at ",
-        "overlayTermsLink":"vfau.co/dd",
-        "offerDetails": "You will get Triple Data when you next recharge on $30 Data/Talk Combo, or Double Data when you next recharge on $40 or above Data/Talk Combo.",
-        "offerEndDesc": "Bonus Data Offer ends 17/07/18.",
-        "offerEndTerms": " T&C apply.",
-        "offerEndDescCompleted": "We hope you’ve enjoyed the Bonus Data Offer. Stay tuned for future offers.",
-        "offerCount":3,
-        "expiryTime": "09/17/2018"
-      }
-    ],
-    "Voice_Of_Vodafone": {
-      "GM": "Good Morning",
-      "subMessage": "Welcome to My Vodafone",
-      "GA": "Good Afternoon",
-      "GE": "Good Evening",
-      "noOffers": "No offers available."
+    "loading_Page_Overlay_Addon_Booster":{
+        "errorTitle":"We're having trouble confirming your details",
+        "loadingPage":"Please don’t leave this page",
+        "title":"Add-ons and Booster",
+        "ErrorScenarioTitle":"test",
+        "gotoDashaboard":"Go to dashboard",
+        "wheelsAreTurningMsg": "Wheels are turning"
     },
-    "Fixed_Dashboard" : {
-      "config_key" : "videoLinks"
+    "alert_message": {
+        "heading": "Currently updating",
+        "message": "We're just putting through your last request, which usually takes 5 to 15 minutes. Please try again soon.",
+        "alertHeading": "Something didn’t go as planned.",
+        "helpMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
     },
-    "Pre_Dashboard_Credit": {
-      "title": "What is My Credit?",
-      "descriptionWithMymix": "At the moment, if you last recharged with MyMix or Combo, you will be able to use My Credit to make calls and send text when in Oz at pay as you go rates.",
-      "lastRechargePrepaid": "If your last recharge was with Prepaid 365 Plus, you can also use My Credit to access data when in Oz at pay as you go rates. ",
-      "subTitle": "We are currently beta testing My Credit.",
-      "button": "my-credit-white",
-      "myCreditIcon": "Offer ends ",
-      "firstUserPlan": "  You currently don’t have any plan inclusions.",
-      "firstUserService": "  Recharge today with one of our prepaid services.",
-      "rechargeBtn": "Recharge my plan",
-      "buyaddonBtn": "Buy an Add-on",
-      "myCredit": "My Credit",
-      "beta": "Beta",
-      "planInclusion": "You currently don’t have any plan inclusions.",
-      "lastInfo": "The balance shown here is a guide only as not all charges are updated in real time.",
-      "needHelp": "Need help?",
-      "Plan_Details": {
-        "noPlanInclusions": "  You currently don’t have any plan inclusions.",
-        "prepaidServices": "  Recharge today with one of our prepaid services.",
-        "balance": "  You currently have an available balance in My Credit."
-      },
-      "Pin_Error_Handling": {
-        "goDashboardBtn": "Go to dashboard"
-      },
-      "My_Credit_Section": {
-        "maxLimit": "You’ve reached the maximum amount for My Credit.",
-        "usedCreditMsg":"You can top again when you’ve used the current available credit.",
-        "noCredit": "You don’t have any My Credit.",
-        "myCreditButton": "Top up My Credit",
-        "purchaseHistory": "View purchase history"
-      }
+    "addonsAndBoosters": {
+        "yourAddonsAndBooster": "Your Add-ons",
+        "purchaseAddonAndBooster": "Purchase an Add-on or Booster",
+        "selectDataBooster": "Select a Data Add-on or Booster",
+        "ourDataAddonBoostersInAustralia" : "Our Data Add-ons and Boosters are for use in Australia.",
+        "changeToNewDataAddon": "Change to a new Data Add-on",
+        "acceptTermsMsg": "I accept the terms and conditions",
+        "replaceCurrentAddonMsg": "Changing to this Add-on will replace your current Add-on.",
+        "recurringDataBoosterMsg": "Our Data Boosters, for use in Australia, expire at the end of your billing month.",
+        "recurringDataAddonMsg": "Our recurring Data Add-ons, for use in Australia, can be cancelled at any time.",
+        "addOnPurchased": "Add-on purchased",
+        "boosterPurchased": "One-off Booster purchased",
+        "addOnChanged": "Add-on changed",
+        "addOnRemoved": "Add-on removed",
+        "confirmationMsg": "You’ll be able to use your Add-on in around 15 minutes. We’ll send you a TXT confirmation.",
+        "confirmationMsgChangeRemoved": "Your account will be updated in around 15 minutes. We'll send you a TXT confirmation.",
+        "addDataLabel": "Add Data",
+        "addInternationalCallsLabel": "Add International Calls",
+        "perMonth": "per month",
+        "oneOffCostLabel": "One-off cost",
+        "valueLabel": "Value",
+        "selectBooster": "Select a Data Booster",
+        "ourDataBoosters": "Our Data Boosters are for use in Australia.",
+        "criticalInfoSummary": "Critical Information Summary",
+        "viewingDetails": "Select a service",
+        "manageAddon": "Manage Add-on",
+        "criticalInfoSummaryUrl": "https://www.vodafone.com.au/about/legal/critical-information-summary/plans?planCategory=Add-onshowing"
     },
-  
-    "Generic_Error_Scenario": [{
-        "errorCode": "BF003",
-        "title": "We can't find this number.",
-        "message": "Please check your number and try again. Alternatively, call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
-      }, {
-        "errorCode": "BF004",
-        "title": "This service is inactive",
-        "message": "Please call us on 1300 650 410."
-      }, {
-        "errorCode": "BF002",
-        "title": "We're having trouble confirming your details.",
-        "message": "Please try again or use another payment method."
-      }, {
-        "errorCode": "GF002",
-        "message": "We're having a few technical issues and are working to get our systems up and running again. Please try again later or call us on 1555 from your Vodafone mobile."
-      }, {
-        "errorCode": "GF003",
-        "title": "Something didn't go as planned.",
-        "message": "We had a minor technical glitch. Please try again."
-      }, {
-        "errorCode": "GF005",
-        "message": "We're having a few technical issues and are working to get our systems up and running again. Please try again later or call us on 1555 from your Vodafone mobile."
-      },{
-        "errorCode": "BB05",
-        "title": "Unfortunately we can't verify your number.",
-        "message": "Please check your number and try again. Alternatively, call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
-      }
-    ],
-    "Error_Scenario_Unbilled": [{
-        "unbillederrorCode": "BB05",
-        "title": "Something didn't go as planned.",
-        "message": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone.",
-        "buttons": "Try again"
-      }
-    ],
+    "iddAddonsAndBoosters": {
+        "addonsAndBoosters":"Add-ons and Boosters",
+        "yourAddonsAndBooster": "Your Add-ons and Boosters",
+        "addOnPurchased": "One-off Booster purchased",
+        "confirmationMsg": "You’ll be able to use your Booster in around 15 minutes. We’ll send you a TXT confirmation.",
+        "internationalValuePack": "International Value Pack",
+        "oneOffCost": "one-off cost",
+        "daysToUse": "days to use",
+        "dayToUse": "day to use",
+        "discountedCallRatesMsg": "There are two ways to get discounted international call rates:",
+        "whereToCallMsg": "Where do you want to call?",
+        "enterCountry": "Enter a country",
+        "changeToNewIddAddon": "Change to a new International Call Add-on",
+        "includes": "Includes",
+        "stdIntVoiceCalls": "Standard International voice calls to",
+        "selectIDDBooster": "Select a IDD Booster",
+        "iddBoosterUseInAus": "Our IDD Boosters are for use in Australia.",
+        "recurringIntAddonMsg": "Our recurring International Call Add-ons, for use in Australia, can be cancelled at any time."
+    },
+    "talkAndText": {
+        "ourTATAddonBoostersInAustralia" : "Our Talk and TXT Add-ons and Boosters are for use in Australia.",
+        "changeToNewTalkAndTXTAddon": "Change to a new Talk and TXT Add-on",
+        "ourTalkAndTXTAddons": "Our Talk and TXT Add-ons are for use in Australia.",
+        "ourTalkAndTXTBoosters": "Our Talk and TXT Boosters are for use in Australia.",
+        "addTalkAndTextLabel": "Add Talk and TXT",
+        "selectTalkAndTXTBooster": "Select a Talk and TXT Booster",
+        "SelectTalkAndTXT":"Select a one-off Talk and TXT",
+        "talkAndTXTInfoLabel":"A Talk and TXT Add-on can give you more of what you love when you need it.",
+        "talkAndTXTMsg":"Our one-off Talk and TXT Add-ons are for use in Australia, and can be cancelled at any time.",
+        "recurringTATBoosterMsg": "Our Talk and TXT Boosters, for use in Australia, expire at the end of your billing month."
+    },
+    "button_names": {
+        "changeToThisAddon": "Change to this Add-on",
+        "buyNow": "Buy now",
+        "cancel": "Cancel",
+        "findOutMore": "Find out more",
+        "tryAgainBtn": "Try again"
+    },
+    "addInternationalCalls": {
+        "countrySearchPlaceholder": "e.g. United Kingdom",
+        "noCountryFoundMsg1": "Sorry there are no results for ",
+        "noCountryFoundMsg2": ". Please check your spelling and try another country."
+    },
+    
+    "existingAddonCodes": [
+                           {
+                           "errorCode": "BF002",
+                           "errorHeading": "Something didn't go as planned.",
+                           "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                           }
+                           ],
+    "addonsErrorCodes": [
+                         {
+                         "errorCode": "TS001",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "TS002",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "TS003",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "BS018",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "BS024",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "BS025",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "BS026",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "BS027",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "BS028",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "BF002",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "GF002",
+                         "errorHeading": "We're having a few technical issues and are working to get our systems up and running again.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile."
+                         },
+                         {
+                         "errorCode": "GF005",
+                         "errorHeading": "We're having a few technical issues and are working to get our systems up and running again.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile."
+                         },
+                         {
+                         "errorCode": "GF003",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "We had a minor technical glitch. Please try again."
+                         },
+                         {
+                         "errorCode": "VF1008",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VF1007",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VF2302",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VF2303",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VF2304",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VF2305",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VF2306",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VF2307",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VF2308",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VF1018",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VF1019",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VF2301",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VF1006",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VF1010",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         
+                         {
+                         "errorCode": "VE001",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         
+                         {
+                         "errorCode": "VE002",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VE031",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         
+                         {
+                         "errorCode": "VE032",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VE100",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VE200",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VE300",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VE000",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "EE0002",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "TE001",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "TE002",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "TS100",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "TS300",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         
+                         {
+                         "errorCode": "BS005",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "TS005",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VE034",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VE033",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VE035",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "TE501",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "TE500",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "TE504",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "TE520",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "TE500",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VE2308",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VE2300",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VE036",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VE037",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VE038",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "TS006",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "BS031",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "BS032",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "BS033",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VE021",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VE022",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "VE023",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         },
+                         {
+                         "errorCode": "GF007",
+                         "errorHeading": "Something didn't go as planned.",
+                         "errorMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                         }
+                         ],
+    "Maintenance_Page" : {
+        "maintenanceHeading"  : "We’re sorry - this feature is currently unavailable.",
+        "tryLaterMsg"  : "Our team are working on fixing the technical issue. Please try again later."
+    },
+    "appTogglerTime":5,
     "Request_Error_Scenario": {
-      "page_not_found_title": "We can’t find that page",
-      "page_not_found_message": "We want you to find what you’re looking for. Head to the dashboard or go back to the previous page.",
-      "page_not_found_dashboard_button": "Go to dashboard",
-      "page_not_found_go_back_button": "Go back",
-      "unauthorised_page_title": "Login to My Vodafone",
-      "unauthorised_page_message": "Login to My Vodafone with your username and password",
-      "unauthorised_login_button": "Login now",
-      "unauthorised_vodafone_button": "Vodafone home",
-      "forbidden_title": "You don’t have access to this page"
-    },
-    "Default_Error_Scenario": [{
-      "title": "Something didn't go as planned.",
-      "message": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone.",
-      "buttons": "Try again"
-    }],
-   "PostPaid_DataUsage" :
-  {
-    "selectedServiceTitle" : "Select a service",
-    "titleDataUsage" : "Data usage",
-    "titleSharedDataUsage" : "Shared data usage",
-    "australiaDataText" : "Data in Australia",
-    "dataResetText" : "Resets on",
-    "titleDailyBreakdown" : "Daily breakdown",
-    "titleMyDailyBreakdown" : "My daily breakdown",
-    "subTitleMyDailyBreakdown" : "All data usage",
-    "detailedUsageButtontext" : "View detailed usage",
-    "dailyBreakDownTimeZoneText": "All times show in AEST",
-    "additionalDataText": "Additional Data",
-    "additionalDataExpiryText": "Expires On",
-    "alertHeading": "Something didn't go as planned",
-    "alertMsg": "Unfortunately, we can't display some of your plan information. Please try again later."
-  },
-  "Postpaid_Dashbaord":{
-    "starterData":"You have Starter Data. That's 5GB Starter Data to use in Australia for your first month to help you get started. T&C apply.",
-    "overRageTitle":"As you’ve used your data this month, we’ve added",
-    "overRageGb":"1GB Additional Data",
-    "overRageDollar":"for $10 to use ",
-    "billing":"until the end of the next billing month.",
-    "rolloverbilling":"until the end of this billing month.",
-    "yourCurrentSpend":"Your current spend",
-    "usageCharges":"Usage charges for this billing period.",
-    "yourCurrentSpendMsg":"These charges only include how you’ve used your service. You may receive other charges that aren’t included in this list.",
-    "rollOverTitle":"The unused",
-    "rollOverGb":"Additional Data",
-    "rollOverDetail":"from last month has been rolled over and will be available",
-    "findOutMore":"Find out more",
-    "including":"Including",
-    "additionalCharges":"additional charges",
-    "usageTextTitle":"Usage charges for this billing period.",
-    "usageTextDetail":"These charges only include how you’ve used your service.",
-    "youMay":"You may ",
-    "usageTextCharges":"receive other charges that aren’t included in this list.",
-    "seeDetailedUsage":"See detailed usage",
-    "billsAndPayments":"Bills and payments",
-    "issueDate":"Your issue date will be:",
-    "monthlyPlanCosts":"Monthly plan costs",
-    "additionalUsage":"Additional usage",
-    "boosters":"Boosters",
-    "reset":"until inclusions reset",
-    "information":"Information accurate as of",
-    "manageAddons":"Manage Add-ons",
-    "browseYourAddons": "Browse all Add-ons",
-    "addons":"Add-ons",
-    "starterDataResId":"OFF0286",
-    "AdditionalData027":"3500027",
-    "AdditionalData090":"3500090",
-    "needHelpUrl": "http://www.vodafone.com.au/support",
-    "KBytes": "KBytes",
-    "Dollars": "Dollars",
-    "Minutes": "Minutes",
-    "mins": "mins",
-    "Data": "Data",
-    "valueLeft": "left",
-    "alertHeading": "Something didn't go as planned.",
-    "alertMsg": "Please try again later or call us on 1555 from your Vodafone mobile or 13330 650 410 from any phone.",
-    "accountLockedHeading" : "Account locked",
-    "accountLockedAlertHeading" : "Your account has been locked.",
-    "accountLockedAlertMsg" : "Your account will unlock in around one hour. Please try again, or call us for free on 1555 from your Vodafone mobile or 1300 650 410 from another phone. Standard call rates apply.",
-    "entitlementIdsArr" : [
-      {
-        "id":"3002001",
-        "title":"Data"
-      },
-      {
-        "id":"3000044",
-        "title":"Data"
-      },
-      {
-        "id":"3000005",
-        "title":"Data"
-      },
-      {
-        "id":"3000003",
-        "title":"Data"
-      },
-      {
-        "id":"3000002",
-        "title":"Data"
-      },
-      {
-        "id":"3000001",
-        "title":"Data"
-      },
-      {
-        "id":"3002169",
-        "title":"Data"
-      },
-      {
-        "id":"3500023",
-        "title":"Data"
-      },
-      {
-        "id":"3500050",
-        "title":"Data"
-      },
-      {
-        "id":"3002144",
-        "title":"Data"
-      },
-      {
-        "id":"3002162",
-        "title":"Data"
-      },
-      {
-        "id":"3002168",
-        "title":"Data"
-      },
-      {
-        "id":"3002167",
-        "title":"Data"
-      },
-      {
-        "id":"3002173",
-        "title":"Data"
-      },
-      {
-        "id":"3002172",
-        "title":"Data"
-      },
-      {
-        "id":"3002171",
-        "title":"Data"
-      },
-      {
-        "id":"3002170",
-        "title":"Data"
-      },
-      {
-        "id":"3500029",
-        "title":"Data"
-      },
-      {
-        "id":"3500027",
-        "title":"Data"
-      },
-      {
-        "id":"3500026",
-        "title":"Data"
-      },
-      {
-        "id":"3500101",
-        "title":"Data"
-      },
-      {
-        "id":"3500033",
-        "title":"Data"
-      },
-      {
-        "id":"3500055",
-        "title":"Data"
-      },
-      {
-        "id":"3500069",
-        "title":"Data"
-      },
-      {
-        "id":"3500068",
-        "title":"Data"
-      },
-      {
-        "id":"3500067",
-        "title":"Data"
-      },
-      {
-        "id":"3500066",
-        "title":"Data"
-      },
-      {
-        "id":"3500036",
-        "title":"Data"
-      },
-      {
-        "id":"3500034",
-        "title":"Data"
-      },
-      {
-        "id":"3500104",
-        "title":"Data"
-      },
-      {
-        "id":"3500039",
-        "title":"Data"
-      },
-      {
-        "id":"3002149",
-        "title":"Data"
-      },
-      {
-        "id":"3002128",
-        "title":"Data"
-      },
-      {
-        "id":"3002127",
-        "title":"Data"
-      },
-      {
-        "id":"3002126",
-        "title":"Data"
-      },
-      {
-        "id":"3002125",
-        "title":"Data"
-      },
-      {
-        "id":"3002112",
-        "title":"Data"
-      },
-      {
-        "id":"3002108",
-        "title":"Data"
-      },
-      {
-        "id":"3002092",
-        "title":"Data"
-      },
-      {
-        "id":"3002085",
-        "title":"Data"
-      },
-      {
-        "id":"3002080",
-        "title":"Data"
-      },
-      {
-        "id":"3002079",
-        "title":"Data"
-      },
-      {
-        "id":"3002078",
-        "title":"Data"
-      },
-      {
-        "id":"3500064",
-        "title":"Dollar"
-      },
-      {
-        "id":"3000024",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500032",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500051",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500049",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500057",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500054",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500074",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500072",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500071",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500070",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3002130",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500028",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500058",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500063",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500061",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500060",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500059",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500037",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500035",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500038",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500046",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500044",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500042",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500084",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500083",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500082",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500081",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500080",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500079",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500078",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3500073",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3002084",
-        "title":"IntlCalls"
-      },
-      {
-        "id":"3000041",
-        "title":"Talk"
-      },
-      {
-        "id":"3000030",
-        "title":"Talk"
-      },
-      {
-        "id":"3000023",
-        "title":"Talk"
-      },
-      {
-        "id":"3000022",
-        "title":"Talk"
-      },
-      {
-        "id":"3000020",
-        "title":"Talk"
-      },
-      {
-        "id":"3000017",
-        "title":"Talk"
-      },
-      {
-        "id":"3000016",
-        "title":"Talk"
-      },
-      {
-        "id":"3000012",
-        "title":"Talk"
-      },
-      {
-        "id":"3000008",
-        "title":"Talk"
-      },
-      {
-        "id":"3000007",
-        "title":"Talk"
-      },
-      {
-        "id":"3002131",
-        "title":"Talk"
-      },
-      {
-        "id":"3002087",
-        "title":"Talk"
-      },
-      {
-        "id":"3002086",
-        "title":"Talk"
-      },
-      {
-        "id":"3002083",
-        "title":"Talk"
-      },
-      {
-        "id":"3002081",
-        "title":"Talk"
-      },
-      {
-        "id":"3000042",
-        "title":"Txt"
-      },
-      {
-        "id":"3000040",
-        "title":"Txt"
-      },
-      {
-        "id":"3000021",
-        "title":"Txt"
-      },
-      {
-        "id":"3000013",
-        "title":"Txt"
-      },
-      {
-        "id":"3002142",
-        "title":"Txt"
-      },
-      {
-        "id":"3002141",
-        "title":"Txt"
-      },
-      {
-        "id":"3002140",
-        "title":"Txt"
-      },
-      {
-        "id":"3002129",
-        "title":"Txt"
-      },
-      {
-        "id":"3002102",
-        "title":"Txt"
-      },
-      {
-        "id":"3002101",
-        "title":"Txt"
-      },
-      {
-        "id":"3002100",
-        "title":"Txt"
-      },
-      {
-        "id":"3002099",
-        "title":"Txt"
-      },
-      {
-        "id":"3002089",
-        "title":"Txt"
-      },
-      {
-        "id":"3002082",
-        "title":"Txt"
-      }
-    ],
-    "entitlementIds" : {
-      "3002001":"Data",
-      "3000044":"Data",
-      "3000005":"Data",
-      "3000003":"Data",
-      "3000002":"Data",
-      "3000001":"Data",
-      "3002169":"Data",
-      "3500023":"Data",
-      "3500050":"Data",
-      "3002144":"Data",
-      "3002162":"Data",
-      "3002168":"Data",
-      "3002167":"Data",
-      "3002173":"Data",
-      "3002172":"Data",
-      "3002171":"Data",
-      "3002170":"Data",
-      "3500029":"Data",
-      "3500027":"Data",
-      "3500026":"Data",
-      "3500101":"Data",
-      "3500033":"Data",
-      "3500055":"Data",
-      "3500069":"Data",
-      "3500068":"Data",
-      "3500067":"Data",
-      "3500066":"Data",
-      "3500036":"Data",
-      "3500034":"Data",
-      "3500104":"Data",
-      "3500039":"Data",
-      "3002149":"Data",
-      "3002128":"Data",
-      "3002127":"Data",
-      "3002126":"Data",
-      "3002125":"Data",
-      "3002112":"Data",
-      "3002108":"Data",
-      "3002092":"Data",
-      "3002085":"Data",
-      "3002080":"Data",
-      "3002079":"Data",
-      "3002078":"Data",
-      "3500064":"Dollar",
-      "3000024":"IntlCalls",
-      "3500032":"IntlCalls",
-      "3500051":"IntlCalls",
-      "3500049":"IntlCalls",
-      "3500057":"IntlCalls",
-      "3500054":"IntlCalls",
-      "3500074":"IntlCalls",
-      "3500072":"IntlCalls",
-      "3500071":"IntlCalls",
-      "3500070":"IntlCalls",
-      "3002130":"IntlCalls",
-      "3500028":"IntlCalls",
-      "3500058":"IntlCalls",
-      "3500063":"IntlCalls",
-      "3500061":"IntlCalls",
-      "3500060":"IntlCalls",
-      "3500059":"IntlCalls",
-      "3500037":"IntlCalls",
-      "3500035":"IntlCalls",
-      "3500038":"IntlCalls",
-      "3500046":"IntlCalls",
-      "3500044":"IntlCalls",
-      "3500042":"IntlCalls",
-      "3500084":"IntlCalls",
-      "3500083":"IntlCalls",
-      "3500082":"IntlCalls",
-      "3500081":"IntlCalls",
-      "3500080":"IntlCalls",
-      "3500079":"IntlCalls",
-      "3500078":"IntlCalls",
-      "3500073":"IntlCalls",
-      "3002084":"IntlCalls",
-      "3000041":"Talk",
-      "3000030":"Talk",
-      "3000023":"Talk",
-      "3000022":"Talk",
-      "3000020":"Talk",
-      "3000017":"Talk",
-      "3000016":"Talk",
-      "3000012":"Talk",
-      "3000008":"Talk",
-      "3000007":"Talk",
-      "3002131":"Talk",
-      "3002087":"Talk",
-      "3002086":"Talk",
-      "3002083":"Talk",
-      "3002081":"Talk",
-      "3000042":"Txt",
-      "3000040":"Txt",
-      "3000021":"Txt",
-      "3000013":"Txt",
-      "3002142":"Txt",
-      "3002141":"Txt",
-      "3002140":"Txt",
-      "3002129":"Txt",
-      "3002102":"Txt",
-      "3002101":"Txt",
-      "3002100":"Txt",
-      "3002099":"Txt",
-      "3002089":"Txt",
-      "3002082":"Txt"
+        "page_not_found_title": "We can’t find that page",
+        "page_not_found_message": "We want you to find what you’re looking for. Head to the dashboard or go back to the previous page.",
+        "page_not_found_dashboard_button": "Go to dashboard",
+        "page_not_found_go_back_button": "Go back",
+        "unauthorised_page_title": "Login to My Vodafone",
+        "unauthorised_page_message": "Login to My Vodafone with your username and password",
+        "unauthorised_login_button": "Login now",
+        "unauthorised_vodafone_button": "Vodafone home",
+        "forbidden_title": "You don’t have access to this page"
     }
-  
-  },
-  
-   "fixed": {
-      "name": "Vodafone nbn",
-      "isFixed":"true",
-      "pipelabelone":"Your Essential Plus plan includes",
-      "pipelabeltwo":" Unlimited data",
-      "pipelabelthree":" up to 50Mbps download speed",
-      "pipelabelfour":"  1GB bonus data",
-      "pipelabelfive":"  to use in Oz with your mobile plan",
-      "tracklabelone":"  Track my order",
-      "tracklabeltwo":"  On its way",
-      "installpipeone":"  Installation Date",
-      "installpipetwo":" You need to be at your",
-      "installpipethree":"  premises between:",
-      "installpipefour":" 9:00-11:00am, 22 Nov 2017",
-      "installpipefive":"  To change your appointment , call us.",
-      "installTrouble": "Having issues?Call Vodafone Care.",
-      "basiclabel":"  You’re on a month to month plan, which doesn’t have a plan contract end date.",
-      "wifilabel":"  Your Wi-Fi Hub is on its way.",
-      "wifibutton":" Call us now ",
-      "yourVodafoneNBN":"Your Vodafone nbn",
-      "TM":"TM",
-      "isNow":"is now",
-      "active":"active",
-      "needHelpUrlPipe": "http://www.vodafone.com.au/support/nbn",
-      "wifiparagraph":"  It should arrive within 1-2 days. Once you’ve plugged it in, you’ll automatically have Walk-out Working. This means you can access our network until your NBN service is connected. Watch our video to find out more.",
-      "videodata": [
-        {
-          "duration":"Duration: 1min30s",
-          "sources":[
-          {
-            "type":"video/mp4",
-            "src":"https://www.vodafone.com.au/content/video/welcome-to-vodafone-nbn.mp4"
-          }
-        ],
-        "title":"Welcome to Vodafone nbn",
-        "poster":"https://www.vodafone.com.au/images/welcome-to-vodafone-nbn.jpg"
-      },
-      {
-      "duration":"Duration: 1min10s ",
-      "sources":[
-      {
-      "type":"video/mp4",
-      "src":"https://www.vodafone.com.au/content/video/setup-your-vodafone-wifi-hub.mp4"
-      }
-      ],
-      "title":"How to set-up your Wi-Fi Hub.",
-      "poster":"https://www.vodafone.com.au/images/setup-your-vodafone-wifi-hub.jpg"
-      }
-      ]
-  },
-  "Sharing": {
-    "mobileBroadband":"Mobile Broadband",
-    "including":"Including",
-    "addCharges":"additional charges",
-    "vodafoneNBN":"Vodafone nbn",
-    "serviceID":"Service ID:",
-    "TM":"TM",
-    "pinLoaderMsg":"Please don’t leave this page",
-    "sharedDataUsageBreakdown": "Shared data usage breakdown",
-    "sharedIntMinsBreakdown": "Shared international calls breakdown",
-    "showAllUsersBtn": "Show all users",
-    "saveSettingsBtn": "Save settings",
-    "used": "used",
-    "cancelBtn": "Cancel",
-    "manageDataControl": "Manage Data Control",
-    "hideUsers": "Hide other users",
-    "alertMsg": "Control the access to data for these plans.",
-    "allCurrentSpend": "All current spend",
-    "seeAllSpendBtn": "See all current spend",
-    "billsAndPaymentBtn": "Bills and payments",
-    "usageCharges": "Usage charges for this billing period.",
-    "includedOtherCharges": "These charges only include how you’ve used your service. You may receive other charges that aren’t included in this list.",
-    "alertErrorHeading": "Something didn't go as planned.",
-    "alertErrorMsg": "Please try again later or call us on 1555 from your Vodafone mobile or 13330 650 410 from any phone.",
-    "overlayBefText": "We've made the change to",
-    "overlayAftText": " and we've also sent them a notification.",
-    "alertGetErrorMsg": "Unfortunately, we can't display some of your data control options. Please try again later.",
-    "overlayTitle": "Data Control settings saved"
-  },
-  "TermsnCond_Dash_Board":{
-  "DashBoard":[{
-  "type": "Additional Data",
-  "content1": "Additional Data, to use in Australia, is automatically added at $10/GB ($0.01/MB) when you've used your included data. Unused Additional Data will roll over to the following billing month and will be available until the end of that period.",
-  "content2": "Included Data does not roll over at the end of each billing month."
-  }]
-  },
-  "Maintenance_Page" :
-  {
-    "maintenanceHeading"  : "We’re sorry - this feature is currently unavailable.",
-    "tryLaterMsg"  : "Our team are working on fixing the technical issue. Please try again later."
-  },
-  "walletSuppressToggle": "OFF",
-  "appTogglerTime":5,
-  "accountBlockList":["Blocked","Scratch card recharge suspended"],
-  "creditBonus":["VF_WALLET_RW_DOL_BDL","VF_WALLET_DOL_BDL","VF_RWD_COUNTER2_BDL","VF_RWD_COUNTER1_BDL","VF_RWD_COUNTER3_BDL"],
-  "channelName":"Gold-Web",
-  "applicationName":"Self-Service(Gold)",
-  "loaderTimer":0
-  }
+}

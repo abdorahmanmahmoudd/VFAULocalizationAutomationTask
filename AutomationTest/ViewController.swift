@@ -14,7 +14,8 @@ class ViewController: NSViewController {
         super.viewDidAppear()
         
         let localizationFileName = "localized.json"
-        let modelName = "DashBoardConfigurationModel"
+        let modelName = "AddonsConfigurationFile"
+        let localizationFilePath = "/Users/mac/Desktop/localized.json"
         
         //read and parse strings json file
         guard let localizedStringsData = getFileData(Named: localizationFileName) else {
@@ -42,21 +43,24 @@ class ViewController: NSViewController {
             exit(0)
         }
         
-        let projectPath = "/Users/mac/Desktop/"
-        let filesToOperateOn = getValidFiles(withPath: projectPath)
-        print("preparing to work on the following views...\n\(filesToOperateOn)\n")
+        let projectPath = "/Users/mac/Documents/VFAU-iOS/MyVodafone-Gold/Postpaid Addons"
+        var filesToOperateOn = [String]()
+        getValidFiles(withPath: projectPath, inArray: &filesToOperateOn)
+//        print("preparing to work on the following files...\n\(filesToOperateOn)\n")
+        
         sleep(20)
         for filePath in filesToOperateOn{
             
-            guard var sourceCodefileContent = getFileContent(Named: projectPath + "/" + filePath) else{
-                print("Warning: couldn't get \(filePath) content! but i will continue")
+            print("will work on file: \(filePath)\n")
+            guard var sourceCodefileContent = getFileContent(Named: filePath) else{
+                print("Warning: couldn't get \(filePath) content! but i will continue to the next file\n")
                 continue
             }
             
             let fullLocalizationLineOfCodeRegex = "R.string.localizable.[a-zA-Z0-9]\\w+\\(\\)"
             let localizationLines = matches(forRegex: fullLocalizationLineOfCodeRegex, inText: sourceCodefileContent)
             if localizationLines.count == 0{
-                print("Couldn't find localizations at \(filePath) and i will continue")
+                print("Couldn't find localizations at \(filePath) and i will continue to the next file\n")
                 continue
             }
             //            print("\(localizationLines) \n \(localizationLines.count) \n")
@@ -67,29 +71,33 @@ class ViewController: NSViewController {
             //            print("\(localizationKeys) \n \(localizationLines.count) \n")
             
             var updateFiles = false
-            guard var localizationFileContent = getFileContent(Named: projectPath + "/" + localizationFileName) else {
+            guard var localizationFileContent = getFileContent(Named: localizationFilePath) else {
                 print("ERROR: Can not read localized.json to edit it")
                 exit(0)
             }
             
-            //check if the localization value has a match in the configuration file and update files is exists
-            var configurationMatches = Dictionary<String,String>()
+            //check if the localization value has a match in the configuration file and update files if exists
             
+            var totalConfigurationMatches = Dictionary<String,String>()
             for i in 0..<localizationKeys.count{
                 
                 //                print("will try to find value for key: \(localizationKeys[i])\n")
                 guard localizationModelObject.responds(to: Selector(localizationKeys[i].lowercased())) else{
-                    print("Most probably that the key: \(localizationKeys[i]) which you are looking for is configuration key, so localization model can't find it. so we will continue with next keys ^_^\n")
+//                    print("Most probably that the key: \(localizationKeys[i]) which you are looking for is configuration key, so localization model can't find it. so we will continue with next keys ^_^\n")
                     continue
                 }
-                let localizationValue = localizationModelObject.value(forKey: localizationKeys[i]) as? String ?? "corrupted_value"
+                let localizationValue = localizationModelObject.value(forKey: localizationKeys[i].lowercased()) as? String ?? "corrupted_value"
 //                print("found a value: \(localizationValue), for key: \(localizationKeys[i])\n")
                 
+                var configurationMatches = Dictionary<String,String>()
                 getValueMatches(fromDic: configurationDictionary, forValue: localizationValue, intoDic: &configurationMatches, withRoot: "")
                 guard configurationMatches.count > 0 else{
                     print("Couldn't find a match for key: \(localizationKeys[i]), value: \(localizationValue)\n")
                     continue
                 }
+                totalConfigurationMatches.merge(configurationMatches, uniquingKeysWith: { (v1, v2) -> String in
+                    return v1
+                })
                 updateFiles = true
                 
                 //update localization file
@@ -116,6 +124,7 @@ class ViewController: NSViewController {
                         if key.contains("."){
                             key = mappedConfigurationPath.components(separatedBy: ".").last ?? "corrupted_key"
                         }
+                        
                         let codeSnippet = "getStringForView(ofConfigurationKey: R.string.localizable.\(key).key, andConfigurationValue: \(modelName).sharedInstance?.\(mappedConfigurationPath.replacingOccurrences(of: ".", with: "?.")), andLocalString: R.string.localizable.\(key)())"
                         sourceCodefileContent = sourceCodefileContent.replacingOccurrences(of: matchedLine, with: codeSnippet)
                         print("Replaced: \(matchedLine), for key: \(localizationKeys[i]), with snippet of Configuration Key: \(key)\n")
@@ -123,17 +132,17 @@ class ViewController: NSViewController {
                 }
             }
             
-            print("Found keys: \(configurationMatches) in \(filePath) and replaced them.\n\n")
+            print("Found keys: \(totalConfigurationMatches) in \(filePath) and replaced them.\n\n")
             
             if updateFiles{
                 updateFiles = false
                 do {
                     let emptyString = ""
-                    try emptyString.write(toFile: projectPath + "/" + localizationFileName, atomically: false, encoding: String.Encoding.utf8)
-                    try localizationFileContent.write(toFile: projectPath + "/" + localizationFileName, atomically: false, encoding: String.Encoding.utf8)
+                    try emptyString.write(toFile: localizationFilePath, atomically: false, encoding: String.Encoding.utf8)
+                    try localizationFileContent.write(toFile: localizationFilePath, atomically: false, encoding: String.Encoding.utf8)
                     
-                    try emptyString.write(toFile: projectPath + "/" + filePath, atomically: false, encoding: .utf8)
-                    try sourceCodefileContent.write(toFile: projectPath + "/" + filePath, atomically: false, encoding: .utf8)
+                    try emptyString.write(toFile: filePath, atomically: false, encoding: .utf8)
+                    try sourceCodefileContent.write(toFile: filePath, atomically: false, encoding: .utf8)
                     
                     print("\(filePath) updated and done.")
 
@@ -155,24 +164,39 @@ class ViewController: NSViewController {
         
     }
     
-    func getValidFiles(withPath path: String) -> [String]{
-        var validFiles = [String]()
+    func getValidFiles(withPath path: String, inArray array: inout [String]){
+
+        var isDir : ObjCBool = false
         do {
-            try validFiles = FileManager.default.contentsOfDirectory(atPath: path).filter({ (path) -> Bool in
-                return path.lowercased().contains("view")
-            })
+            if FileManager.default.fileExists(atPath: path, isDirectory: &isDir) {
+                if isDir.boolValue {
+                    
+//                    print("file exists and is a directory\n")
+                    let allSubDirectories = try FileManager.default.contentsOfDirectory(atPath: path)
+                    allSubDirectories.forEach({ (subDirectory) in
+                        let subPath = path + "/" + subDirectory
+                        getValidFiles(withPath: subPath, inArray: &array)
+                    })
+                    
+                } else {
+//                    print("file exists and is not a directory\n")
+                    if path.contains(".swift"){
+                        array.append(path)
+                    }
+                }
+            } else {
+//                print("file does not exist\n")
+            }
         } catch  {
             print(error.localizedDescription)
         }
-        
-        return validFiles
     }
-    
+
     func getFileContent(Named name: String) -> String?{
         do {
             return try String.init(contentsOfFile: name)
         }catch{
-            print("couldn't read file content + error: " + error.localizedDescription)
+            print("couldn't read file content + error: " + error.localizedDescription + "\n and file name is: \(name)")
         }
         return nil
     }

@@ -14,30 +14,20 @@
 		041B6CDA21388E8E00F7FB24 /* LocalizedStringsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B6CD921388E8E00F7FB24 /* LocalizedStringsModel.swift */; };
 		041B6CDC213891A000F7FB24 /* localized.json in Resources */ = {isa = PBXBuildFile; fileRef = 041B6CDB213891A000F7FB24 /* localized.json */; };
 		046B54252138ABD800BAFDA2 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 046B54242138ABD800BAFDA2 /* config.json */; };
+		04AA3638213C14EA004223E7 /* IddAddonsAndBooster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA362B213C14E9004223E7 /* IddAddonsAndBooster.swift */; };
+		04AA3639213C14EA004223E7 /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA362C213C14E9004223E7 /* AlertMessage.swift */; };
+		04AA363A213C14EA004223E7 /* AddonsConfigurationFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA362D213C14E9004223E7 /* AddonsConfigurationFile.swift */; };
+		04AA363B213C14EA004223E7 /* InternationalCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA362E213C14EA004223E7 /* InternationalCountry.swift */; };
+		04AA363C213C14EA004223E7 /* RequestErrorScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA362F213C14EA004223E7 /* RequestErrorScenario.swift */; };
+		04AA363D213C14EA004223E7 /* LoadingPageOverlayAddonBooster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA3630213C14EA004223E7 /* LoadingPageOverlayAddonBooster.swift */; };
+		04AA363E213C14EA004223E7 /* ButtonName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA3631213C14EA004223E7 /* ButtonName.swift */; };
+		04AA363F213C14EA004223E7 /* AddInternationalCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA3632213C14EA004223E7 /* AddInternationalCall.swift */; };
+		04AA3640213C14EA004223E7 /* TalkAndText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA3633213C14EA004223E7 /* TalkAndText.swift */; };
+		04AA3641213C14EA004223E7 /* AddonsAndBooster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA3634213C14EA004223E7 /* AddonsAndBooster.swift */; };
+		04AA3642213C14EA004223E7 /* MaintenancePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA3635213C14EA004223E7 /* MaintenancePage.swift */; };
+		04AA3643213C14EA004223E7 /* AddonsErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA3636213C14EA004223E7 /* AddonsErrorCode.swift */; };
+		04AA3644213C14EA004223E7 /* InternationalCallOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA3637213C14EA004223E7 /* InternationalCallOverlay.swift */; };
 		04F27D4C213987D300023246 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27D4B213987D300023246 /* Helpers.swift */; };
-		04F27DF0213995D200023246 /* Postpaid_Dashbaord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DD9213995D100023246 /* Postpaid_Dashbaord.swift */; };
-		04F27DF1213995D200023246 /* PostPaid_DataUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DDA213995D100023246 /* PostPaid_DataUsage.swift */; };
-		04F27DF2213995D200023246 /* source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DDB213995D100023246 /* source.swift */; };
-		04F27DF3213995D200023246 /* TermsnCond_Dash_Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DDC213995D100023246 /* TermsnCond_Dash_Board.swift */; };
-		04F27DF4213995D200023246 /* fixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DDD213995D100023246 /* fixed.swift */; };
-		04F27DF5213995D200023246 /* Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DDE213995D100023246 /* Sharing.swift */; };
-		04F27DF6213995D200023246 /* Default_Error_Scenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DDF213995D100023246 /* Default_Error_Scenario.swift */; };
-		04F27DF7213995D200023246 /* Pin_Error_Handling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DE0213995D100023246 /* Pin_Error_Handling.swift */; };
-		04F27DF8213995D200023246 /* Fixed_Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DE1213995D100023246 /* Fixed_Dashboard.swift */; };
-		04F27DF9213995D200023246 /* Voice_Of_Vodafone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DE2213995D100023246 /* Voice_Of_Vodafone.swift */; };
-		04F27DFA213995D200023246 /* My_Credit_Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DE3213995D100023246 /* My_Credit_Section.swift */; };
-		04F27DFB213995D200023246 /* Generic_Error_Scenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DE4213995D100023246 /* Generic_Error_Scenario.swift */; };
-		04F27DFC213995D200023246 /* Pre_Dashboard_Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DE5213995D100023246 /* Pre_Dashboard_Credit.swift */; };
-		04F27DFD213995D200023246 /* Error_Scenario_Unbilled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DE6213995D100023246 /* Error_Scenario_Unbilled.swift */; };
-		04F27DFE213995D200023246 /* Maintenance_Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DE7213995D100023246 /* Maintenance_Page.swift */; };
-		04F27DFF213995D200023246 /* videodata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DE8213995D100023246 /* videodata.swift */; };
-		04F27E00213995D200023246 /* Prepaid_XMAS_offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DE9213995D100023246 /* Prepaid_XMAS_offer.swift */; };
-		04F27E01213995D200023246 /* DashBoardConfigurationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DEA213995D200023246 /* DashBoardConfigurationModel.swift */; };
-		04F27E02213995D200023246 /* DashBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DEB213995D200023246 /* DashBoard.swift */; };
-		04F27E03213995D200023246 /* entitlementIdsArr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DEC213995D200023246 /* entitlementIdsArr.swift */; };
-		04F27E04213995D200023246 /* Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DED213995D200023246 /* Generic.swift */; };
-		04F27E05213995D200023246 /* Request_Error_Scenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DEE213995D200023246 /* Request_Error_Scenario.swift */; };
-		04F27E06213995D200023246 /* Plan_Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27DEF213995D200023246 /* Plan_Detail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,30 +41,20 @@
 		041B6CD921388E8E00F7FB24 /* LocalizedStringsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalizedStringsModel.swift; path = ../../LocalizedStringsModel.swift; sourceTree = "<group>"; };
 		041B6CDB213891A000F7FB24 /* localized.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = localized.json; path = ../../localized.json; sourceTree = "<group>"; };
 		046B54242138ABD800BAFDA2 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		04AA362B213C14E9004223E7 /* IddAddonsAndBooster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IddAddonsAndBooster.swift; sourceTree = "<group>"; };
+		04AA362C213C14E9004223E7 /* AlertMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
+		04AA362D213C14E9004223E7 /* AddonsConfigurationFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddonsConfigurationFile.swift; sourceTree = "<group>"; };
+		04AA362E213C14EA004223E7 /* InternationalCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternationalCountry.swift; sourceTree = "<group>"; };
+		04AA362F213C14EA004223E7 /* RequestErrorScenario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestErrorScenario.swift; sourceTree = "<group>"; };
+		04AA3630213C14EA004223E7 /* LoadingPageOverlayAddonBooster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingPageOverlayAddonBooster.swift; sourceTree = "<group>"; };
+		04AA3631213C14EA004223E7 /* ButtonName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonName.swift; sourceTree = "<group>"; };
+		04AA3632213C14EA004223E7 /* AddInternationalCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddInternationalCall.swift; sourceTree = "<group>"; };
+		04AA3633213C14EA004223E7 /* TalkAndText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkAndText.swift; sourceTree = "<group>"; };
+		04AA3634213C14EA004223E7 /* AddonsAndBooster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddonsAndBooster.swift; sourceTree = "<group>"; };
+		04AA3635213C14EA004223E7 /* MaintenancePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenancePage.swift; sourceTree = "<group>"; };
+		04AA3636213C14EA004223E7 /* AddonsErrorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddonsErrorCode.swift; sourceTree = "<group>"; };
+		04AA3637213C14EA004223E7 /* InternationalCallOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternationalCallOverlay.swift; sourceTree = "<group>"; };
 		04F27D4B213987D300023246 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		04F27DD9213995D100023246 /* Postpaid_Dashbaord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Postpaid_Dashbaord.swift; sourceTree = "<group>"; };
-		04F27DDA213995D100023246 /* PostPaid_DataUsage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostPaid_DataUsage.swift; sourceTree = "<group>"; };
-		04F27DDB213995D100023246 /* source.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = source.swift; sourceTree = "<group>"; };
-		04F27DDC213995D100023246 /* TermsnCond_Dash_Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsnCond_Dash_Board.swift; sourceTree = "<group>"; };
-		04F27DDD213995D100023246 /* fixed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fixed.swift; sourceTree = "<group>"; };
-		04F27DDE213995D100023246 /* Sharing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sharing.swift; sourceTree = "<group>"; };
-		04F27DDF213995D100023246 /* Default_Error_Scenario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Default_Error_Scenario.swift; sourceTree = "<group>"; };
-		04F27DE0213995D100023246 /* Pin_Error_Handling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pin_Error_Handling.swift; sourceTree = "<group>"; };
-		04F27DE1213995D100023246 /* Fixed_Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fixed_Dashboard.swift; sourceTree = "<group>"; };
-		04F27DE2213995D100023246 /* Voice_Of_Vodafone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Voice_Of_Vodafone.swift; sourceTree = "<group>"; };
-		04F27DE3213995D100023246 /* My_Credit_Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = My_Credit_Section.swift; sourceTree = "<group>"; };
-		04F27DE4213995D100023246 /* Generic_Error_Scenario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generic_Error_Scenario.swift; sourceTree = "<group>"; };
-		04F27DE5213995D100023246 /* Pre_Dashboard_Credit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pre_Dashboard_Credit.swift; sourceTree = "<group>"; };
-		04F27DE6213995D100023246 /* Error_Scenario_Unbilled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error_Scenario_Unbilled.swift; sourceTree = "<group>"; };
-		04F27DE7213995D100023246 /* Maintenance_Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maintenance_Page.swift; sourceTree = "<group>"; };
-		04F27DE8213995D100023246 /* videodata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = videodata.swift; sourceTree = "<group>"; };
-		04F27DE9213995D100023246 /* Prepaid_XMAS_offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prepaid_XMAS_offer.swift; sourceTree = "<group>"; };
-		04F27DEA213995D200023246 /* DashBoardConfigurationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardConfigurationModel.swift; sourceTree = "<group>"; };
-		04F27DEB213995D200023246 /* DashBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoard.swift; sourceTree = "<group>"; };
-		04F27DEC213995D200023246 /* entitlementIdsArr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = entitlementIdsArr.swift; sourceTree = "<group>"; };
-		04F27DED213995D200023246 /* Generic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generic.swift; sourceTree = "<group>"; };
-		04F27DEE213995D200023246 /* Request_Error_Scenario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request_Error_Scenario.swift; sourceTree = "<group>"; };
-		04F27DEF213995D200023246 /* Plan_Detail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plan_Detail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,13 +87,13 @@
 		041B6CC6213883A600F7FB24 /* AutomationTest */ = {
 			isa = PBXGroup;
 			children = (
+				04AA362A213C146E004223E7 /* AddonesModel */,
 				046B54242138ABD800BAFDA2 /* config.json */,
 				041B6CDB213891A000F7FB24 /* localized.json */,
 				04F27D4B213987D300023246 /* Helpers.swift */,
 				041B6CD921388E8E00F7FB24 /* LocalizedStringsModel.swift */,
 				041B6CC7213883A600F7FB24 /* AppDelegate.swift */,
 				041B6CC9213883A600F7FB24 /* ViewController.swift */,
-				041B6CDD2138951C00F7FB24 /* DashBoardConfigurationModel */,
 				041B6CCB213883A600F7FB24 /* Assets.xcassets */,
 				041B6CCD213883A600F7FB24 /* Main.storyboard */,
 				041B6CD0213883A600F7FB24 /* Info.plist */,
@@ -122,34 +102,24 @@
 			path = AutomationTest;
 			sourceTree = "<group>";
 		};
-		041B6CDD2138951C00F7FB24 /* DashBoardConfigurationModel */ = {
+		04AA362A213C146E004223E7 /* AddonesModel */ = {
 			isa = PBXGroup;
 			children = (
-				04F27DEB213995D200023246 /* DashBoard.swift */,
-				04F27DEA213995D200023246 /* DashBoardConfigurationModel.swift */,
-				04F27DDF213995D100023246 /* Default_Error_Scenario.swift */,
-				04F27DEC213995D200023246 /* entitlementIdsArr.swift */,
-				04F27DE6213995D100023246 /* Error_Scenario_Unbilled.swift */,
-				04F27DE1213995D100023246 /* Fixed_Dashboard.swift */,
-				04F27DDD213995D100023246 /* fixed.swift */,
-				04F27DE4213995D100023246 /* Generic_Error_Scenario.swift */,
-				04F27DED213995D200023246 /* Generic.swift */,
-				04F27DE7213995D100023246 /* Maintenance_Page.swift */,
-				04F27DE3213995D100023246 /* My_Credit_Section.swift */,
-				04F27DE0213995D100023246 /* Pin_Error_Handling.swift */,
-				04F27DEF213995D200023246 /* Plan_Detail.swift */,
-				04F27DD9213995D100023246 /* Postpaid_Dashbaord.swift */,
-				04F27DDA213995D100023246 /* PostPaid_DataUsage.swift */,
-				04F27DE5213995D100023246 /* Pre_Dashboard_Credit.swift */,
-				04F27DE9213995D100023246 /* Prepaid_XMAS_offer.swift */,
-				04F27DEE213995D200023246 /* Request_Error_Scenario.swift */,
-				04F27DDE213995D100023246 /* Sharing.swift */,
-				04F27DDB213995D100023246 /* source.swift */,
-				04F27DDC213995D100023246 /* TermsnCond_Dash_Board.swift */,
-				04F27DE8213995D100023246 /* videodata.swift */,
-				04F27DE2213995D100023246 /* Voice_Of_Vodafone.swift */,
+				04AA3632213C14EA004223E7 /* AddInternationalCall.swift */,
+				04AA3634213C14EA004223E7 /* AddonsAndBooster.swift */,
+				04AA362D213C14E9004223E7 /* AddonsConfigurationFile.swift */,
+				04AA3636213C14EA004223E7 /* AddonsErrorCode.swift */,
+				04AA362C213C14E9004223E7 /* AlertMessage.swift */,
+				04AA3631213C14EA004223E7 /* ButtonName.swift */,
+				04AA362B213C14E9004223E7 /* IddAddonsAndBooster.swift */,
+				04AA3637213C14EA004223E7 /* InternationalCallOverlay.swift */,
+				04AA362E213C14EA004223E7 /* InternationalCountry.swift */,
+				04AA3630213C14EA004223E7 /* LoadingPageOverlayAddonBooster.swift */,
+				04AA3635213C14EA004223E7 /* MaintenancePage.swift */,
+				04AA362F213C14EA004223E7 /* RequestErrorScenario.swift */,
+				04AA3633213C14EA004223E7 /* TalkAndText.swift */,
 			);
-			path = DashBoardConfigurationModel;
+			path = AddonesModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,33 +200,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F27E04213995D200023246 /* Generic.swift in Sources */,
-				04F27DFB213995D200023246 /* Generic_Error_Scenario.swift in Sources */,
 				041B6CCA213883A600F7FB24 /* ViewController.swift in Sources */,
-				04F27DF3213995D200023246 /* TermsnCond_Dash_Board.swift in Sources */,
-				04F27DF1213995D200023246 /* PostPaid_DataUsage.swift in Sources */,
-				04F27DF7213995D200023246 /* Pin_Error_Handling.swift in Sources */,
-				04F27E00213995D200023246 /* Prepaid_XMAS_offer.swift in Sources */,
-				04F27E06213995D200023246 /* Plan_Detail.swift in Sources */,
-				04F27DF4213995D200023246 /* fixed.swift in Sources */,
-				04F27DFE213995D200023246 /* Maintenance_Page.swift in Sources */,
-				04F27E03213995D200023246 /* entitlementIdsArr.swift in Sources */,
-				04F27E05213995D200023246 /* Request_Error_Scenario.swift in Sources */,
-				04F27E02213995D200023246 /* DashBoard.swift in Sources */,
-				04F27DF5213995D200023246 /* Sharing.swift in Sources */,
-				04F27E01213995D200023246 /* DashBoardConfigurationModel.swift in Sources */,
-				04F27DFA213995D200023246 /* My_Credit_Section.swift in Sources */,
-				04F27DF0213995D200023246 /* Postpaid_Dashbaord.swift in Sources */,
-				04F27DFC213995D200023246 /* Pre_Dashboard_Credit.swift in Sources */,
+				04AA3642213C14EA004223E7 /* MaintenancePage.swift in Sources */,
+				04AA3643213C14EA004223E7 /* AddonsErrorCode.swift in Sources */,
+				04AA3638213C14EA004223E7 /* IddAddonsAndBooster.swift in Sources */,
+				04AA363E213C14EA004223E7 /* ButtonName.swift in Sources */,
+				04AA3641213C14EA004223E7 /* AddonsAndBooster.swift in Sources */,
+				04AA363D213C14EA004223E7 /* LoadingPageOverlayAddonBooster.swift in Sources */,
+				04AA3639213C14EA004223E7 /* AlertMessage.swift in Sources */,
+				04AA3640213C14EA004223E7 /* TalkAndText.swift in Sources */,
 				041B6CDA21388E8E00F7FB24 /* LocalizedStringsModel.swift in Sources */,
-				04F27DF2213995D200023246 /* source.swift in Sources */,
-				04F27DF6213995D200023246 /* Default_Error_Scenario.swift in Sources */,
 				041B6CC8213883A600F7FB24 /* AppDelegate.swift in Sources */,
-				04F27DFF213995D200023246 /* videodata.swift in Sources */,
-				04F27DF9213995D200023246 /* Voice_Of_Vodafone.swift in Sources */,
 				04F27D4C213987D300023246 /* Helpers.swift in Sources */,
-				04F27DF8213995D200023246 /* Fixed_Dashboard.swift in Sources */,
-				04F27DFD213995D200023246 /* Error_Scenario_Unbilled.swift in Sources */,
+				04AA363F213C14EA004223E7 /* AddInternationalCall.swift in Sources */,
+				04AA363B213C14EA004223E7 /* InternationalCountry.swift in Sources */,
+				04AA363A213C14EA004223E7 /* AddonsConfigurationFile.swift in Sources */,
+				04AA363C213C14EA004223E7 /* RequestErrorScenario.swift in Sources */,
+				04AA3644213C14EA004223E7 /* InternationalCallOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
