@@ -14,19 +14,6 @@
 		041B6CDA21388E8E00F7FB24 /* LocalizedStringsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B6CD921388E8E00F7FB24 /* LocalizedStringsModel.swift */; };
 		041B6CDC213891A000F7FB24 /* localized.json in Resources */ = {isa = PBXBuildFile; fileRef = 041B6CDB213891A000F7FB24 /* localized.json */; };
 		046B54252138ABD800BAFDA2 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 046B54242138ABD800BAFDA2 /* config.json */; };
-		04AA3638213C14EA004223E7 /* IddAddonsAndBooster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA362B213C14E9004223E7 /* IddAddonsAndBooster.swift */; };
-		04AA3639213C14EA004223E7 /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA362C213C14E9004223E7 /* AlertMessage.swift */; };
-		04AA363A213C14EA004223E7 /* AddonsConfigurationFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA362D213C14E9004223E7 /* AddonsConfigurationFile.swift */; };
-		04AA363B213C14EA004223E7 /* InternationalCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA362E213C14EA004223E7 /* InternationalCountry.swift */; };
-		04AA363C213C14EA004223E7 /* RequestErrorScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA362F213C14EA004223E7 /* RequestErrorScenario.swift */; };
-		04AA363D213C14EA004223E7 /* LoadingPageOverlayAddonBooster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA3630213C14EA004223E7 /* LoadingPageOverlayAddonBooster.swift */; };
-		04AA363E213C14EA004223E7 /* ButtonName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA3631213C14EA004223E7 /* ButtonName.swift */; };
-		04AA363F213C14EA004223E7 /* AddInternationalCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA3632213C14EA004223E7 /* AddInternationalCall.swift */; };
-		04AA3640213C14EA004223E7 /* TalkAndText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA3633213C14EA004223E7 /* TalkAndText.swift */; };
-		04AA3641213C14EA004223E7 /* AddonsAndBooster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA3634213C14EA004223E7 /* AddonsAndBooster.swift */; };
-		04AA3642213C14EA004223E7 /* MaintenancePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA3635213C14EA004223E7 /* MaintenancePage.swift */; };
-		04AA3643213C14EA004223E7 /* AddonsErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA3636213C14EA004223E7 /* AddonsErrorCode.swift */; };
-		04AA3644213C14EA004223E7 /* InternationalCallOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA3637213C14EA004223E7 /* InternationalCallOverlay.swift */; };
 		04F27D4C213987D300023246 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27D4B213987D300023246 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,19 +28,6 @@
 		041B6CD921388E8E00F7FB24 /* LocalizedStringsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalizedStringsModel.swift; path = ../../LocalizedStringsModel.swift; sourceTree = "<group>"; };
 		041B6CDB213891A000F7FB24 /* localized.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = localized.json; path = ../../localized.json; sourceTree = "<group>"; };
 		046B54242138ABD800BAFDA2 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
-		04AA362B213C14E9004223E7 /* IddAddonsAndBooster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IddAddonsAndBooster.swift; sourceTree = "<group>"; };
-		04AA362C213C14E9004223E7 /* AlertMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
-		04AA362D213C14E9004223E7 /* AddonsConfigurationFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddonsConfigurationFile.swift; sourceTree = "<group>"; };
-		04AA362E213C14EA004223E7 /* InternationalCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternationalCountry.swift; sourceTree = "<group>"; };
-		04AA362F213C14EA004223E7 /* RequestErrorScenario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestErrorScenario.swift; sourceTree = "<group>"; };
-		04AA3630213C14EA004223E7 /* LoadingPageOverlayAddonBooster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingPageOverlayAddonBooster.swift; sourceTree = "<group>"; };
-		04AA3631213C14EA004223E7 /* ButtonName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonName.swift; sourceTree = "<group>"; };
-		04AA3632213C14EA004223E7 /* AddInternationalCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddInternationalCall.swift; sourceTree = "<group>"; };
-		04AA3633213C14EA004223E7 /* TalkAndText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkAndText.swift; sourceTree = "<group>"; };
-		04AA3634213C14EA004223E7 /* AddonsAndBooster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddonsAndBooster.swift; sourceTree = "<group>"; };
-		04AA3635213C14EA004223E7 /* MaintenancePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenancePage.swift; sourceTree = "<group>"; };
-		04AA3636213C14EA004223E7 /* AddonsErrorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddonsErrorCode.swift; sourceTree = "<group>"; };
-		04AA3637213C14EA004223E7 /* InternationalCallOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternationalCallOverlay.swift; sourceTree = "<group>"; };
 		04F27D4B213987D300023246 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,7 +61,6 @@
 		041B6CC6213883A600F7FB24 /* AutomationTest */ = {
 			isa = PBXGroup;
 			children = (
-				04AA362A213C146E004223E7 /* AddonesModel */,
 				046B54242138ABD800BAFDA2 /* config.json */,
 				041B6CDB213891A000F7FB24 /* localized.json */,
 				04F27D4B213987D300023246 /* Helpers.swift */,
@@ -100,26 +73,6 @@
 				041B6CD1213883A600F7FB24 /* AutomationTest.entitlements */,
 			);
 			path = AutomationTest;
-			sourceTree = "<group>";
-		};
-		04AA362A213C146E004223E7 /* AddonesModel */ = {
-			isa = PBXGroup;
-			children = (
-				04AA3632213C14EA004223E7 /* AddInternationalCall.swift */,
-				04AA3634213C14EA004223E7 /* AddonsAndBooster.swift */,
-				04AA362D213C14E9004223E7 /* AddonsConfigurationFile.swift */,
-				04AA3636213C14EA004223E7 /* AddonsErrorCode.swift */,
-				04AA362C213C14E9004223E7 /* AlertMessage.swift */,
-				04AA3631213C14EA004223E7 /* ButtonName.swift */,
-				04AA362B213C14E9004223E7 /* IddAddonsAndBooster.swift */,
-				04AA3637213C14EA004223E7 /* InternationalCallOverlay.swift */,
-				04AA362E213C14EA004223E7 /* InternationalCountry.swift */,
-				04AA3630213C14EA004223E7 /* LoadingPageOverlayAddonBooster.swift */,
-				04AA3635213C14EA004223E7 /* MaintenancePage.swift */,
-				04AA362F213C14EA004223E7 /* RequestErrorScenario.swift */,
-				04AA3633213C14EA004223E7 /* TalkAndText.swift */,
-			);
-			path = AddonesModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,22 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				041B6CCA213883A600F7FB24 /* ViewController.swift in Sources */,
-				04AA3642213C14EA004223E7 /* MaintenancePage.swift in Sources */,
-				04AA3643213C14EA004223E7 /* AddonsErrorCode.swift in Sources */,
-				04AA3638213C14EA004223E7 /* IddAddonsAndBooster.swift in Sources */,
-				04AA363E213C14EA004223E7 /* ButtonName.swift in Sources */,
-				04AA3641213C14EA004223E7 /* AddonsAndBooster.swift in Sources */,
-				04AA363D213C14EA004223E7 /* LoadingPageOverlayAddonBooster.swift in Sources */,
-				04AA3639213C14EA004223E7 /* AlertMessage.swift in Sources */,
-				04AA3640213C14EA004223E7 /* TalkAndText.swift in Sources */,
 				041B6CDA21388E8E00F7FB24 /* LocalizedStringsModel.swift in Sources */,
 				041B6CC8213883A600F7FB24 /* AppDelegate.swift in Sources */,
 				04F27D4C213987D300023246 /* Helpers.swift in Sources */,
-				04AA363F213C14EA004223E7 /* AddInternationalCall.swift in Sources */,
-				04AA363B213C14EA004223E7 /* InternationalCountry.swift in Sources */,
-				04AA363A213C14EA004223E7 /* AddonsConfigurationFile.swift in Sources */,
-				04AA363C213C14EA004223E7 /* RequestErrorScenario.swift in Sources */,
-				04AA3644213C14EA004223E7 /* InternationalCallOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

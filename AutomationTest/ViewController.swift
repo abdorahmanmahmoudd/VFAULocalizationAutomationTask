@@ -14,36 +14,41 @@ class ViewController: NSViewController {
         super.viewDidAppear()
         
         let localizationFileName = "localized.json"
-        let modelName = "AddonsConfigurationFile"
+        let modelName = "AppSetting"
         let localizationFilePath = "/Users/mac/Desktop/localized.json"
         
         //read and parse strings json file
         guard let localizedStringsData = getFileData(Named: localizationFileName) else {
             print("ERROR: Can not find localized.json")
+            print("I will EXIST NOW")
             exit(0)
         }
         
         guard let localizationModelObject = try? JSONDecoder().decode(LocalizationStringsModel.self, from: localizedStringsData) else {
             print("ERROR: Can not decode localized.json")
+            print("I will EXIST NOW")
             exit(0)
         }
         
         //read and parse configuration json file
         guard let configurationFileData = getFileData(Named: "config.json") else {
             print("ERROR: Can not find config.json")
+            print("I will EXIST NOW")
             exit(0)
         }
         guard let configurationModelObject = try? JSONSerialization.jsonObject(with: configurationFileData, options: []) as? [String: AnyObject] else {
             print("ERROR: Can not decode config.json")
+            print("I will EXIST NOW")
             exit(0)
         }
         
         guard let configurationDictionary = configurationModelObject else {
             print("ERROR: Configuration Model could not be a dictionary!")
+            print("I will EXIST NOW")
             exit(0)
         }
         
-        let projectPath = "/Users/mac/Documents/VFAU-iOS/MyVodafone-Gold/Postpaid Addons"
+        let projectPath = "/Users/mac/Documents/VFAU-iOS/MyVodafone-Gold"
         var filesToOperateOn = [String]()
         getValidFiles(withPath: projectPath, inArray: &filesToOperateOn)
 //        print("preparing to work on the following files...\n\(filesToOperateOn)\n")
@@ -51,7 +56,7 @@ class ViewController: NSViewController {
         sleep(20)
         for filePath in filesToOperateOn{
             
-            print("will work on file: \(filePath)\n")
+//            print("will work on file: \(filePath)\n")
             guard var sourceCodefileContent = getFileContent(Named: filePath) else{
                 print("Warning: couldn't get \(filePath) content! but i will continue to the next file\n")
                 continue
@@ -73,11 +78,18 @@ class ViewController: NSViewController {
             var updateFiles = false
             guard var localizationFileContent = getFileContent(Named: localizationFilePath) else {
                 print("ERROR: Can not read localized.json to edit it")
+                print("I will EXIST NOW")
                 exit(0)
             }
             
+            let projectLocalizationFilePath = "/Users/mac/Documents/VFAU-iOS/MyVodafone-Gold/en-AU.lproj/Localizable.strings"
+            guard var projectLocalizationFileContent = getFileContent(Named: projectLocalizationFilePath)else{
+                print("Couldn't open project localization file . strings and i will stop\n")
+                print("I will EXIST NOW")
+                exit(0)
+            }
+            print("File: \(filePath), impacted by the following configuration: \(modelName)")
             //check if the localization value has a match in the configuration file and update files if exists
-            
             var totalConfigurationMatches = Dictionary<String,String>()
             for i in 0..<localizationKeys.count{
                 
@@ -108,7 +120,8 @@ class ViewController: NSViewController {
                     if key.contains("."){
                         key = mappedConfigurationPath.components(separatedBy: ".").last ?? "corrupted_key"
                     }
-                    localizationFileContent = localizationFileContent.replacingOccurrences(of: localizationKeys[i], with: key)
+//                    localizationFileContent = localizationFileContent.replacingOccurrences(of: localizationKeys[i], with: key)
+                    projectLocalizationFileContent = projectLocalizationFileContent.replacingOccurrences(of: localizationKeys[i], with: key, options: .literal, range: nil)
                 }
                 
                 //update configuration file
@@ -120,12 +133,13 @@ class ViewController: NSViewController {
                     if let mappedConfigurationPath = (configurationMatches.first { (key,value) -> Bool in
                         return value == localizationValue}?.key)
                     {
-                        var key = mappedConfigurationPath
+                        var key = mappedConfigurationPath.lowercased()
                         if key.contains("."){
                             key = mappedConfigurationPath.components(separatedBy: ".").last ?? "corrupted_key"
                         }
                         
                         let codeSnippet = "getStringForView(ofConfigurationKey: R.string.localizable.\(key).key, andConfigurationValue: \(modelName).sharedInstance?.\(mappedConfigurationPath.replacingOccurrences(of: ".", with: "?.")), andLocalString: R.string.localizable.\(key)())"
+                        
                         sourceCodefileContent = sourceCodefileContent.replacingOccurrences(of: matchedLine, with: codeSnippet)
                         print("Replaced: \(matchedLine), for key: \(localizationKeys[i]), with snippet of Configuration Key: \(key)\n")
                     }
@@ -144,14 +158,17 @@ class ViewController: NSViewController {
                     try emptyString.write(toFile: filePath, atomically: false, encoding: .utf8)
                     try sourceCodefileContent.write(toFile: filePath, atomically: false, encoding: .utf8)
                     
+                    try projectLocalizationFileContent.write(toFile: projectLocalizationFilePath, atomically: true, encoding: .utf8)
+                    
                     print("\(filePath) updated and done.")
 
                 }catch{
                     print("ERROR: couldn't update localization file or source code file named: \(filePath)! - description: \(error.localizedDescription)")
-                    exit(0)
+                    print("I will EXIST NOW")
                 }
             }
         }
+        print("hooof.. Done El7")
     }
 
     func getFileData(Named name: String) -> Data?{
@@ -216,43 +233,51 @@ class ViewController: NSViewController {
     }
     
     func getValueMatches(fromDic dic: Dictionary<String, AnyObject>, forValue value: String, intoDic matches: inout Dictionary<String,String>, withRoot root: String){
+        
         for (k,v) in dic{
-//            print("configuration key: \(k), value: \(v)\n")
-            var path = String()
+            //d.
+            var path = k
             if root != ""{
                 path = root + "." + k
             }
     
             if (v as? String) == (value){
-                matches[path] = v as? String
+                matches[path] = value
                 
             }else if let numericValue = v as? Int{
-                
                 if String(numericValue) == value{
-                    matches[path] = String(numericValue)
+                    matches[path] = value
                 }
                 
             }else if let subDictionary = v as? Dictionary<String, AnyObject>{
                 
-                getValueMatches(fromDic: subDictionary , forValue: value, intoDic: &matches, withRoot: k)
+                getValueMatches(fromDic: subDictionary , forValue: value, intoDic: &matches, withRoot: path)
                 
             }else if let subArray = v as? [Any]{
                 
-                subArray.forEach { (object) in
-                    
-                    if let subDictionary = object as? Dictionary<String, AnyObject>{
-                        getValueMatches(fromDic: subDictionary, forValue: value, intoDic: &matches, withRoot: k)
-                        
-                    }else if (object as? String) == (value){
-                        matches[path] = v as? String
-                        
-                    }else if let numericValue = object as? Int{
-                        
-                        if String(numericValue) == value{
-                            matches[path] = String(numericValue)
-                        }
-                    }
+                getValueMatches(fromArr: subArray, forValue: value, intoDic: &matches, withRoot: path)
+            }
+        }
+    }
+    
+    func getValueMatches(fromArr arr: [Any], forValue value: String, intoDic matches: inout Dictionary<String,String>, withRoot root:String){
+        
+        for i in 0..<arr.count{
+            let key = "\(root)[\(i)]"
+            if (arr[i] as? String) == value{
+                matches[key] = value
+                
+            }else if let numericValue = arr[i] as? Int{
+                if String(numericValue) == value{
+                    matches[key] = value
                 }
+                
+            }else if let subDictionary = arr[i] as? Dictionary<String,AnyObject>{
+                getValueMatches(fromDic: subDictionary , forValue: value, intoDic: &matches, withRoot: key)
+                
+            }else if let subArray = arr[i] as? [Any]{
+                getValueMatches(fromArr: subArray, forValue: value, intoDic: &matches, withRoot: key)
+                
             }
         }
     }
