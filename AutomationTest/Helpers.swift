@@ -42,3 +42,12 @@ extension Encodable {
         return dictionary
     }
 }
+
+extension String {
+    mutating func attributePath() -> String{
+        self = self.replacingOccurrences(of: ".", with: "?.") //ab?.cd[0]?.ef
+        self = self.replacingOccurrences(of: "[", with: "?[") //ab?.cd?[0]?.ef
+        self = self.replacingOccurrences(of: "]?", with: "]") //ab?.cd?[0].ef
+        return self
+    }
+}

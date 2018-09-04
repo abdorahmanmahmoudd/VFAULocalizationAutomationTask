@@ -14,7 +14,7 @@ class ViewController: NSViewController {
         super.viewDidAppear()
         
         let localizationFileName = "localized.json"
-        let modelName = "AppSetting"
+        let modelName = "HistoryConfiguration"
         let localizationFilePath = "/Users/mac/Desktop/localized.json"
         
         //read and parse strings json file
@@ -51,12 +51,10 @@ class ViewController: NSViewController {
         let projectPath = "/Users/mac/Documents/VFAU-iOS/MyVodafone-Gold"
         var filesToOperateOn = [String]()
         getValidFiles(withPath: projectPath, inArray: &filesToOperateOn)
-//        print("preparing to work on the following files...\n\(filesToOperateOn)\n")
         
         sleep(20)
         for filePath in filesToOperateOn{
             
-//            print("will work on file: \(filePath)\n")
             guard var sourceCodefileContent = getFileContent(Named: filePath) else{
                 print("Warning: couldn't get \(filePath) content! but i will continue to the next file\n")
                 continue
@@ -68,19 +66,12 @@ class ViewController: NSViewController {
                 print("Couldn't find localizations at \(filePath) and i will continue to the next file\n")
                 continue
             }
-            //            print("\(localizationLines) \n \(localizationLines.count) \n")
             
             let localizationKeys = localizationLines.map { (line) -> String in
                 return String.init(line.split(separator: ".")[3].dropLast(2))
             }
-            //            print("\(localizationKeys) \n \(localizationLines.count) \n")
             
             var updateFiles = false
-            guard var localizationFileContent = getFileContent(Named: localizationFilePath) else {
-                print("ERROR: Can not read localized.json to edit it")
-                print("I will EXIST NOW")
-                exit(0)
-            }
             
             let projectLocalizationFilePath = "/Users/mac/Documents/VFAU-iOS/MyVodafone-Gold/en-AU.lproj/Localizable.strings"
             guard var projectLocalizationFileContent = getFileContent(Named: projectLocalizationFilePath)else{
@@ -93,13 +84,11 @@ class ViewController: NSViewController {
             var totalConfigurationMatches = Dictionary<String,String>()
             for i in 0..<localizationKeys.count{
                 
-                //                print("will try to find value for key: \(localizationKeys[i])\n")
                 guard localizationModelObject.responds(to: Selector(localizationKeys[i].lowercased())) else{
 //                    print("Most probably that the key: \(localizationKeys[i]) which you are looking for is configuration key, so localization model can't find it. so we will continue with next keys ^_^\n")
                     continue
                 }
                 let localizationValue = localizationModelObject.value(forKey: localizationKeys[i].lowercased()) as? String ?? "corrupted_value"
-//                print("found a value: \(localizationValue), for key: \(localizationKeys[i])\n")
                 
                 var configurationMatches = Dictionary<String,String>()
                 getValueMatches(fromDic: configurationDictionary, forValue: localizationValue, intoDic: &configurationMatches, withRoot: "")
@@ -112,15 +101,12 @@ class ViewController: NSViewController {
                 })
                 updateFiles = true
                 
-                //update localization file
+                //update project localization file
                 if let mappedConfigurationPath = (configurationMatches.first { (key,value) -> Bool in
                     return value == localizationValue}?.key)
                 {
-                    var key = mappedConfigurationPath
-                    if key.contains("."){
-                        key = mappedConfigurationPath.components(separatedBy: ".").last ?? "corrupted_key"
-                    }
-//                    localizationFileContent = localizationFileContent.replacingOccurrences(of: localizationKeys[i], with: key)
+                    let key = (mappedConfigurationPath.contains(".") ? (mappedConfigurationPath.components(separatedBy: ".").last ?? "corrupted_key") : mappedConfigurationPath)
+                    
                     projectLocalizationFileContent = projectLocalizationFileContent.replacingOccurrences(of: localizationKeys[i], with: key, options: .literal, range: nil)
                 }
                 
@@ -130,18 +116,15 @@ class ViewController: NSViewController {
                     return String.init(line.split(separator: ".")[3].dropLast(2)) == localizationKeys[i]
                 }))
                 {
-                    if let mappedConfigurationPath = (configurationMatches.first { (key,value) -> Bool in
+                    if var mappedConfigurationPath = (configurationMatches.first { (key,value) -> Bool in
                         return value == localizationValue}?.key)
                     {
-                        var key = mappedConfigurationPath.lowercased()
-                        if key.contains("."){
-                            key = mappedConfigurationPath.components(separatedBy: ".").last ?? "corrupted_key"
-                        }
+                        let key = (mappedConfigurationPath.contains(".") ? (mappedConfigurationPath.lowercased().components(separatedBy: ".").last ?? "corrupted_key") : mappedConfigurationPath.lowercased())
                         
-                        let codeSnippet = "getStringForView(ofConfigurationKey: R.string.localizable.\(key).key, andConfigurationValue: \(modelName).sharedInstance?.\(mappedConfigurationPath.replacingOccurrences(of: ".", with: "?.")), andLocalString: R.string.localizable.\(key)())"
+                        let codeSnippet = "getStringForView(ofConfigurationKey: R.string.localizable.\(key).key, andConfigurationValue: \(modelName).sharedInstance?.\(mappedConfigurationPath.attributePath()), andLocalString: R.string.localizable.\(key)())"
                         
                         sourceCodefileContent = sourceCodefileContent.replacingOccurrences(of: matchedLine, with: codeSnippet)
-                        print("Replaced: \(matchedLine), for key: \(localizationKeys[i]), with snippet of Configuration Key: \(key)\n")
+                        print("Replaced: \(matchedLine), of key: \(localizationKeys[i]), with snippet of Configuration Key: \(key)\n")
                     }
                 }
             }
@@ -152,8 +135,6 @@ class ViewController: NSViewController {
                 updateFiles = false
                 do {
                     let emptyString = ""
-                    try emptyString.write(toFile: localizationFilePath, atomically: false, encoding: String.Encoding.utf8)
-                    try localizationFileContent.write(toFile: localizationFilePath, atomically: false, encoding: String.Encoding.utf8)
                     
                     try emptyString.write(toFile: filePath, atomically: false, encoding: .utf8)
                     try sourceCodefileContent.write(toFile: filePath, atomically: false, encoding: .utf8)
@@ -163,8 +144,9 @@ class ViewController: NSViewController {
                     print("\(filePath) updated and done.")
 
                 }catch{
-                    print("ERROR: couldn't update localization file or source code file named: \(filePath)! - description: \(error.localizedDescription)")
+                    print("ERROR: couldn't update localization file or source code file named: \(filePath)! - description: \(error.localizedDescription)\n")
                     print("I will EXIST NOW")
+                    exit(0)
                 }
             }
         }
@@ -188,7 +170,7 @@ class ViewController: NSViewController {
             if FileManager.default.fileExists(atPath: path, isDirectory: &isDir) {
                 if isDir.boolValue {
                     
-//                    print("file exists and is a directory\n")
+                    //file exists and is a directory
                     let allSubDirectories = try FileManager.default.contentsOfDirectory(atPath: path)
                     allSubDirectories.forEach({ (subDirectory) in
                         let subPath = path + "/" + subDirectory
@@ -196,13 +178,13 @@ class ViewController: NSViewController {
                     })
                     
                 } else {
-//                    print("file exists and is not a directory\n")
+                    //file exists and is not a directory
                     if path.contains(".swift"){
                         array.append(path)
                     }
                 }
             } else {
-//                print("file does not exist\n")
+                //file does not exist
             }
         } catch  {
             print(error.localizedDescription)

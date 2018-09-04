@@ -1,2475 +1,526 @@
 {
-    "ProofOfPurchase_data":
-    {
-        "receiverEmailAddress":"onlinewebrequests@TechMahindra.com",
-        "senderEmailAddress":"service.request@vodafone.com.au",
-        "subject":"Proof of purchase request â€“ HSS/WSS",
-        "MainLabel": "A proof of purchase may be required if your device is being repaired under warranty or if youâ€™re submitting an insurance claim. Weâ€™ll email your document by the end of the next business day.",
-        "FullName": "Enter your full name",
-        "phonenum": "Enter your phone number",
-        "emailAddress": "Enter your email address",
-        "DetailsOfPhone": "Details about where you purchased your phone",
-        "ExRepair":"e.g. repair/insurance purposes",
-        "IMEInum": "Enter your IMEI number",
-        "mobileName": "e.g. iPhone 8",
-        "NameLbl": "Your name",
-        "ContactLbl": "Contact number (optional)",
-        "EmailLbl": "Email to receive the proof of purchase",
-        "purchaseLbl1": "About you",
-        "purchaseLbl2": "About your purchase",
-        "purchaseLbl3": "Phone details",
-        "detailsLbl": "Details",
-        "ReasonLbl": "Reason for proof of purchase",
-        "IMEILbl": "IMEI number for this handset (dial *#06# on your handset)",
-        "HandsetLbl": "Handset make / model",
-        "HandsetDropdownLbl": "Handset purchased from",
-        "dropPlaceholder": "- select -",
-        "proofOfPurchase_Details": [
-                                    {
-                                    "name": "- select -",
-                                    "id": "1"
-                                    },
-                                    {
-                                    "name": "Online",
-                                    "id": "2"
-                                    },
-                                    {
-                                    "name": "Phone",
-                                    "id": "3"
-                                    },
-                                    {
-                                    "name": "Store",
-                                    "id": "4"
-                                    },
-                                    {
-                                    "name": "Other",
-                                    "id": "5"
-                                    }
-                                    ]
-    },
-    
-    "button_Name":{
+    "button_Name": {
         "gotoDashaboard": "Go to dashboard",
-        "buttonType": "Save settings",
-        "buttonLabel": "Request proof of purchase",
-        "buttonType1": "Update",
-        "buttonType2": "Remove",
-        "buttonType3": "Remove card",
+        "buttonType": "Download adjustment",
+        "buttonLabel": "Download Adjustment History",
         "buttonType4": "Cancel"
     },
-    "addon_overlay":{
-        "rechargeTitle": "Recharge to get an Add-on",
-        "rechargeDescription": "Youâ€™ll need to recharge before you can get an Add-on."
+    "loading_Page_Overlay_Usage": {
+        "errorTitle": "We're having trouble confirming your details",
+        "loadingPage": "Please don’t leave this page",
+        "title": "Usage History",
+        "ErrorScenarioTitle": "test"
     },
     "loading_Page_Overlays": {
         "errorTitle": "We're having trouble confirming your details",
-        "loadingPage": "Please donâ€™t leave this page",
-        "title": "Settings saved",
-        "ErrorScenarioTitle": "test",
-        "InternlCallingTitle": "Updating international calling",
-        "InternlCallingDescription": "Your request has been submitted. Please allow 5 to 15 minutes until activation.",
-        "ProofOfPurchaseTitle": "Weâ€™ve received your proof of purchase request",
-        "ProofOfPurchaseDescrip": "Thanks, weâ€™ll send you a TXT shortly, then follow up with an email containing your proof of purchase.",
-        "EditSuccessMsg": "Your details have been updated"
+        "loadingPage": "Please don’t leave this page",
+        "title": "Adjustment History",
+        "ErrorScenarioTitle": "test"
     },
-    "errorMsgAlerts":{
-        "heading": "Currently updating",
-        "msg": "We're processing your last request, which usually takes 5 to 15 minutes. Please try again soon.",
-        "errorAlertHeading": "Something didn't go as planned.",
-        "errorMsg": "Thereâ€™s been a technical mishap retrieving your details. Give it another go or call us on 1555 from your Vodafone mobile or 1300 650 410 from other phones."
+    "loading_Page_Overlay_transaction": {
+        "errorTitle": "We're having trouble confirming your details",
+        "loadingPage": "Please don’t leave this page",
+        "title": "Transaction History",
+        "ErrorScenarioTitle": "test"
     },
-    "Authentication": {
-        "inactive_customer": "Authentication: the customer for msisdn is inactive",
-        "invalid_account": "Authentication: the customer for msisdn is invalid account",
-        "invalid_subscription": "Authentication: the customer for msisdn does not have a valid subscription"
+    "spinner_title": {
+        "adjustHistTitle": "Loading adjustment history",
+        "purchaseHistTitle": "Loading purchase history",
+        "usageHistTitle": "Loading usage history"
     },
-    "edit_profile": {
-        "unit_type_dropdown": [
-                               {
-                               "id": "default",
-                               "name": "- select -"
-                               },
-                               {
-                               "id": "Shop",
-                               "name": "Shop"
-                               },
-                               {
-                               "id": "Apartment",
-                               "name": "Apartment"
-                               },
-                               {
-                               "id": "Flat",
-                               "name": "Flat"
-                               },
-                               {
-                               "id": "Level",
-                               "name": "Level"
-                               },
-                               {
-                               "id": "Suite",
-                               "name": "Suite"
-                               },
-                               {
-                               "id": "Unit",
-                               "name": "Unit"
-                               }
-                               ],
-        "street_type_dropdown": [
-                                 {
-                                 "id": "default",
-                                 "name": "- select -"
-                                 },
-                                 {
-                                 "id": "Avenue",
-                                 "name": "Avenue"
-                                 },
-                                 {
-                                 "id": "Crescent",
-                                 "name": "Crescent"
-                                 },
-                                 {
-                                 "id": "Lane",
-                                 "name": "Lane"
-                                 },
-                                 {
-                                 "id": "Highway",
-                                 "name": "Highway"
-                                 },
-                                 {
-                                 "id": "Parade",
-                                 "name": "Parade"
-                                 },
-                                 {
-                                 "id": "Place",
-                                 "name": "Place"
-                                 },
-                                 {
-                                 "id": "Road",
-                                 "name": "Road"
-                                 },
-                                 {
-                                 "id": "Street",
-                                 "name": "Street"
-                                 },
-                                 {
-                                 "id": "Access",
-                                 "name": "Access"
-                                 },
-                                 {
-                                 "id": "Alley",
-                                 "name": "Alley"
-                                 },
-                                 {
-                                 "id": "Alleyway",
-                                 "name": "Alleyway"
-                                 },
-                                 {
-                                 "id": "Amble",
-                                 "name": "Amble"
-                                 },
-                                 {
-                                 "id": "Anchorage",
-                                 "name": "Anchorage"
-                                 },
-                                 {
-                                 "id": "Approach",
-                                 "name": "Approach"
-                                 },
-                                 {
-                                 "id": "Arcade",
-                                 "name": "Arcade"
-                                 },
-                                 {
-                                 "id": "Artery",
-                                 "name": "Artery"
-                                 },
-                                 {
-                                 "id": "Basin",
-                                 "name": "Basin"
-                                 },
-                                 {
-                                 "id": "Beach",
-                                 "name": "Beach"
-                                 },
-                                 {
-                                 "id": "Bend",
-                                 "name": "Bend"
-                                 },
-                                 {
-                                 "id": "Block",
-                                 "name": "Block"
-                                 },
-                                 {
-                                 "id": "Boulevard",
-                                 "name": "Boulevard"
-                                 },
-                                 {
-                                 "id": "Brace",
-                                 "name": "Brace"
-                                 },
-                                 {
-                                 "id": "Brae",
-                                 "name": "Brae"
-                                 },
-                                 {
-                                 "id": "Break",
-                                 "name": "Break"
-                                 },
-                                 {
-                                 "id": "Bridge",
-                                 "name": "Bridge"
-                                 },
-                                 {
-                                 "id": "Broadway",
-                                 "name": "Broadway"
-                                 },
-                                 {
-                                 "id": "Brow",
-                                 "name": "Brow"
-                                 },
-                                 {
-                                 "id": "Bypass",
-                                 "name": "Bypass"
-                                 },
-                                 {
-                                 "id": "Byway",
-                                 "name": "Byway"
-                                 },
-                                 {
-                                 "id": "Causeway",
-                                 "name": "Causeway"
-                                 },
-                                 {
-                                 "id": "Centre",
-                                 "name": "Centre"
-                                 },
-                                 {
-                                 "id": "Centreway",
-                                 "name": "Centreway"
-                                 },
-                                 {
-                                 "id": "Chase",
-                                 "name": "Chase"
-                                 },
-                                 {
-                                 "id": "Circle",
-                                 "name": "Circle"
-                                 },
-                                 {
-                                 "id": "Circlet",
-                                 "name": "Circlet"
-                                 },
-                                 {
-                                 "id": "Circuit",
-                                 "name": "Circuit"
-                                 },
-                                 {
-                                 "id": "Circus",
-                                 "name": "Circus"
-                                 },
-                                 {
-                                 "id": "Close",
-                                 "name": "Close"
-                                 },
-                                 {
-                                 "id": "Colonnade",
-                                 "name": "Colonnade"
-                                 },
-                                 {
-                                 "id": "Common",
-                                 "name": "Common"
-                                 },
-                                 {
-                                 "id": "Concourse",
-                                 "name": "Concourse"
-                                 },
-                                 {
-                                 "id": "Copse",
-                                 "name": "Copse"
-                                 },
-                                 {
-                                 "id": "Corner",
-                                 "name": "Corner"
-                                 },
-                                 {
-                                 "id": "Corso",
-                                 "name": "Corso"
-                                 },
-                                 {
-                                 "id": "Court",
-                                 "name": "Court"
-                                 },
-                                 {
-                                 "id": "Courtyard",
-                                 "name": "Courtyard"
-                                 },
-                                 {
-                                 "id": "Cove",
-                                 "name": "Cove"
-                                 },
-                                 {
-                                 "id": "Crest",
-                                 "name": "Crest"
-                                 },
-                                 {
-                                 "id": "Cross",
-                                 "name": "Cross"
-                                 },
-                                 {
-                                 "id": "Crossing",
-                                 "name": "Crossing"
-                                 },
-                                 {
-                                 "id": "Crossroad",
-                                 "name": "Crossroad"
-                                 },
-                                 {
-                                 "id": "Crossway",
-                                 "name": "Crossway"
-                                 },
-                                 {
-                                 "id": "Cruiseway",
-                                 "name": "Cruiseway"
-                                 },
-                                 {
-                                 "id": "Cutting",
-                                 "name": "Cutting"
-                                 },
-                                 {
-                                 "id": "Dale",
-                                 "name": "Dale"
-                                 },
-                                 {
-                                 "id": "Dell",
-                                 "name": "Dell"
-                                 },
-                                 {
-                                 "id": "Deviation",
-                                 "name": "Deviation"
-                                 },
-                                 {
-                                 "id": "Dip",
-                                 "name": "Dip"
-                                 },
-                                 {
-                                 "id": "Distributor",
-                                 "name": "Distributor"
-                                 },
-                                 {
-                                 "id": "Drive",
-                                 "name": "Drive"
-                                 },
-                                 {
-                                 "id": "Driveway",
-                                 "name": "Driveway"
-                                 },
-                                 {
-                                 "id": "Edge",
-                                 "name": "Edge"
-                                 },
-                                 {
-                                 "id": "Elbow",
-                                 "name": "Elbow"
-                                 },
-                                 {
-                                 "id": "End",
-                                 "name": "End"
-                                 },
-                                 {
-                                 "id": "Entrance",
-                                 "name": "Entrance"
-                                 },
-                                 {
-                                 "id": "Esplanade",
-                                 "name": "Esplanade"
-                                 },
-                                 {
-                                 "id": "Estate",
-                                 "name": "Estate"
-                                 },
-                                 {
-                                 "id": "Expressway",
-                                 "name": "Expressway"
-                                 },
-                                 {
-                                 "id": "Extension",
-                                 "name": "Extension"
-                                 },
-                                 {
-                                 "id": "Fairway",
-                                 "name": "Fairway"
-                                 },
-                                 {
-                                 "id": "Firetrail",
-                                 "name": "Firetrail"
-                                 },
-                                 {
-                                 "id": "Flat",
-                                 "name": "Flat"
-                                 },
-                                 {
-                                 "id": "Follow",
-                                 "name": "Follow"
-                                 },
-                                 {
-                                 "id": "Footway",
-                                 "name": "Footway"
-                                 },
-                                 {
-                                 "id": "Foreshore",
-                                 "name": "Foreshore"
-                                 },
-                                 {
-                                 "id": "Formation",
-                                 "name": "Formation"
-                                 },
-                                 {
-                                 "id": "Freeway",
-                                 "name": "Freeway"
-                                 },
-                                 {
-                                 "id": "Front",
-                                 "name": "Front"
-                                 },
-                                 {
-                                 "id": "Frontage",
-                                 "name": "Frontage"
-                                 },
-                                 {
-                                 "id": "Gap",
-                                 "name": "Gap"
-                                 },
-                                 {
-                                 "id": "Garden",
-                                 "name": "Garden"
-                                 },
-                                 {
-                                 "id": "Gardens",
-                                 "name": "Gardens"
-                                 },
-                                 {
-                                 "id": "Gate",
-                                 "name": "Gate"
-                                 },
-                                 {
-                                 "id": "Gates",
-                                 "name": "Gates"
-                                 },
-                                 {
-                                 "id": "Glade",
-                                 "name": "Glade"
-                                 },
-                                 {
-                                 "id": "Glen",
-                                 "name": "Glen"
-                                 },
-                                 {
-                                 "id": "Grange",
-                                 "name": "Grange"
-                                 },
-                                 {
-                                 "id": "Green",
-                                 "name": "Green"
-                                 },
-                                 {
-                                 "id": "Ground",
-                                 "name": "Ground"
-                                 },
-                                 {
-                                 "id": "Grove",
-                                 "name": "Grove"
-                                 },
-                                 {
-                                 "id": "Gully",
-                                 "name": "Gully"
-                                 },
-                                 {
-                                 "id": "Heights",
-                                 "name": "Heights"
-                                 },
-                                 {
-                                 "id": "Highroad",
-                                 "name": "Highroad"
-                                 },
-                                 {
-                                 "id": "Hill",
-                                 "name": "Hill"
-                                 },
-                                 {
-                                 "id": "Interchange",
-                                 "name": "Interchange"
-                                 },
-                                 {
-                                 "id": "Intersection",
-                                 "name": "Intersection"
-                                 },
-                                 {
-                                 "id": "Junction",
-                                 "name": "Junction"
-                                 },
-                                 {
-                                 "id": "Key",
-                                 "name": "Key"
-                                 },
-                                 {
-                                 "id": "Landing",
-                                 "name": "Landing"
-                                 },
-                                 {
-                                 "id": "Laneway",
-                                 "name": "Laneway"
-                                 },
-                                 {
-                                 "id": "Lees",
-                                 "name": "Lees"
-                                 },
-                                 {
-                                 "id": "Line",
-                                 "name": "Line"
-                                 },
-                                 {
-                                 "id": "Link",
-                                 "name": "Link"
-                                 },
-                                 {
-                                 "id": "Little",
-                                 "name": "Little"
-                                 },
-                                 {
-                                 "id": "Lookout",
-                                 "name": "Lookout"
-                                 },
-                                 {
-                                 "id": "Loop",
-                                 "name": "Loop"
-                                 },
-                                 {
-                                 "id": "Lower",
-                                 "name": "Lower"
-                                 },
-                                 {
-                                 "id": "Mall",
-                                 "name": "Mall"
-                                 },
-                                 {
-                                 "id": "Meander",
-                                 "name": "Meander"
-                                 },
-                                 {
-                                 "id": "Mew",
-                                 "name": "Mew"
-                                 },
-                                 {
-                                 "id": "Mews",
-                                 "name": "Mews"
-                                 },
-                                 {
-                                 "id": "Motorway",
-                                 "name": "Motorway"
-                                 },
-                                 {
-                                 "id": "Mount",
-                                 "name": "Mount"
-                                 },
-                                 {
-                                 "id": "Nook",
-                                 "name": "Nook"
-                                 },
-                                 {
-                                 "id": "Outlook",
-                                 "name": "Outlook"
-                                 },
-                                 {
-                                 "id": "Park",
-                                 "name": "Park"
-                                 },
-                                 {
-                                 "id": "Parklands",
-                                 "name": "Parklands"
-                                 },
-                                 {
-                                 "id": "Parkway",
-                                 "name": "Parkway"
-                                 },
-                                 {
-                                 "id": "Part",
-                                 "name": "Part"
-                                 },
-                                 {
-                                 "id": "Pass",
-                                 "name": "Pass"
-                                 },
-                                 {
-                                 "id": "Path",
-                                 "name": "Path"
-                                 },
-                                 {
-                                 "id": "Pathway",
-                                 "name": "Pathway"
-                                 },
-                                 {
-                                 "id": "Piazza",
-                                 "name": "Piazza"
-                                 },
-                                 {
-                                 "id": "Plateau",
-                                 "name": "Plateau"
-                                 },
-                                 {
-                                 "id": "Plaza",
-                                 "name": "Plaza"
-                                 },
-                                 {
-                                 "id": "Pocket",
-                                 "name": "Pocket"
-                                 },
-                                 {
-                                 "id": "Point",
-                                 "name": "Point"
-                                 },
-                                 {
-                                 "id": "Port",
-                                 "name": "Port"
-                                 },
-                                 {
-                                 "id": "Promenade",
-                                 "name": "Promenade"
-                                 },
-                                 {
-                                 "id": "Quad",
-                                 "name": "Quad"
-                                 },
-                                 {
-                                 "id": "Quadrangle",
-                                 "name": "Quadrangle"
-                                 },
-                                 {
-                                 "id": "Quadrant",
-                                 "name": "Quadrant"
-                                 },
-                                 {
-                                 "id": "Quay",
-                                 "name": "Quay"
-                                 },
-                                 {
-                                 "id": "Quays",
-                                 "name": "Quays"
-                                 },
-                                 {
-                                 "id": "Ramble",
-                                 "name": "Ramble"
-                                 },
-                                 {
-                                 "id": "Ramp",
-                                 "name": "Ramp"
-                                 },
-                                 {
-                                 "id": "Range",
-                                 "name": "Range"
-                                 },
-                                 {
-                                 "id": "Reach",
-                                 "name": "Reach"
-                                 },
-                                 {
-                                 "id": "Reserve",
-                                 "name": "Reserve"
-                                 },
-                                 {
-                                 "id": "Rest",
-                                 "name": "Rest"
-                                 },
-                                 {
-                                 "id": "Retreat",
-                                 "name": "Retreat"
-                                 },
-                                 {
-                                 "id": "Ride",
-                                 "name": "Ride"
-                                 },
-                                 {
-                                 "id": "Ridge",
-                                 "name": "Ridge"
-                                 },
-                                 {
-                                 "id": "Ridgeway",
-                                 "name": "Ridgeway"
-                                 },
-                                 {
-                                 "id": "Ring",
-                                 "name": "Ring"
-                                 },
-                                 {
-                                 "id": "Rise",
-                                 "name": "Rise"
-                                 },
-                                 {
-                                 "id": "River",
-                                 "name": "River"
-                                 },
-                                 {
-                                 "id": "Riverway",
-                                 "name": "Riverway"
-                                 },
-                                 {
-                                 "id": "Riviera",
-                                 "name": "Riviera"
-                                 },
-                                 {
-                                 "id": "Roads",
-                                 "name": "Roads"
-                                 },
-                                 {
-                                 "id": "Roadside",
-                                 "name": "Roadside"
-                                 },
-                                 {
-                                 "id": "Roadway",
-                                 "name": "Roadway"
-                                 },
-                                 {
-                                 "id": "Ronde",
-                                 "name": "Ronde"
-                                 },
-                                 {
-                                 "id": "Rosebowl",
-                                 "name": "Rosebowl"
-                                 },
-                                 {
-                                 "id": "Rotary",
-                                 "name": "Rotary"
-                                 },
-                                 {
-                                 "id": "Round",
-                                 "name": "Round"
-                                 },
-                                 {
-                                 "id": "Route",
-                                 "name": "Route"
-                                 },
-                                 {
-                                 "id": "Row",
-                                 "name": "Row"
-                                 },
-                                 {
-                                 "id": "Rue",
-                                 "name": "Rue"
-                                 },
-                                 {
-                                 "id": "Run",
-                                 "name": "Run"
-                                 },
-                                 {
-                                 "id": "Siding",
-                                 "name": "Siding"
-                                 },
-                                 {
-                                 "id": "Slope",
-                                 "name": "Slope"
-                                 },
-                                 {
-                                 "id": "Sound",
-                                 "name": "Sound"
-                                 },
-                                 {
-                                 "id": "Spur",
-                                 "name": "Spur"
-                                 },
-                                 {
-                                 "id": "Square",
-                                 "name": "Square"
-                                 },
-                                 {
-                                 "id": "Stairs",
-                                 "name": "Stairs"
-                                 },
-                                 {
-                                 "id": "Steps",
-                                 "name": "Steps"
-                                 },
-                                 {
-                                 "id": "Strand",
-                                 "name": "Strand"
-                                 },
-                                 {
-                                 "id": "Strip",
-                                 "name": "Strip"
-                                 },
-                                 {
-                                 "id": "Subway",
-                                 "name": "Subway"
-                                 },
-                                 {
-                                 "id": "Tarn",
-                                 "name": "Tarn"
-                                 },
-                                 {
-                                 "id": "Terrace",
-                                 "name": "Terrace"
-                                 },
-                                 {
-                                 "id": "Thoroughfare",
-                                 "name": "Thoroughfare"
-                                 },
-                                 {
-                                 "id": "Tollway",
-                                 "name": "Tollway"
-                                 },
-                                 {
-                                 "id": "Top",
-                                 "name": "Top"
-                                 },
-                                 {
-                                 "id": "Tor",
-                                 "name": "Tor"
-                                 },
-                                 {
-                                 "id": "Towers",
-                                 "name": "Towers"
-                                 },
-                                 {
-                                 "id": "Track",
-                                 "name": "Track"
-                                 },
-                                 {
-                                 "id": "Trail",
-                                 "name": "Trail"
-                                 },
-                                 {
-                                 "id": "Trailer",
-                                 "name": "Trailer"
-                                 },
-                                 {
-                                 "id": "Triangle",
-                                 "name": "Triangle"
-                                 },
-                                 {
-                                 "id": "Trunkway",
-                                 "name": "Trunkway"
-                                 },
-                                 {
-                                 "id": "Turn",
-                                 "name": "Turn"
-                                 },
-                                 {
-                                 "id": "Underpass",
-                                 "name": "Underpass"
-                                 },
-                                 {
-                                 "id": "Upper",
-                                 "name": "Upper"
-                                 },
-                                 {
-                                 "id": "Vale",
-                                 "name": "Vale"
-                                 },
-                                 {
-                                 "id": "Viaduct",
-                                 "name": "Viaduct"
-                                 },
-                                 {
-                                 "id": "View",
-                                 "name": "View"
-                                 },
-                                 {
-                                 "id": "Villas",
-                                 "name": "Villas"
-                                 },
-                                 {
-                                 "id": "Vista",
-                                 "name": "Vista"
-                                 },
-                                 {
-                                 "id": "Wade",
-                                 "name": "Wade"
-                                 },
-                                 {
-                                 "id": "Walk",
-                                 "name": "Walk"
-                                 },
-                                 {
-                                 "id": "Walkway",
-                                 "name": "Walkway"
-                                 },
-                                 {
-                                 "id": "Way",
-                                 "name": "Way"
-                                 },
-                                 {
-                                 "id": "Wharf",
-                                 "name": "Wharf"
-                                 },
-                                 {
-                                 "id": "Wynd",
-                                 "name": "Wynd"
-                                 },
-                                 {
-                                 "id": "Yard",
-                                 "name": "Yard"
-                                 }
-                                 ],
-        "state_dropdown": [
-                           {
-                           "id": "default",
-                           "name": "- select -"
-                           },
-                           {
-                           "id": "ACT",
-                           "name": "ACT"
-                           },
-                           {
-                           "id": "NSW",
-                           "name": "NSW"
-                           },
-                           {
-                           "id": "NT",
-                           "name": "NT"
-                           },
-                           {
-                           "id": "QLD",
-                           "name": "QLD"
-                           },
-                           {
-                           "id": "SA",
-                           "name": "SA"
-                           },
-                           {
-                           "id": "TAS",
-                           "name": "TAS"
-                           },
-                           {
-                           "id": "VIC",
-                           "name": "VIC"
-                           },
-                           {
-                           "id": "WA",
-                           "name": "WA"
-                           }
-                           ],
-        "country_dropdown": [
-                             {
-                             "id": "default",
-                             "name": "- select -"
-                             },
-                             {
-                             "id": "Australia",
-                             "name": "Australia"
-                             },
-                             {
-                             "id": "New Zealand",
-                             "name": "New Zealand"
-                             },
-                             {
-                             "id": "Fiji",
-                             "name": "Fiji"
-                             },
-                             {
-                             "id": "Afghanistan",
-                             "name": "Afghanistan"
-                             },
-                             {
-                             "id": "Albania",
-                             "name": "Albania"
-                             },
-                             {
-                             "id": "Algeria",
-                             "name": "Algeria"
-                             },
-                             {
-                             "id": "American Samoa",
-                             "name": "American Samoa"
-                             },
-                             {
-                             "id": "Andorra",
-                             "name": "Andorra"
-                             },
-                             {
-                             "id": "Angola",
-                             "name": "Angola"
-                             },
-                             {
-                             "id": "Anguilla",
-                             "name": "Anguilla"
-                             },
-                             {
-                             "id": "Antigua",
-                             "name": "Antigua"
-                             },
-                             {
-                             "id": "Argentina",
-                             "name": "Argentina"
-                             },
-                             {
-                             "id": "Armenia",
-                             "name": "Armenia"
-                             },
-                             {
-                             "id": "Aruba",
-                             "name": "Aruba"
-                             },
-                             {
-                             "id": "Austria",
-                             "name": "Austria"
-                             },
-                             {
-                             "id": "Azerbaijan",
-                             "name": "Azerbaijan"
-                             },
-                             {
-                             "id": "Bahamas",
-                             "name": "Bahamas"
-                             },
-                             {
-                             "id": "Bahrain",
-                             "name": "Bahrain"
-                             },
-                             {
-                             "id": "Bangladesh",
-                             "name": "Bangladesh"
-                             },
-                             {
-                             "id": "Barbados",
-                             "name": "Barbados"
-                             },
-                             {
-                             "id": "Belarus",
-                             "name": "Belarus"
-                             },
-                             {
-                             "id": "Belgium",
-                             "name": "Belgium"
-                             },
-                             {
-                             "id": "Belize",
-                             "name": "Belize"
-                             },
-                             {
-                             "id": "Benin",
-                             "name": "Benin"
-                             },
-                             {
-                             "id": "Bermuda",
-                             "name": "Bermuda"
-                             },
-                             {
-                             "id": "Bhutan",
-                             "name": "Bhutan"
-                             },
-                             {
-                             "id": "Bolivia",
-                             "name": "Bolivia"
-                             },
-                             {
-                             "id": "Bosnia and Herzegovina",
-                             "name": "Bosnia and Herzegovina"
-                             },
-                             {
-                             "id": "Botswana",
-                             "name": "Botswana"
-                             },
-                             {
-                             "id": "Brazil",
-                             "name": "Brazil"
-                             },
-                             {
-                             "id": "British Virgin Islands",
-                             "name": "British Virgin Islands"
-                             },
-                             {
-                             "id": "Brunei Darussalam",
-                             "name": "Brunei Darussalam"
-                             },
-                             {
-                             "id": "Bulgaria",
-                             "name": "Bulgaria"
-                             },
-                             {
-                             "id": "Burkina Faso",
-                             "name": "Burkina Faso"
-                             },
-                             {
-                             "id": "Burundi",
-                             "name": "Burundi"
-                             },
-                             {
-                             "id": "Cambodia",
-                             "name": "Cambodia"
-                             },
-                             {
-                             "id": "Cameroon",
-                             "name": "Cameroon"
-                             },
-                             {
-                             "id": "Canada",
-                             "name": "Canada"
-                             },
-                             {
-                             "id": "Cape Verde",
-                             "name": "Cape Verde"
-                             },
-                             {
-                             "id": "Cayman Islands",
-                             "name": "Cayman Islands"
-                             },
-                             {
-                             "id": "Chad",
-                             "name": "Chad"
-                             },
-                             {
-                             "id": "Central African Republic",
-                             "name": "Central African Republic"
-                             },
-                             {
-                             "id": "Chile",
-                             "name": "Chile"
-                             },
-                             {
-                             "id": "China",
-                             "name": "China"
-                             },
-                             {
-                             "id": "Colombia",
-                             "name": "Colombia"
-                             },
-                             {
-                             "id": "Comoros",
-                             "name": "Comoros"
-                             },
-                             {
-                             "id": "Congo",
-                             "name": "Congo"
-                             },
-                             {
-                             "id": "Congo, Republic of the",
-                             "name": "Congo, Republic of the"
-                             },
-                             {
-                             "id": "Cook Islands",
-                             "name": "Cook Islands"
-                             },
-                             {
-                             "id": "Costa Rica",
-                             "name": "Costa Rica"
-                             },
-                             {
-                             "id": "Cote d'Ivoire",
-                             "name": "Cote d'Ivoire"
-                             },
-                             {
-                             "id": "Croatia",
-                             "name": "Croatia"
-                             },
-                             {
-                             "id": "Cuba",
-                             "name": "Cuba"
-                             },
-                             {
-                             "id": "Cyprus",
-                             "name": "Cyprus"
-                             },
-                             {
-                             "id": "Czech Republic",
-                             "name": "Czech Republic"
-                             },
-                             {
-                             "id": "Denmark",
-                             "name": "Denmark"
-                             },
-                             {
-                             "id": "Djibouti",
-                             "name": "Djibouti"
-                             },
-                             {
-                             "id": "Dominica",
-                             "name": "Dominica"
-                             },
-                             {
-                             "id": "Dominican Republic",
-                             "name": "Dominican Republic"
-                             },
-                             {
-                             "id": "Timor-Leste",
-                             "name": "Timor-Leste"
-                             },
-                             {
-                             "id": "Ecuador",
-                             "name": "Ecuador"
-                             },
-                             {
-                             "id": "Egypt",
-                             "name": "Egypt"
-                             },
-                             {
-                             "id": "El Salvador",
-                             "name": "El Salvador"
-                             },
-                             {
-                             "id": "Equatorial Guinea",
-                             "name": "Equatorial Guinea"
-                             },
-                             {
-                             "id": "Eritrea",
-                             "name": "Eritrea"
-                             },
-                             {
-                             "id": "Estonia",
-                             "name": "Estonia"
-                             },
-                             {
-                             "id": "Ethiopia",
-                             "name": "Ethiopia"
-                             },
-                             {
-                             "id": "Falkland Islands",
-                             "name": "Falkland Islands"
-                             },
-                             {
-                             "id": "Finland",
-                             "name": "Finland"
-                             },
-                             {
-                             "id": "France",
-                             "name": "France"
-                             },
-                             {
-                             "id": "French Antilles",
-                             "name": "French Antilles"
-                             },
-                             {
-                             "id": "French Guiana",
-                             "name": "French Guiana"
-                             },
-                             {
-                             "id": "French Polynesia",
-                             "name": "French Polynesia"
-                             },
-                             {
-                             "id": "Gabon",
-                             "name": "Gabon"
-                             },
-                             {
-                             "id": "Georgia",
-                             "name": "Georgia"
-                             },
-                             {
-                             "id": "Germany",
-                             "name": "Germany"
-                             },
-                             {
-                             "id": "Ghana",
-                             "name": "Ghana"
-                             },
-                             {
-                             "id": "Gibraltar",
-                             "name": "Gibraltar"
-                             },
-                             {
-                             "id": "Greece",
-                             "name": "Greece"
-                             },
-                             {
-                             "id": "Greenland",
-                             "name": "Greenland"
-                             },
-                             {
-                             "id": "Grenada",
-                             "name": "Grenada"
-                             },
-                             {
-                             "id": "Guadeloupe",
-                             "name": "Guadeloupe"
-                             },
-                             {
-                             "id": "Guam",
-                             "name": "Guam"
-                             },
-                             {
-                             "id": "Guatemala",
-                             "name": "Guatemala"
-                             },
-                             {
-                             "id": "Guinea",
-                             "name": "Guinea"
-                             },
-                             {
-                             "id": "Guinea-Bissau",
-                             "name": "Guinea-Bissau"
-                             },
-                             {
-                             "id": "Guyana",
-                             "name": "Guyana"
-                             },
-                             {
-                             "id": "Haiti",
-                             "name": "Haiti"
-                             },
-                             {
-                             "id": "Honduras",
-                             "name": "Honduras"
-                             },
-                             {
-                             "id": "Hong Kong",
-                             "name": "Hong Kong"
-                             },
-                             {
-                             "id": "Hungary",
-                             "name": "Hungary"
-                             },
-                             {
-                             "id": "Iceland",
-                             "name": "Iceland"
-                             },
-                             {
-                             "id": "India",
-                             "name": "India"
-                             },
-                             {
-                             "id": "Indonesia",
-                             "name": "Indonesia"
-                             },
-                             {
-                             "id": "Iran",
-                             "name": "Iran"
-                             },
-                             {
-                             "id": "Iraq",
-                             "name": "Iraq"
-                             },
-                             {
-                             "id": "Ireland",
-                             "name": "Ireland"
-                             },
-                             {
-                             "id": "Isle of Man",
-                             "name": "Isle of Man"
-                             },
-                             {
-                             "id": "Israel",
-                             "name": "Israel"
-                             },
-                             {
-                             "id": "Italy",
-                             "name": "Italy"
-                             },
-                             {
-                             "id": "Jamaica",
-                             "name": "Jamaica"
-                             },
-                             {
-                             "id": "Japan",
-                             "name": "Japan"
-                             },
-                             {
-                             "id": "Jordan",
-                             "name": "Jordan"
-                             },
-                             {
-                             "id": "Kazakhstan",
-                             "name": "Kazakhstan"
-                             },
-                             {
-                             "id": "Kenya",
-                             "name": "Kenya"
-                             },
-                             {
-                             "id": "Kiribati",
-                             "name": "Kiribati"
-                             },
-                             {
-                             "id": "Kuwait",
-                             "name": "Kuwait"
-                             },
-                             {
-                             "id": "Kyrgyzstan",
-                             "name": "Kyrgyzstan"
-                             },
-                             {
-                             "id": "Laos",
-                             "name": "Laos"
-                             },
-                             {
-                             "id": "Latvia",
-                             "name": "Latvia"
-                             },
-                             {
-                             "id": "Lebanon",
-                             "name": "Lebanon"
-                             },
-                             {
-                             "id": "Lesotho",
-                             "name": "Lesotho"
-                             },
-                             {
-                             "id": "Liberia",
-                             "name": "Liberia"
-                             },
-                             {
-                             "id": "Libya",
-                             "name": "Libya"
-                             },
-                             {
-                             "id": "Liechtenstein",
-                             "name": "Liechtenstein"
-                             },
-                             {
-                             "id": "Lithuania",
-                             "name": "Lithuania"
-                             },
-                             {
-                             "id": "Luxembourg",
-                             "name": "Luxembourg"
-                             },
-                             {
-                             "id": "Macau",
-                             "name": "Macau"
-                             },
-                             {
-                             "id": "Macedonia",
-                             "name": "Macedonia"
-                             },
-                             {
-                             "id": "Madagascar",
-                             "name": "Madagascar"
-                             },
-                             {
-                             "id": "Malawi",
-                             "name": "Malawi"
-                             },
-                             {
-                             "id": "Malaysia",
-                             "name": "Malaysia"
-                             },
-                             {
-                             "id": "Maldives",
-                             "name": "Maldives"
-                             },
-                             {
-                             "id": "Mali",
-                             "name": "Mali"
-                             },
-                             {
-                             "id": "Malta",
-                             "name": "Malta"
-                             },
-                             {
-                             "id": "Mariana Islands",
-                             "name": "Mariana Islands"
-                             },
-                             {
-                             "id": "Marshall Islands",
-                             "name": "Marshall Islands"
-                             },
-                             {
-                             "id": "Martinique",
-                             "name": "Martinique"
-                             },
-                             {
-                             "id": "Mauritania",
-                             "name": "Mauritania"
-                             },
-                             {
-                             "id": "Mauritius",
-                             "name": "Mauritius"
-                             },
-                             {
-                             "id": "Mexico",
-                             "name": "Mexico"
-                             },
-                             {
-                             "id": "Micronesia",
-                             "name": "Micronesia"
-                             },
-                             {
-                             "id": "Moldova",
-                             "name": "Moldova"
-                             },
-                             {
-                             "id": "Monaco",
-                             "name": "Monaco"
-                             },
-                             {
-                             "id": "Mongolia",
-                             "name": "Mongolia"
-                             },
-                             {
-                             "id": "Montenegro",
-                             "name": "Montenegro"
-                             },
-                             {
-                             "id": "Montserrat",
-                             "name": "Montserrat"
-                             },
-                             {
-                             "id": "Morocco",
-                             "name": "Morocco"
-                             },
-                             {
-                             "id": "Mozambique",
-                             "name": "Mozambique"
-                             },
-                             {
-                             "id": "Myanmar",
-                             "name": "Myanmar"
-                             },
-                             {
-                             "id": "Namibia",
-                             "name": "Namibia"
-                             },
-                             {
-                             "id": "Nauru",
-                             "name": "Nauru"
-                             },
-                             {
-                             "id": "Nepal",
-                             "name": "Nepal"
-                             },
-                             {
-                             "id": "Netherlands",
-                             "name": "Netherlands"
-                             },
-                             {
-                             "id": "New Caledonia",
-                             "name": "New Caledonia"
-                             },
-                             {
-                             "id": "Nicaragua",
-                             "name": "Nicaragua"
-                             },
-                             {
-                             "id": "Niger",
-                             "name": "Niger"
-                             },
-                             {
-                             "id": "Nigeria",
-                             "name": "Nigeria"
-                             },
-                             {
-                             "id": "Niue",
-                             "name": "Niue"
-                             },
-                             {
-                             "id": "North Korea",
-                             "name": "North Korea"
-                             },
-                             {
-                             "id": "Northern Mariana Islands",
-                             "name": "Northern Mariana Islands"
-                             },
-                             {
-                             "id": "Norway",
-                             "name": "Norway"
-                             },
-                             {
-                             "id": "Oman",
-                             "name": "Oman"
-                             },
-                             {
-                             "id": "Pakistan",
-                             "name": "Pakistan"
-                             },
-                             {
-                             "id": "Palau",
-                             "name": "Palau"
-                             },
-                             {
-                             "id": "Palestine",
-                             "name": "Palestine"
-                             },
-                             {
-                             "id": "Panama",
-                             "name": "Panama"
-                             },
-                             {
-                             "id": "Papua New Guinea",
-                             "name": "Papua New Guinea"
-                             },
-                             {
-                             "id": "Paraguay",
-                             "name": "Paraguay"
-                             },
-                             {
-                             "id": "Peru",
-                             "name": "Peru"
-                             },
-                             {
-                             "id": "Philippines",
-                             "name": "Philippines"
-                             },
-                             {
-                             "id": "Pitcairn Island",
-                             "name": "Pitcairn Island"
-                             },
-                             {
-                             "id": "Poland",
-                             "name": "Poland"
-                             },
-                             {
-                             "id": "Portugal",
-                             "name": "Portugal"
-                             },
-                             {
-                             "id": "Puerto Rico",
-                             "name": "Puerto Rico"
-                             },
-                             {
-                             "id": "Qatar",
-                             "name": "Qatar"
-                             },
-                             {
-                             "id": "Romania",
-                             "name": "Romania"
-                             },
-                             {
-                             "id": "Russia",
-                             "name": "Russia"
-                             },
-                             {
-                             "id": "Rwanda",
-                             "name": "Rwanda"
-                             },
-                             {
-                             "id": "Samoa",
-                             "name": "Samoa"
-                             },
-                             {
-                             "id": "San Marino",
-                             "name": "San Marino"
-                             },
-                             {
-                             "id": "Sao Tome and Principe",
-                             "name": "Sao Tome and Principe"
-                             },
-                             {
-                             "id": "Saudi Arabia",
-                             "name": "Saudi Arabia"
-                             },
-                             {
-                             "id": "Senegal",
-                             "name": "Senegal"
-                             },
-                             {
-                             "id": "Serbia",
-                             "name": "Serbia"
-                             },
-                             {
-                             "id": "Serbia and Montenegro",
-                             "name": "Serbia and Montenegro"
-                             },
-                             {
-                             "id": "Seychelles",
-                             "name": "Seychelles"
-                             },
-                             {
-                             "id": "Sierra Leone",
-                             "name": "Sierra Leone"
-                             },
-                             {
-                             "id": "Singapore",
-                             "name": "Singapore"
-                             },
-                             {
-                             "id": "Slovakia",
-                             "name": "Slovakia"
-                             },
-                             {
-                             "id": "Slovenia",
-                             "name": "Slovenia"
-                             },
-                             {
-                             "id": "Solomon Islands",
-                             "name": "Solomon Islands"
-                             },
-                             {
-                             "id": "Somalia",
-                             "name": "Somalia"
-                             },
-                             {
-                             "id": "South Africa",
-                             "name": "South Africa"
-                             },
-                             {
-                             "id": "South Korea",
-                             "name": "South Korea"
-                             },
-                             {
-                             "id": "Spain",
-                             "name": "Spain"
-                             },
-                             {
-                             "id": "Sri Lanka",
-                             "name": "Sri Lanka"
-                             },
-                             {
-                             "id": "Sudan",
-                             "name": "Sudan"
-                             },
-                             {
-                             "id": "Suriname",
-                             "name": "Suriname"
-                             },
-                             {
-                             "id": "Swaziland",
-                             "name": "Swaziland"
-                             },
-                             {
-                             "id": "Sweden",
-                             "name": "Sweden"
-                             },
-                             {
-                             "id": "Switzerland",
-                             "name": "Switzerland"
-                             },
-                             {
-                             "id": "Syria",
-                             "name": "Syria"
-                             },
-                             {
-                             "id": "Taiwan",
-                             "name": "Taiwan"
-                             },
-                             {
-                             "id": "Tajikistan",
-                             "name": "Tajikistan"
-                             },
-                             {
-                             "id": "Tanzania",
-                             "name": "Tanzania"
-                             },
-                             {
-                             "id": "Thailand",
-                             "name": "Thailand"
-                             },
-                             {
-                             "id": "The Gambia",
-                             "name": "The Gambia"
-                             },
-                             {
-                             "id": "Togo",
-                             "name": "Togo"
-                             },
-                             {
-                             "id": "Tokelau",
-                             "name": "Tokelau"
-                             },
-                             {
-                             "id": "Tonga",
-                             "name": "Tonga"
-                             },
-                             {
-                             "id": "Trinidad and Tobago",
-                             "name": "Trinidad and Tobago"
-                             },
-                             {
-                             "id": "Tunisia",
-                             "name": "Tunisia"
-                             },
-                             {
-                             "id": "Turkey",
-                             "name": "Turkey"
-                             },
-                             {
-                             "id": "Turkmenistan",
-                             "name": "Turkmenistan"
-                             },
-                             {
-                             "id": "Tuvalu",
-                             "name": "Tuvalu"
-                             },
-                             {
-                             "id": "Uganda",
-                             "name": "Uganda"
-                             },
-                             {
-                             "id": "Ukraine",
-                             "name": "Ukraine"
-                             },
-                             {
-                             "id": "United Arab Emirates",
-                             "name": "United Arab Emirates"
-                             },
-                             {
-                             "id": "United Kingdom",
-                             "name": "United Kingdom"
-                             },
-                             {
-                             "id": "United States of America",
-                             "name": "United States of America"
-                             },
-                             {
-                             "id": "Uruguay",
-                             "name": "Uruguay"
-                             },
-                             {
-                             "id": "Uzbekistan",
-                             "name": "Uzbekistan"
-                             },
-                             {
-                             "id": "Vanuatu",
-                             "name": "Vanuatu"
-                             },
-                             {
-                             "id": "Venezuela",
-                             "name": "Venezuela"
-                             },
-                             {
-                             "id": "Vietnam",
-                             "name": "Vietnam"
-                             },
-                             {
-                             "id": "Yemen",
-                             "name": "Yemen"
-                             },
-                             {
-                             "id": "Zambia",
-                             "name": "Zambia"
-                             },
-                             {
-                             "id": "Zimbabwe",
-                             "name": "Zimbabwe"
-                             },
-                             {
-                             "id": "Other",
-                             "name": "Other"
-                             },
-                             {
-                             "id": "The Holy See",
-                             "name": "The Holy See"
-                             },
-                             {
-                             "id": "Mayotte",
-                             "name": "Mayotte"
-                             },
-                             {
-                             "id": "Netherlands Antilles",
-                             "name": "Netherlands Antilles"
-                             },
-                             {
-                             "id": "Saint Kitts and Nevis",
-                             "name": "Saint Kitts and Nevis"
-                             },
-                             {
-                             "id": "Saint Lucia",
-                             "name": "Saint Lucia"
-                             },
-                             {
-                             "id": "Saint Pierre and Miquelon",
-                             "name": "Saint Pierre and Miquelon"
-                             },
-                             {
-                             "id": "Saint Vincent and the Grenadin",
-                             "name": "Saint Vincent and the Grenadin"
-                             },
-                             {
-                             "id": "Turks and Caicos Islands",
-                             "name": "Turks and Caicos Islands"
-                             },
-                             {
-                             "id": "United States Virgin Islands",
-                             "name": "United States Virgin Islands"
-                             },
-                             {
-                             "id": "Western Sahara",
-                             "name": "Western Sahara"
-                             }
-                             ],
-        "addUnitType": [
+    "resourceIds": [
+                    {
+                    "id": "3002211",
+                    "timeLabel": "Topped up at ",
+                    "title": "My Credit top up",
+                    "receiptLabel": "Barcode/Receipt"
+                    }
+                    ],
+    "resourceDefault": {
+        "timeLabel": "Recharged at",
+        "title": "Recharge",
+        "receiptLabel": "Barcode/Receipt"
+    },
+    "ids": [
+            {
+            "id": "3002116",
+            "timeLabel": "Recharged at",
+            "title": "Recharge",
+            "receiptLabel": "Barcode/Receipt"
+            },
+            {
+            "id": "3002211",
+            "timeLabel": "Topped up at ",
+            "title": "My Credit top up",
+            "receiptLabel": "Barcode/Receipt"
+            }
+            ],
+    "adjustment_history": {
+        "downloadButton": "Download adjustment history",
+        "showingAdjustmentsFromThePastLabel": "Showing adjustments from the past 4 months.",
+        "timeLabel": "Adjusted at",
+        "reasonLabel": "Reason",
+        "noRecentAdjustmentHistLabel": "There are no recent adjustments.",
+        "completeAdjustmentHistoryLabel": "For a complete adjustment history, please contact",
+        "customerCareLabel": "customer care"
+    },
+    "transaction_history": {
+        "thingsYouNeedToKnowLabel": "Things you need to know",
+        "noteMessage": "It may take up to 15 minutes for a payment record to appear on this screen. Amounts are rounded up to the nearest cent inclusive of GST. The statement is not and in no way constitutes a tax invoice. Please do not pay. Account balance displayed is indicative only and may not include all charges. Your Transaction History for the past three months is only available online here at My Account.",
+        "phoneAndDataUsageLabel": "Phone and data usage",
+        "downloadButton": "Download purchase history",
+        "showMoreButton": "Show more",
+        "ShowingPurchaseFromThePastLabel": "Showing purchases from the past",
+        "monthsLabel": "months.",
+        "monthLabel": "month.",
+        "noRecentPurchaseHistLabel": "There are no recent purchases.",
+        "noMorePurchaseHistLabel": "There are no more purchases to show.",
+        "completePurchaseHistoryLabel": "For a complete purchase history, please contact",
+        "customerCareLabel": "customer care",
+        "monthCountTwo": 2
+    },
+    "Usage_History": {
+        "thingsYouNeedToKnowLabel": "Things you need to know",
+        "noteMessage": "Charges are inclusive of GST and are rounded to the nearest cent. This is a summary of your usage, and does not constitute a tax invoice. The usage information available using the ‘Download usage history’ button will always show records for the previous 3 months, even if a different date range is selected on this screen.",
+        "showingUsageLable": " Showing usage from the past 5 days.",
+        "downloadButton": "Download usage history",
+        "showMoreButton": "Show more",
+        "noUsageHist": "There is no more usage history to show.",
+        "eventTypeTalk": "1",
+        "eventTypeTXT": "2",
+        "eventTypeData": "3",
+        "eventTypeInternational": "4",
+        "eventTypeRoaming": "5",
+        "eventTypeExtra": "6",
+        "eventTypeOthers": "7",
+        "eventTypeAll": "8",
+        "noService": "You didn't use your service on this day.",
+        "ShowingUsageFromThePastLable": " Here's your usage from the past",
+        "daysLable": "days",
+        "noCallMessage": "You didn't make any calls on this day.",
+        "noTxtMessage": "You didn't TXT on this day.",
+        "noDataMessage": "You didn't use data on this day.",
+        "noInclusionsMessage": "You didn’t use these inclusions on this day.",
+        "noRomaingServices": "You didn't use roaming on this day.",
+        "Data": "Data",
+        "Talk": "Talk",
+        "TXT": "TXT",
+        "Roaming": "Roaming",
+        "Others": "Others"
+    },
+    "Detailed_Usage": {
+        "thingsYouNeedToKnowLabel": "Things you need to know",
+        "noteMessage": "Most usage is updated within 18 hours, but if you’re roaming overseas it may take up to 72 hours. Charges do not include GST and are rounded to the nearest cent. Any discounts or charges that may apply when your bill is issued are not included. This is a summary of your usage, and does not constitute a tax invoice.",
+        "downloadButton": "Download CSV",
+        "downloadTxt": "Download",
+        "showMoreMsg": "Here's your usage from the past",
+        "showMoreMsgDays": "days.",
+        "showMoreButton": "Show more",
+        "thatsLotMessage": "That’s the lot for this bill period",
+        "recordsNotFoundMsg": "There is no usage for this period.",
+        "usageFromTxt": "Detailed usage from:",
+        "issueTxt": "Your issue date will be:",
+        "extraContentLabel" : "Your detailed usage is available for the 3 most recent billing cycles. For the past 24 billing cycles, you can view your usage by downloading the corresponding bill. You can also call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone. ",
+        "eventTypeTalk": "1",
+        "eventTypeTXT": "2",
+        "eventTypeData": "3",
+        "eventTypeInternational": "4",
+        "eventTypeRoaming": "5",
+        "eventTypeExtra": "6",
+        "eventTypeOthers": "7",
+        "eventTypeAll": "8",
+        "extraContentLabel": "Your detailed usage is available for the 3 most recent billing cycles. For the past 24 billing cycles, you can view your usage by downloading the corresponding bill. You can also call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+    },
+    "Call_code": {
+        "AID": "International voice",
+        "AND": "Additional national data",
+        "ARD": "Additional roaming data",
+        "BBD": "National blackberry",
+        "BBR": "Roaming blackberry",
+        "DO": "Roaming data",
+        "DOV": "Roaming data",
+        "FCM": "Fixed mobile",
+        "FDU": "Fixed Data",
+        "FLC": "Fixed to local fixed",
+        "FNC": "Fixed national",
+        "FNG": "Fixed non-geographic",
+        "IC": "Intercompany",
+        "IN": "International voice",
+        "INT": "International voice",
+        "IP": "International group",
+        "LIV": "Vodafone live!",
+        "MC": "Premium message",
+        "MG": "Globalstar call",
+        "MO": "Roaming voice",
+        "MOV": "Roaming voice",
+        "NA": "National non mobile",
+        "NAT": "National call",
+        "NR": "National roaming",
+        "OS": "Operator",
+        "PKT": "National data",
+        "PN": "Group calling",
+        "PXO": "Roaming PXT",
+        "PXT": "Picture message",
+        "Power Up": "Power up",
+        "Premium TXT": "Premium TXT",
+        "RDF": "Roaming daily fees",
+        "RG": "Globalstar incoming",
+        "RID": "International voice",
+        "RO": "Received call-roam",
+        "SS_DO_CHARGE": "Data used from flexible credit",
+        "SS_DO_NOCHARGE": "Included data",
+        "SS_PKT_CHARGE": "Data used from flexible credit",
+        "SS_PKT_NOCHARGE": "Included data",
+        "Standard TXT": "Text message",
+        "TPA": "Third party applications",
+        "TPP": "Third party purchase",
+        "TXO": "Roaming text",
+        "TXT": "Text message",
+        "V23": "3 Mobile",
+        "V2O": "Other mobile",
+        "V2V": "Vodafone mobile",
+        "VCO": "Other video",
+        "VCV": "Vodafone video",
+        "VF": "Vodafone purchase",
+        "VFC": "Vodafone central",
+        "VIN": "International video",
+        "VO": "Roaming video",
+        "VOV": "Roaming video",
+        "VRO": "Received video-roam",
+        "VS": "Vodafone service",
+        "VVN": "Group video",
+        "Video": "Video call",
+        "Voice": "Voice call"
+    },
+    "Call_code_Array": [
                         {
-                        "id": "default",
-                        "name": "- select -"
+                        "id": "AID",
+                        "title": "International voice"
                         },
                         {
-                        "id": "Shop",
-                        "name": "Shop"
+                        "id": "AND",
+                        "title": "Additional national data"
                         },
                         {
-                        "id": "Apartment",
-                        "name": "Apartment"
+                        "id": "ARD",
+                        "title": "Additional roaming data"
                         },
                         {
-                        "id": "Flat",
-                        "name": "Flat"
+                        "id": "BBD",
+                        "title": "National blackberry"
                         },
                         {
-                        "id": "Level",
-                        "name": "Level"
+                        "id": "BBR",
+                        "title": "Roaming blackberry"
                         },
                         {
-                        "id": "Suite",
-                        "name": "Suite"
+                        "id": "DO",
+                        "title": "Roaming data"
                         },
                         {
-                        "id": "Unit",
-                        "name": "Unit"
+                        "id": "DOV",
+                        "title": "Roaming data"
+                        },
+                        {
+                        "id": "DOV",
+                        "title": "Roaming data"
+                        },
+                        {
+                        "id": "FCM",
+                        "title": "Fixed mobile"
+                        },
+                        {
+                        "id": "FDU",
+                        "title": "Fixed Data"
+                        },
+                        {
+                        "id": "FLC",
+                        "title": "Fixed to local fixed"
+                        },
+                        {
+                        "id": "FNC",
+                        "title": "Fixed national"
+                        },
+                        {
+                        "id": "FNG",
+                        "title": "Fixed non-geographic"
+                        },
+                        {
+                        "id": "IC",
+                        "title": "Intercompany"
+                        },
+                        {
+                        "id": "IN",
+                        "title": "International voice"
+                        },
+                        {
+                        "id": "INT",
+                        "title": "International voice"
+                        },
+                        {
+                        "id": "IP",
+                        "title": "International group"
+                        },
+                        {
+                        "id": "LIV",
+                        "title": "Vodafone live!"
+                        },
+                        {
+                        "id": "MC",
+                        "title": "Premium message"
+                        },
+                        {
+                        "id": "MG",
+                        "title": "Globalstar call"
+                        },
+                        {
+                        "id": "MO",
+                        "title": "Roaming voice"
+                        },
+                        {
+                        "id": "MOV",
+                        "title": "Roaming voice"
+                        },
+                        {
+                        "id": "NA",
+                        "title": "National non mobile"
+                        },
+                        {
+                        "id": "NAT",
+                        "title": "National call"
+                        },
+                        {
+                        "id": "NR",
+                        "title": "National roaming"
+                        },
+                        {
+                        "id": "OS",
+                        "title": "Operator"
+                        },
+                        {
+                        "id": "PKT",
+                        "title": "National data"
+                        },
+                        {
+                        "id": "PN",
+                        "title": "Group calling"
+                        },
+                        {
+                        "id": "PXO",
+                        "title": "Roaming PXT"
+                        },
+                        {
+                        "id": "PXT",
+                        "title": "Picture message"
+                        },
+                        {
+                        "id": "Power Up",
+                        "title": "Power up"
+                        },
+                        {
+                        "id": "Premium TXT",
+                        "title": "Premium TXT"
+                        },
+                        {
+                        "id": "RDF",
+                        "title": "Roaming daily fees"
+                        },
+                        {
+                        "id": "RG",
+                        "title": "Globalstar incoming"
+                        },
+                        {
+                        "id": "RID",
+                        "title": "International voice"
+                        },
+                        {
+                        "id": "RO",
+                        "title": "Received call-roam"
+                        },
+                        {
+                        "id": "SS_DO_CHARGE",
+                        "title": "Data used from flexible credit"
+                        },
+                        {
+                        "id": "SS_PKT_CHARGE",
+                        "title": "Data used from flexible credit"
+                        },
+                        {
+                        "id": "SS_DO_NOCHARGE",
+                        "title": "Included data"
+                        },
+                        {
+                        "id": "SS_PKT_NOCHARGE",
+                        "title": "Included data"
+                        },
+                        {
+                        "id": "Standard TXT",
+                        "title": "Text message"
+                        },
+                        {
+                        "id": "TPA",
+                        "title": "Third party applications"
+                        },
+                        {
+                        "id": "TPP",
+                        "title": "Third party purchase"
+                        },
+                        {
+                        "id": "TXO",
+                        "title": "Roaming text"
+                        },
+                        {
+                        "id": "TXT",
+                        "title": "Text message"
+                        },
+                        {
+                        "id": "V23",
+                        "title": "3 Mobile"
+                        },
+                        {
+                        "id": "V2O",
+                        "title": "Other mobile"
+                        },
+                        {
+                        "id": "V2V",
+                        "title": "Vodafone mobile"
+                        },
+                        {
+                        "id": "VCO",
+                        "title": "Other video"
+                        },
+                        {
+                        "id": "VCV",
+                        "title": "Vodafone video"
+                        },
+                        {
+                        "id": "VF",
+                        "title": "Vodafone purchase"
+                        },
+                        {
+                        "id": "VFC",
+                        "title": "Vodafone central"
+                        },
+                        {
+                        "id": "VIN",
+                        "title": "International video"
+                        },
+                        {
+                        "id": "VO",
+                        "title": "Roaming video"
+                        },
+                        {
+                        "id": "VOV",
+                        "title": "Roaming video"
+                        },
+                        {
+                        "id": "VRO",
+                        "title": "Received video-roam"
+                        },
+                        {
+                        "id": "VS",
+                        "title": "Vodafone service"
+                        },
+                        {
+                        "id": "VVN",
+                        "title": "Group video"
+                        },
+                        {
+                        "id": "Video",
+                        "title": "Video call"
+                        },
+                        {
+                        "id": "Voice",
+                        "title": "Voice call"
                         }
-                        ]
-    },
-    "edit_profile_data":{
-        "yourDetails": "Your details",
-        "nameLbl": "Name",
-        "accountLbl": "Account number",
-        "contactLbl": "Contact numbers",
-        "primaryLbl": "Primary",
-        "otherLbl": "Other",
-        "emailLbl": "Billing email address",
-        "emailAddLbl": "Email address",
-        "addLbl": "Address",
-        "careOfLbl": "Care of  (optional)",
-        "unitTypeLbl": "Unit type (optional)",
-        "unitLbl": "Unit number (optional)",
-        "streetLbl": "Street number",
-        "streetNameLbl": "Street name",
-        "streetTypeLbl": "Street type",
-        "citylbl": "City/Suburb",
-        "statelbl": "State",
-        "postcodelbl": "Postcode",
-        "billingadd": "Billing address",
-        "countrylbl": "Country",
-        "Carelbl": "Care of",
-        "emailrequiredtxt": "Only required for email billing.",
-        "managetxt": "Manage bill options",
-        "secNumErr": "Your entered phone number must be between 10 and 19 digits, do not include plus signs (+) or spaces.",
-        "addressLine1": "Address line 1",
-        "addressLine2" : "Address line 2"
-        
-        
-        
-    },
-    "postpaid":{
-        "accountSettings":[
-                           {
-                           "type":"Account",
-                           "services":[
-                                       {
-                                       "serName":"Edit profile",
-                                       "url":"/settings/editprofile",
-                                       "featureId":"edit-profile"
-                                       },
-                                       {
-                                       "serName":"Change your password",
-                                       "url":"https://boa-www-myvodafone.test.aaa.services.vodafone.com.au/selfservice/changepassword",
-                                       "id":"changepassword"
-                                       },
-                                       {
-                                       "serName":"Swap my SIM",
-                                       "url":"/services/online-sim-replacement",
-                                       "id":"simswap",
-                                       "featureId": "swap-my-sim"
-                                       }
-                                       ]
-                           },
-                           {
-                           "type":"Service",
-                           "services":[
-                                       {
-                                       "serName":"Calls & service",
-                                       "url":"/settings/calls",
-                                       "featureId": "Calls-service"
-                                       },
-                                       {
-                                       "serName":"International roaming",
-                                       "url":"/settings/roaming",
-                                       "featureId": "international-roaming"
-                                       },
-                                       {
-                                       "serName":"PUK code",
-                                       "url":"/settings/puk",
-                                       "featureId": "puk-code"
-                                       }
-                                       ]
-                           }
-                           ]
-    },
-    "prepaid":{
-        "accountSettings":[
-                           {
-                           "type":"Account",
-                           "services":[
-                                       {
-                                       "serName":"Transaction history",
-                                       "url":"/purchase",
-                                       "id":"purchase",
-                                       "featureId": "your-purchase-history"
-                                       
-                                       },
-                                       {
-                                       "serName":"Change your password",
-                                       "url":"https://boa-www-myvodafone.test.aaa.services.vodafone.com.au/selfservice/changepassword",
-                                       "id":"changepassword"
-                                       },
-                                       {
-                                       "serName":"Swap my SIM",
-                                       "url":"/services/online-sim-replacement",
-                                       "id":"simswap",
-                                       "featureId": "swap-my-sim"
-                                       },
-                                       {
-                                       "serName":"Adjustment history",
-                                       "url":"/adjustment",
-                                       "id":"adjustment",
-                                       "featureId": "your-adjustment-history"
-                                       }
-                                       ]
-                           },
-                           {
-                           "type":"Service",
-                           "services":[
-                                       {
-                                       "serName":"My plan info",
-                                       "url":"https://www.vodafone.com.au/about/legal/critical-information-summary/plans?planCategory=Prepaid",
-                                       "id":"myplaninfo",
-                                       "featureId": "change-your-plan"
-                                       },
-                                       {
-                                       "serName":"International roaming",
-                                       "url":"/settings/roaming",
-                                       "featureId": "international-roaming"
-                                       },
-                                       {
-                                       "serName":"International calling",
-                                       "url":"/settings/international-calls",
-                                       "featureId": "international-calling"
-                                       },
-                                       {
-                                       "serName":"Calls & service",
-                                       "url":"/settings/calls",
-                                       "featureId": "Calls-service"
-                                       }
-                                       ]
-                           },
-                           {
-                           "type":"Payment",
-                           "services":[
-                                       {
-                                       "serName":"Manage credit card",
-                                       "url":"/settings/credit-card",
-                                       "featureId": "Manage-credit-card"
-                                       },
-                                       {
-                                       "serName":"Proof of purchase",
-                                       "url":"/settings/proof_of_purchase",
-                                       "id":"proofofpurchase"
-                                       
-                                       }
-                                       ]
-                           }
-                           ]
-    },
-    "fixed":{
-        "accountSettings":[
-                           {
-                           "type":"Account",
-                           "services":[
-                                       {
-                                       "serName":"Edit profile",
-                                       "url":"/settings/editprofile"
-                                       }
-                                       ]
-                           }
-                           ]
-    },
-    "yourPlanSummary": {
-        "planSummary": [{
-                        "updating" : false
-                        }]
-    },
-    "roamingSuccList": {
-        "title": "Updating roaming",
-        "description": "Thanks, your changes will come in to effect in around 5 to 15 minutes."
-    },
-    "updateSuccessRoam":{
-        "msg": "You're on $5 Roaming",
-        "updateSuccessPaygo": "You're on Pay As You Go Roaming",
-        "roamingqtn": "Why not switch to $5 Roaming?"
-    },
-    "International_roaming_label":{
-        "label": "International roaming"
-    },
-    "Summary_Header": {
-        "summaryHeader": "Your Plan Summary",
-        "IndexData": "Per month",
-        "data": "Data"
-    },
-    "Radio_Options1": {
-        "RadioOpt1": "$5 Roaming",
-        "RadioOptmsg": "Use your phone like you would at home in",
-        "href": "http://www.vodafone.com.au/plans/international-roaming",
-        "link": "over 50 countries",
-        "continuemsg": "for $5 extra per day for up to 90 days in any calendar year. T&C apply."
-    },
-    "Radio_Options2":{
-        "RadioOpt2": "Pay As You Go Roaming",
-        "RadioOptmsg": "Our Pay As You Go Roaming rates are $1 per minute to make or receive calls, $1 per MB of data used and 75c per TXT or PXT.",
-        "radioAlert": "Switching to Pay As You Go Roaming may result in higher costs than $5 Roaming",
-        "termsAndCond": "Terms and conditions"
-    },
-    "prepaid_Roaming":{
-        "CallHeading": "When International Roaming is on,",
-        "hrefForRoamingRates":"https://www.vodafone.com.au/support/prepaid/roaming-rates",
-        "hrefForRoamingRatesAlert":" will apply when overseas unless you've purchased one of our Prepaid Roaming Add-ons and you're traveling in one of our ",
-        "hrefLable":"Pay As You Go Roaming rates",
-        "alertSelectedCountries":"selected add-on countries",
-        "continuemsg": " will apply when overseas.",
-        "statusMsg": "International roaming is currently",
-        "statusHeading": "International roaming",
-        "alertmsg": "To use roaming services or our Prepaid Roaming Add-ons, youâ€™ll need to activate roaming",
-        "roamingAddonHeading": "Purchase a Roaming Add-on",
-        "roamingAddonsubhead": "Roaming Add-ons are for use in",
-        "link": "selected countries",
-        "roamingAddon": "Roaming Add-ons",
-        "href": "http://www.vodafone.com.au/plans/international-calls",
-        "alertLable": "You've now activated roaming. Prepaid ",
-        "hrefForIntlRoaming":"https://www.vodafone.com.au/prepaid/plans/international-roaming"
-    },
-    "roaming": {
-        "type": "Terms and conditions",
-        "InternationalRoaming":[{
-                                "termsHeading": "What terms apply to my International Mobile Roaming Product?",
-                                "termsContent": "a) An international mobile roaming product xz(Product)xz is any one of the following:xnpi. Vodafone $5 Roaming;xnpii. Vodafone Pay-As-You- Go Traveller Rates (Pay-As-You- Go Rates);xnpiii. Vodafone Prepaid Travellerxnpiv. Vodafone Overseas Data Add-Ons; andxnpv. Vodafone Shared Roaming Add-Ons.xnpxnpzb) The terms and conditions that will apply to your Product or Products are:xnpi. all the terms and conditions contained in this document titled â€œTerms & Conditions, International Mobile Roamingâ€;xnp1. all the terms and conditions contained in the Vodafone Standard Form of Agreement xdz(SFOA)xdz, which is available at xdlapvodafone.com.auxdlap, particularly the following:xnp2. Clause 7 of Section 1 â€“ Your Obligations;xnp3. Clause 13 of Section 1 â€“ Suspension of the Service and Termination of your Agreement; andxnp4. Section 4 â€“ Fair Use Policy; andxnpii. all the terms and conditions contained in any application form you complete when you agree to purchase or opt-in to a Product,(collectively, the xzâ€œTermsâ€xz).xnpzc) When you agree to purchase a Vodafone Red Business Shared Plan, you accept, and agree to be bound by, the Terms.xnpzd) On or after 23 April 2014, when you agree to purchase or change rateplans to any of our new planâ€™s (Eligible Vodafone Plan) you also accept, and agree to be bound by, the Terms.xnpze) For all other Vodafone customers, when you agree to purchase or opt-in to a Roaming Product, and use Vodafone services while roaming overseas, you accept, and agree to be bound by, the Terms.xnpzf) Your contract commences on your acceptance of the Terms, however, any contract term which applies does not commence until your service is activated.xnpzg) The Terms may be changed by Vodafone from time to time. Vodafone will comply with relevant laws, regulations and industry codes if it makes any such changes.xnpzh) For more information, call Vodafone on:xnpi. 1300 650 410 from any phone within Australia;xnpii. 1555 for free from your Vodafone mobile when in Australia; orxnpiii. +61 426 320 000 free from your Vodafone mobile while roaming or visit xlapvodafone.com.auxlap",
-                                "payHeading": "Vodafone $5 Roaming, Pay-As-You-Go Traveller and Prepaid Traveller",
-                                "payContent": "1. Important things you need to know â€“ Vodafone $5 Roaming, Pay-As-You-Go Traveller and Prepaid Traveller Availabilityxbxnpa) Vodafone Pay-As-You-Go Traveller is only available to credit approved customers who are connected and remain connected to an eligible Vodafone Mobile Broadband plan or handset plan.xnpb) Vodafone $5 Roaming is only available to credit approved customers who are connected and remain connected to an eligible Vodafone handset plan.xnpc) Prepaid Traveller is only available to Vodafone Prepaid Customers.xnpd) Unlimited data for the first month does not apply when roaming.xnp",
-                                "roamContent": "2. $5 RoamingxbxnpVodafone $5 Roaming is only available if you:xnpa) are an approved Vodafone Postpaid customer;xnpb) are connected to one of the following postpaid plans:xnp",
-                                "consumerPlanHeading": "i. Consumer Plans",
-                                "julyPlans": "July 2014 PlansxbxnpA. $30 24 month plan â€“ Launched July 2014xnpB. $40 24 month plan â€“ Launched July 2014xnpC. $50 24 month plan â€“ Launched July 2014xnpD. $60 24 month plan â€“ Launched July 2014xnpE. 70 Red 12 month plan â€“ Launched July 2014xnpF. 70 Red 24 month plan â€“ Launched July 2014xnpG. 80 Red 12 month plan â€“ Launched July 2014xnpH. 80 Red 24 month plan â€“ Launched July 2014xnpI. 100 Red 12 month plan â€“ Launched July 2014xnpJ. 100 Red 24 month plan â€“ Launched July 2014xnpK. Vodafone $20 SIMO 24M â€“ Launched July 2014xnpL. Vodafone $25 SIMO 24M â€“ Launched July 2014xnpM. Vodafone $35 SIMO 24M â€“ Launched July 2014xnpN. Vodafone $45 SIMO 24M â€“ Launched July 2014xnpO. Vodafone Red $50 SIMO 24M â€“ Launched July 2014xnpP. Vodafone Red $55 SIMO 24M â€“ Launched July 2014xnpQ. Vodafone Red $70 SIMO 24M â€“ Launched July 2014xnpR. Vodafone $25 SIM only month to month plan â€“ Launched July 2014xnpS. Vodafone $30 SIM only month to month plan â€“ Launched July 2014xnpT. Vodafone $35 SIM only month to month plan â€“ Launched July 2014xnpU. Vodafone $45 SIM only month to month plan â€“ Launched July 2014xnpV. 50 Red SIM month to month plan â€“ Launched July 2014xnpW. 60 Red SIM month to month plan â€“ Launched July 2014xnpX. 80 Red SIM month to month plan â€“ Launched July 2014xnp",
-                                "augPlans": "August 2013 PlansxbxnpY. Vodafone 60 12 Mth - Launched August 2013xnpZ. Vodafone 60 24 Mth - Launched August 2013xnpAA. Vodafone Red 65 12 Mth - Launched August 2013xnpBB. Vodafone Red 65 24 Mth - Launched August 2013xnpCC. Vodafone Red 80 12-Mth - Launched August 2013xnpDD. Vodafone Red 80 24-Mth - Launched August 2013xnpEE. Vodafone 45 SIM M2M - Launched August 2013xnpFF. Vodafone Red 50 SIM M2M - Launched August 2013xnpGG. Vodafone Red 65 SIM-M2M - Launched August 2013xnp",
-                                "aprPlans": "April 2013 PlansxbxnpHH. Vodafone 60 12 Mth - Launched April 2013xnpII. Vodafone Red 80 12 Mth - Launched April 2013xnpJJ. Vodafone Red 100 12 Mth - Launched April 2013xnpKK. Vodafone 30 24 Mth - Launched April 2013xnpLL. Vodafone 40 24 Mth-TXT - Launched April 2013xnpMM. Vodafone 40 24 Mth-ON - Launched April 2013xnpNN. Vodafone 50 24 Mth-TXT - Launched April 2013xnpOO. Vodafone 50 24 Mth-ON - Launched April 2013xnpPP. Vodafone 60 24 Mth - Launched April 2013xnpQQ. Vodafone Red 80 24 Mth - Launched April 2013xnpRR. Vodafone Red 100 24 Mth - Launched April 2013xnpSS. Vodafone 20 SIM M2M - Launched April 2013xnpTT. Vodafone 30 SIM M2M-TXT - Launched April 2013xnpUU. Vodafone 30 SIM M2M-ON - Launched April 2013xnpVV. Vodafone 35 SIM M2M-TXT - Launched April 2013xnpWW. Vodafone 35 SIM M2M-ON - Launched April 2013xnpXX. Vodafone 45 SIM M2M - Launched April 2013xnpYY. Vodafone Red 65 SIM M2M - Launched April 2013xnpZZ. Vodafone Red 85 SIM M2M - Launched April 2013xnp",
-                                "businessPlans": "ii. Business Plans",
-                                "busjulPlans": "July 2014 PlansxbxnpA. $30 Biz 24 month plan â€“ Launched July 2014xnpB. $40 Biz 24 month plan â€“ Launched July 2014xnpC. $50 Biz 24 month plan â€“ Launched July 2014xnpD. $60 Biz 24 month plan â€“ Launched July 2014xnpE. Vodafone Red $70 Biz 12M â€“ Launched July 2014xnpF. Vodafone Red $70 Biz 24M â€“ Launched July 2014xnpG. Vodafone Red $80 Biz 12M â€“ Launched July 2014xnpH. Vodafone Red $80 Biz 24M â€“ Launched July 2014xnpI. Vodafone Red $100 Biz 12M â€“ Launched July 2014xnpJ. Vodafone Red $100 Biz 24M â€“ Launched July 2014xnpK. Vodafone Red $130 Biz 24M â€“ Launched July 2014xnpL. $30 Biz SIM only 12 month plan â€“ Launched July 2014xnpM. $35 Biz SIM only 12 month plan â€“ Launched July 2014xnpN. $45 Biz SIM only 12 month plan â€“ Launched July 2014xnpO. Vodafone Red $50 Biz SIM only 12 month plan â€“ Launched July 2014xnpP. Vodafone Red $60 Biz SIM only 12 month plan â€“ Launched July 2014xnpQ. Vodafone Red $80 Biz SIM only 12 month plan â€“ Launched July 2014xnp",
-                                "busAugPlans": "August 2013 PlansxbxnpR. Vodafone 60 Biz 12 Mth - Launched August 2013xnpS. Vodafone 60 Biz 24 Mth - Launched August 2013xnpT. Vodafone Red 65 Biz 12 Mth - Launched August 2013xnpU. Vodafone Red 65 Biz 24 Mth - Launched August 2013xnpV. Vodafone Red 80 Biz 12-Mth - Launched August 2013xnpW. Vodafone Red 80 Biz 24-Mth - Launched August 2013xnpX. Vodafone 45 Biz SIM 12 Mth - Launched August 2013xnpY. Vodafone Red 50 Biz SIM 12 Mth - Launched August 2013xnpZ. Vodafone Red 65 Biz SIM 12-Mth - Launched August 2013xnp",
-                                "busAprPlans": "April 2013 PlansxbxnpAA. Vodafone 60 Biz 12 Mth - Launched April 2013xnpBB. Vodafone Red 80 Biz 12 Mth - Launched April 2013xnpCC. Vodafone Red 100 Biz 12 Mth - Launched April 2013xnpDD. Vodafone 30 Biz 24 Mth - Launched April 2013xnpEE. Vodafone 40 Biz 24 Mth-TXT - Launched April 2013xnpFF. Vodafone 40 Biz 24 Mth-ON - Launched April 2013xnpGG. Vodafone 50 Biz 24 Mth-TXT - Launched April 2013xnpHH. Vodafone 50 Biz 24 Mth-ON - Launched April 2013xnpII. Vodafone 60 Biz 24 Mth - Launched April 2013xnpJJ. Vodafone Red 80 Biz 24 Mth - Launched April 2013xnpKK. Vodafone Red 100 Biz 24 Mth - Launched April 2013xnpLL. Vodafone 30 Biz SIM 12 Mth-TXT - Launched April 2013xnpMM. Vodafone 30 Biz SIM 12 Mth-ON - Launched April 2013xnpNN. Vodafone 35 Biz SIM 12 Mth-TXT - Launched April 2013xnpOO. Vodafone 35 Biz SIM 12 Mth-ON - Launched April 2013xnpPP. Vodafone 45 Biz SIM 12 Mth - Launched April 2013xnpQQ. Vodafone Red 65 Biz SIM 12 Mth - Launched April 2013xnpRR. Vodafone Red 85 Biz SIM 12 Mth - Launched April 2013xnp",
-                                "redPlans": "iii. Red Business Shared Plans",
-                                "redplansContent": "A. Red Business Shared - BYOD $135 - Launched March 2014xnpB. Red Business Shared - BYOD $270 - Launched March 2014xnpC. Red Business Shared - BYOD $450 - Launched March 2014xnpD. Red Business Shared - BYOD $675 - Launched March 2014xnpE. Red Business Shared - BYOD $900 - Launched March 2014xnpF. Red Business Shared - BYOD $1125 - Launched March 2014xnpG. Red Business Shared - BYOD $1350 - Launched March 2014xnpH. Red Business Shared - BYOD $1800 - Launched March 2014xnpI. Red Business Shared - BYOD $2250 - Launched March 2014xnpJ. Red Business Shared - BYOD $2925 - Launched March 2014xnpK. Red Business Shared- BYOD $3600 - Launched March 2014xnpL. Red Business Shared - BYOD $4500 - Launched March 2014xnpM. Red Business Shared - Plus $150 - Launched March 2014xnpN. Red Business Shared - Plus $300 - Launched March 2014xnpO. Red Business Shared - Plus $500 - Launched March 2014xnpP. Red Business Shared- Plus $750 - Launched March 2014xnpQ. Red Business Shared - Plus $1000 - Launched March 2014xnpR. Red Business Shared - Plus $1250 - Launched March 2014xnpS. Red Business Shared - Plus $1500 - Launched March 2014xnpT. Red Business Shared - Plus $2000 - Launched March 2014xnpU. Red Business Shared - Plus $2500 - Launched March 2014xnpV. Red Business Shared - Plus $3250 - Launched March 2014xnpW. Red Business Shared - Plus $4000 - Launched March 2014xnpX. Red Business Shared- Plus $5000 - Launched March 2014xnpY. Red Business Shared- Pro $195 - Launched March 2014xnpZ. Red Business Shared - Pro $390 - Launched March 2014xnpAA. Red Business Shared - Pro $650 - Launched March 2014xnpBB. Red Business Shared - Pro $975 - Launched March 2014xnpCC. Red Business Shared - Pro $1300 - Launched March 2014xnpDD. Red Business Shared - Pro $1625 - Launched March 2014xnpEE. Red Business Shared- Pro $1950 - Launched March 2014xnpFF. Red Business Shared - Pro $2600 - Launched March 2014xnpGG. Red Business Shared - Pro $3250 - Launched March 2014xnpHH. Red Business Shared - Pro $4225 - Launched March 2014xnpII. Red Business Shared- Pro $5200 - Launched March 2014xnpJJ. Red Business Shared- Pro $6500 - Launched March 2014xnp",
-                                "eligiblePlans": "(Eligible Vodafone Plan)",
-                                "subContent": "; and",
-                                "lastContent": "c) have opted into $5 Roaming.",
-                                "dollarRoaming": "3. How do I opt-in to $5 Roaming?",
-                                "dollarTerms": "If you have met the conditions in Section 2 above, you may opt-in to $5 Roaming as follows:xnpa) Customers connected to Red Business Shared Plans are opted-in automatically to Vodafone $5 Roaming upon activation, but may opt-out at anytime by calling Customer Care.xnpb) Customers who purchase or change rateplan from an ineligible plan to an Eligible Vodafone Plan from the 23 April 2014 onwards agree to automatically be opted-in to Vodafone $5 Roaming upon activation, but may opt-out at anytime by calling Customer Care or visiting xlapmyodafone.com.auxlap.xnpc) Customers who connected or changed rateplans before 23 April 2014 to an Eligible Vodafone Plan must actively opt-in to Vodafone $5 Roaming. Customers can do so by using MyVodafone or by contacting Customer Care. Vodafone may from time to time also opt-customers into roaming and $5 Roaming, if we do this we will provide notification before this change.xnpd) Customers already on an eligible plan who upgrade to, or rateplan change to a different eligible plan will not have their current roaming settings changed unless they are notified in accordance with section 3(c) above.xnpe) Section 6 below provides more details of the terms and conditions associated with $5 Roaming.xnp",
-                                "travellerHeading": "4. Vodafone Pay-As-You-Go Traveller",
-                                "travelContent": "a) Pay-As-You-Go Traveller is available if you are:xnpi. a credit approved customer; andxnpii. connected to a Vodafone Postpaid Plan.xnpAm I opted-in to Vodafone Pay-As-You-Go Traveller?xbxnpb) In accordance with section 3(a) above, if you are a customer who purchased or rateplan changed from an ineligible plan to an Eligible Vodafone Plan from the 23 April 2014 onwards, you agreed to automatically be opted-in to $5 Roaming upon activation. However, you can move to Pay-As-You-Go Traveller rates at anytime by calling Customer Care or visiting xlpmyvodafone.com.auxlpxnpc) If you are a customer who connected or changed rateplans before 23 April 2014, and if you:xnpi. have roaming currently active on your phone because you had previously opted-in to Vodafone Traveller or Vodafone World, you are now automatically on Vodafone Pay-As-You-Go Traveller; orxnpii. have never previously turned on roaming, you will be able to opt-in to Vodafone Pay-As-You-Go Traveller or $5 Roaming.xnpVodafone Traveller (postpaid) and World are no longer available to customers.xnpUsing Pay-As-You-Go Travellerxbxnpa) Unlimited data for the first month does not apply when roaming. If you are not opted in to $5 Roaming, you will be charged as per the Pay-As-You-Go Traveller rates. For details on how you will be charged if you are opted-in to $5 Roaming, see section 6 below.xnpb) If Pay-As-You-Go Traveller is active on your account, and you are roaming outside Australia, youâ€™ll be charged whenever you:xnpi. send TXT;xnpii. send a PXT;xnpiii. make a call;xnpiv. receive a call;xnpv. send or receive dataxnp(Roaming Services).xbxnpc) While roaming, youâ€™ll be charged a roaming rate per minute (Call Charge) for making and receiving calls.xnpi. The Call Charge for standard calls will be charged $1/min charged in 30 second increments, with a 60 second minimum duration for both making and receiving calls; andxnpii. Standard TXT (SMS) and PXT (MMS) will be charged at 75c per message and receiving TXT or PXT will be free of charge.xnpd) For a full list of countries and applicable Call Rates, or for more information about specific roaming rates, charges or other services such as: Vodafone live!, PXTÂ®, video calls, voicemail deposits, Ask us anything-123, Directory Assistance-1223, 15 numbers (including calls to 1555 Customer Care), Premium TXT and Call Screen, go to xlpwww.vodafone.com.au/roamingxlp or call Customer Care.xnpe) Conditional forwarding of calls to voicemail when busy or no answer is free of charge when roaming. Retrieval of voicemail messages when roaming will be charged at $1 per minute (charged per 30 seconds with a 1 minute minimum charge). There is no Flagfall for retrieving voicemail messages.xnpf) Conditional forwarding of calls to any number other than voicemail when busy or no answer will be charged at the applicable Call Charge to both receive and make that call type in the country you are roaming in at the time the incoming call is received.xnpg) Sending at TXT while roaming will be charged at $0.75 per TXT of 160 characters or less. Itâ€™s free to receive TXT while roaming.xnph) Sending or receiving data while roaming will be charged at $1.00 per MB, charged per kB, regardless of the country you are in.xnpi) Charges for all Roaming Services will be charged in addition to your monthly access fee, and will not come from the included value of your eligible Vodafone Postpaid Plan. This includes:xnpi. The Call Chargexnpii. TXT and PXT charges; andxnpiii. Any charges incurred for data usage.xnpj) If you are connected to an Eligible Vodafone Plan (see Section 2 above) $5 Roaming will be your default international mobile roaming Product if you connect on or after 23 April 2014. You can opt-out of Vodafone $5 Roaming and into Vodafone Pay-As-You-Go Traveller at any time.xnpk) You can check your usage while roaming through My Vodafone. Just head to xlpwww.myvodafone.com.auxlp or call Customer Care for free from your Vodafone mobile on +61 426 320 000.xnpl) There are no additional access fees or monthly charges for using Vodafone Pay-As-You-Go Traveller. Details of calls, TXT, and other services used while overseas will appear on your monthly invoice (if you receive one). You can also get details of your usage by calling 1512 from your mobile phone, through My Vodafone online, or on the My Vodafone App. Actual charges may vary on your invoice as each charge is rounded up to the nearest cent. All services while roaming are GST free.xnp",
-                                "factorHeading": "5. Factors affecting use whilst roaming",
-                                "subFactor": "Factors affecting availability and performance",
-                                "coverageContent": "a) Network coverage and many other factors may affect the availability and performance of certain Products.xnpb) All Vodafone Services are subject to network availability, individual handset capabilities and limitations of overseas networks. Some Vodafone services such as data, video calling, TXT, PXTÂ® and Vodafone live! May not be available while roaming in some countries.xnpc) Certain Products, services and functions are only available if used in conjunction with a compatible mobile or other device and if in a compatible coverage area. Not all mobile devices are compatible with Vodafone or overseas partner networks.xnpAll Vodafone services, including Vodafone $5 Roaming, Pay-As-You-Go Traveller, and Prepaid Traveller, are subject to network availability, individual device capabilities and limitations of overseas networks. Vodafone data roaming service, including mobile broadband speeds, will not be available in all overseas countries and in the countries where the Vodafone Roaming Data service is available, it may not be available in all geographic areas of that countryxnpd) Compatible device required to access services. Some services, such as video streaming may not be available while roaming in some countries.xnpData Servicesxbxnpe) All data is charged in 1kB increments.xnpf) For Products that provide data access capabilities, a data session:xnpi. starts when you begin internet activity, either directly or indirectly* on your mobile device; andxnpii. ends when your data connection is lost. This will happen when:xnpA. you turn your mobile device off;xnpB. turn your data connection off;xnpC. switch to flight mode;xnpD. when you lose network reception; orxnpE. your mobile device has not sent or received data for a period of time.xnp*Direct internet activity is when you prompt your mobile device to send or receive data from the internet. For example; when you send an email. Indirect internet activity is when your mobile device or mobile applications are set up to send or receive data from the internet on your behalf. Examples include (but are not limited to): Email notifications via Gmail, notification of Tweets or Facebook posts which mention you and software or weather updates.xnpg) When using data Products, some internet services, including web sites and email, may not be accessible.xnpRates and Chargesxbxnph) Details of the rates and charges, including any spends which apply to the Products are contained in the Terms.xnpi) GST does not apply to overseas roaming rates and access fees.xnpj) International Roaming rates and charges are subject to change. Always refer to xlapvodafone.com.au/roamingxlap before leaving Australia for the most up to date rates and charges.xnpk) Goto xlpwww.vodafone.com.au/roamingxlp or phone Customer Care for information about specific roaming rates and charges for services such as: Vodafone live!, PXTÂ®, video calls, voicemail deposits, Ask us anything-123, Directory Assistance-1223, 15 numbers (including calls to 1555 Customer Care), Premium TXT and Call Screen.xnpl) Calls made to 1512, 1511 and +61 426 320 000 to recharge or to check your account balance are free of charge while roaming.xnpm) All Vodafone services are subject to network availability, individual handset capabilities and limitations of overseas networks.xnpBillingxbxnpn) Some charges in relation to, $5 Roaming, and Vodafone Pay-As-You-Go Traveller are not payable from the included value of your plan, and will be charged in addition to your monthly access fee. This excludes any additional device repayments (if applicable) and any additional or excluded service costs.xnp",
-                                "pospayHeading": "6. Vodafone $5 Roaming for Postpaid Customers",
-                                "pospaySubContent": "a) By satisfying the conditions listed in Sections 2 and 3 (a) or (b) above, you accept and agree to be bound by the terms and conditions contained in this section titled â€œVodafone $5 Roaming for Postpaid Customersâ€.xnpb) Vodafone $5 Roaming will be available until 1 July 2015, unless extended. We may decide to extend the period of availability of Vodafone $5 Roaming until a future date, or indefinitely.xnp",
-                                "countriesHeading": "c) Vodafone $5 Roaming will only apply in the following countries:",
-                                "roamingPlansContent": "(Eligible Roaming Countries).xbxnpOutside of Eligible Roaming Countries listed above, Vodafone Pay-As-You-Go Traveller rates will apply for making and receiving calls, TXT, PXTÂ® and data.xnpa) If you are opted-in to Vodafone $5 Roaming, you will be charged $5 per 24 hour period during which $5 Roaming has been activated xap(Daily Charge)xap.xnpb) If you are a Red Business Shared Plan customer, this Daily Charge will apply for each individual connection that activates $5 Roaming on your account (for example, if 3 of your connections each use their phone on the same day from an Eligible Roaming Country, $15 will be charged to your account).xnpc) $5 Roaming will be activated, and you will be charged the Daily Charge if youâ€™re in an xapEligible Roaming Countryxap and you or one of your connections:xnpi. send a TXT;xnpii. send a PXTÂ®;xnpiii. make a call;xnpiv. receive a call; orxnpv. send or receive data in excess of 50KB per day.xnp(Trigger Events).xbxnpReceiving a TXT is free, and is not a Trigger Event.xnpd) The Daily Charge:xnpi. is in addition to any monthly plan charges; andxnpii. will be charged in addition to your monthly access fee. The Daily Charge will not be deducted from the included value of your Eligible Vodafone Plan.xnpe) Apart from the Daily Charge, all calls while roaming in an Eligible Roaming Country which are made to either:xnpi. A standard Australian number; orxnpii. A standard number which is active in the Eligible Roaming Country you are in at the time of making the call;xnpwill be charged as if youâ€™re calling from Australia to another standard Australian number using your Eligible Vodafone Plan. Calls to numbers advertised as â€œFree Callâ€ or 1300/1800 numbers and calls to voicemail while in an Eligible Roaming Country will be charged at standard national call rates. No calls will be rated at special Vodafone to Vodafone rates. For more details on call rates, visit xlpwww.vodafone.com.auxlp, or call Customer Care.xnpf) If you are connected to a Vodafone Red Business Shared Plan, at any one time, all connections to your account must either be opted-in or opted out of Vodafone $5 Roaming.xnpg) Premium services, such as premium TXT and calls to Premium Numbers xap(Premium Services)xap may not be available while roaming. Where Premium Services are available, they will be charged at the applicable premium rate for the same service as charged when using the service in Australia. Charges for Premium Services while roaming will not be deducted from the included value of your plan.xnph) When roaming in an Eligible Roaming Country, calls made to a country other than the Eligible Roaming Country in which you are roaming xap( Third Country)xap, or to Australia will be charged at the international call rate for your Eligible Vodafone Plan.xnpi) When roaming in an Eligible Roaming Country, all standard TXT and PXTÂ®, whether back to Australia or to the country you are in will be billed as if the TXT or PXTÂ® were being sent in Australia to another Australian number.xnpj) When roaming in an Eligible Roaming Country, all standard TXT and PXTÂ® to a Third Country will be charged at the international TXT or PXT rate for your Eligible Vodafone Plan.xnpk) When roaming in an Eligible Roaming Country, you will not be charged for receiving calls however receiving calls will be a Trigger Event and you will be charged the Daily Charge.xnpl) If you roam outside an Eligible Roaming Country, Vodafone Pay-As-You-Go Traveller rates will apply. Go to xlpwww.vodafone.com.au/roamingxlp for more information on our Vodafone Pay-As-You-Go Traveller roaming rates.xnpm) As a Vodafone $5 Roaming customer, while in an Eligible Roaming Country, youâ€™ll be able to use the data allowance in your plan, as well as any domestic Data Booster or Data Add-on or any Overseas Data Add-on xap(Data Add-On)xap. Data will be deducted from each of these in the following order:xnpi. Data Booster;xnpii. Data Add-on;xnpiii. Plan Allowance;xnpiv. Overseas Data Add-on.xnpn) BlackBerry MeMail30 & Memail50 Add-ons cannot be consumed when using $5 Roaming.xnpo) Vodafone Infinite Calling Add-onâ€™s cannot be used when using $5 Roaming.xnpp) When using $5 Roaming if you exceed the data allowance of your Plan (or Add-On if applicable) you will be charged for excess data the same way as you would in Australia.xnpq) If you have an Overseas Data Add-on and your allowance is exhausted you will be charged the applicable overage rate for the applicable Overseas Data Add-on.xnpr) If you do not have a Data Add-On or Overseas Data Add-on, you will be charged the same rate for excess data as your Eligible Vodafone Plan, while roaming in an eligible $5 Roaming country.xnps) Unlimited data for the first month does not apply while roaming in an eligible $5 Roaming country.xnpt) If you are roaming outside an Eligible Roaming Country, you will be charged Vodafone Pay-As-You-Go Traveller rates for data usage. Go to xlpwww.vodafone.com.au/roamingxlp for more information on our Vodafone Pay-As-You-Go Traveller roaming rates.xnpu) Vodafone $5 Roaming charges, including the Daily Charge are only applicable when roaming overseas in an Eligible Roaming Country. If you roam outside an Eligible Roaming Country, you will be charged Vodafone Pay-As-You-Go Traveller rates. Thereâ€™s no monthly commitment for Vodafone $5 Roaming and you donâ€™t need to disconnect the service once you get back to Australia.xnpv) Charges for Vodafone $5 Roaming and other services used while roaming will appear on your plan invoice. Actual charges may vary on your invoice as each charge is rounded up to the nearest cent. All services while roaming are GST free.xnpw) You can change from Vodafone Pay-As-You-Go Traveller to Vodafone $5 Roaming or from Vodafone $5 Roaming to Vodafone Pay-As-You-Go Traveller, free of charge at any time.xnpx) Any existing international roaming discounts will be forfeited upon connection to Vodafone $5 Roaming.xnpy) Conditional forwarding of calls to voicemail when busy or no answer will be free of charge when roaming.xnpz) Conditional forwarding of calls to any number other than voicemail when busy or no answer will be charged at the applicable roaming rate to both receive and make that call type in the country you are roaming in at the time the incoming call is received.xnpaa) Vodafone $5 Roaming is available to Australian Permanent Residents only and is not available to Permanent Residents of other countries. Vodafone $5 Roaming is limited to a maximum usage of 90 days per calendar year, per connection. We may remove Vodafone $5 Roaming from your service if you do not comply with this condition, are in breach of Vodafoneâ€™s Fair Use Policy, or other terms of Vodafoneâ€™s SFOA.xnpbb)We may expand the number of countries where $5 Roaming is available from time to time. If that happens, you will automatically be opted-in to receive the Vodafone $5 Roaming rates for those countries. If we make more countries available through Vodafone $5 Roaming, it may be for the same, or an increased Daily Charge.xnp",
-                                "prepayHeading": "7. Vodafone Prepaid Traveller",
-                                "prepayContent": "Prepaid Flexi Cap and Prepaid Cap Customersxnpa) Prepaid Vodafone Traveller is available to customers connected to Vodafone Prepaid Flexi Caps and Prepaid Caps. Go to xlapvodafone.com.auxlap or phone Customer Care for information about Prepaid Flexi Caps and Prepaid Caps.xnpb) Vodafone Traveller customers will be charged for making and receiving calls and sending TXT and for using other services while roaming internationally at different rates according to the geographical zone they are roaming in at the time.xnpc) Standard calls made while overseas on Vodafone Traveller will be charged the Roaming Premium Rate Per Minute (Zone Charge) plus the standard call rate plus a Connection Fee (flagfall). The Roaming Premium Rate Per Minute (Zone Charge) is dependent on the particular zone the call is made in at the time the call is placed (go to xlapvodafone.com.au/roamingxlap for full rates and charges). The standard call rate is as per the current Flexi Cap or Prepaid Cap rate at the time the call is placed and the Connection Fee (flagfall) can be found at xlapvodafone.com.au/roamingxlap. These rates apply to standard voice calls (including calls to 13 and 18 numbers), voicemail retrieval and Australian toll free numbers. Calls to numbers advertised as â€œFree Callâ€ numbers within the country being visited are charged at standard roaming rates for calls to that country. Standard TXTs are charged at a flat rate per 160 characters, whichever zone you are travelling in at the time the TXT is sent (go to xlapvodafone.com.au/roamingxlap for applicable rates).xnpd) To receive a standard voice call, you will be charged the Roaming Premium Rate Per Minute (Zone Charge) as applicable for the Zone you are in at the time the call is received.xnpe) Go to xlapvodafone.com.au/roamingxlap or phone Customer Care for information about specific roaming rates and charges for services such as: Vodafone live!, PXT, video calls, voicemail deposits, Ask us anything-123, Directory Assistance-1223, 15 numbers (including calls to 1555 Customer Care), Premium TXT. Some of these Vodafone services may not be available whilst roaming in some countries.xnpf) Both the Roaming Premium Rate Per Minute (Zone Charge) and the standard call rate are charged in 30 second increments with a 30 second minimum duration.xnpg) Conditional forwarding of calls to voicemail when busy or no answer, will be free of charge when roaming.xnph) Conditional forwarding of calls to any number other than voicemail when busy or no answer, will be charged at the applicable roaming rate to both receive and make that call type in the country you are roaming in at the time the incoming call is received.xnpi) For Prepaid Vodafone Traveller Customers, the Roaming Premium Rate Per Minute (Zone Charge) for calls made and received, the standard call rate and the Connection Fee (flagfall) for calls made, charges for TXT made and charges for all other services which are capable of being used as part of your Prepaid Flexible Credit will be deducted from your Flexible Credit.xnpj) Prepaid Vodafone Traveller Customers who use data while roaming will incur a charge of $51.20 per MB with a 1KB increment.xnpk) There are no additional access fees or monthly charges for Vodafone Traveller. Details of all calls, TXT and other services used whilst overseas can be obtained by calling 1512 from your mobile phone, or via your MyVodafone account (you must be a registered MyVodafone user to access your usage records this way). Each charge is rounded up to the nearest cent. All services while roaming are GST free.xnpVodafone Traveller â€“ Prepaid Plan Customersxbxnpa) Prepaid Vodafone Traveller is available to customers connected to Vodafone Prepaid Plan offers, including the TXT & Talk, Vodafone International, Text & Data, Vodafone All-time and 365 Day Recharges. Go to xlapvodafone.com.auxlap or phone Customer Care for information about Prepaid Plan Offers.xnpb) Vodafone Traveller customers will be charged for making and receiving calls, for sending TXT and for using other services while roaming internationally at different rates according to the geographical zone they are roaming in at the time.xnpc) For customers on a TXT & Talk, 365 Day or Text & Data Recharge, standard calls made while overseas on Vodafone Traveller will be charged the Roaming Premium Rate Per Minute (Zone Charge) plus the standard call rate plus a Connection Fee (flagfall). The standard call rate is as per the applicable Plan the customer is connected to at the time of placing the call. For customers on Vodafone International, standard calls made while overseas on Vodafone Traveller will be charged the Roaming Premium Rate Per Minute (Zone Charge) plus a call rate of $0.39 per 30 seconds plus a Connection Fee (flagfall). For customers on Vodafone All-time, standard calls made while overseas on Vodafone Traveller will be charged the Roaming Premium Rate Per Minute (Zone Charge) plus a call rate of $0.40 per 30 seconds plus a Connection Fee (flagfall). For all Prepaid Plan Recharges, the Roaming Premium Rate Per Minute (Zone Charge) is dependent on the particular zone the call is made in at the time the call is placed (go to xlapvodafone.com.au/roamingxlap for full rates and charges) and the Connection Fee (flagfall) can be found at xlapvodafone.com.au/roamingxlap. These rates apply to standard voice calls (including 13 and 18 numbers). Voicemail retrieval and Australian toll free numbers. Calls to numbers advertised as â€œFree Callâ€ numbers within the country being visited are charged at standard rates for calls to that country. Standard TXTs are charged at a flat rate per 160 characters, whichever zone you are travelling in at the time the TXT is sent (go to xlapvodafone.com.au/roamingxlap for applicable rates).xnpd) To receive a standard voice call, you will be charged the Roaming Premium Rate Per Minute (Zone Charge) as applicable for the Zone you are in at the time the call is received.xnpe) Go to xlapvodafone.com.au/roamingxlap or phone Customer Care for information about specific roaming rates and charges for services such as: Vodafone live!, PXT, video calls, voicemail deposits, Ask us anything-123, Directory Assistance-1223, 15 numbers (including calls to 1555 Customer Care), Premium TXT. Some of these Vodafone services may not be available whilst roaming in some countries.xnpf) Both the Roaming Premium Rate Per Minute (Zone Charge) and the standard call rate (for all Prepaid Plan Recharges except Vodafone International and Vodafone All-time) or the 39c per 30 second call rate for Vodafone International and 40c per 30 second call rate for Vodafone All-time are charged in 30 second increments, with a 30 second minimum duration.xnpg) Conditional forwarding of calls to voicemail when busy or no answer, will be charged at the applicable voicemail diversion as when you are at home.xnph) For Prepaid Vodafone Traveller Customers, the Roaming Premium Rate Per Minute (Zone Charge) for calls made and received, the standard call rate (for all Recharges except Vodafone International and Vodafone All-time) or the $0.39 per 30 second call rate for Vodafone International and 40c per 30 second for Vodafone All-time for calls made, the Connection Fee (flagfall) for calls made, charges for TXT made and charges for all other services which are capable of being used as part of your Flexible Credit will be deducted from your Flexible Credit.xnpi) Prepaid Vodafone Traveller customers who use data while roaming will incur a charge of $51.20 per MB with a 1KB increment.xnpj) There are no additional access fees or monthly charges for Vodafone Traveller. Details of all calls, TXT and other services used whilst overseas can be obtained by calling 1512 from your mobile phone, or via your MyVodafone account (you must be a registered MyVodafone user to access your usage records this way). Each charge is rounded up to the nearest cent. All services while roaming are GST free.xnp",
-                                "listOfCountries": ["1. Albania","2. Austria","3. Belgium","4. Bulgaria","5. China","6. Croatia","7. Cyprus","8. Czech Republic","9. Denmark","10. England","11. Estonia","12. Finland","13. France","14. Germany","15. Greece","16. Hong Kong","17. Hungary","18. Iceland","19. Indonesia","20. Ireland","21. Italy","22. Japan","23. Latvia"
-                                                    ,"24. Lithuania","25. Luxembourg","26. Malta","27. Montenegro","28. Netherlands","29. Northern Ireland","30. Norway","31. NZ","32. Poland","33. Portugal","34. Romania","35. Scotland","36. Serbia","37. Singapore","38. Slovak Republic","39. Slovenia","40. Spain","41. Sweden","42. Switzerland","43. Thailand","44. Turkey","45. USA","46. Wales","47. Brazil"]
-                                }]
-    },
-    "CallandService":{
-        "allcallDetails": [
-                           {
-                           "name": "- select -",
-                           "id": "0"
-                           
-                           },
-                           {
-                           "name": "Forward to Voicemail",
-                           "id": "1"
-                           
-                           },
-                           {
-                           "name": "Forward to operator",
-                           "id": "2"
-                           
-                           },
-                           {
-                           "name": "Forward to another number",
-                           "id": "3"
-                           
-                           },
-                           {
-                           "name": "Forward to Call Catcher",
-                           "id": "4"
-                           }
-                           ],
-        "specificcallDetails": [
-                                {
-                                "name": "- select -",
-                                "id": "0"
-                                
-                                },
-                                {
-                                "name": "No call forwarding",
-                                "id": "5"
-                                
-                                },
-                                {
-                                "name": "Forward to voicemail",
-                                "id": "6"
-                                
-                                },
-                                {
-                                "name": "Forward to operator",
-                                "id": "7"
-                                
-                                },
-                                {
-                                "name": "Forward to another number",
-                                "id": "8"
-                                
-                                },
-                                {
-                                "name": "Forward to Call Catcher",
-                                "id": "9"
-                                }
-                                ],
-        "activeAfterDetails": [
-                               {
-                               "name": "- select -"
-                               },
-                               {
-                               "name": "5 seconds"
-                               
-                               },
-                               {
-                               "name": "10 seconds"
-                               
-                               },
-                               {
-                               "name": "15 seconds"
-                               
-                               },
-                               {
-                               "name": "20 seconds"
-                               
-                               },
-                               {
-                               "name": "25 seconds"
-                               }
-                               ]
-    },
-    "calls_services_data":{
-        "forwardnum": "Forward to another number",
-        "mobileNumErr": "Your entered phone number must be between 10 and 11 digits, do not include plus signs (+) or spaces.",
-        "networkSettings1": "CALL",
-        "type1": "CallConference",
-        "networkServiceName": "ANHL|",
-        "networkSettings2": "SMS",
-        "type2": "Admin",
-        "type3": "OutgoingCallerId",
-        "callnserviceTitle": "Call settings",
-        "callsAlert": "Outgoing barring",
-        "callsAlertmsg": "Calls you make won't connect and you'll hear a recorded message letting you know call barring is active.",
-        "callconference": "Allow call conference",
-        "callerId": "Show caller ID",
-        "PremiumTXT": "Premium TXT",
-        "Callforwarding" :"Call forwarding",
-        "Forallmycalls": "For all my calls",
-        "specificsituations": "In specific situations",
-        "Divertcalls": "Divert all of your calls from your mobile when you don't want to receive any.",
-        "Forallcalls": "For all calls",
-        "Forwardcalls": "Forward to",
-        "DivertcallsinSituations": "Divert your calls from your mobile in certain situations.",
-        "Whenunanswered": "When unanswered",
-        "Activateafter": "Activate after",
-        "Whenunreachable": "When unreachable",
-        "Whenbusy": "When busy",
-        "demoTitle": "Call barring",
-        "demostatus": "Inactive",
-        "democontent": "You can use",
-        "postpaidInternationalCalls": "International Calls",
-        "postpaidcallPlanIncludes": "Check to see if your plan includes",
-        "href1": "http://www.vodafone.com.au/plans/international-calls",
-        "standardinterminutes": "standard international minutes.",
-        "notIncludeStandInter": "If your plan doesnâ€™t incude standard international minutes, youâ€™ll be charged at our",
-        "href2": "https://www.vodafone.com.au/support/plans/international-calls",
-        "internationalcallrate": "international call rate.",
-        "VodafoneAlerts": "Vodafone Alerts",
-        "VodafoneAlertsmsg": "When Vodafone Alerts is activated, you'll receive a TXT when you reach",
-        "VodafoneAlertsmsg1": "of your included call value and included data allowance.",
-        "VodafoneAlertsmsg2": "Before saving your settings, make sure you agree with these",
-        "noCallForwarding":"No call forwarding"
-    },
-    "International_calling_data":{
-        "callHeading": "When international calling is on, you can make overseas calls from Australia",
-        "Callingstatus": "International calling is currently",
-        "CalTitle": "International calling",
-        "href": "http://www.vodafone.com.au/plans/international-calls",
-        "FindoutBlock": "Find out more"
-    },
-    "TermsnCond_call_services":{
-        "CallService":[{
-                       "type": "Terms and conditions",
-                       "content1": "1. Vodafone Alerts monitor your usage and consist only of usage that has been processed at that point in time.",
-                       "content2": "2. Overspend Alerts will only monitor your account balance from the date of activation of Vodafone Alerts and consist of charges that have been processed from that time. Overspend Alerts include all unbilled amounts that are charged on top of your minimum monthly spend such as premium SMS, global roaming charges or usage above your plan's allowance.",
-                       "content3": "3. Whilst most charges are updated and form part of your account balance within 4-24 hours of the charges being incurred, there can be a delay in processing charges for the third party services such as international roaming, downloading data and applications and using premium services. The delay in processing international roaming charges can be up to 60 days. This means that the Usage and Overspend Alerts that you receive are as up to date as they can be based on our records at that time but may not contain all charges that you have actually accrued at that point.",
-                       "content4": "4. GST charges are generally included in all billed charges but not in unbilled charges."
-                       }]
-    },
-    
-    "manage_credit_card": {
-        "creditCardTitle1": "Saving a credit card allows you to recharge faster in the future.",
-        "creditCardTitle2": "Your credit card details",
-        "creditCardTitle3": "Your payment is safe with Verizon cybertrust",
-        "type": "Terms and conditions",
-        "creditCardMsg": "Things you need to know",
-        "creditCardBelowContent1": "If the credit card you want to use shows a different name to this account, youâ€™ll need to register it at a Vodafone store",
-        "creditCardBelowContent2":  "A pre-authorisation payment of $1 will be charged and then automatically refunded to your credit card within 3-5 working days.",
-        "servicesLinkedTitle1": "Services linked to this credit card",
-        "servicesLinkedTitle2": "Up to 5 prepaid services can be linked to this card for recharge and top up",
-        "removeCreditCardBlock": "Your mobile number is already linked to a credit card. If you would like to change to a different card, youâ€™ll need to remove the current one.",
-        "ToastMsgunlinked": "Your credit card has been unlinked",
-        "ToastMsgdelinked": "Your service is delinked",
-        "ToastMsglinked": "Your service is linked",
-        "creditremovedmsg": "Your credit card has been removed",
-        "checkboxtermsMsg": "I authorise Vodafone to charge my nominated credit card and have read and agreed to the terms and conditions.",
-        "alertmsg": "There are no other services linked to this card.",
-        "alertmsg1": "You have ",
-        "alertmsg2": " active service linked to this card.",
-        "alertmsg3": "You have reached the limit of 5 active services linked to this card",
-        "addanothertext": "Add another service"
-        
-    },
-    "creditcard_success_Overlay": {
-        "linkservice": "addlinkservice",
-        "linkserviceTitle": "You are linking the service",
-        "linkserviceDescription": "By linking this service, youâ€™ll be able to recharge this service using this credit card.",
-        "delinkpageName": "precc",
-        "delinktitle": "You are delinking the service",
-        "delinkdescription": "By delinking this service, you wonâ€™t be able to recharge this service using this credit card.",
-        "removecardsecuserName": "secUser",
-        "removecardsecuserTitle": "You are removing the card for secondary user",
-        "removecardsecuserDes": "By delinking this service, you wonâ€™t be able to recharge this service using this credit card.",
-        "creditupdate": "Credit card updated",
-        "creditsaved": "Credit card Saved",
-        "creditsaveddesp": "Your credit card has been saved and can now be used for your next recharge.",
-        "SecerrorMsg": "After youâ€™ve unlinked this card, youâ€™ll be able to enter new credit card details.",
-        "Seccardunlink": "By removing this card, you will unlink ",
-        "Seccardmsg": " You can still use this credit card for one-off recharges",
-        "RemoveCard": "Are you sure you want to remove this card?",
-        "RemoveMultiServices": "By removing this card, you will unlink 2 services. You can still use this credit card for one-off recharges.",
-        "Unlinkcard": "Unlink credit card",
-        "confirmRemove": "Confirm Removal"
-    },
-    "PUK_Code": {
-        "cardLabel": "PUK code"
-    },
-    "Error_Scenario": [
-                       {
-                       "errorCode": 404,
-                       "title": "We canâ€™t find that page",
-                       "message": "We want you to find what youâ€™re looking for. Head to the dashboard or go back to the previous page.",
-                       "buttonText": "Go to dashboard",
-                       "secondButtonText": "Go back"
-                       },
-                       {
-                       "errorCode": 401,
-                       "title": "Login to My Vodafone",
-                       "message": "Login to My Vodafone with your username and password",
-                       "buttonText": "Login now",
-                       "secondButtonText": "Vodafone home"
-                       },
-                       {
-                       "errorCode": 403,
-                       "title": "You donâ€™t have access to this page",
-                       "message": "We want you to find what youâ€™re looking for. Head to the dashboard or go back to the previous page.",
-                       "buttonText": "Go to dashboard",
-                       "secondButtonText": "Go back"
-                       },
-                       {
-                       "errorCode": "PlanSharedaccUnavaliable",
-                       "title": "You donâ€™t have access to this page",
-                       "message": "We want you to find what youâ€™re looking for. Head to the dashboard or go back to the previous page.",
-                       "buttonText": "Go to dashboard",
-                       "secondButtonText": "Go back"
-                       },
-                       {
-                       "errorCode": "UnsuitableAccountType",
-                       "title": "You donâ€™t have access to this page",
-                       "message": "We want you to find what youâ€™re looking for. Head to the dashboard or go back to the previous page.",
-                       "buttonText": "Go to dashboard",
-                       "secondButtonText": "Go back"
-                       },
-                       {
-                       "errorCode": "TS002",
-                       "title": "Unfortunately we can't verify your number.",
-                       "message": "Please check your number and try again. Alternatively, call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
-                       }
-                       ],
-    "Sim_Error": [
-                  {
-                  "errorCode": "BF021",
-                  "title": "Youâ€™ve made too many attempts.",
-                  "message": "Please call us on",
-                  "phnNo": "1300 650 410",
-                  "message2": "for help you with your SIM replacement."
-                  },
-                  {
-                  "errorCode": "BF022",
-                  "title": "This SIM cannot be used.",
-                  "message": "It looks like youâ€™re using a SIM from a Prepaid Starter Pack. This canâ€™t be used for SIM replacement. You can get a replacement SIM from a Vodafone store.",
-                  "buttonText": "Find Vodafone store"
-                  },
-                  {
-                  "errorCode": "BF020",
-                  "title": "This SIM is no longer usable.",
-                  "message": "Youâ€™ll need to get a new replacement SIM to transfer your number. You can get a replacement SIM from a Vodafone store.",
-                  "buttonText": "Find Vodafone store"
-                  },
-                  {
-                  "errorCode": "BF023",
-                  "title": "We have your SIM replacement Request.",
-                  "message": "Weâ€™re currently working to get your new SIM up and running. This usually takes 15 to 60 minutes. For help, call us on",
-                  "PhnNo": "1300 650 410",
-                  "buttonText": "Go to dashboard"
-                  }
-                  ],
-    "Credit_Card_Error":[
-                         {
-                         "errorCode": "BF002",
-                         "title": "Unfortunately we can't verify your payment details.",
-                         "message": "Please try again or use a different payment option."
-                         },
-                         {
-                         "errorCode": "BF003",
-                         "title": "Unfortunately we can't verify your number.",
-                         "message": "Please check your number and try again."
-                         },
-                         {
-                         "errorCode": "BF045",
-                         "title": "Please save your credit card details.",
-                         "message": "To continue, register your credit card details."
-                         },
-                         {
-                         "errorCode": "BF060",
-                         "title": "This option is only available to the primary account owner.",
-                         "message": "To update your details, please login to My Vodafone with this number."
-                         },
-                         {
-                         "errorCode": "BF016",
-                         "title": "Your account needs updating.",
-                         "message": "Please update your details."
-                         },
-                         {
-                         "errorCode": "BF052",
-                         "title": "This number is already linked to a credit card.",
-                         "message": "Please unlink this number in My Vodafone and then add this number to your account."
-                         },
-                         {
-                         "errorCode": "BF051",
-                         "title": "This number is already linked to a credit card.",
-                         "message": "Please unlink this number in My Vodafone and then add this number to your account."
-                         }
-                         ],
-    "Payment_Error":[
-                     {
-                     "errorCode": "BF002",
-                     "title": "Unfortunately we couldn't save your credit card details.",
-                     "message": "Please select another payment option and try again."
-                     },
-                     {
-                     "errorCode": "BF003",
-                     "title": "Unfortunately we can't verify your number.",
-                     "message": "Please check your number and try again."
-                     }
+                        ],
+    "Resource_ID_Array": [
+                          {
+                          "id": "3002211",
+                          "title": "Charges taken from My Credit"
+                          },
+                          {
+                          "id": "3002212",
+                          "title": "Charges taken from My Credit"
+                          },
+                          {
+                          "id": "3002116",
+                          "title": "Charges taken from Flexi Credit"
+                          },
+                          {
+                          "id": "3002110",
+                          "title": "Charges taken from Flexi Credit"
+                          },
+                          {
+                          "id": "3002136",
+                          "title": "Charges taken from Flexi Credit"
+                          },
+                          {
+                          "id": "3002137",
+                          "title": "Charges taken from Flexi Credit"
+                          },
+                          {
+                          "id": "3002148",
+                          "title": "Charges taken from Flexi Credit"
+                          },
+                          {
+                          "id": "3002199",
+                          "title": "Charges taken from your plan"
+                          },
+                          {
+                          "id": "3002210",
+                          "title": "Charges taken from your plan"
+                          },
+                          {
+                          "id": "3002211",
+                          "title": "Charges taken from My Credit"
+                          },
+                          {
+                          "id": "3002212",
+                          "title": "Charges taken from Flexi Credit"
+                          }
+                          ],
+    "Resource_ID": {
+        "MyCredit": [
+                     "3002211",
+                     "3002212"
                      ],
-    "Generic": {
-        "title": "Something didnâ€™t go as planned.",
-        "message": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone",
-        "buttonText": "Try again"
+        "FlexiCredit": [
+                        "3002116",
+                        "3002110",
+                        "3002194",
+                        "3002105",
+                        "3002137",
+                        "3002136",
+                        "3002148"
+                        ],
+        "myPlan": "your plan",
+        "chargesTxt": "Charges taken from",
+        "vfPurchase": "VF Purchase"
     },
-    "apptogglerTime":5
+    "Default_Error": [
+                      {
+                      "title": "Something didn't go as planned.",
+                      "message":" Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone.",
+                      "button": "Try again"
+                      }
+                      ],
+    "UnknownError":{
+        "pageNotfoundTitle":"We can’t find that page",
+        "pageNotfoundMessage":"We want you to find what you’re looking for. Head to the dashboard or go back to the previous page.",
+        "dashboardButton":" Go to dashboard",
+        "gobackButton":"Go back",
+        "unauthorizederrorTitle":"Login to My Vodafone",
+        "unauthorizederrorMessage":"Login to My Vodafone with your username and password",
+        "loginButton":"Login now",
+        "VodafonehomeButton":"Vodafone home",
+        "ForbiddenerrorTitle":"You don’t have access to this page",
+        "ForbiddenerrorMessage":"We want you to find what you’re looking for. Head to the dashboard or go back to the previous page."
+    },
+    "Maintenance_Page" :
+    {
+        "maintenanceHeading"  : "We’re sorry - this feature is currently unavailable.",
+        "tryLaterMsg"  : "Our team are working on fixing the technical issue. Please try again later."
+    },
+    "appTogglerTime": 5
 }
