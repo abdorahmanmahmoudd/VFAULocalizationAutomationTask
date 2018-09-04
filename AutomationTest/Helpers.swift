@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Cocoa
 
 #if !swift(>=4.2)
 public protocol CaseIterable {

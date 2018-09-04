@@ -8,150 +8,9 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, NSTextFieldDelegate {
     
-    override func viewDidAppear() {
-        super.viewDidAppear()
-        
-        let localizationFileName = "localized.json"
-        let modelName = "HistoryConfiguration"
-        let localizationFilePath = "/Users/mac/Desktop/localized.json"
-        
-        //read and parse strings json file
-        guard let localizedStringsData = getFileData(Named: localizationFileName) else {
-            print("ERROR: Can not find localized.json")
-            print("I will EXIST NOW")
-            exit(0)
-        }
-        
-        guard let localizationModelObject = try? JSONDecoder().decode(LocalizationStringsModel.self, from: localizedStringsData) else {
-            print("ERROR: Can not decode localized.json")
-            print("I will EXIST NOW")
-            exit(0)
-        }
-        
-        //read and parse configuration json file
-        guard let configurationFileData = getFileData(Named: "config.json") else {
-            print("ERROR: Can not find config.json")
-            print("I will EXIST NOW")
-            exit(0)
-        }
-        guard let configurationModelObject = try? JSONSerialization.jsonObject(with: configurationFileData, options: []) as? [String: AnyObject] else {
-            print("ERROR: Can not decode config.json")
-            print("I will EXIST NOW")
-            exit(0)
-        }
-        
-        guard let configurationDictionary = configurationModelObject else {
-            print("ERROR: Configuration Model could not be a dictionary!")
-            print("I will EXIST NOW")
-            exit(0)
-        }
-        
-        let projectPath = "/Users/mac/Documents/VFAU-iOS/MyVodafone-Gold"
-        var filesToOperateOn = [String]()
-        getValidFiles(withPath: projectPath, inArray: &filesToOperateOn)
-        
-        sleep(20)
-        for filePath in filesToOperateOn{
-            
-            guard var sourceCodefileContent = getFileContent(Named: filePath) else{
-                print("Warning: couldn't get \(filePath) content! but i will continue to the next file\n")
-                continue
-            }
-            
-            let fullLocalizationLineOfCodeRegex = "R.string.localizable.[a-zA-Z0-9]\\w+\\(\\)"
-            let localizationLines = matches(forRegex: fullLocalizationLineOfCodeRegex, inText: sourceCodefileContent)
-            if localizationLines.count == 0{
-                print("Couldn't find localizations at \(filePath) and i will continue to the next file\n")
-                continue
-            }
-            
-            let localizationKeys = localizationLines.map { (line) -> String in
-                return String.init(line.split(separator: ".")[3].dropLast(2))
-            }
-            
-            var updateFiles = false
-            
-            let projectLocalizationFilePath = "/Users/mac/Documents/VFAU-iOS/MyVodafone-Gold/en-AU.lproj/Localizable.strings"
-            guard var projectLocalizationFileContent = getFileContent(Named: projectLocalizationFilePath)else{
-                print("Couldn't open project localization file . strings and i will stop\n")
-                print("I will EXIST NOW")
-                exit(0)
-            }
-            print("File: \(filePath), impacted by the following configuration: \(modelName)")
-            //check if the localization value has a match in the configuration file and update files if exists
-            var totalConfigurationMatches = Dictionary<String,String>()
-            for i in 0..<localizationKeys.count{
-                
-                guard localizationModelObject.responds(to: Selector(localizationKeys[i].lowercased())) else{
-//                    print("Most probably that the key: \(localizationKeys[i]) which you are looking for is configuration key, so localization model can't find it. so we will continue with next keys ^_^\n")
-                    continue
-                }
-                let localizationValue = localizationModelObject.value(forKey: localizationKeys[i].lowercased()) as? String ?? "corrupted_value"
-                
-                var configurationMatches = Dictionary<String,String>()
-                getValueMatches(fromDic: configurationDictionary, forValue: localizationValue, intoDic: &configurationMatches, withRoot: "")
-                guard configurationMatches.count > 0 else{
-                    print("Couldn't find a match for key: \(localizationKeys[i]), value: \(localizationValue)\n")
-                    continue
-                }
-                totalConfigurationMatches.merge(configurationMatches, uniquingKeysWith: { (v1, v2) -> String in
-                    return v1
-                })
-                updateFiles = true
-                
-                //update project localization file
-                if let mappedConfigurationPath = (configurationMatches.first { (key,value) -> Bool in
-                    return value == localizationValue}?.key)
-                {
-                    let key = (mappedConfigurationPath.contains(".") ? (mappedConfigurationPath.components(separatedBy: ".").last ?? "corrupted_key") : mappedConfigurationPath)
-                    
-                    projectLocalizationFileContent = projectLocalizationFileContent.replacingOccurrences(of: localizationKeys[i], with: key, options: .literal, range: nil)
-                }
-                
-                //update configuration file
-                if let matchedLine = (localizationLines.first(where: { (line) -> Bool in
-                    
-                    return String.init(line.split(separator: ".")[3].dropLast(2)) == localizationKeys[i]
-                }))
-                {
-                    if var mappedConfigurationPath = (configurationMatches.first { (key,value) -> Bool in
-                        return value == localizationValue}?.key)
-                    {
-                        let key = (mappedConfigurationPath.contains(".") ? (mappedConfigurationPath.lowercased().components(separatedBy: ".").last ?? "corrupted_key") : mappedConfigurationPath.lowercased())
-                        
-                        let codeSnippet = "getStringForView(ofConfigurationKey: R.string.localizable.\(key).key, andConfigurationValue: \(modelName).sharedInstance?.\(mappedConfigurationPath.attributePath()), andLocalString: R.string.localizable.\(key)())"
-                        
-                        sourceCodefileContent = sourceCodefileContent.replacingOccurrences(of: matchedLine, with: codeSnippet)
-                        print("Replaced: \(matchedLine), of key: \(localizationKeys[i]), with snippet of Configuration Key: \(key)\n")
-                    }
-                }
-            }
-            
-            print("Found keys: \(totalConfigurationMatches) in \(filePath) and replaced them.\n\n")
-            
-            if updateFiles{
-                updateFiles = false
-                do {
-                    let emptyString = ""
-                    
-                    try emptyString.write(toFile: filePath, atomically: false, encoding: .utf8)
-                    try sourceCodefileContent.write(toFile: filePath, atomically: false, encoding: .utf8)
-                    
-                    try projectLocalizationFileContent.write(toFile: projectLocalizationFilePath, atomically: true, encoding: .utf8)
-                    
-                    print("\(filePath) updated and done.")
-
-                }catch{
-                    print("ERROR: couldn't update localization file or source code file named: \(filePath)! - description: \(error.localizedDescription)\n")
-                    print("I will EXIST NOW")
-                    exit(0)
-                }
-            }
-        }
-        print("hooof.. Done El7")
-    }
+    @IBOutlet weak var pathTextField: NSTextField?
 
     func getFileData(Named name: String) -> Data?{
         
@@ -264,5 +123,206 @@ class ViewController: NSViewController {
         }
     }
     
+    
+    func startProcess(withModelName modelName: String, andPath projectPath: String){
+        
+        let localizationFileName = "localized.json"
+        let modelName = ""
+        
+        //read and parse strings json file
+        guard let localizedStringsData = getFileData(Named: localizationFileName) else {
+            print("ERROR: Can not find localized.json")
+            print("I will EXIST NOW")
+            exit(0)
+        }
+        
+        guard let localizationModelObject = try? JSONDecoder().decode(LocalizationStringsModel.self, from: localizedStringsData) else {
+            print("ERROR: Can not decode localized.json")
+            print("I will EXIST NOW")
+            exit(0)
+        }
+        
+        //read and parse configuration json file
+        guard let configurationFileData = getFileData(Named: "config.json") else {
+            print("ERROR: Can not find config.json")
+            print("I will EXIST NOW")
+            exit(0)
+        }
+        guard let configurationModelObject = try? JSONSerialization.jsonObject(with: configurationFileData, options: []) as? [String: AnyObject] else {
+            print("ERROR: Can not decode config.json")
+            print("I will EXIST NOW")
+            exit(0)
+        }
+        
+        guard let configurationDictionary = configurationModelObject else {
+            print("ERROR: Configuration Model could not be a dictionary!")
+            print("I will EXIST NOW")
+            exit(0)
+        }
+        
+        var filesToOperateOn = [String]()
+        getValidFiles(withPath: projectPath, inArray: &filesToOperateOn)
+        
+        sleep(20)
+        for filePath in filesToOperateOn{
+            
+            guard var sourceCodefileContent = getFileContent(Named: filePath) else{
+                print("Warning: couldn't get \(filePath) content! but i will continue to the next file\n")
+                continue
+            }
+            
+            let fullLocalizationLineOfCodeRegex = "R.string.localizable.[a-zA-Z0-9]\\w+\\(\\)"
+            let localizationLines = matches(forRegex: fullLocalizationLineOfCodeRegex, inText: sourceCodefileContent)
+            if localizationLines.count == 0{
+                print("Couldn't find localizations at \(filePath) and i will continue to the next file\n")
+                continue
+            }
+            
+            let localizationKeys = localizationLines.map { (line) -> String in
+                return String.init(line.split(separator: ".")[3].dropLast(2))
+            }
+            
+            var updateFiles = false
+            
+            let projectLocalizationFilePath = "/Users/mac/Documents/VFAU-iOS/MyVodafone-Gold/en-AU.lproj/Localizable.strings"
+            guard var projectLocalizationFileContent = getFileContent(Named: projectLocalizationFilePath)else{
+                print("Couldn't open project localization file . strings and i will stop\n")
+                print("I will EXIST NOW")
+                exit(0)
+            }
+            print("File: \(filePath), impacted by the following configuration: \(modelName)")
+            //check if the localization value has a match in the configuration file and update files if exists
+            var totalConfigurationMatches = Dictionary<String,String>()
+            for i in 0..<localizationKeys.count{
+                
+                guard localizationModelObject.responds(to: Selector(localizationKeys[i].lowercased())) else{
+                    //                    print("Most probably that the key: \(localizationKeys[i]) which you are looking for is configuration key, so localization model can't find it. so we will continue with next keys ^_^\n")
+                    continue
+                }
+                let localizationValue = localizationModelObject.value(forKey: localizationKeys[i].lowercased()) as? String ?? "corrupted_value"
+                
+                var configurationMatches = Dictionary<String,String>()
+                getValueMatches(fromDic: configurationDictionary, forValue: localizationValue, intoDic: &configurationMatches, withRoot: "")
+                guard configurationMatches.count > 0 else{
+                    print("Couldn't find a match for key: \(localizationKeys[i]), value: \(localizationValue), at model: \(modelName)\n")
+                    continue
+                }
+                totalConfigurationMatches.merge(configurationMatches, uniquingKeysWith: { (v1, v2) -> String in
+                    return v1
+                })
+                updateFiles = true
+                
+                //update project localization file
+                if let mappedConfigurationPath = (configurationMatches.first { (key,value) -> Bool in
+                    return value == localizationValue}?.key)
+                {
+                    let key = (mappedConfigurationPath.contains(".") ? (mappedConfigurationPath.components(separatedBy: ".").last ?? "corrupted_key") : mappedConfigurationPath)
+                    
+                    projectLocalizationFileContent = projectLocalizationFileContent.replacingOccurrences(of: localizationKeys[i], with: key, options: .literal, range: nil)
+                }
+                
+                //update configuration file
+                if let matchedLine = (localizationLines.first(where: { (line) -> Bool in
+                    
+                    return String.init(line.split(separator: ".")[3].dropLast(2)) == localizationKeys[i]
+                }))
+                {
+                    if var mappedConfigurationPath = (configurationMatches.first { (key,value) -> Bool in
+                        return value == localizationValue}?.key)
+                    {
+                        let key = (mappedConfigurationPath.contains(".") ? (mappedConfigurationPath.lowercased().components(separatedBy: ".").last ?? "corrupted_key") : mappedConfigurationPath.lowercased())
+                        
+                        let codeSnippet = "getStringForView(ofConfigurationKey: R.string.localizable.\(key).key, andConfigurationValue: \(modelName).sharedInstance?.\(mappedConfigurationPath.attributePath()), andLocalString: R.string.localizable.\(key)())"
+                        
+                        sourceCodefileContent = sourceCodefileContent.replacingOccurrences(of: matchedLine, with: codeSnippet)
+                        print("Replaced: \(matchedLine), of key: \(localizationKeys[i]), with snippet of Configuration Key: \(key)\n")
+                    }
+                }
+            }
+            
+            print("Found keys: \(totalConfigurationMatches) in \(filePath) and replaced them.\n\n")
+            
+            if updateFiles{
+                updateFiles = false
+                do {
+                    let emptyString = ""
+                    
+                    try emptyString.write(toFile: filePath, atomically: false, encoding: .utf8)
+                    try sourceCodefileContent.write(toFile: filePath, atomically: false, encoding: .utf8)
+                    
+                    try projectLocalizationFileContent.write(toFile: projectLocalizationFilePath, atomically: true, encoding: .utf8)
+                    
+                    print("\(filePath) updated")
+                    
+                }catch{
+                    print("ERROR: couldn't update localization file or source code file named: \(filePath)! - description: \(error.localizedDescription)\n")
+                    print("I will EXIST NOW")
+                    exit(0)
+                }
+            }
+        }
+        print("hooof.. Done El7")
+    }
+    
+    func removeOccurence(fromFilePath path: String){
+        
+        guard let fileContent = getFileContent(Named: path) else {
+            print("ERROR: Can not get file content")
+            print("I will EXIST NOW")
+            exit(0)
+        }
+        
+        let fileLines = fileContent.components(separatedBy: "\n")
+        
+        var nonOccurenceLines = [String]()
+        fileLines.forEach { (line) in
+            if !nonOccurenceLines.contains(line){
+                nonOccurenceLines.append(line)
+            }
+        }
+        
+        do {
+            let emptyString = ""
+            
+            try emptyString.write(toFile: path, atomically: false, encoding: .utf8)
+            try nonOccurenceLines.joined(separator: "\n").write(toFile: path, atomically: false, encoding: .utf8)
+            
+            print("\(path) updated.")
+            
+        }catch{
+            print("ERROR: couldn't update file : \(path)! - description: \(error.localizedDescription)\n")
+            print("I will EXIST NOW")
+            exit(0)
+        }
+        
+    }
+    
+    //MARK: IBActions
+    
+    @IBAction func btnStartClicked(_ sender: NSButton) {
+        
+        if pathTextField?.stringValue != ""{
+            
+            let path = pathTextField?.stringValue ?? "/Users/mac/Documents/VFAU-iOS/MyVodafone-Gold"
+            pathTextField?.placeholderString = "will try to look at the default path: /Users/mac/Documents/VFAU-iOS/MyVodafone-Gold."
+            let modelName = "HistoryConfiguration"
+            startProcess(withModelName: modelName, andPath: path)
+            
+        }else{
+            print("Please enter project path!")
+        }
+        
+    }
+    
+    @IBAction func btnRemoveOccurenceClicked(_ sender: NSButton) {
+        if pathTextField?.stringValue != ""{
+            
+            let path = pathTextField?.stringValue ?? "-"
+            removeOccurence(fromFilePath: path)
+        }else{
+            print("Please enter file path!")
+        }
+    }
+
 }
 
