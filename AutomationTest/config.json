@@ -1,526 +1,926 @@
 {
-    "button_Name": {
-        "gotoDashaboard": "Go to dashboard",
-        "buttonType": "Download adjustment",
-        "buttonLabel": "Download Adjustment History",
-        "buttonType4": "Cancel"
+    "proofOfPurchaseData": {
+        "receiverEmailAddress": "onlinewebrequests@TechMahindra.com",
+        "senderEmailAddress": "service.request@vodafone.com.au",
+        "subject": "Proof of purchase request â€“ HSS/WSS",
+        "MainLabel": "A proof of purchase may be required if your device is being repaired under warranty or if youâ€™re submitting an insurance claim. Weâ€™ll email your document by the end of the next business day.",
+        "FullName": "Enter your full name",
+        "phonenum": "Enter your phone number",
+        "emailAddress": "Enter your email address",
+        "DetailsOfPhone": "Details about where you purchased your phone",
+        "ExRepair": "e.g. repair/insurance purposes",
+        "IMEInum": "Enter your IMEI number",
+        "mobileName": "e.g. iPhone 8",
+        "NameLbl": "Your name",
+        "ContactLbl": "Contact number (optional)",
+        "EmailLbl": "Email to receive the proof of purchase",
+        "purchaseLbl": "About your purchase",
+        "detailsLbl": "Details",
+        "ReasonLbl": "Reason for proof of purchase",
+        "IMEILbl": "IMEI number for this handset (dial *#06# on your handset)",
+        "HandsetLbl": "Handset make / model"
     },
-    "loading_Page_Overlay_Usage": {
-        "errorTitle": "We're having trouble confirming your details",
-        "loadingPage": "Please don’t leave this page",
-        "title": "Usage History",
-        "ErrorScenarioTitle": "test"
+    "generic": {
+        "tryagainLabel": "Something didnâ€™t go as planned",
+        "tryagainDescLabel": "Please try again later to see any new offers.",
+        "tryagainBtnLabel": "Try again"
     },
-    "loading_Page_Overlays": {
-        "errorTitle": "We're having trouble confirming your details",
-        "loadingPage": "Please don’t leave this page",
-        "title": "Adjustment History",
-        "ErrorScenarioTitle": "test"
+    
+    "offersLoading": {
+        "title": "Please don't leave this page",
+        "header": "Offers and extras for you"
     },
-    "loading_Page_Overlay_transaction": {
-        "errorTitle": "We're having trouble confirming your details",
-        "loadingPage": "Please don’t leave this page",
-        "title": "Transaction History",
-        "ErrorScenarioTitle": "test"
+    "offers": {
+        "Wallet_Topup": {
+            "offerTypeKey":"rechargeOfferType",
+            "topupKey":"wallet_topup"
+        },
+        "Recharge_and_Get": {
+            "key": "Recharge and Get",
+            "offerTypeKey":"rechargeOfferType",
+            "topupKey":"wallet_topup",
+            "topupBtnLabel":"Top up now",
+            "btnLabel": "Recharge now",
+            "tandc": "http://vfau.co/inppc"
+        },
+        "Upgrade": {
+            "key": "Upgrade",
+            "btnLabel": "Find out more",
+            "phoneandPlanUpgradeURL": "https://shop.vodafone.com.au/upgrades/userlogin",
+            "SIMOUpgradeURL":"https://shop.vodafone.com.au/upgrades/userlogin",
+            "tandc": "http://vfau.co/inppc"
+        },
+        "NPEY": {
+            "btnLabel": "Find out more",
+            "key": "NPEY",
+            "url": "https://shop.vodafone.com.au/upgrades/npey",
+            "tandc": "http://vfau.co/inppc"
+        },
+        "ORPC": {
+            "key": "ORPC",
+            "btnLabel": "Compare the plan",
+            "tandc": "http://vfau.co/inppc"
+        },
+        "Prepaid_Addon": {
+            "key": "Prepaid Addon",
+            "btnLabel": "Add Data",
+            "tandc": "http://vfau.co/inppc"
+        },
+        "Content": {
+            "key": "Content",
+            "btnLabel": "Find out more",
+            "freeKey":"free",
+            "freeURL":"https://subscriptions.services.vodafone.com.au/subscriptions/user_selection/new",
+            "otherURL":"https://subscriptions.services.vodafone.com.au/subscriptions/spotify/user_confirmation/new_chargeable",
+            "tandc": "http://vfau.co/inppc"
+        },
+        "Recharge_and_Select": {
+            "key": "Recharge and Select",
+            "btnLabel": "Recharge now",
+            "tandc": "http://vfau.co/inppc"
+        },
+        "iamnotInterestedLabel": "I'm not interested"
     },
-    "spinner_title": {
-        "adjustHistTitle": "Loading adjustment history",
-        "purchaseHistTitle": "Loading purchase history",
-        "usageHistTitle": "Loading usage history"
+    "offersBody": {
+        "RechargeButton": "Recharge now",
+        "ImNotIntrestedButton": "I'm not interested",
+        "FinoutButton": "Find out more",
+        "AdddataButton": "Add Data",
+        "RechargeandSelect": "Recharge and Select",
+        "Mb200": "200MB",
+        "Credit40": "$40 credit",
+        "Dollar40": "$40",
+        "Gb6": "6GB",
+        "Days35": "35 days",
+        "Content": "Content",
+        "PrepaidAddon": "Prepaid Addon",
+        "Upgrade": "Upgrade",
+        "Gb8": "8 GB",
+        "Datadiv": "Data",
+        "Dollar60": "$60",
+        "Dollar70": "$70",
+        "Premonth": "per month",
+        "Npey": "NPEY",
+        "Orpc": "ORPC",
+        "RecommendedPlan": "Recommended Plan",
+        "RechargeandGet": "Recharge and Get",
+        "noOffersHead": "We donâ€™t have any offers for you right now",
+        "checkBackLabel": "Check back soon to see new offers as theyâ€™re posted."
     },
-    "resourceIds": [
-                    {
-                    "id": "3002211",
-                    "timeLabel": "Topped up at ",
-                    "title": "My Credit top up",
-                    "receiptLabel": "Barcode/Receipt"
-                    }
-                    ],
-    "resourceDefault": {
-        "timeLabel": "Recharged at",
-        "title": "Recharge",
-        "receiptLabel": "Barcode/Receipt"
-    },
-    "ids": [
-            {
-            "id": "3002116",
-            "timeLabel": "Recharged at",
-            "title": "Recharge",
-            "receiptLabel": "Barcode/Receipt"
-            },
-            {
-            "id": "3002211",
-            "timeLabel": "Topped up at ",
-            "title": "My Credit top up",
-            "receiptLabel": "Barcode/Receipt"
-            }
-            ],
-    "adjustment_history": {
-        "downloadButton": "Download adjustment history",
-        "showingAdjustmentsFromThePastLabel": "Showing adjustments from the past 4 months.",
-        "timeLabel": "Adjusted at",
-        "reasonLabel": "Reason",
-        "noRecentAdjustmentHistLabel": "There are no recent adjustments.",
-        "completeAdjustmentHistoryLabel": "For a complete adjustment history, please contact",
-        "customerCareLabel": "customer care"
-    },
-    "transaction_history": {
-        "thingsYouNeedToKnowLabel": "Things you need to know",
-        "noteMessage": "It may take up to 15 minutes for a payment record to appear on this screen. Amounts are rounded up to the nearest cent inclusive of GST. The statement is not and in no way constitutes a tax invoice. Please do not pay. Account balance displayed is indicative only and may not include all charges. Your Transaction History for the past three months is only available online here at My Account.",
-        "phoneAndDataUsageLabel": "Phone and data usage",
-        "downloadButton": "Download purchase history",
-        "showMoreButton": "Show more",
-        "ShowingPurchaseFromThePastLabel": "Showing purchases from the past",
-        "monthsLabel": "months.",
-        "monthLabel": "month.",
-        "noRecentPurchaseHistLabel": "There are no recent purchases.",
-        "noMorePurchaseHistLabel": "There are no more purchases to show.",
-        "completePurchaseHistoryLabel": "For a complete purchase history, please contact",
-        "customerCareLabel": "customer care",
-        "monthCountTwo": 2
-    },
-    "Usage_History": {
-        "thingsYouNeedToKnowLabel": "Things you need to know",
-        "noteMessage": "Charges are inclusive of GST and are rounded to the nearest cent. This is a summary of your usage, and does not constitute a tax invoice. The usage information available using the ‘Download usage history’ button will always show records for the previous 3 months, even if a different date range is selected on this screen.",
-        "showingUsageLable": " Showing usage from the past 5 days.",
-        "downloadButton": "Download usage history",
-        "showMoreButton": "Show more",
-        "noUsageHist": "There is no more usage history to show.",
-        "eventTypeTalk": "1",
-        "eventTypeTXT": "2",
-        "eventTypeData": "3",
-        "eventTypeInternational": "4",
-        "eventTypeRoaming": "5",
-        "eventTypeExtra": "6",
-        "eventTypeOthers": "7",
-        "eventTypeAll": "8",
-        "noService": "You didn't use your service on this day.",
-        "ShowingUsageFromThePastLable": " Here's your usage from the past",
-        "daysLable": "days",
-        "noCallMessage": "You didn't make any calls on this day.",
-        "noTxtMessage": "You didn't TXT on this day.",
-        "noDataMessage": "You didn't use data on this day.",
-        "noInclusionsMessage": "You didn’t use these inclusions on this day.",
-        "noRomaingServices": "You didn't use roaming on this day.",
-        "Data": "Data",
-        "Talk": "Talk",
-        "TXT": "TXT",
-        "Roaming": "Roaming",
-        "Others": "Others"
-    },
-    "Detailed_Usage": {
-        "thingsYouNeedToKnowLabel": "Things you need to know",
-        "noteMessage": "Most usage is updated within 18 hours, but if you’re roaming overseas it may take up to 72 hours. Charges do not include GST and are rounded to the nearest cent. Any discounts or charges that may apply when your bill is issued are not included. This is a summary of your usage, and does not constitute a tax invoice.",
-        "downloadButton": "Download CSV",
-        "downloadTxt": "Download",
-        "showMoreMsg": "Here's your usage from the past",
-        "showMoreMsgDays": "days.",
-        "showMoreButton": "Show more",
-        "thatsLotMessage": "That’s the lot for this bill period",
-        "recordsNotFoundMsg": "There is no usage for this period.",
-        "usageFromTxt": "Detailed usage from:",
-        "issueTxt": "Your issue date will be:",
-        "extraContentLabel" : "Your detailed usage is available for the 3 most recent billing cycles. For the past 24 billing cycles, you can view your usage by downloading the corresponding bill. You can also call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone. ",
-        "eventTypeTalk": "1",
-        "eventTypeTXT": "2",
-        "eventTypeData": "3",
-        "eventTypeInternational": "4",
-        "eventTypeRoaming": "5",
-        "eventTypeExtra": "6",
-        "eventTypeOthers": "7",
-        "eventTypeAll": "8",
-        "extraContentLabel": "Your detailed usage is available for the 3 most recent billing cycles. For the past 24 billing cycles, you can view your usage by downloading the corresponding bill. You can also call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
-    },
-    "Call_code": {
-        "AID": "International voice",
-        "AND": "Additional national data",
-        "ARD": "Additional roaming data",
-        "BBD": "National blackberry",
-        "BBR": "Roaming blackberry",
-        "DO": "Roaming data",
-        "DOV": "Roaming data",
-        "FCM": "Fixed mobile",
-        "FDU": "Fixed Data",
-        "FLC": "Fixed to local fixed",
-        "FNC": "Fixed national",
-        "FNG": "Fixed non-geographic",
-        "IC": "Intercompany",
-        "IN": "International voice",
-        "INT": "International voice",
-        "IP": "International group",
-        "LIV": "Vodafone live!",
-        "MC": "Premium message",
-        "MG": "Globalstar call",
-        "MO": "Roaming voice",
-        "MOV": "Roaming voice",
-        "NA": "National non mobile",
-        "NAT": "National call",
-        "NR": "National roaming",
-        "OS": "Operator",
-        "PKT": "National data",
-        "PN": "Group calling",
-        "PXO": "Roaming PXT",
-        "PXT": "Picture message",
-        "Power Up": "Power up",
-        "Premium TXT": "Premium TXT",
-        "RDF": "Roaming daily fees",
-        "RG": "Globalstar incoming",
-        "RID": "International voice",
-        "RO": "Received call-roam",
-        "SS_DO_CHARGE": "Data used from flexible credit",
-        "SS_DO_NOCHARGE": "Included data",
-        "SS_PKT_CHARGE": "Data used from flexible credit",
-        "SS_PKT_NOCHARGE": "Included data",
-        "Standard TXT": "Text message",
-        "TPA": "Third party applications",
-        "TPP": "Third party purchase",
-        "TXO": "Roaming text",
-        "TXT": "Text message",
-        "V23": "3 Mobile",
-        "V2O": "Other mobile",
-        "V2V": "Vodafone mobile",
-        "VCO": "Other video",
-        "VCV": "Vodafone video",
-        "VF": "Vodafone purchase",
-        "VFC": "Vodafone central",
-        "VIN": "International video",
-        "VO": "Roaming video",
-        "VOV": "Roaming video",
-        "VRO": "Received video-roam",
-        "VS": "Vodafone service",
-        "VVN": "Group video",
-        "Video": "Video call",
-        "Voice": "Voice call"
-    },
-    "Call_code_Array": [
-                        {
-                        "id": "AID",
-                        "title": "International voice"
-                        },
-                        {
-                        "id": "AND",
-                        "title": "Additional national data"
-                        },
-                        {
-                        "id": "ARD",
-                        "title": "Additional roaming data"
-                        },
-                        {
-                        "id": "BBD",
-                        "title": "National blackberry"
-                        },
-                        {
-                        "id": "BBR",
-                        "title": "Roaming blackberry"
-                        },
-                        {
-                        "id": "DO",
-                        "title": "Roaming data"
-                        },
-                        {
-                        "id": "DOV",
-                        "title": "Roaming data"
-                        },
-                        {
-                        "id": "DOV",
-                        "title": "Roaming data"
-                        },
-                        {
-                        "id": "FCM",
-                        "title": "Fixed mobile"
-                        },
-                        {
-                        "id": "FDU",
-                        "title": "Fixed Data"
-                        },
-                        {
-                        "id": "FLC",
-                        "title": "Fixed to local fixed"
-                        },
-                        {
-                        "id": "FNC",
-                        "title": "Fixed national"
-                        },
-                        {
-                        "id": "FNG",
-                        "title": "Fixed non-geographic"
-                        },
-                        {
-                        "id": "IC",
-                        "title": "Intercompany"
-                        },
-                        {
-                        "id": "IN",
-                        "title": "International voice"
-                        },
-                        {
-                        "id": "INT",
-                        "title": "International voice"
-                        },
-                        {
-                        "id": "IP",
-                        "title": "International group"
-                        },
-                        {
-                        "id": "LIV",
-                        "title": "Vodafone live!"
-                        },
-                        {
-                        "id": "MC",
-                        "title": "Premium message"
-                        },
-                        {
-                        "id": "MG",
-                        "title": "Globalstar call"
-                        },
-                        {
-                        "id": "MO",
-                        "title": "Roaming voice"
-                        },
-                        {
-                        "id": "MOV",
-                        "title": "Roaming voice"
-                        },
-                        {
-                        "id": "NA",
-                        "title": "National non mobile"
-                        },
-                        {
-                        "id": "NAT",
-                        "title": "National call"
-                        },
-                        {
-                        "id": "NR",
-                        "title": "National roaming"
-                        },
-                        {
-                        "id": "OS",
-                        "title": "Operator"
-                        },
-                        {
-                        "id": "PKT",
-                        "title": "National data"
-                        },
-                        {
-                        "id": "PN",
-                        "title": "Group calling"
-                        },
-                        {
-                        "id": "PXO",
-                        "title": "Roaming PXT"
-                        },
-                        {
-                        "id": "PXT",
-                        "title": "Picture message"
-                        },
-                        {
-                        "id": "Power Up",
-                        "title": "Power up"
-                        },
-                        {
-                        "id": "Premium TXT",
-                        "title": "Premium TXT"
-                        },
-                        {
-                        "id": "RDF",
-                        "title": "Roaming daily fees"
-                        },
-                        {
-                        "id": "RG",
-                        "title": "Globalstar incoming"
-                        },
-                        {
-                        "id": "RID",
-                        "title": "International voice"
-                        },
-                        {
-                        "id": "RO",
-                        "title": "Received call-roam"
-                        },
-                        {
-                        "id": "SS_DO_CHARGE",
-                        "title": "Data used from flexible credit"
-                        },
-                        {
-                        "id": "SS_PKT_CHARGE",
-                        "title": "Data used from flexible credit"
-                        },
-                        {
-                        "id": "SS_DO_NOCHARGE",
-                        "title": "Included data"
-                        },
-                        {
-                        "id": "SS_PKT_NOCHARGE",
-                        "title": "Included data"
-                        },
-                        {
-                        "id": "Standard TXT",
-                        "title": "Text message"
-                        },
-                        {
-                        "id": "TPA",
-                        "title": "Third party applications"
-                        },
-                        {
-                        "id": "TPP",
-                        "title": "Third party purchase"
-                        },
-                        {
-                        "id": "TXO",
-                        "title": "Roaming text"
-                        },
-                        {
-                        "id": "TXT",
-                        "title": "Text message"
-                        },
-                        {
-                        "id": "V23",
-                        "title": "3 Mobile"
-                        },
-                        {
-                        "id": "V2O",
-                        "title": "Other mobile"
-                        },
-                        {
-                        "id": "V2V",
-                        "title": "Vodafone mobile"
-                        },
-                        {
-                        "id": "VCO",
-                        "title": "Other video"
-                        },
-                        {
-                        "id": "VCV",
-                        "title": "Vodafone video"
-                        },
-                        {
-                        "id": "VF",
-                        "title": "Vodafone purchase"
-                        },
-                        {
-                        "id": "VFC",
-                        "title": "Vodafone central"
-                        },
-                        {
-                        "id": "VIN",
-                        "title": "International video"
-                        },
-                        {
-                        "id": "VO",
-                        "title": "Roaming video"
-                        },
-                        {
-                        "id": "VOV",
-                        "title": "Roaming video"
-                        },
-                        {
-                        "id": "VRO",
-                        "title": "Received video-roam"
-                        },
-                        {
-                        "id": "VS",
-                        "title": "Vodafone service"
-                        },
-                        {
-                        "id": "VVN",
-                        "title": "Group video"
-                        },
-                        {
-                        "id": "Video",
-                        "title": "Video call"
-                        },
-                        {
-                        "id": "Voice",
-                        "title": "Voice call"
-                        }
-                        ],
-    "Resource_ID_Array": [
-                          {
-                          "id": "3002211",
-                          "title": "Charges taken from My Credit"
-                          },
-                          {
-                          "id": "3002212",
-                          "title": "Charges taken from My Credit"
-                          },
-                          {
-                          "id": "3002116",
-                          "title": "Charges taken from Flexi Credit"
-                          },
-                          {
-                          "id": "3002110",
-                          "title": "Charges taken from Flexi Credit"
-                          },
-                          {
-                          "id": "3002136",
-                          "title": "Charges taken from Flexi Credit"
-                          },
-                          {
-                          "id": "3002137",
-                          "title": "Charges taken from Flexi Credit"
-                          },
-                          {
-                          "id": "3002148",
-                          "title": "Charges taken from Flexi Credit"
-                          },
-                          {
-                          "id": "3002199",
-                          "title": "Charges taken from your plan"
-                          },
-                          {
-                          "id": "3002210",
-                          "title": "Charges taken from your plan"
-                          },
-                          {
-                          "id": "3002211",
-                          "title": "Charges taken from My Credit"
-                          },
-                          {
-                          "id": "3002212",
-                          "title": "Charges taken from Flexi Credit"
-                          }
-                          ],
-    "Resource_ID": {
-        "MyCredit": [
-                     "3002211",
-                     "3002212"
+    "simswap": {
+        "dropdown": [{
+                     "name": "- select -",
+                     "id": "0"
+                     },
+                     {
+                     "name": "New device",
+                     "request":"Lost / Stolen SIM",
+                     "id": "1"
+                     },
+                     {
+                     "name": "Lost or stolen",
+                     "request":"Faulty SIM",
+                     "id": "2"
+                     },
+                     {
+                     "name": "Faulty",
+                     "request":"Blocked SIM",
+                     "id": "3"
+                     },
+                     {
+                     "name": "Blocked",
+                     "request":"Upgrade to SIM",
+                     "id": "4"
+                     }
                      ],
-        "FlexiCredit": [
-                        "3002116",
-                        "3002110",
-                        "3002194",
-                        "3002105",
-                        "3002137",
-                        "3002136",
-                        "3002148"
-                        ],
-        "myPlan": "your plan",
-        "chargesTxt": "Charges taken from",
-        "vfPurchase": "VF Purchase"
+        "titleLabel": "Transfer your existing Vodafone number to your new SIM",
+        "mobileNumberLabel": "Your mobile number",
+        "reasonLabel": "Reason for replacement",
+        "enterSimLabel": "Enter your new SIM number",
+        "simNumberFirst": "89610 30000",
+        "simNumberPlaceholder": "Next 10 digits",
+        "errorCantFind": "Canâ€™t find your SIM number?",
+        "canHighlightedLabel": "You can find the SIM number highlighted below.",
+        
+        "success": {
+            "title1": "Good news, youâ€™re almost done!",
+            "button": "Go to dashboard",
+            "query1": "How long does it take?",
+            "response1": "Your service should be ready in about 15 minutes.",
+            "query2": "What happens next?",
+            "response2": "Once your existing SIM stops working, insert your Vodafone SIM into your device and youâ€™ll be ready to go.",
+            "tip1": "Tip: If it doesnâ€™t connect after 15 minutes, try switching your phone off and on."
+        }
     },
-    "Default_Error": [
+    "postPaidProductAndServices": {
+        "data": "Data",
+        "includedDataPlan": "Included data - plan",
+        "starterData": "Starter Data",
+        "nationalCallsAndTXT": "National calls and TXT",
+        "standardTXTToOverseas": "Standard TXT here and to overseas",
+        "unlimited": "Unlimited",
+        "standardNationalMin": "Standard national minutes",
+        "internationalCalls": "Int'l calls",
+        "stdInternationalMins": "Standard international mins to",
+        "selectedCountries": "Selected Countries",
+        "stdInternationalGlobalMins": "Standard international Global Minutes to",
+        "eligibleCountries": "Eligible Countries",
+        "NewPhoneEveryYear": "New Phone Every Year",
+        "thisplanEligibleNPEY": "This plan is eligible for New Phone Every Year.",
+        "button_1": "Find out more",
+        "button_Manage": " Manage subscriptions",
+        "GB5bonusData": "5GB bonus data for your first month.",
+        "TandCApply": "T&C apply.",
+        "changeYourPlan": "Change your plan",
+        "changeYourPlanDesc": "If you're still under contract, you can change to a higher value plan.",
+        "add_onsBoosters": "Your Add-ons and Boosters",
+        "add_onsBoosters_label": "Make the most of your plan with an Add-on or a Booster.",
+        "browseAdd_onsBoosters": "Browse Add-ons and Boosters",
+        "manageRoamingsetting": "Manage your Roaming settings",
+        "manageAdd_on": "Manage Add-on",
+        "hotOffers": "Hot offers on your plan",
+        "hotOffersMobile": "Hot offers",
+        "yourPlanSummary": "Your plan summary",
+        "resetsOn": "Resets on",
+        "resetsDate": "01/07/17",
+        "expiresOn": "Expires on",
+        "expiresDate": "01/07/17",
+        "plan": "Plan",
+        "swapSIM": "Swap my SIM",
+        "proofOfPurchase": "Request proof of purchase",
+        "cis": "Critical information summary",
+        "planDetails": "Plan details",
+        "newphoneContent": " You're eligible for a new phone from",
+        "MonthPlanContract":"You're on a month to month plan, which doesn't have a plan contract end date. ",
+        "MonthPlanContractMPP":"However your device is still in contract. See device payment plan section for the end date. ",
+        "planContractEndDate": " For your contract end date, call our team on 1300 650 410.",
+        "PlanContratTeamHelpline": "Contact our team to find out more about your current plan by calling 1300 650 410.",
+        "insuranceCover": "Vodafone Cover me Mobile Insurance",
+        "InsuranceDesc": "For more information call the Vodafone Cover me Mobile Insurance team on 1800 371 713 or",
+        "button_clickHere": "click here",
+        "Accessory": "Accessory",
+        "eligibleUpgrade": "You're eligible for an upgrade.",
+        "upgradeHelpline": "You can upgrade online or call our team on 1300 650 410. When upgrading, fees may apply",
+        "Upgradenow_button": "Upgrade now",
+        "notupgradeEligible": "You're not eligible for an upgrade.",
+        "notupgradeHelpline":"Please contact our team to find out when you're eligible for an upgrade by calling 1300 650 410.",
+        "requestCallback_button": "Request a Callback",
+        "changePlan": "Change plan",
+        "withoutChangingYourCurrentPhone": "You can change your plan without changing your current phone",
+        "inclusionsRefresh": "Inclusions refresh on",
+        "inclusionsDate": "1 July",
+        "starterDataExpires": "Expires:",
+        "starterDataExpiresDate": "05/08/18",
+        "httpNPEY": "http://vodafone.com.au/plans/new-phone-every-year",
+        "httpSubscriptions": "http://subscriptions-portal-sit2.test.services.vodafone.com.au/logins/new",
+        "httpsUpgrade": "http://qa9.test.estore.aws.vodafone.com.au/upgrades",
+        "httprequestCallBack": "http://www.vodafone.com.au/personal/request-a-callback?queue=VF_UPGRADES",
+        "npeyDiff": 11,
+        "entitlementIdsArr" : [
+                               {
+                               "id":"3002001",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3000044",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3000005",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3000003",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3000002",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3000001",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002169",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3500023",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3500050",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002144",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002162",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002168",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002167",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002173",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002172",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002171",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002170",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3500029",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3500027",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3500026",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3500101",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3500033",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3500055",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3500069",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3500068",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3500067",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3500066",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3500036",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3500034",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3500104",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3500039",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002149",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002128",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002127",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002126",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002125",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002112",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002108",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002092",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002085",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002080",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002079",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3002078",
+                               "title":"Data"
+                               },
+                               {
+                               "id":"3500064",
+                               "title":"Dollar"
+                               },
+                               {
+                               "id":"3000024",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500032",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500051",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500049",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500057",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500054",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500074",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500072",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500071",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500070",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3002130",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500028",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500058",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500063",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500061",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500060",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500059",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500037",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500035",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500038",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500046",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500044",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500042",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500084",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500083",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500082",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500081",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500080",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500079",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500078",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3500073",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3002084",
+                               "title":"IntlCalls"
+                               },
+                               {
+                               "id":"3000041",
+                               "title":"Talk"
+                               },
+                               {
+                               "id":"3000030",
+                               "title":"Talk"
+                               },
+                               {
+                               "id":"3000023",
+                               "title":"Talk"
+                               },
+                               {
+                               "id":"3000022",
+                               "title":"Talk"
+                               },
+                               {
+                               "id":"3000020",
+                               "title":"Talk"
+                               },
+                               {
+                               "id":"3000017",
+                               "title":"Talk"
+                               },
+                               {
+                               "id":"3000016",
+                               "title":"Talk"
+                               },
+                               {
+                               "id":"3000012",
+                               "title":"Talk"
+                               },
+                               {
+                               "id":"3000008",
+                               "title":"Talk"
+                               },
+                               {
+                               "id":"3000007",
+                               "title":"Talk"
+                               },
+                               {
+                               "id":"3002131",
+                               "title":"Talk"
+                               },
+                               {
+                               "id":"3002087",
+                               "title":"Talk"
+                               },
+                               {
+                               "id":"3002086",
+                               "title":"Talk"
+                               },
+                               {
+                               "id":"3002083",
+                               "title":"Talk"
+                               },
+                               {
+                               "id":"3002081",
+                               "title":"Talk"
+                               },
+                               {
+                               "id":"3000042",
+                               "title":"Txt"
+                               },
+                               {
+                               "id":"3000040",
+                               "title":"Txt"
+                               },
+                               {
+                               "id":"3000021",
+                               "title":"Txt"
+                               },
+                               {
+                               "id":"3000013",
+                               "title":"Txt"
+                               },
+                               {
+                               "id":"3002142",
+                               "title":"Txt"
+                               },
+                               {
+                               "id":"3002141",
+                               "title":"Txt"
+                               },
+                               {
+                               "id":"3002140",
+                               "title":"Txt"
+                               },
+                               {
+                               "id":"3002129",
+                               "title":"Txt"
+                               },
+                               {
+                               "id":"3002102",
+                               "title":"Txt"
+                               },
+                               {
+                               "id":"3002101",
+                               "title":"Txt"
+                               },
+                               {
+                               "id":"3002100",
+                               "title":"Txt"
+                               },
+                               {
+                               "id":"3002099",
+                               "title":"Txt"
+                               },
+                               {
+                               "id":"3002089",
+                               "title":"Txt"
+                               },
+                               {
+                               "id":"3002082",
+                               "title":"Txt"
+                               }
+                               ],
+        "entitlementIds": {
+            "Data": [
+                     3002001,
+                     3000044,
+                     3000005,
+                     3000003,
+                     3000002,
+                     3000001,
+                     3002169,
+                     3500023,
+                     3500050,
+                     3002144,
+                     3002162,
+                     3002168,
+                     3002167,
+                     3002173,
+                     3002172,
+                     3002171,
+                     3002170,
+                     3500029,
+                     3500027,
+                     3500026,
+                     3500101,
+                     3500033,
+                     3500055,
+                     3500069,
+                     3500068,
+                     3500067,
+                     3500066,
+                     3500036,
+                     3500034,
+                     3500104,
+                     3500039,
+                     3002149,
+                     3002128,
+                     3002127,
+                     3002126,
+                     3002125,
+                     3002112,
+                     3002108,
+                     3002092,
+                     3002085,
+                     3002080,
+                     3002079,
+                     3002078
+                     ],
+            "Dollar": [3500064],
+            "IntlCalls": [
+                          3000024,
+                          3500032,
+                          3500051,
+                          3500049,
+                          3500057,
+                          3500054,
+                          3500074,
+                          3500072,
+                          3500071,
+                          3500070,
+                          3002130,
+                          3500028,
+                          3500058,
+                          3500063,
+                          3500061,
+                          3500060,
+                          3500059,
+                          3500037,
+                          3500035,
+                          3500038,
+                          3500046,
+                          3500044,
+                          3500042,
+                          3500084,
+                          3500083,
+                          3500082,
+                          3500081,
+                          3500080,
+                          3500079,
+                          3500078,
+                          3500073,
+                          3002084
+                          ],
+            "Talk": [
+                     3000041,
+                     3000030,
+                     3000023,
+                     3000022,
+                     3000020,
+                     3000017,
+                     3000016,
+                     3000012,
+                     3000008,
+                     3000007,
+                     3002131,
+                     3002087,
+                     3002086,
+                     3002083,
+                     3002081
+                     ],
+            "Txt": [
+                    3000042,
+                    3000040,
+                    3000021,
+                    3000013,
+                    3002142,
+                    3002141,
+                    3002140,
+                    3002129,
+                    3002102,
+                    3002101,
+                    3002100,
+                    3002099,
+                    3002089,
+                    3002082
+                    ]
+        }
+    },
+    "productandServices" : {
+        "thinkToKnowContent": "Please regard the balances shown here as a usage guide only as not all charges can be updated instantly. All prices are inclusive of GST where applicable.",
+        "thinkToKnowHeading": "Things you need to know",
+        "whatiscredit": "What is My Credit?",
+        "creditDescp": "At the moment, if you last recharged with MyMix or Combo, you will be able to use My Credit to make calls and send text when in Oz at pay as you go rates.",
+        "lastRechrgeText": "If your last recharge was with Prepaid 365 Plus, you can also use My Credit to access data when in Oz at pay as you go rates.",
+        "creditHeading": "We are currently beta testing My Credit.",
+        "myCredit": "My Credit",
+        "beta": "Beta",
+        "noCredit": "You don't have any My Credit",
+        "topupButton": "Top up My Credit",
+        "purchaseButton": "View purchase history",
+        "maxCredit": "Youâ€™ve reached the maximum amount for My Credit.",
+        "rechargeAgainTxt": "You can top again when youâ€™ve used the current available credit",
+        "standardDollar": "Standard Dollars",
+        "bonusDollar": "Bonus Dollars",
+        "remaining": "remaining",
+        "Unlimited": "Unlimited",
+        "expiresLabel": "Expires:",
+        "rechargeServicesTxt": "Recharge today with one of our Prepaid Services",
+        "rechargePlanButton": "Recharge my plan",
+        "addonButton": "Buy an Add-on",
+        "rechargeNowButton": "Recharge now",
+        "summaryHeading": "Your plan summary"
+    },
+    "ProductPlanDetails": {
+        "planHeading": "Plan details",
+        "planDetails": [
+                        {
+                        "titleName": "Subscriptions",
+                        "id": "",
+                        "url": "http://subscriptions-portal-sit2.test.services.vodafone.com.au/logins/new"
+                        },
+                        {
+                        "titleName": "Request proof of purchase",
+                        "id": "Proof",
+                        "url": "/settings/proof_of_purchase"
+                        }
+                        ]
+    },
+    "maintenancePage" :
+    {
+        "maintenanceHeading"  : "Weâ€™re sorry - this feature is currently unavailable.",
+        "tryLaterMsg"  : "Our team are working on fixing the technical issue. Please try again later."
+    },
+    "phonenumber": [
+                    {
+                    "number" : "0422 757 781"
+                    }],
+    "genericError": [
+                     {
+                     "errorCode": "BF020",
+                     "title": "Please check your number.",
+                     "message":
+                     "We're unable to validate your number. Please check the number and try again."
+                     },
+                     {
+                     "errorCode": "BF021",
+                     "title": "You've made too many attempts.",
+                     "message": "Please call us on 1300 650 410."
+                     },
+                     {
+                     "errorCode": "BF022",
+                     "message": "Sorry, we're unable to validate your SIM number. Please check the SIM number and try again."
+                     },
+                     {
+                     "errorCode": "BF023",
+                     "title": "This service is currently unavailable for your number.",
+                     "message": "Please try again later or call us on 1300 650 410 for help with your SIM replacement."
+                     }
+                     ],
+    "genericErrorOffers": [
+                           {
+                           "errorCode": "GF003",
+                           "title": "Something didn't go as planned.",
+                           "message": "Please try again later to see any new offers.",
+                           "button": "Try again"
+                           },
+                           {
+                           "errorCode": "GF005",
+                           "title": "Something didn't go as planned.",
+                           "message": "Please try again later to see any new offers.",
+                           "button": "Try again"
+                           },
+                           {
+                           "errorCode": "GF001",
+                           "title": "Something didn't go as planned.",
+                           "message": "Please try again later to see any new offers.",
+                           "button": "Try again"
+                           },
+                           {
+                           "errorCode": "BF002",
+                           "title": "Something didn't go as planned.",
+                           "message": "Please try again later to see any new offers.",
+                           "button": "Try again"
+                           },
+                           {
+                           "errorCode": "EE0500",
+                           "title": "Something didn't go as planned.",
+                           "message": "Please try again later to see any new offers.",
+                           "button": "Try again"
+                           }
+                           ],
+    "genericErrorInclusions" : [
+                                {
+                                "errorCode": "BF003",
+                                "title": "We can't find this number.",
+                                "message": "Please check your number and try again. Alternatively, call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF004",
+                                "title": "This service is inactive.",
+                                "message": "Please call us on 1300 650 410."
+                                }
+                                ],
+    "genericErrorValidation" : [
+                                {
+                                "errorCode": "BF002",
+                                "title": "We're having trouble confirming your details.",
+                                "message": "Please try again or use another payment method."
+                                }
+                                ],
+    "genericErrorLastRecharge" : [
+                                  {
+                                  "errorCode": "BF002",
+                                  "title": "We're having trouble confirming your details.",
+                                  "message": "Please try again, or use another payment method."
+                                  }
+                                  ],
+    "defaultError": [
                       {
                       "title": "Something didn't go as planned.",
-                      "message":" Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone.",
+                      "message":"Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone.",
                       "button": "Try again"
                       }
                       ],
-    "UnknownError":{
-        "pageNotfoundTitle":"We can’t find that page",
-        "pageNotfoundMessage":"We want you to find what you’re looking for. Head to the dashboard or go back to the previous page.",
+    "unknownError":{
+        "pageNotfoundTitle":"We canâ€™t find that page",
+        "pageNotfoundMessage":"We want you to find what youâ€™re looking for.Head to the dashboard or go back to the previous page.",
         "dashboardButton":" Go to dashboard",
         "gobackButton":"Go back",
         "unauthorizederrorTitle":"Login to My Vodafone",
         "unauthorizederrorMessage":"Login to My Vodafone with your username and password",
         "loginButton":"Login now",
         "VodafonehomeButton":"Vodafone home",
-        "ForbiddenerrorTitle":"You don’t have access to this page",
-        "ForbiddenerrorMessage":"We want you to find what you’re looking for. Head to the dashboard or go back to the previous page."
+        "ForbiddenerrorTitle":"You donâ€™t have access to this page",
+        "ForbiddenerrorMessage":"We want you to find what youâ€™re looking for.Head to the dashboard or go back to the previous page."
     },
-    "Maintenance_Page" :
-    {
-        "maintenanceHeading"  : "We’re sorry - this feature is currently unavailable.",
-        "tryLaterMsg"  : "Our team are working on fixing the technical issue. Please try again later."
+    "simSwapOTP":{
+        "Heading":"Transfer your existing Vodafone number to your new SIM.",
+        "NeedHelp": "Need help?",
+        "HelpLine":"Contact our team on",
+        "HelpLineNumber":"1300 788 055",
+        "LoginOTP":"Login with one-time code",
+        "LoginPassword":"Login with password",
+        "MobileNumberbLabel":"Enter your mobile number",
+        "GetOTPButton":"Get one-time code by TXT",
+        "ContinueButton":"Continue",
+        "NewCodeButton":"Get a new code",
+        "EnterOTPCode":"Enter one-time code",
+        "AlertTXT":"Weâ€™ve sent you an SMS with a one-time code to",
+        "ResentTXT": "Weâ€™ve re-sent you an SMS with a one-time code to",
+        "AlertMsg":"If your code doesn't arrive within 2 minutes, please get a new code.",
+        "LoginButton":"Login now",
+        "LoadingMsg": "Please donâ€™t leave this page",
+        "AttemptsError": "You've made too many attempts. Please call us on 1300 650 410 for help with your one-time code."
     },
-    "appTogglerTime": 5
+    "appTogglerTime": 5,
+    "creditBonus":["VF_WALLET_RW_DOL_BDL","VF_WALLET_DOL_BDL","VF_RWD_COUNTER2_BDL","VF_RWD_COUNTER1_BDL","VF_RWD_COUNTER3_BDL"]
 }

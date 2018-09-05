@@ -127,7 +127,7 @@ class ViewController: NSViewController, NSTextFieldDelegate {
     func startProcess(withModelName modelName: String, andPath projectPath: String){
         
         let localizationFileName = "localized.json"
-        let modelName = ""
+        let modelName = "OfferConfiguration"
         
         //read and parse strings json file
         guard let localizedStringsData = getFileData(Named: localizationFileName) else {
@@ -163,7 +163,6 @@ class ViewController: NSViewController, NSTextFieldDelegate {
         var filesToOperateOn = [String]()
         getValidFiles(withPath: projectPath, inArray: &filesToOperateOn)
         
-        sleep(20)
         for filePath in filesToOperateOn{
             
             guard var sourceCodefileContent = getFileContent(Named: filePath) else{
@@ -304,8 +303,7 @@ class ViewController: NSViewController, NSTextFieldDelegate {
         if pathTextField?.stringValue != ""{
             
             let path = pathTextField?.stringValue ?? "/Users/mac/Documents/VFAU-iOS/MyVodafone-Gold"
-            pathTextField?.placeholderString = "will try to look at the default path: /Users/mac/Documents/VFAU-iOS/MyVodafone-Gold."
-            let modelName = "HistoryConfiguration"
+            let modelName = "OfferConfiguration"
             startProcess(withModelName: modelName, andPath: path)
             
         }else{
