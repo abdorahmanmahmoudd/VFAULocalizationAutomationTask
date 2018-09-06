@@ -13,7 +13,6 @@
     "addons_available_list_title" : "Purchase other Add-ons",
     "addons_inclusion_duration" : "per month",
     "addons_inclusion_type" : "Data",
-    
     "addon_purchase_title" : "Purchase Add-on",
     "addon_includes_title" : "Includes",
     "addon_terms_title" : "Terms and conditions",
@@ -33,20 +32,13 @@
     "addon_manage_remove_success_message" : "Your account will be updated in around 15 minutes. We'll send you a TXT confirmation.",
     "postpaid_all_usage_current_period" : "Current period",
     "postpaid_all_usage_billed_on" : "Billed on",
-    
-    
-    
     "needhelp_need_help_tab" : "Need Help",
     "needhelp_request_callback_tab" : "Request a callback",
     "needhelp_user_guide_tab" : "User guide",
     "addon_manage_remove_success_title" : "Add-on removed",
-    
-    
     "terms_and_conditions_title" : "Terms & Conditions",
     "terms_and_conditions_btn_txt" : "Accept",
     "addon_active_card_manage" : "Manage Add-on",
-    
-    
     "available_addon_find_out_more" : "Find out more",
     "available_addon_list_title" : "Select a Data Add-on",
     "available_addon_list_intro" : "Our Month to Month Data Add-ons, for use in Australia, can be cancelled at any time",
@@ -62,8 +54,6 @@
     "available_addon_international_sub_title" : "Our Month to Month International Call Add-ons are for use from Australia, and can be cancelled at any time. Check the discounted rates for our",
     "available_addon_international_sub_title_link" : "International Call countries",
     "addon_manage_remove_success_toast" : "Your {addon} Add-on has been removed from your account",
-    
-    
     "addon_manage_header" : "Manage Add-on",
     "addon_remove_button_title" : "Remove Add-on",
     "addon_manage_active_international_change" : "",
@@ -76,7 +66,6 @@
     "login_forget_username" : "Forgot username?",
     "login_not_register_msg" : "Not registered for My Vodafone?",
     "login_btn_register" : "Register now",
-    
     "login_request_msg" : "",
     "login_register" : "",
     "connectivity_lost_error" : "",
@@ -85,17 +74,15 @@
     "addon_manage_replace_success_toast" : "You've changed from a {old} to a {new}",
     "addon_available_booster_header_title" : "Select a Data Booster",
     "addon_available_booster_header_subtitle" : "If you've gone over your included usage for the month(or you're about to), a one-off Data Booster can help see you through to the end of your billing month",
-    
-    
     "automatic_payment_header" : "Automate Your Payments",
-    "directdebit" : "Manage direct debit",
-    "choosePaymentMethod" : "Choose your payment method",
+    "automatic_payment_title" : "Manage direct debit",
+    "automatic_payment_subtitle" : "Choose your payment method",
     "automatic_payment_credit_card_title" : "Credit card",
     "automatic_payment_terms_and_conditions" : "I have read, understood and agreed to the Direct debit service agreement, I acknowledge that by submitting this Direct debit request, the terms and conditions of the Direct debit service agreement are binding on me or the company that I am authorised to represent.",
-    "directDebitBtnLabel" : "Set up direct debit",
-    "cancelBtn" : "Cancel",
-    "safePaymentMsg" : "Your payment is safe with Verizon cybertrust",
-    "agreementMsg" : "We accept VISA, MasterCard, Diners Club and American Express cards. Please be aware there's a processing surcharge of 0.486% (plus GST) on VISA, 0.228% (plus GST) on MasterCard, 2% (plus GST) on Diners Club and 2.15% (plus GST) on American Express cards. These charges will appear on your next bill.",
+    "automatic_payment_setup_button_title" : "Set up direct debit",
+    "automatic_payment_cancel_button_title" : "Cancel",
+    "automatic_payment_description_title" : "Your payment is safe with Verizon cybertrust",
+    "automatic_payment_description_body" : "We accept VISA, MasterCard, Diners Club and American Express cards. Please be aware there's a processing surcharge of 0.486% (plus GST) on VISA, 0.228% (plus GST) on MasterCard, 2% (plus GST) on Diners Club and 2.15% (plus GST) on American Express cards. These charges will appear on your next bill.",
     "automatic_payment_set_up_sucess_title" : "Done",
     "automatic_payment_set_up_success_subtitle" : "We've received your direct debit request",
     "automatic_payment_update_credit_card_success_subtitle" : "Your credit card has been updated",
@@ -103,20 +90,19 @@
     "automatic_payment_set_up_success_body" : "If you have any charges owing, please don't make payment as we'll debit your account automatically.",
     "automatic_payment_set_up_success_msg" : "Your bank account details have been saved",
     "automatic_payment_bank_account_title" : "Bank account",
-    "ccDetails" : "Your credit card details",
+    "automatic_payment_credit_card_details_title" : "Your credit card details",
     "automatic_payment_credit_card_details_end_number" : "{name} ending in {number}",
     "automatic_payment_credit_card_details_expire_date" : "Expires {date}",
-    "updateBtn" : "Update",
-    "cancelDirectDebit" : "Cancel direct debit",
+    "automatic_payment_update_button_title" : "Update",
+    "automatic_payment_cancel_update_button_title" : "Cancel direct debit",
     "automatic_payment_cancel_confirmation_title" : "Confirm cancellation",
-    "cancelDirectDebitQtn" : "Are you sure you want to cancel your direct debit?",
+    "automatic_payment_cancel_confirmation_body" : "Are you sure you want to cancel your direct debit?",
     "automatic_payment_cancel_confirmation_button_title" : "Confirm",
-    "bankAccDetailsLbl" : "Your bank account details",
-    "bsb" : "BSB",
-    "accountNum" : "Account number",
-    "accountName" : "Account name",
+    "automatic_payment_bank_account_details_title" : "Your bank account details",
+    "automatic_payment_bank_account_details_bsb" : "BSB",
+    "automatic_payment_bank_account_details_number" : "Account number",
+    "automatic_payment_bank_account_details_name" : "Account name",
     "automatic_payment_bank_account_cancel_success_msg" : "Your bank account details have been removed",
-    
     "account_settings_account_header" : "Account",
     "account_settings_service_header" : "Service",
     "account_settings_payment_header" : "Payment",
@@ -170,8 +156,6 @@
     "irrecoverable_error_message_title" : "Something didn't go as planned.",
     "irrecoverable_error_message" : "Please try again or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone.",
     "irrecoverable_error_negative_button_title" : "Return to dashboard",
-    
-    
     "account_settings_services_section_title" : "Services",
     "account_settings_account_section_title" : "Account",
     "account_settings_edit_profile_cell" : "Edit profile",
@@ -219,7 +203,6 @@
     "finger_print_setting_enabled_alertview_subtitle" : "Go to your phone’s settings to enabled Touch ID for my Vodafone",
     "loading_indicator_message" : "Wheels are turning...",
     "service_selector_service_switched_message" : "Service successfully switched to ",
-    
     "edit_profile_header" : "Edit profile",
     "edit_profile_plan_summary_title" : "Plan summary",
     "edit_profile_plan_summary_subtitle" : "$130 Qantas Red 24mth",
@@ -316,7 +299,6 @@
     "addon_manage_active_purchase_international_booster" : "Purchase an International Booster",
     "automatic_payment_set_up_credit_card_success_msg" : "Your credit card has been saved",
     "automatic_payment_credit_card_link" : "Direct debit service agreement",
-    
     "dashboard_recharge_btn" : "Recharge",
     "recharge_hero_title" : "You're recharging:",
     "recharge_hero_link" : "Change",
@@ -331,21 +313,16 @@
     "recharge_card_boost" : "Need a quick boost?",
     "recharge_card_boost_btn" : "Buy an add-on",
     "select_recharge_side_menu" : "Recharge my plan",
-    
-    
     "recharge_change_service_number_header" : "Recharge",
-    "expressHead" : "Recharge your prepaid service",
-    "expressSecondHead" : "To recharge your prepaid service, enter the mobile number that you want to recharge.",
-    "mobNo" : "Enter your mobile number",
+    "recharge_change_service_number_title" : "Recharge your prepaid service",
+    "recharge_change_service_number_subtitle" : "To recharge your prepaid service, enter the mobile number that you want to recharge.",
+    "recharge_change_service_number_card_title" : "Enter your mobile number",
     "recharge_change_service_number_continue_button_title" : "Continue",
-    "voucherBtn" : "Recharge with a voucher",
+    "recharge_change_service_number_voucher_button_title" : "Recharge with a voucher",
     "recharge_change_service_number_accepted_payments_title" : "Accepted payments",
     "recharge_change_service_number_score_title" : "Score bonus data",
     "recharge_change_service_number_score_subtitle" : "When you recharge with a credit card online. Data in Oz. T&C apply.",
-    
     "recharge_change_service_number_input_hint" : "e.g 0414123123",
-    
-    
     "prepaid_international_roaming_header" : "International roaming",
     "prepaid_international_roaming_title" : "When international roaming is active, prepaid Pay As You Go Roaming rates will apply when overseas.",
     "prepaid_international_roaming_title_link" : "Roaming rates",
@@ -367,9 +344,6 @@
     "prepaid_international_roaming_success_overlay_title" : "Updating roaming",
     "prepaid_international_roaming_success_overlay_message" : "Thanks, your changes will come in to effect in around 5 to 15 minutes.",
     "prepaid_international_roaming_success_overlay_button" : "Go to dashboard",
-    
-    
-    
     "fixed_db_track_order_link" : "https://www.vodafone.com.au/tracking#",
     "fixed_db_pay_your_bill" : "Pay your bill",
     "fixed_db_call_to_change_note" : "To change your appointment, call us.",
@@ -402,8 +376,6 @@
     "fixed_db_activation_date" : "NBN Activation Date",
     "fixed_db_view_shipping_status" : "View",
     "fixed_db_welcome_video_url" : "https://www.vodafone.com.au/content/video/welcome-to-vodafone-nbn.mp4",
-    
-    
     "fixed_db_setup_video_url" : "https://www.vodafone.com.au/content/video/setup-your-vodafone-wifi-hub.mp4",
     "fixed_db_welcome_video_duration" : "Duration: 1min30s",
     "fixed_db_setup_video_duration" : "Duration: 2min38s",
@@ -411,15 +383,11 @@
     "recharge_talk_combo" : "Talk Combo",
     "recharge_prepaid" : "Prepaid 365 Plus",
     "rechage_my_mix" : "MyMix",
-    
-    
-    "voucherHeader" : "Recharge with a voucher",
-    "enterText" : "Enter your voucher PIN",
-    "inputPlaceholder" : "Enter 12 digits",
+    "voucher_fragment_title" : "Recharge with a voucher",
+    "voucher_enter_voucher_pin" : "Enter your voucher PIN",
+    "vouchrer_max_digits" : "Enter 12 digits",
     "voucher_btn_continue" : "Continue",
-    "cancelBtn" : "Cancel",
-    
-    
+    "voucher_btn_cancel" : "Cancel",
     "prepaid_international_calling_header" : "International calling",
     "prepaid_international_calling_title" : "When international calling is on, you can make overseas calls from Australia.",
     "prepaid_international_calling_card_activation_title" : "International calling is currently",
@@ -434,9 +402,7 @@
     "fixed_db_pay_text_no_end_date" : "You’re on a month to month plan, which doesn’t have a plan contract end date.",
     "fixed_db_pay_text_end_date" : "Your Vodafone nbn™ contract end date is ",
     "fixed_db_nbn_is_now_active" : "Your Vodafone nbn™ is now active",
-    "errorMsgForExpressRecharge" : "Invalid number entered",
-    
-    
+    "recharge_change_service_number_warning_message" : "Invalid number entered",
     "recharge_flexi_cap" : "Flexi Cap",
     "fixed_db_mbb" : "mbb",
     "fixed_db_active" : "active",
@@ -451,8 +417,6 @@
     "voucher_incorrect_attempts_error" : "Your payment hasn't gone through, so please give it another go or call us on 1555 from your Vodafone mobile or 1300 650 410 from other phones.",
     "voucher_incorrect_pin_title" : "The pin must be 12 digits.",
     "voucher_incorrect_attempts_error_title" : "It looks like we just had a technical mishap.",
-    
-    
     "prepaid_credit_card_management_save_btn_title" : "Save",
     "prepaid_credit_card_management_terms_and_condition_title" : "Terms and conditions",
     "prepaid_credit_card_management_terms" : "I authorise Vodafone to charge my nominated credit card and have read and agreed to the terms and conditions.",
@@ -481,18 +445,13 @@
     "prepaid_credit_card_management_remove_with_single_service_overlay_submessage":"By removing this card, you will unlink 04XX XXX XXX. You can still use this credit card for one-off recharges.",
     "prepaid_credit_card_management_remove_with_multiple_services_overlay_submessage":"By removing this card, you will unlink {number} services. You can still use this credit card for one-off recharges.",
     "prepaid_credit_card_management_setup_success_msg" : "Your credit card has been saved and can now be used for your next recharge.",
-    
     "prepaid_credit_card_management_terms_and_condition_request_title" : "I, the holder of the Nominated Credit Card above, authorise and request:",
     "prepaid_credit_card_management_terms_and_condition_request_body" : "Vodafone to verify the details of my credit card with my Financial Institution.\n My Financial Institution to release information to Vodafone for verification purposes.\nThat Vodafone charge my Nominated Credit Card as authorised.",
     "prepaid_credit_card_management_terms_and_condition_request_condition" : "This request and authority remains in force unless:",
     "prepaid_credit_card_management_terms_and_condition_request_condition_body" : "It is varied by me, or\nUntil it is cancelled by me (or the Vodafone Customer if a different person).",
     "prepaid_credit_card_management_terms_and_condition_agreement" : "I understand that Vodafone may use or disclose personal information collected from me in accordance with the Vodafone Privacy Policy",
-    
-    
     "postpaid_puk_code_header" : "PUK code",
     "postpaid_puk_code_card_title" : "PUK code",
-    
-    
     "postpaid_international_roaming_header" : "International roaming",
     "postpaid_international_roaming_title" : "Your Plan Summary",
     "postpaid_international_roaming_plan_summery_card_title" : "$130 Qantas Red 24mth",
@@ -522,222 +481,6 @@
     "fixed_db_order_status_shipped" : "Shipped",
     "fixed_db_order_status_on_way" : "On its way",
     "fixed_db_active_toast_text" : "Your Vodafone nbn™ is now <b>active</b>",
-    
-    
-    "onboarding_button_skip" : "Skip",
-    "onboarding_postpaid_voice_mbb_personalisation_title" : "Add your name",
-    "onboarding_postpaid_voice_mbb_personalisation_description" : "You can personalise your service by tapping on this icon.",
-    "onboarding_postpaid_voice_mbb_service_selector_title" : "Select a service",
-    "onboarding_postpaid_voice_mbb_service_selector_description" : "If you have more than one service on your account, you can switch between them by tapping on this icon.",
-    "onboarding_postpaid_voice_mbb_usage_dial_voice_title" : "Track your usage",
-    "onboarding_postpaid_voice_mbb_usage_dial_voice_description" : "This dial shows your usage. You can switch between inclusions. Tap the + icon to view and buy Add-ons.",
-    "onboarding_postpaid_voice_mbb_usage_dial_mbb_title" : "Track your usage",
-    "onboarding_postpaid_voice_mbb_usage_dial_mbb_description" : "This dial shows your usage. Tap the + icon to view and buy Add-ons.",
-    "onboarding_postpaid_voice_mbb_current_charges_title" : "Track your spend",
-    "onboarding_postpaid_voice_mbb_current_charges_description" : "You can check your current spend in this section, including any additional charges.",
-    "onboarding_postpaid_voice_mbb_shared_service_selector_title" : "Select a service",
-    "onboarding_postpaid_voice_mbb_shared_service_selector_description" : "If you have more than one service on your account, you can switch between them by tapping on this icon.",
-    "onboarding_postpaid_voice_mbb_shared_usage_dial_voice_title" : "Track your usage",
-    "onboarding_postpaid_voice_mbb_shared_usage_dial_voice_description" : "This dial shows your usage. You can switch between inclusions. Tap the + icon to view and buy Add-ons.",
-    "onboarding_postpaid_voice_mbb_shared_usage_dial_mbb_title" : "Track your usage",
-    "onboarding_postpaid_voice_mbb_shared_usage_dial_mbb_description" : "This dial shows your usage. Tap the + icon to view and buy Add-ons.",
-    "onboarding_postpaid_voice_mbb_shared_usage_dial_shared_title" : "Manage shared services",
-    "onboarding_postpaid_voice_mbb_shared_usage_dial_shared_description" : "You can view and manage data usage for shared services on your account.",
-    "onboarding_postpaid_voice_mbb_shared_charges_title" : "Track your spend",
-    "onboarding_postpaid_voice_mbb_shared_charges_description" : "You can check your current spend in this section, including any additional charges.",
-    "onboarding_prepaid_voice_personalisation_title" : "Add your name",
-    "onboarding_prepaid_voice_personalisation_description" : "You can personalise your service by tapping on this icon.",
-    "onboarding_prepaid_voice_usage_title" : "Track your usage",
-    "onboarding_prepaid_voice_usage_description" : "Your usage and expiry dates are shown here. Scroll down to see all of your inclusions.",
-    "onboarding_prepaid_voice_recharge_title" : "Recharge",
-    "onboarding_prepaid_voice_recharge_description" : "Tap the ‘Recharge’ button to recharge your prepaid service.",
-    "onboarding_prepaid_voice_addons_title" : "Buy an add-on",
-    "onboarding_prepaid_voice_addons_description" : "Tap the ‘Buy an add-on’ button to load up your plan with more data, calls or international roaming.",
-    "onboarding_prepaid_voice_addons_legacy_title" : "Buy an add-on",
-    "onboarding_prepaid_voice_addons_legacy_description" : "Tap the ‘Buy an add-on’ button to load up your plan with more data, calls or international roaming.",
-    "onboarding_prepaid_voice_my_credit_title" : "Top up My Credit",
-    "onboarding_prepaid_voice_my_credit_description" : "You can use My Credit to recharge your prepaid service, get an Add-on, make calls or send TXT messages.",
-    "onboarding_prepaid_mbb_personalisation_title" : "Add your name",
-    "onboarding_prepaid_mbb_personalisation_description" : "You can personalise your service by tapping on this icon.",
-    "onboarding_prepaid_mbb_usage_title" : "Track your usage",
-    "onboarding_prepaid_mbb_usage_description" : "Your usage and expiry dates are shown here.",
-    "onboarding_prepaid_mbb_recharge_title" : "Recharge",
-    "onboarding_prepaid_mbb_recharge_description" : "Tap the ‘Recharge’ button to recharge your prepaid service.",
-    "onboarding_fixed_post_activation_personalisation_title" : "Add your name",
-    "onboarding_fixed_post_activation_personalisation_description" : "You can personalise your service by tapping on this icon.",
-    "onboarding_fixed_post_activation_service_selector_title" : "Select a service",
-    "onboarding_fixed_post_activation_service_selector_description" : "If you have more than one service on your account, you can switch between them by tapping on this icon.",
-    "onboarding_fixed_post_activation_plan_info_title" : "View your plan details",
-    "onboarding_fixed_post_activation_plan_info_description" : "This shows the inclusions of your current plan.",
-    "onboarding_fixed_post_activation_billing_info_title" : "View and pay your bill",
-    "onboarding_fixed_post_activation_billing_info_description" : "To review or pay your bill, tap 'Pay your bill'.",
-    "onboarding_fixed_preactivation_personalisation_title" : "Add your name",
-    "onboarding_fixed_preactivation_personalisation_description" : "You can personalise your service by tapping on this icon.",
-    "onboarding_fixed_preactivation_service_selector_title" : "Select a service",
-    "onboarding_fixed_preactivation_service_selector_description" : "If you have more than one service, you can switch between them by tapping on this icon.",
-    "onboarding_fixed_preactivation_order_tracking_title" : "Track your order",
-    "onboarding_fixed_preactivation_order_tracking_description" : "You can check your order status here.",
-    "onboarding_fixed_preactivation_installation_title" : "Check installation details",
-    "onboarding_fixed_preactivation_installation_description" : "View the details of your installation appointment here.",
-    "onboarding_button_get_started" : "Get started",
-    "voucher_mymix_fragment_title" : "Using a voucher for MyMix",
-    "content" : "With MyMix you can choose your own recharge inclusions. As the value of your voucher is fixed there will be limited choices available.",
-    "anotherContent" : "You’ll be able to get the most out of MyMix by using a credit card or Paypal.",
-    "voucher_mymix_continue" : "Continue",
-    "chooseAnotherBtn" : "Choose another recharge option",
-    
-    
-    "call_and_settings_header" : "Call Settings",
-    
-    
-    "dashboard_recharge_btn" : "Recharge",
-    "recharge_fragment_title" : "Select Recharge",
-    "recharge_hero_title" : "You're recharging:",
-    "recharge_hero_link" : "Change",
-    "rechargeOptions" : "Recharge options",
-    "chooseBtn" : "Choose",
-    "recharge_list_title" : "You last recharged",
-    "recharged" : "Recharged on",
-    "sameAgainBtn" : "Same again",
-    "chooseSomethingelseBtn" : "Choose something else",
-    "voucherTitle" : "You have a voucher?",
-    "redeemNowBtn" : "Redeem now",
-    "addonTitle" : "Need a quick boost?",
-    "buyAddonBtn" : "Buy an add-on",
-    "select_recharge_side_menu" : "Recharge my plan",
-    
-    
-    
-    
-    "recharge_change_service_number_header" : "Recharge",
-    "recharge_change_service_number_title" : "Recharge your prepaid service",
-    "recharge_change_service_number_subtitle" : "To recharge your prepaid service, enter the mobile number that you want to recharge.",
-    "recharge_change_service_number_card_title" : "Enter your mobile number",
-    "continueBtn" : "Continue",
-    "recharge_change_service_number_voucher_button_title" : "Recharge with a voucher",
-    "recharge_change_service_number_accepted_payments_title" : "Accepted payments",
-    "recharge_change_service_number_score_title" : "Score bonus data",
-    "recharge_change_service_number_score_subtitle" : "When you recharge with a credit card online. Data in Oz. T&C apply.",
-    
-    "recharge_change_service_number_input_hint" : "e.g 0414123123",
-    
-    
-    "fixed_db_track_order_link" : "https://www.vodafone.com.au/tracking#",
-    "fixed_db_pay_your_bill" : "Pay your bill",
-    "fixed_db_call_to_change_note" : "To change your appointment, call us.",
-    "fixed_db_call_now" : "Call us now",
-    "fixed_db_track_card_title" : "Track my order",
-    "fixed_db_installation_card_title" : "Installation date",
-    "fixed_db_installation_card_be_home_note" : "You <b>need</b> to be at your premises between:",
-    "fixed_db_installation_card_no_home_note" : "You <b>don't</b> need to be at your premises for this installation:",
-    "fixed_db_nbn_activation_card_title" : "NBN Activation Date",
-    "fixed_db_call_if_have_issues" : "Having issues? Call Vodafone Care.",
-    "fixed_db_includes_card_title_essential" : "includes",
-    "fixed_db_includes_card_title_premium" : "Your Premium plan includes",
-    "fixed_db_wifi_hub_on_way_title" : "Your Wi-Fi Hub is on its way",
-    "fixed_db_wifi_hub_on_way_message" : "It should arrive within 1-2 days. Once you’ve plugged it in, you’ll automatically have Walk-out Working. This means you can access our network until your NBN service is connected. Watch our video to find out more.",
-    "fixed_db_wifi_hub_setup_title" : "Let’s set up your Wi-Fi Hub.",
-    "fixed_db_wifi_hub_setup_message" : "When you plug in your Wi-Fi Hub, you’ll instantly get Walk-out Working. This gives you access to our network until your NBN service is connected. Watch our video to find out how to add services to your Wi-Fi network.",
-    "fixed_db_welcome_video_title" : "Welcome to Vodafone NBN",
-    "fixed_db_setup_video_title" : "How to: Setup your new Wi-Fi Hub",
-    "fixed_db_welcome_video_subtitle" : "Duration: 1min20s",
-    "fixed_db_setup_video_subtitle" : "Duration: 1min20s",
-    "fixed_db_shipping_status_shipped" : "SHIPPED",
-    "fixed_db_shipping_status_staged" : "STAGED/PICK CONFIRMED",
-    "fixed_db_shipping_status_ready_to_release" : "READY TO RELEASE",
-    "fixed_db_shipping_status_back_ordered" : "BACKORDERED",
-    "fixed_db_shipping_status_cancelled" : "CANCELLED",
-    "fixed_db_shipping_status_interfaced" : "INTERFACED",
-    "fixed_db_shipping_status_not_applicable" : "NOT APPLICABLE",
-    "fixed_db_shipping_status_not_available" : "This information is currently unavailable. Try again soon.",
-    "fixed_db_nbn_installation_date" : "NBN Installation Date",
-    "fixed_db_activation_date" : "NBN Activation Date",
-    "fixed_db_view_shipping_status" : "View",
-    
-    "fixed_db_welcome_video_url" : "https://www.vodafone.com.au/content/video/welcome-to-vodafone-nbn.mp4",
-    
-    "fixed_db_setup_video_url" : "https://www.vodafone.com.au/content/video/setup-your-vodafone-wifi-hub.mp4",
-    "fixed_db_welcome_video_duration" : "Duration: 1min30s",
-    "fixed_db_setup_video_duration" : "Duration: 2min38s",
-    "recharge_data_combo" : "Data Combo",
-    "recharge_talk_combo" : "Talk Combo",
-    "recharge_prepaid" : "Prepaid 365 Plus",
-    "rechage_my_mix" : "MyMix",
-    
-    
-    "voucher_fragment_title" : "Recharge with a voucher",
-    "voucher_enter_voucher_pin" : "Enter your voucher PIN",
-    "vouchrer_max_digits" : "Enter 12 digits",
-    "voucher_btn_continue" : "Continue",
-    "voucher_btn_cancel" : "Cancel",
-    
-    
-    "prepaid_international_calling_header" : "International calling",
-    "prepaid_international_calling_title" : "When international calling is on, you can make overseas calls from Australia.",
-    "prepaid_international_calling_card_activation_title" : "International calling is currently",
-    "prepaid_international_calling_active_status" : "Active",
-    "prepaid_international_calling_inactive_status" : "Inactive",
-    "prepaid_international_calling_card_title" : "International calling",
-    "prepaid_international_calling_card_find_more" : "Find out more",
-    "prepaid_international_calling_button_save" : "Save settings",
-    "prepaid_international_calling_overlay_title" : "Updating international calling",
-    "prepaid_international_calling_overlay_message" : "Thanks, your changes will come in to effect in around 5 to 15 minutes.",
-    "prepaid_international_calling_overlay_button" : "Go to dashboard",
-    "fixed_db_pay_text_no_end_date" : "You’re on a month to month plan, which doesn’t have a plan contract end date.",
-    "fixed_db_pay_text_end_date" : "Your Vodafone nbn™ contract end date is ",
-    "fixed_db_nbn_is_now_active" : "Your Vodafone nbn™ is now active",
-    "errorMsgForExpressRecharge" : "Invalid number entered",
-    
-    
-    "recharge_flexi_cap" : "Flexi Cap",
-    "fixed_db_mbb" : "mbb",
-    "fixed_db_active" : "active",
-    "fixed_db_service_id" : "SERVICE ID: ",
-    "fixed_db_fix" : "fix",
-    "fixed_db_pay_your_pill" : "Pay your pill",
-    "voucher_incorrect_pin_error" : "Give it another go but keep in mind that three unsuccessful attempts will results in a blocked voucher.",
-    "voucher_already_used_error" : "This voucher has already been used. Please try again with another voucher.",
-    "voucher_reported_stolen_error" : "This voucher has been repoted stolen. For help, call 1555 free from your Vodafone mobile or 1300 650 410 from another phone (standard call rates  apply).",
-    "voucher_expire_error" : "This voucher has expired. Please try again with another voucher. For help call 1500 free from your Vodafone mobile or 1300 650 410 from anther phone (standard call rates apply). ",
-    "voucher_technical_mishap_error" : "We’ve just had a technical mishap with your account. Give it another go or call us on 1555 from your Vodafone mobile or 1300 650 410 from other phones.",
-    "voucher_incorrect_attempts_error" : "Your payment hasn't gone through, so please give it another go or call us on 1555 from your Vodafone mobile or 1300 650 410 from other phones.",
-    "voucher_incorrect_pin_title" : "The pin must be 12 digits.",
-    "voucher_incorrect_attempts_error_title" : "It looks like we just had a technical mishap.",
-    
-    
-    "postpaid_puk_code_header" : "PUK code",
-    "postpaid_puk_code_card_title" : "PUK code",
-    
-    
-    "postpaid_international_roaming_header" : "International roaming",
-    "postpaid_international_roaming_title" : "Your Plan Summary",
-    "postpaid_international_roaming_plan_summery_card_title" : "$130 Qantas Red 24mth",
-    "postpaid_international_roaming_plan_summery_card_plan" : "Plan",
-    "postpaid_international_roaming_plan_summery_card_month" : "months",
-    "postpaid_international_roaming_plan_summery_card_view" : "View current plan",
-    "postpaid_international_roaming_card_title" : "International Roaming",
-    "postpaid_international_roaming_card_active" : "Active",
-    "postpaid_international_roaming_card_inactive" : "Inactive",
-    "postpaid_international_roaming_card_options_five" : "$5 Roaming",
-    "postpaid_international_roaming_card_options_pay" : "Pay As You Go Roaming",
-    "postpaid_international_roaming_card_options_five_hint" : "Use your plan like you do at home in over 55 countries for $5 extra a day for up to 90 days in any calendar year. T&C apply.",
-    "postpaid_international_roaming_card_options_five_hint_more" : "Find out more",
-    "postpaid_international_roaming_card_options_pay_hint" : "Our Pay As You Go Roaming rates are $1 per minute to make or receive calls, $1 per MB of data used and 75c per TXT or PXT.",
-    "postpaid_international_roaming_card_terms_title" : "Terms and conditions",
-    "postpaid_international_roaming_card_accept_terms_title" : "I accept the terms and conditions",
-    "postpaid_international_roaming_button_save" : "Save settings",
-    "postpaid_international_roaming_success_overlay_title" : "Updating roaming",
-    "postpaid_international_roaming_success_overlay_message" : "Thanks, your changes will come in to effect in around 5 to 15 minutes",
-    "postpaid_international_roaming_success_overlay_button" : "Go to dashboard",
-    "postpaid_international_roaming_card_options_pay_warning" : "Switching to Pay As You Go Roaming may result in higher costs than $5 Roaming.",
-    "postpaid_international_roaming_progress_information_title" : "Currently updating",
-    "postpaid_international_roaming_progress_information_message" : "We're processing your last request, which usually takes 5 to 15 minutes. Please try again soon.",
-    "postpaid_international_roaming_progress_information_button" : "Go to dashboard",
-    "fixed_db_order_status_shipped" : "Shipped",
-    "fixed_db_order_status_on_way" : "On its way",
-    "fixed_db_active_toast_text" : "Your Vodafone nbn™ is now <b>active</b>",
-    
-    
     "onboarding_button_skip" : "Skip",
     "onboarding_postpaid_voice_mbb_personalisation_title" : "Add your name",
     "onboarding_postpaid_voice_mbb_personalisation_description" : "You can personalise your service by tapping on this icon.",
@@ -799,8 +542,9 @@
     "voucher_mymix_second_content" : "You’ll be able to get the most out of MyMix by using a credit card or Paypal.",
     "voucher_mymix_continue" : "Continue",
     "voucher_mymix_choose_another_recharge" : "Choose another recharge options",
-    
-    
+    "call_and_settings_header" : "Call Settings",
+    "recharge_fragment_title" : "Select Recharge",
+    "postpaid_international_roaming_card_options_five_hint" : "Use your plan like you do at home in over 55 countries for $5 extra a day for up to 90 days in any calendar year. T&C apply.",
     "call_forwarding_title_for_sepcific" : "Divert your calls from your mobile in certain situations.",
     "call_forwarding_title_for_all_call" : "Divert all of your calls from your mobile when you don't want to receive any.",
     "call_forwarding_segment_control_for_call" : "For all my calls",
@@ -832,13 +576,9 @@
     "call_forwarding_saved_message" : "Settings saved",
     "call_forwarding_plan_summary_header_title" : "Your Plan Summary",
     "call_forawarding_header_title" : "Call forwarding",
-    
-    
     "prepaid_call_settings_header" : "Call Settings",
     "prepaid_call_and_service_settings_header" : "Calls & Service",
     "prepaid_call_and_service_settings_button_save" : "Save settings",
-    
-    
     "link_service_title" : "Services linked to this credit card",
     "link_service_sub_title" : "Up to 5 prepaid services can be linked to this card for recharge and top up",
     "link_service_count_warning" : "There are no other services linked to this card.",
@@ -879,12 +619,10 @@
     "call_barring" : "Call barring",
     "inactive" : "Inactive",
     "prepaid_call_and_service_call_barring_find_out_more_link" : "https://www.vodafone.com.au/support/device/call-barring",
-    
     "vfau_switch_item_inactive" : "Inactive",
     "vfau_switch_item_active" : "Active",
     "prepaid_call_and_service_error_title" : "Something didn't go as planned.",
     "prepaid_call_and_service_error_message" : "There’s been a technical mishap retrieving your details. Give it another go or call us on 1555 from your Vodafone mobile or 1300 650 410 from other phones.",
-    "prepaid_call_and_service_settings_button_save" : "Save settings",
     "postpaid_call_service_plan_summery" : "Your Plan Summary",
     "postpaid_call_service_plan_summery_action" : "View current plan",
     "postpaid_call_international_call_hint" : "If your plan doesn’t include standard international minutes, you’ll be charged at our international call rates.",
@@ -895,17 +633,12 @@
     "postpaid_call_and_service_international_call_rate_link" : "https://www.vodafone.com.au/support/plans/international-calls",
     "postpaid_call_and_service_terms_and_conditions_title" : "Terms and conditions",
     "tv_postpaid_call_service_terms_and_conditions" : "1. Vodafone Alerts monitor your usage and consist only of usage that has been processed at that point in time.\n\n2. Overspend Alerts will only monitor your account balance from the date of activation of Vodafone Alerts and consist of charges that have been processed from that time. Overspend Alerts include all unbilled amounts that are charged on top of your minimum monthly spend such as premium SMS, global roaming charges or usage obove your plan's allowance.\n\n3. Whilst most charges are updated and form part of your account balance within 4-24 hours of the charges being incurred, there can be a delay in processing charges for the third party services such as international roaming, downloading data and applications and using premium services. The delay in processing international roaming charges can be up to 60 days. This means that the Usage and Overspend Alerts that you receive are as up to date as they can be based on our records at that time but may not contain all charges that you have actually accrued at that point.\n\n4. GST charges are generally included in all billed charges but not in unbilled charges.",
-    
-    
-    
     "select_recharge_expiry" : "Expiry",
     "select_recharge_per_MB" : "Per MB",
     "select_recharge_bottom_hint" : "Excludes premium services. All for use in Australia.",
     "select_recharge_header_title" : "Select recharge",
     "select_recharge_toppick_title" : "Top pick",
     "select_recharge_select_btn_title" : "Select",
-    
-    
     "recharge_mymix_plan_name" : "myMix",
     "mymix_warning" : "This combination is not available for the value of your voucher. Please reselect and try again.",
     "prepaid_call_and_service_settings_saved_message" : "Settings saved",
@@ -932,73 +665,63 @@
     "my_mix_selection_card_critical_info_title" : "Critical Information Summary ",
     "my_mix_continue_button_title" : "Continue",
     "my_mix_cancel_button_title" : "Cancel",
-    
-    
     "review_and_pay" : "Review and pay",
-    "paymentOptionHeader" : "How would you like to pay?",
-    "rechargeNowBtn" : "Recharge now",
-    "newCardHeader" : "Use new card",
+    "review_and_pay_how_would_you_pay" : "How would you like to pay?",
+    "review_and_pay_recharge_now" : "Recharge now",
+    "review_and_pay_use_new_card" : "Use new card",
     "postpaid_international_roaming_activation_card_user_status" : "You’re on",
     "postpaid_international_roaming_activation_card_roaming" : "Roaming",
     "postpaid_international_roaming_activation_card_switch" : "Why not switch to $5 Roaming?",
-    "successfulTitle" : "Recharge successful",
-    "restartLabel" : "Please restart your phone to use your Recharge.",
+    "review_and_pay_success_overlay_title" : "Recharge successful",
+    "review_and_pay_overlay_warning_text" : "Please restart your phone to use your Recharge.",
     "review_and_pay_success_overlay_submessage" : "You have recharged {msisdn}\nYour Vodafone receipt number is: {receipt}\n\nYour new balance will be updated in few minutes.",
     "review_and_pay_success_overlay_message" : "{plan}",
-    "unsuccessfulTitle" : "Recharge unsuccessful",
-    "prepaidCCUpdationListTransactionMsg" : "Your payment has not gone through",
-    "walletSubmissionDetailsDescription" : "Unfortunately, your financial provider has declined your payment. Please try another card or choose another payment option.",
-    "creditCard" : "Credit card",
+    "review_and_pay_unsuccessfull_overlay_title" : "Recharge unsuccessful",
+    "review_and_pay_unsuccessfull_overlay_message" : "Your payment has not gone through",
+    "review_and_pay_unsuccesfull_overlay_submessage" : "Unfortunately, your financial provider has declined your payment. Please try another card or choose another payment option.",
+    "review_and_pay_payment_option_credit_card" : "Credit card",
     "review_and_pay_payment_option_paypal" : "Paypal",
     "review_and_pay_payment_option_wallet" : "My Credit",
     "review_and_pay_recharge_with_paypal_user" : "Recharge using PayPal account",
     "review_and_pay_recharge_with_paypal_guest" : "Recharge as PayPal guest",
     "review_and_pay_recharge_with_paypal" : "Recharge with PayPal",
-    "helpMeRechargeBtn" : "Help me recharge",
-    "payPalMsg" : "You'll be temporarily taken to the PayPal website.",
-    "termsAndConditionLabel" : "Terms and conditions",
-    "criticalInfo" : "Critical Information Summary",
+    "review_and_pay_unsuccessfull_overlay_help_me_recharge" : "Help me recharge",
+    "review_and_pay_paypal_accordion_warning_text" : "You'll be temporarily taken to the PayPal website.",
+    "review_pay_terms_condition_title" : "Terms and conditions",
+    "review_pay_critical_inf_summary_title" : "Critical Information Summary",
     "review_pay_credit_card_title" : "Credit card",
-    "savedCardHeader" : "Pay with saved card",
+    "review_pay_with_card_title" : "Pay with saved card",
     "review_pay_credit_card_first_numbers" : "{cardname} starting in {number}",
     "review_pay_credit_card_expire_title" : "Expires {number}",
     "review_pay_credit_btn_cancel_button" : "Cancel",
     "review_pay_credit_btn_recharge_paypal_account_button" : "Recharge using PayPal account",
-    "availableBalanceHeader" : "Available balance",
+    "review_pay_available_title" : "Available balance",
     "review_pay_txt_payments" : "Accepted payments",
     "review_pay_txt_save_credit" : "Save credit card",
     "review_pay_txt_save_credit_description" : "For quick and secure future recharges online and by TXT.",
     "review_pay_txt_authorise_credit_description" : "I authorise Vodafone to charge my nominated credit card and have read and agreed to the terms and conditions.",
     "review_pay_credit_warning_title" : "Something didn't go as planned.",
-    "cardUnavailableMsg" : "Credit card unavailable.",
+    "review_pay_credit_warning_unavailable_title" : "Credit card unavailable.",
     "review_and_pay_credit_card_unavailable" : "We are currently unable to retrieve your saved credit card details. Please re-enter your details or pay with PayPal.",
     "review_pay_credit_warning_description" : "Recharging with a credit card is currently unavailable. However, you can recharge using PayPal as a guest.",
     "review_pay_recharge_plan_hint" : "Recharge inclusions are for use in Australia",
-    "myCreditDescription" : "will be deducted from My Credit to pay for this recharge",
+    "review_pay_mycredit_card_detail" : "will be deducted from My Credit to pay for this recharge",
     "review_pay_success_dialog_dashboard_btn" : "Go to dashboard",
     "my_credit_reenter_credit_card_details_button_title" : "Re-enter your details",
     "review_pay_success_dialog_subtitle" : "You have recharged {number}",
     "review_pay_success_dialog_body_description" : "Your Vodafone receipt number is: {number}.\\n\\n Your new balance will be updated in few minutes.",
     "review_pay_unsuccess_dialog_dashboard_btn" : "Go to dashboard",
-    "payWithNewCardHeader" : "Pay with new card",
+    "review_pay_with_new_card_title\n" : "Pay with new card",
     "terms_close_button_title" : "Close",
     "postpaid_productAndServices_title" : "Product and Services",
-    "cancelButton" : "Cancel",
-    "loadingButton" : "Go to dashboard",
-    "goTODashboardBtn" : "Go to dashboard",
-    
     "review_and_pay_help_me_recharge_links" : "https://www.vodafone.com.au/support/prepaid/combo",
     "link_service_linked_user_remove_card_message" : "your credit card has been unlinked",
     "edit_profile_add_both_unit_name_and_number" : "Enter both unit type and unit number.",
     "edit_profile_billing_options" : "Billing options",
     "edit_profile_contact_type_home" : "Home",
-    
-    
     "need_help_first_tap_title" : "Need help?",
     "need_help_second_tap_title" : "Contact our team",
     "need_help_third_tap_title" : "User guide",
-    
-    
     "select_addon_header" : "Select Add-on",
     "select_addon_section_title" : "Choose your expiry",
     "select_addon_button_title" : "Select",
@@ -1007,8 +730,6 @@
     "select_addon_Intenrational_Call_footer_link" : "58 countries",
     "select_addon_Data_Combo_footer" :  "All for use in Australia.",
     "select_addon_Talk_Combo_footer" :  "All for use in Australia.",
-    
-    
     "loading_error_message_help_phone_1" : "1555",
     "loading_error_message_help_phone_2" : "1300 650 410",
     "irrecoverable_error_message_help_phone_1" : "1555",
@@ -1021,8 +742,6 @@
     "prepaid_dashboard_things_to_know_international_call_rates" : "International call rates",
     "prepaid_dashboard_things_to_know_national_call_rates" : "Countries you can call",
     "prepaid_dashboard_footer_details" : "The balance shown here is a guide only as not all charges are updated in real time.",
-    
-    
     "login_use_password_tab_title" : "Use password",
     "login_one_time_code_tab_title" : "Get one-time code",
     "login_error_wrong_username_or_password" : "That doesn't look like the right username or password. Please try again or reset your password.",
@@ -1042,8 +761,6 @@
     "prepaid_dashboard_user_with_credit_title_custom" : "You currently have an available\nbalance in My Credit.",
     "Prepaid_dashboard_30_days_expiry" : "If you do not recharge within 30 days you’ll lose this phone number.",
     "christmas_offers_bonus_data_offer" : "Bonus Data Offer",
-    
-    
     "proof_of_purchase_title" : "Proof of purchase",
     "proof_of_purchase_description" : "A proof of purchase may be required if your device is being repaired under warranty or if you’re submitting an insurance claim. We’ll email your document by the end of the next business day.",
     "proof_of_purchase_about_you_title" : "About you",
@@ -1077,9 +794,6 @@
     "proof_of_purchase_handset_place_options_placeholder_title" : "Please select",
     "proof_of_purchase_success_overlay_title" : "We've received your proof of purchase request",
     "proof_of_purchase_success_overlay_message" : "We'll send you a TXT shortly, then follow up with an email containing your proof of purchase.",
-    
-    
-    
     "prepaid_products_and_services_things_you_need_to_know_details" : "Please regard the balances shown here as a usage guide only as not all charges can be updated instantly. All prices are inclusive of GST where applicable.",
     "prepaid_products_and_services_plan_details_header" : "Plan details",
     "prepaid_products_and_services_plan_summary_header" : "Your plan summary",
@@ -1093,14 +807,10 @@
     "prepaid_products_and_services_unlimited_title" : "Unlimited",
     "prepaid_products_and_services_subscription_card_title" : "Subscriptions",
     "prepaid_products_and_services_accessories_card_title" : "Accessory payment plan",
-    
-    
     "ORPC_offer_recommended_plan_label" : "Recommended Plan",
     "offers_empty_state_title_label" : "We don’t have any offers for you right now.",
     "offers_empty_state_message_label" : "Check back soon to see new offers as they’re posted.",
     "offers_title" : "Offers and extras for you",
-    
-    
     "sim_swap" : "Swap my SIM",
     "sim_swap_title" : "Transfer your existing Vodafone number to your new SIM",
     "sim_swap_info" : "Can’t find your SIM number?",
@@ -1132,16 +842,13 @@
     "sim_swap_submessage_success_overlay" : "How long does it take?\nYour service should be ready in about 15 minutes.\n\nWhat happens next?\nOnce your existing SIM stops working, insert your Vodafone SIM into your device and you’ll be ready to go.\n\nTip: If it doesn’t connect after 15 minutes, try switching your phone off and on.",
     "sim_swap_overlay_try_again_button" : "Try Again",
     "sim_swap_overlay_title_message" : "Something wrong happened, don’t worry it’s just a system error, you can try again.",
-    
-    
-    "walletHeader" : "My credit",
+    "my_credit_title" : "My credit",
     "my_credit_title_beta" : "Beta",
     "my_credit_expires" : "Expires",
     "my_credit_bonus" : "Bonus Credit",
     "my_credit_including" : "Including",
     "my_credit_expiring_on" : "expiring on",
     "my_credit_top_up_my_credit_button_title" : "Top up My Credit",
-    "overlayTitle" : "Top up My Credit",
     "my_credit_view_history_Button_title" : "View purchase history",
     "my_credit_info_overlay_title" : "What is My Credit?",
     "my_credit_info_overlay_msg" : "You can use My Credit to pay for a recharge, or for your calls, TXT and data outside of your prepaid plan allowance.",
@@ -1152,19 +859,13 @@
     "my_credit_max_state_sub_msg" : "You can top again when you’ve used the current available credit.",
     "my_credit_standard_dollars" : "Standard dollars",
     "my_credit_bonus_dollars" : "Bonus dollars",
-    
-    
     "VOV_Greeting_Message" : "Welcome to My Vodafone",
     "VOV_Morning_Message" : "Good Morning",
     "VOV_Afternoon_Message" : "Good Afternoon",
     "VOV_Evening_Message" : "Good Evening",
     "recharge_legacy_plan_warning" : "If you choose to recharge on any of these plans, you won’t be able to return to your current plan. You can however continue to recharge on any of these new plans.",
     "recharge_plan_not_available" : "Your current plan is no longer available. Please choose from one of our new plans.",
-    
     "edit_profile_numbers_only" : "Numbers only",
-    
-    
-    
     "filtration_apply_button" : "Apply",
     "filtration_clear_Button" : "Clear Filters",
     "filtration_bill_period_header" : "Bill Period",
@@ -1172,32 +873,26 @@
     "filter_title_prepaid" : "Filter by usage type",
     "filter_title_postpaid" : "Filter",
     "filter_title_after_filteration" : "Filter",
-    
-    
     "my_credit_header_error_sub_title" : "Balance unavailable",
     "my_credit_error_msg" : "We are unable to retrieve your My Credit balance. Choose another payment type to pay for your recharge.",
-    "alertHeading" : "Something didn’t go as planned",
-    "differentPaymentMethodTxt" : "We couldn’t complete your recharge. Please try again using a different payment method",
+    "my_credit_error_title" : "Something didn’t go as planned",
+    "my_credit_recharge_error_msg" : "We couldn’t complete your recharge with My Credit. Please recharge your service using a credit card or Paypal.",
     "my_credit_pay_with_credit_card_title" : "Pay with saved card",
     "my_credit_retrieve_credit_card_details_error_msg" : "We are currently unable to retrieve your saved credit card details. Please re-enter your details or pay with PayPal.",
-    "my_credit_reenter_credit_card_details_button_title" : "Re-enter your details",
     "my_credit_pay_with_new_credit_card_title" : "Pay with new card",
     "my_credit_header_sub_title_value" : "Available balance",
     "my_credit_no_enough_credit_error_msg" : "You don’t have enough My Credit to complete this purchase. Please top up your My Credit with",
     "my_credit_top_up_with_saved_card_primary_button_title" : "Top up {value} using saved credit card",
     "my_credit_top_up_primary_button_title" : "Top up {value} to My Credit",
-    "anotherPaymentBtn" : "Use another payment type",
+    "my_credit_top_up_secondary_button_title" : "Use another payment type",
     "my_credit_top_up_successful_msg" : "has been added to your My Credit balance.",
-    "recharge_plan_not_available" : "Your current plan is no longer available. Please choose from one of our new plans.",
-    "review_and_pay_credit_card_unavailable" : "We are currently unable to retrieve your saved credit card details. Please re-enter your details or pay with PayPal.",
-    "rechargeWithMyCreditBtn" : "Recharge now with My Credit",
+    "my_credit_recharge_now_button_title" : "Recharge now with My Credit",
     "my_credit_review_and_pay_success_overlay_submessage" : "You have recharged {msisdn}\nYour Vodafone receipt number is: {receipt}\n",
-    "remCreditBalText" : "Your remaining My Credit balance is",
-    "msg" : "Your new balance will be updated in few minutes.",
-    "inSufficientErrMsg" : "You don’t have enough My Credit to complete this purchase. Please top up your My Credit with",
-    "rechargedText" : "You have recharged",
-    "receiptNoText" : "Your Vodafone receipt number is:",
-    
+    "my_credit_success_overlay_remaining_balance_submessage" : "Your remaining My Credit balance is",
+    "my_credit_success_overlay_new_balance_submessage" : "Your new balance will be updated in few minutes.",
+    "my_credit_no_enough_credit_text" : "You don’t have enough My Credit to complete this purchase. Please top up your My Credit with",
+    "review_and_pay_success_overlay_you_have_recharged_submessage" : "You have recharged",
+    "review_and_pay_success_overlay_receipt_number_submessage" : "Your Vodafone receipt number is:",
     "orpc_ready_for_change_card_title" : "Ready for a change?",
     "orpc_ready_for_change_card_body" : "Use our online upgrades hub or give us a call on 1300 300 404 to see if you’re eligible for an upgrade.",
     "orpc_ready_for_change_card_footer" : "Head to our online upgrades hub",
@@ -1219,8 +914,6 @@
     "orpc_compare_with_my_plan_button_title":"Compare with my plan",
     "orpc_compare_plans_overlay_selected_plan_title":"Selected plan",
     "orpc_compare_plans_overlay_current_plan_title":"Your current plan",
-    
-    
     "prepaid_usage_history_title" : "Usage history",
     "prepaid_adjustment_history_title" : "Adjustment history",
     "prepaid_all_usage_history_things_to_know_description" : "It may take up to 15 minutes for a payment record to appear on this screen. Amounts are rounded up to the nearest cent inclusive of GST. The statement is not and in no constitutes a tax invoice. Please do not pay. Account balance displayed is indicative only and may not include all charges. Your Transaction History for the past eighteen months is only available online here at My Account.",
@@ -1261,13 +954,9 @@
     "purchase_history_usage_title" : "Phone and data usage",
     "prepaid_all_usage_history_empty_state" : "There is no usage for this billing period yet.",
     "prepaid_adjustment_history_empty_state_text" : "There are no recent adjustments.",
-    
     "adjustment_history_usage_period" : "4 months",
     "adjustment_history_time_title" : "Adjusted at",
     "adjustment_history_reason_title" : "Reason: ",
-    
-    
-    
     "postpaid_all_usage_history_thing_you_need_to_know_message" : "Most usage is updated within 18 hours, but if you’re roaming overseas it may take up to 72 hours. Charges do not include GST and are rounded to the nearest cent. Any discounts or charges that may apply when your bill is issued are not included. \nThis is a summary of your usage, and does not constitute a tax invoice.",
     "postpaid_all_usage_detailed_usage_from" : "Detailed usage from:",
     "postpaid_all_usage_your_issue_date" : "Your issue date will be ",
@@ -1275,11 +964,7 @@
     "postpaid_all_usage_no_more_usage_available" : "There is no more usage history to show.",
     "postpaid_all_usage_last_updated" : "Last updated ",
     "all_usage_footer_past_days_title" : "Showing usage from the past {number} days",
-    
-    "login_use_password_tab_title" : "Use password",
-    "login_one_time_code_tab_title" : "Get one-time code",
     "login_try_again_error_message" : "Sorry, it looks like we're having a few technical problems. Please try again shortly.",
-    
     "postpaid_plan_summary_terms_conditions" : "I agree to the rate plan change terms and conditions and plan terms and conditions",
     "postpaid_new_plan_summary_rate_link" : "View rate plan change terms and conditions",
     "postpaid_new_plan_summary_plans_link" : "View plan terms and conditions",
@@ -1287,15 +972,11 @@
     "new_plan_summmary_rate_overlay_description" : "1. Only one plan change is allowed per billing cycle\n2. Changing a plan may mean that your current plan will no longer be available to change back to now or in the future\n3. Any discounts that have been applied specific to your plan will be lost on completing the plan change\n4. You'll receive a TXT when the plan change is completed. You should not assume your new plan applies until that time.\n5. Changing your plan does not vary your minimum commitment period.",
     "new_plan_summary_rate_overlay_title" : "Rate plan changes terms and conditions",
     "new_plan_summary_plans_overlay_description" : "For personal use by approved customers only. Inclusions expire after 1 month. Plan excludes Premium Services, 1223 & 1225 directory services, 123 Ask-Us-Anything, International Roaming, content purchases, Call Screen and charges for additional data & additional standard international calls.\n\nIf you have more than one Vodafone plan that supports sharing on your billing account (up to a maximum of 10) the data allowances on those services will automatically combine into one pool which will be shared between eligible users. Any existing international calling allowances on your account are not shareable with this plan. You can find out which plans support sharing or you can opt-out of sharing altogether at any time by calling 1555.\n\nEarly exit fee: $35 x months left on contract plus any handset payments.\n\nData\nIn Australia, extra Data automatically added at $10/ GB ($0.01/MB). Services subject to device capabilities, network limitations & customer location.\n\nVoicemail\nCalls to 121 only.\n\nVisual Voicemail\nUses data.\n\nRed Care\nGet priority care from our Red Care team when you call 1555 from your mobile phone when in OZ. Your Red Care team will handle the bulk of your needs during operating hours, and may transfer to specialist teams where appropriate.\n\n$5 Roaming\nCountries subject to change, see current list at vodafone.com.au/roaming. Available to eligible customers. $5 Daily Charge is in addition to minimum monthly spend. Excludes Vodafone to Vodafone minutes for non-Red Plan customers. Max 90 days of use in any calendar year. Full details at vodafone.com.au/roaming. Opt-out at any time, visit MyVodafone.com.au/ or call 1555.\n\nFaceTime\n\nUses Data. Both users need the FaceTime app and a compatible device.\n\n4G Device \n\nVodafone 4G is available in selected areas of Sydney, Melbourne, Brisbane, Perth, Adelaide, Gold Coast, Canberra, Newcastle, Wollongong and Hobart. 4G is available to customers with a 4G device and an active prepaid recharge or Postpaid account with Vodafone Alerts and a 4G device. Go to vodafone.com.au/coverage to find out where.\n\nOne month unlimited data\n\nPersonal Use Only. Available until 31/07/18 for new customers signing up to a 12 or 24 month plan (excludes Business Shared Infinite, Business Flex, Red Business Shared & Red Business Grow and upgrades). If you perform a Rate Plan Change during the unlimited data period, your eligibility ceases & additional data fees will apply. Fair Use Policy applies: see vodafone.com.au/fairuse. For the first billing month any additional data usage within Australia will be free.\n\nVodafone Shared\nIf you have more than one Vodafone plan that supports sharing on your billing account (up to a maximum of 10) the data allowances on those services will automatically combine into one pool which will be shared between eligible users. Any existing international calling allowances on your account are not shareable with this plan. You can find out which plans support sharing or you can opt-out of sharing altogether at any time by calling 1555.\n\nNew Phone Every Year\nNew Phone Every Year offer is only available to customers who sign-up, upgrade, or rate plan change to any 24-month Red plan launched from 2 September 2016 (Eligible Plan). After first 12 months of contract, customers can pay $149, return their current Vodafone-supplied phone in Good Working Order (which is to be deemed by Vodafone staff according to Ingram’s Valuation Criteria) to a Vodafone owned store and upgrade to a new 24 month Eligible Plan with a new phone. Phone and plan repayments on your new 24-month plan may differ. When you return your phone, ownership in it will be signed over to Ingram Micro Pty Ltd (Ingram). Vodafone Stores act as a device collection point on behalf of Ingram. For full terms go to www.vodafone.com.au/new-phone-every-year.\n\nStudent exclusive offer\n\nPersonal use only. Discount available to approved new & upgrading students (excludes rate plan change) with a valid student ID who sign up to a $40, $60 Red 24 month plan, $70 or $90 Red Data handset 24 month plan, or a $80, $100 or $120 MyMix Red Data or MyMix Red Global 24 month plan or $40 Red 24 month SIM Only plan or $42, $55 Red Data 24 month SIM Only plan or $50, $60, $73 MyMix Red Data or MyMix Red Global 24 month SIM Only plan. Excludes all Business plans. Discount available from months 1-24 months and forfeited if you cancel. During the Discount Term min monthly spend is $36, $37.80, $45, $49.50, $54, $63, $65.70, $72, $81, $90, $108 (for the $40, $42, $50, $55, $60, $70, $73, $80, $90, $100, $120 plans respectively) plus any applicable handset costs. After Discount Term, min monthly spend is $40, $42, $50, $55, $60, $70, $73, $80, $90, $100, $120 (for the for the $40, $42, $50, $55, $60, $70, $73, $80, $90, $100, $120 plans respectively) (‘Undiscounted Min Monthly Spend’) plus applicable handset costs. Early exit fee : 50% of Undiscounted Min Monthly Spend x months remaining plus applicable handset costs. Not for commercial or resale purposes. Services subject to device capabilities, network limitations and customer location. Offer not transferrable or redeemable for cash, subject to change or available with any other offer.\n\nBonus data on selected 24 months plans\nPersonal use only. Business customers must have an ABN/ACN. Bonus data available to approved new and upgrading customers who sign up to a Vodafone $27 Red (1GB bonus) SIM Only 24 month plan, $42 or $55 Red Data (4GB and 11GB bonus data respectively) SIM Only 24 month plan, $50 MyMix Red Global (6GB bonus data) or MyMix Red Data (bonus 8GB) SIM Only 24 month plan, $60 MyMix Red Data or MyMix Red Global (9GB bonus data) SIM Only 24 month plan, $73 MyMix Red Data or Red Global (14GB bonus data) SIM Only 24 month plan, $40 Red (1GB bonus data) 24 month plan, $70, $90 Red Data (4GB and 11GB bonus data respectively) 24 month plan, $80 MyMix Red data (8GB bonus data) or MyMix Red Global (6GB bonus data) 24 month plan, $100 MyMix Red Data or MyMix Red Global (9GB bonus data) 24 month plan or $120 MyMix Red Data or Red Global (14GB bonus data) 24 month plan. Excludes Business Grow and Business Flex. Bonus data available from months 1-24 if you remain continuously connected and forfeited if you cancel. Min monthly spend is $42, $50, $55, $60, $70, $73, $80, $90, $100, $120 (for the $42, $50, $55, $60, $70, $73, $80, $90, $100, $120 plans respectively) plus applicable device costs. Early exit fee : 50% of min month spend x months left on contract plus applicable device costs. Services subject to device capabilities, network limitations & customer location. Offer not transferrable or redeemable for cash and subject to change.\n\nBonus data on iPhone 7\nPersonal use only. Business customers must have an ABN/ACN. Bonus data available to approved new and upgrading customers (excludes rate plan change) who sign up to a Vodafone $70 Red Data 24 month plan (2GB bonus data) with an iPhone 7 (32GB) device. Excludes Business Grow and Business Flex. Bonus data is applied months 1-24 if you remain continuously connected. Forfeit if you cancel. Min monthly spend is $70 plus applicable device costs. Early exit fee : $35 x months left on contract plus applicable device costs. Not for commercial or resale purposes. Services subject to device capabilities, network limitations & customer location. Offer not transferrable or redeemable for cash and subject to change.\n\nBonus data on Huawei P10Personal use only. Business customers must have an ABN/ACN. Bonus data available to approved new and upgrading customers (excludes rate plan change) who sign up to a Vodafone $70 Red Data 24 month plan (2GB bonus data) with a Huawei P10 device. Excludes Business Grow and Business Flex. Bonus data is applied months 1-24 if you remain continuously connected. Forfeit if you cancel. Min monthly spend is $70 plus applicable device costs. Early exit fee : $35 x months left on contract plus applicable device costs. Not for commercial or resale purposes. Services subject to device capabilities, network limitations & customer location. Offer not transferrable or redeemable for cash and subject to change.\n\nView full terms and conditions\nVodafone Pty Limited ABN 76 062 954 554",
-    
     "change_plan_addon_title" : "Do you want to keep these Add-ons?",
     "change_plan_addon_keep_btn_title" : "Keep current add-ons",
     "change_plan_addon_remove_btn_title" : "Remove all add-ons",
     "change_plan_addon_back_btn_title" : "Back to available plans",
     "change_plan_addon_screen_title" : "Addons",
-    
-    
-    
     "Data_usage_detail_screen_title" : "Data usage detail",
     "view_detailed_usage_btn_title" : "View Detailed Usage",
     "see_detailed_usage_btn_title" : "See detailed usage",
@@ -1307,8 +988,6 @@
     "daily_breakdown_usage_title" : "Daily breakdown",
     "chart_today_bar" : "Today",
     "chart_title" : "All times show in AEST",
-    
-    
     "new_plan_summary_monthly_title" : "New monthly costs",
     "new_plan_summary_exit_fees_description" : "Exit fees are charged if you've cancelled a contract for your plan or add-on before its commitment end date. When changing plans this will most likely happen when choosing a plan of a lesser value.",
     "new_plan_summary_change_plan" : "Change to this plan",
@@ -1328,8 +1007,6 @@
     "new_plan_summary_exit_fee_label" : "Total exit fees",
     "new_plan_summary_monthly_cost_label" : "Total monthly costs",
     "purchase_history_hint_message" : "Showing purchases from the past ",
-    
-    
     "postpaid_device_payment_plan_monthly_charge" : "{monthlyCharge}/month",
     "postpaid_device_payment_plan_amount_left" : "Amount left to pay {amount} ({monthlyCharge} x {monthsLeft} months)",
     "postpaid_upgrade_eligibility_eligibile_info_title" : "You're eligible for an upgrade.",
@@ -1339,7 +1016,6 @@
     "postpaid_upgrade_eligibility_not_eligibile_change_note" : "You can change your plan without changing\nyour current phone.",
     "postpaid_new_phone_every_year_text" : "You’re eligible for a new phone from {date}.",
     "postpaid_plan_details_upgrade_elibibility_title" : "Upgrade eligibility",
-    
     "current_spend_value_card_title" : "Your current spend",
     "current_spend_additional_charges" : "Including {amount} additional charges",
     "current_spend_charges_info_title" : "Usage charges for this billing period.",
@@ -1349,8 +1025,6 @@
     "purchase_contact_customer_care" : "For a complete purchase history please contact customer care.",
     "purchase_download_btn_title" : "Download purchase history",
     "plan_summary_failure_title" : "Payment failed",
-    
-    
     "postpaid_addon_data_title" : "Data",
     "postpaid_addon_international_calls_title" : "Int. Calls",
     "postpaid_addon_browse_button_title" : "Browse Add-ons and Boosters",
@@ -1358,17 +1032,11 @@
     "postpaid_your_addons_title" : "Your Add-ons",
     "postpaid_your_addons_subtitle" : "Make the most of your plan with an Add-on or a Booster.",
     "postpaid_your_addons_boosters_title" : "Your Add-ons and Boosters",
-    
-    
-    
     "current_spend_title" : "Your current spend",
     "all_current_spend_title" : "All current spend",
     "usage_breakdown_Vodafone_nbn_Service_ID" : "Vodafone nbn Service ID",
-    
     "usage_occordione_title" : "Usage charges for this billing period.",
-    
     "usage_occordione_description" : "These charges only include how you’ve used your service. You may receive other charges that aren’t included in this list.\n",
-    
     "see_detailed_usage" : "See detailed usage",
     "bills_and_payments" : "Bills and payments",
     "issue_date" : "Your issue date will be: %@",
@@ -1377,8 +1045,6 @@
     "boosters"  : "Boosters",
     "including_additional_charges" : "including %@ additional charges",
     "postpaid_amoumt_description" : "Exclude any device or subscribtion costs",
-    
-    "plan_summary_failure_title" : "Payment failed",
     "upgrade_eligibilty" : "Upgrade now",
     "upgrade_eligiblity_equest_callback" : "Request a callback",
     "upgrade_eligibilty_change_plan" : "Change Plan",
@@ -1388,29 +1054,20 @@
     "manage_subscription" : "Manage subscriptions",
     "manage_subscription_one_item" : "Manage subscription",
     "insurance_description" : "For more information call the Vodafone Cover me Mobile Insurance team on 1800 371 713 or click here.",
-    
-    
     "postpaid_change_your_plan_title" : "Change your plan",
     "postpaid_change_your_plan_msg" : "If you’re still under contract, you can change to a higher value plan.",
     "postpaid_change_your_plan_button_txt" : "Find out more",
-    
-    
     "postpaid_hot_offers_description" : "bonus standard international minutes from Australia to selected countries each month. T&C apply. This offer is available while you remain on this plan.",
     "postpaid_hot_offers_title" : "Hot offers",
     "postpaid_hot_offers_show_more_button_title" : "Show more",
     "postpaid_hot_offers_show_less_button_title" : "Show less",
     "postpaid_hot_offers_description_with_expiry_date" : "bonus credit each month. T&C apply. ",
     "postpaid_hot_offers_expiry_text" : "Expires on:",
-    
-    
-    
     "postpaid_starter_data_title" : "Starter Data",
     "postpaid_starter_data_value_text" : "bonus data for your first month.",
     "postpaid_starter_data_t_and_c" : "T&C apply.",
     "postpaid_starter_data_expires_text" : "Expires:",
     "usage_history_download_csv_button_title" : "Download CSV",
-    
-    
     "postpaid_product_and_service_plan_summary_title" : "Your plan summary",
     "contract_end_date_12_24_month" : "For your contract end date, call our team on 1300 650 410.",
     "plan_contract_monthly_with_device_payment_title" : "You’re on a month to month plan, which doesn’t have a plan contract end date. However your device is still in contract. See device payment plan section for the end date.",
@@ -1427,9 +1084,6 @@
     "postpaid_product_service_find_out_more" :  "Find Out More",
     "postpaid_product_service_warning_view_title" : "Something didn't go as planned.",
     "postpaid_product_service_warning_view_description" : "Unfortunately, we can't display some of your plan information. Please try again later.",
-    
-    
-    
     "postpaid_data_adddon_filter_title" : "Select a Data Add-on or Booster",
     "postpaid_data_adddon_filter_subtitle" : "Our Data Add-ons and Boosters are for use in Australia.",
     "postpaid_addon_add_talk_and_txt_title" : "Add Talk and TXT",
@@ -1439,18 +1093,12 @@
     "postpaid_adddon_value_main_inclusion_subtitle" : "Value",
     "postpaid_addon_legacy_talk_and_txt_title" : "Select a one-off Talk and TXT",
     "postpaid_addon_legacy_talk_and_txt_subtitle" : "A Talk and TXT Add-on can give you more of what you love when you need it.",
-    
-    
     "postpaid_addon_add_talk_and_text_subtitile_detail" : "Our one-off Talk and TXT Add-ons are for use in Australia, and can be cancelled at any time.",
     "postpaid_addon_add_boosters_subtitile_detail" : "Our Data Boosters, for use in Australia, expire at the end of your billing month.",
-    
-    
     "postpaid_addons_landing_page_title" : "Add-ons and Boosters",
     "postpaid_purchase_addon_or_booster_title" : "Purchase an Add-on or Booster",
     "postpaid_addons_in_eligibility_message" : "We're just putting through your last request, which usually takes 5 to 15 minutes. Please try again soon.",
     "postpaid_addons_currently_updating_message" : "Currently updating",
-    
-    
     "postpaid_manage_addons_screen_title" : "Manage Add-ons",
     "postpaid_manage_addon_change_section_title" : "Change to a new {type} Add-on",
     "postpaid_remove_addon_success_overlay_title" : "Add-on removed",
@@ -1481,12 +1129,8 @@
     "postpaid_change_addon_info_view_text" : "Changing to this Add-on will replace your current Add-on.",
     "postpaid_manage_addon_remove_addon_warning_text":"Once you remove your Add-on, your current Add-on will no longer be available to you.",
     "postpaid_addon_search_error" : "Sorry there are no results for {countryName}. Please check your spelling and try another country.",
-    
     "since" : "Since %@",
     "current_spend_title" : "Current spend",
-    
-    
-    
     "fingerprint_first_level_Authentication_evaluate_message" : "Login with Touch ID.",
     "fingerprint_first_level_Authentication_evaluate_fallback" : "Enter password",
     "fingerprint_first_level_Authentication_subtitle" : "Next time, use Touch ID instead of a password to login to My Vodafone.\n\nTo manage Touch ID go to settings on your device.",
@@ -1495,28 +1139,14 @@
     "fingerprint_first_level_Authentication_register_message" : "You have not yet registered a fingerprint on your device.\n\nTo register a fingerprint, please go to your device settings.",
     "fingerprint_first_level_Authentication_settings_descrition" : "Use Touch ID instead of your mobile number and password to log in to My Vodafone.",
     "fingerprint_first_level_Authentication_settings_title" : "Log in with Touch ID",
-    
-    
-    
-    "fingerprint_first_level_Authentication_evaluate_message" : "Login with Touch ID.",
-    "fingerprint_first_level_Authentication_evaluate_fallback" : "Enter password",
-    "fingerprint_first_level_Authentication_subtitle" : "Next time, use Touch ID instead of a password to login to My Vodafone.\n\nTo manage Touch ID go to settings on your device.",
-    "fingerprint_first_level_Authentication_enabled_turnon_button" : "Opt in to Touch ID",
-    "fingerprint_first_level_Authentication_register_title" : "Register your fingerprint",
-    "fingerprint_first_level_Authentication_register_message" : "You have not yet registered a fingerprint on your device.\n\nTo register a fingerprint, please go to your device settings.",
-    "fingerprint_first_level_Authentication_settings_descrition" : "Use Touch ID instead of your mobile number and password to log in to My Vodafone.",
-    "fingerprint_first_level_Authentication_settings_title" : "Log in with Touch ID",
-    
     "see_current_spend" : "See current spend",
     "see_all_current_spend" : "See all current spend",
-    
     "postpaid_available_addons_International_voice" : "Standard International voice calls to",
     "postpaid_addon_IDD_footer" : "View Add-on support page, or Booster support page, for more information.\n\nYou can also view the Critical Information Summaries for these International Call Add-on and Boosters.",
     "postaid_addon_IDD_addon_support_link" : "Add-on support page",
     "postaid_addon_IDD_booster_support_link" : "Booster support page",
     "postaid_addon_IDD_critical_Information_summary_link" : "Critical Information Summaries",
     "postpaid_search_placeholder" : "e.g. United Kingdom",
-    
     "sharingDataUsageTitle" : "Shared data usage breakdown",
     "show_all_users" : "Show all users",
     "hide_other_users" : "Hide other users",
@@ -1524,39 +1154,34 @@
     "used" : "used",
     "control_attention_message" : "Control the access to data for these plans.",
     "save_settings" : "Save Settings",
-    
-    
-    
-    
-    "paid" : "paid",
-    "owing" : "owing",
-    "overdue" : "overdue",
-    "contactMsg" : "For older bills contact",
-    "customerCare" : "Customer care",
-    "accBalanceTxt" : "Account balance",
-    "creditTxt" : "Credit will be applied to your next Bill",
+    "postpaid_bill_and_payment_paid_title" : "paid",
+    "postpaid_bill_and_payment_owing_title" : "owing",
+    "postpaid_bill_and_payment_overdue_title" : "overdue",
+    "postpaid_bill_and_payment_older_bills_customer_care_message" : "For older bills contact Customer Care",
+    "postpaid_bills_Download_bill" : "Download bill",
+    "postpaid_bills_Account_balance" : "Account balance",
+    "postpaid_bill_Credit_next_bill" : "Credit will be applied to your next Bill",
     "postpaid_bill_zero_amount" : "You don’t have to pay anything this month.",
-    "invoiceNumber" : "Invoice no: ",
-    "issueDate" : "Issued on ",
-    "nextCharge" : "Next Charge ",
-    "overDue" : "Overdue",
+    "postpaid_bill_invoice_number" : "Invoice no: ",
+    "poadtpaid_bill_Issued_title" : "Issued on ",
+    "postpaid_bill_Next_Charge " : "Next Charge ",
+    "postpaid_bill_overdue" : "Overdue",
     "postpaid_bill_overdue_message" : "Overdue: please pay ASAP",
     "postpaid_bills_Make_Payment" : "Make Payment",
-    "dueDate " : "Due by: ",
+    "postpaid_bills_Dueby " : "Due by: ",
     "postpaid_bills_download_footer" : "For a detailed view of your charges, download your bill.",
-    "downloadBill" : "Download Bill",
-    "directDebitBtnLabel" : "Set up direct debit",
-    "updateDirectBtnLabel" : "Update direct debit",
-    "extensionMessage" : "Need more time to pay?",
-    "helpMessage" : "To request a payment extension of up to 14 days, call us on 1300 723 649 in Australia or +61 426 320 000 from overseas.",
-    "back" : "Back",
-    "billsAndPayments" : "Bills and payments",
+    "postpaid_bills_Download_Bill" : "Download Bill",
+    "postpaid_bills_setup_direct_debit" : "Set up direct debit",
+    "postpaid_bill_update_direct_debit" : "Update direct debit",
+    "postpaid_bill_need_more_title" : "Need more time to pay?",
+    "postpaid_bills_need_more_message" : "To request a payment extension of up to 14 days, call us on 1300 723 649 in Australia or +61 426 320 000 from overseas.",
+    "postpaid_bills_overlay_back" : "Back",
+    "postpaid_bill_bills_payment_header" : "Bills and payments",
     "postpaid_bills_your_bill_header" : "Your bill",
     "postpaid_bills_call_now" : "Call now",
     "postpaid_bills_error_title" : "Something didn’t go as planned.",
     "postpaid_billing_options_signed_as" : " (Signed in as)",
     "postpaid_bills_see_detailed_usage_title" : "See detailed Usage",
-    
     "postpaid_bills_download_button_title" : "Download",
     "please_choose_different_option" : "Please choose a different filter option",
     "postpaid_bills_filter_all" : "All",
@@ -1568,8 +1193,6 @@
     "postpaid_payment_results_empty" : "There are no transactions for the last month",
     "postpaid_payment_terms_conditions" :"Charges are rounded up to the nearest cent inclusive of GST. This is a statement of payments received onto your account. The statement is not and in no way constitutes a tax invoice. Please do not pay. Account balance displayed is indicative only and may not include all charges.",
     "postpaid_bills_payment_paid_title" : "Paid on",
-    
-    
     "postpaid_make_payment_charges_Applied_Message" : "We accept VISA, MasterCard, Diners Club and American Express. There's a processing surcharge excluding GST of 0.318% on MasterCard Credit Standard, 0.368% on MasterCard Debit Premium and Debit Standard and 0.268% on MasterCard International, 0.969% on Visa Credit Premium, 0.419% on Visa Credit Standard, 0.369% on Visa Debit Premium and Visa Debit Standard, 0.419% on Visa International, 0.956% on Visa Super Premium, 2% on Diners Club and 2.15% on American Express. These charges will appear on your next bill.",
     "postpaid_make_payment_terms_acceptance_title" : "I authorise Vodafone to charge my nominated credit card and have read and agreed to the terms and conditions.",
     "postpaid_make_payment_safe_payment_description" : "Your payment is safe with Verizon cybertrust",
@@ -1594,19 +1217,14 @@
     "postpaid_make_payment_total_to_pay" : "Total to pay",
     "postpaid_bills_payment_bill_overdue_status_message" : "This bill is now overdue",
     "postpaid_payments_the" : "the",
-    
     "postpaid_data_rollOver_info" : "The unused Additional Data from last month has been rolled over and will be available untill the end of  this billing month.\nFind out more",
     "postpaid_data_overage_warning" : "As you’ve used your data this month, we’ve added %@ for $10 to use until the end of the next billing month.\nFind out more",
     "postpaid_additional_data" : "Additional Data",
     "postpaid_dashboard_overlay_descrition" : "Additional Data, to use in Australia, is automatically added at $10/GB ($0.01/MB) when you’ve used your included data. Unused Additional Data will roll over to the following billing month and will be available until the end of that period.\n\nIncluded Data does not roll over at the end of each billing month.",
-    
-    
     "dashboard_gauge_manage_addon_button_title" : "Manage Add-on",
     "dashboard_gauge_addon_button_title" : "Add-on",
     "dashboard_information_updated_at_label_text" : "Information accurate as of ",
     "dashboard_remianing_days_label_text" : " days until inclusions reset",
-    
-    
     "postpaid_starterdata_message" : "You have Starter Data. That's 5GB bonus data to use in Australia for your first month to help you get started. T&C apply.",
     "postpaid_progress_view_reset_title" : "Rests on",
     "postpaid_progress_view_expire_title" : "Expires on",
@@ -1615,8 +1233,5 @@
     "postpaid_addons_international_calls_country_header" : "Where do you want to call?",
     "postpaid_shared_overlay_message" : "We’ve made the change to %@ services and we've also sent them a notification.",
     "postpaid_shared_overlay_warning_message" : "Unfortunately, we can’t save data control options for %@ Please try again later.",
-    "postpaid_overlay_data_control" : "Data Control settings saved",
-    "charges_taken_from" : "Charges taken from",
-    "individual_error_message_body" : "Unfortunately, we can’t display your services. Please try again later."
+    "postpaid_overlay_data_control" : "Data Control settings saved"
 }
-

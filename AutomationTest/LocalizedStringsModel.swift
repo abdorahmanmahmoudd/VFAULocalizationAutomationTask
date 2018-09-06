@@ -1,6 +1,9 @@
-//  Create by Abdorahman Mahmoud on 31/8/2018
-//	LocalizedStringsModel.swift
-//	Model file generated using JSONExport: https://github.com/Ahmed-Ali/JSONExport
+//
+//    LocalizationStringsModel.swift
+//
+//    Create by Abdorahman Mahmoud on 6/9/2018
+//    Copyright © 2018. All rights reserved.
+//    Model file generated using JSONExport: https://github.com/Ahmed-Ali/JSONExport
 
 import Foundation
 
@@ -15,9 +18,6 @@ class LocalizationStringsModel : NSObject, Codable {
     let vov_evening_message : String?
     let vov_greeting_message : String?
     let vov_morning_message : String?
-    let accbalancetxt : String?
-    let accountname : String?
-    let accountnum : String?
     let account_settings_account_header : String?
     let account_settings_account_section_title : String?
     let account_settings_adjustment_history_cell : String?
@@ -47,7 +47,6 @@ class LocalizationStringsModel : NSObject, Codable {
     let active : String?
     let add_on_replace_message : String?
     let additional_usage : String?
-    let addontitle : String?
     let addon_accept_terms_statement : String?
     let addon_active_card_manage : String?
     let addon_added_to_account_message : String?
@@ -92,14 +91,14 @@ class LocalizationStringsModel : NSObject, Codable {
     let adjustment_history_reason_title : String?
     let adjustment_history_time_title : String?
     let adjustment_history_usage_period : String?
-    let agreementmsg : String?
-    let alertheading : String?
     let all_current_spend_title : String?
     let all_data_usage_title : String?
     let all_usage_footer_past_days_title : String?
-    let anothercontent : String?
-    let anotherpaymentbtn : String?
     let automatic_payment_bank_account_cancel_success_msg : String?
+    let automatic_payment_bank_account_details_bsb : String?
+    let automatic_payment_bank_account_details_name : String?
+    let automatic_payment_bank_account_details_number : String?
+    let automatic_payment_bank_account_details_title : String?
     let automatic_payment_bank_account_placeholder_bsb : String?
     let automatic_payment_bank_account_placeholder_name : String?
     let automatic_payment_bank_account_placeholder_number : String?
@@ -108,24 +107,33 @@ class LocalizationStringsModel : NSObject, Codable {
     let automatic_payment_bank_account_warning_account_name : String?
     let automatic_payment_bank_account_warning_account_number : String?
     let automatic_payment_bank_account_warning_bsb : String?
+    let automatic_payment_cancel_button_title : String?
+    let automatic_payment_cancel_confirmation_body : String?
     let automatic_payment_cancel_confirmation_button_title : String?
     let automatic_payment_cancel_confirmation_title : String?
+    let automatic_payment_cancel_update_button_title : String?
     let automatic_payment_credit_card_cancel_success_msg : String?
     let automatic_payment_credit_card_details_end_number : String?
     let automatic_payment_credit_card_details_expire_date : String?
+    let automatic_payment_credit_card_details_title : String?
     let automatic_payment_credit_card_link : String?
     let automatic_payment_credit_card_title : String?
     let automatic_payment_credit_card_update_success_msg : String?
+    let automatic_payment_description_body : String?
+    let automatic_payment_description_title : String?
     let automatic_payment_header : String?
     let automatic_payment_set_up_credit_card_success_msg : String?
     let automatic_payment_set_up_success_body : String?
     let automatic_payment_set_up_success_msg : String?
     let automatic_payment_set_up_success_subtitle : String?
     let automatic_payment_set_up_sucess_title : String?
+    let automatic_payment_setup_button_title : String?
+    let automatic_payment_subtitle : String?
     let automatic_payment_terms_and_conditions : String?
+    let automatic_payment_title : String?
     let automatic_payment_update_bank_account_success_subtitle : String?
+    let automatic_payment_update_button_title : String?
     let automatic_payment_update_credit_card_success_subtitle : String?
-    let availablebalanceheader : String?
     let available_addon_all_tab : String?
     let available_addon_booster_tab : String?
     let available_addon_choose_expiry : String?
@@ -140,13 +148,8 @@ class LocalizationStringsModel : NSObject, Codable {
     let available_addon_list_intro : String?
     let available_addon_list_title : String?
     let available_addon_recurring_tab : String?
-    let back : String?
-    let bankaccdetailslbl : String?
-    let billsandpayments : String?
     let bills_and_payments : String?
     let boosters : String?
-    let bsb : String?
-    let buyaddonbtn : String?
     let call_and_service_allow_call_conference_active : String?
     let call_and_service_allow_call_conference_header : String?
     let call_and_service_allow_call_conference_inactive : String?
@@ -190,51 +193,28 @@ class LocalizationStringsModel : NSObject, Codable {
     let call_forwarding_title_for_sepcific : String?
     let call_forwarding_toggler_view_title : String?
     let call_now_button : String?
-    let cancelbtn : String?
-    let cancelbutton : String?
-    let canceldirectdebit : String?
-    let canceldirectdebitqtn : String?
-    let cardunavailablemsg : String?
-    let ccdetails : String?
     let change_plan_addon_back_btn_title : String?
     let change_plan_addon_keep_btn_title : String?
     let change_plan_addon_remove_btn_title : String?
     let change_plan_addon_screen_title : String?
     let change_plan_addon_title : String?
-    let charges_taken_from : String?
     let chart_title : String?
     let chart_today_bar : String?
-    let chooseanotherbtn : String?
-    let choosebtn : String?
-    let choosepaymentmethod : String?
-    let choosesomethingelsebtn : String?
     let christmas_offers_bonus_data_offer : String?
     let connectivity_lost_error : String?
-    let contactmsg : String?
-    let content : String?
-    let continuebtn : String?
     let contract_end_date_12_24_month : String?
     let control_attention_message : String?
-    let creditcard : String?
-    let credittxt : String?
-    let criticalinfo : String?
     let current_spend_additional_charges : String?
     let current_spend_charges_info_message : String?
     let current_spend_charges_info_title : String?
     let current_spend_title : String?
     let current_spend_value_card_title : String?
-    let customercare : String?
     let daily_breakdown_usage_title : String?
     let dashboard_gauge_addon_button_title : String?
     let dashboard_gauge_manage_addon_button_title : String?
     let dashboard_information_updated_at_label_text : String?
     let dashboard_recharge_btn : String?
     let dashboard_remianing_days_label_text : String?
-    let differentpaymentmethodtxt : String?
-    let directdebitbtnlabel : String?
-    let directdebit : String?
-    let downloadbill : String?
-    let duedate : String?
     let edit_profile_add_both_unit_name_and_number : String?
     let edit_profile_address_care_title : String?
     let edit_profile_address_email_hint : String?
@@ -285,14 +265,9 @@ class LocalizationStringsModel : NSObject, Codable {
     let edit_profile_unit_title : String?
     let edit_profile_view_current_plan_info_title : String?
     let enable_touchid_title : String?
-    let entertext : String?
     let enter_your_correct_pin_title : String?
     let enter_your_pin_button : String?
     let enter_your_pin_title : String?
-    let errormsgforexpressrecharge : String?
-    let expresshead : String?
-    let expresssecondhead : String?
-    let extensionmessage : String?
     let filter_title_after_filteration : String?
     let filter_title_postpaid : String?
     let filter_title_prepaid : String?
@@ -393,26 +368,18 @@ class LocalizationStringsModel : NSObject, Codable {
     let fixed_db_wifi_hub_setup_message : String?
     let fixed_db_wifi_hub_setup_title : String?
     let forgotten_your_pin : String?
-    let gotodashboardbtn : String?
-    let helpmerechargebtn : String?
-    let helpmessage : String?
     let hide_other_users : String?
-    let insufficienterrmsg : String?
     let inactive : String?
     let including_additional_charges : String?
     let incorrect_pin_message : String?
-    let individual_error_message_body : String?
-    let inputplaceholder : String?
     let insurance_description : String?
     let international_countries_screen_title : String?
-    let invoicenumber : String?
     let irrecoverable_error_message : String?
     let irrecoverable_error_message_help_phone_1 : String?
     let irrecoverable_error_message_help_phone_2 : String?
     let irrecoverable_error_message_title : String?
     let irrecoverable_error_negative_button_title : String?
     let irrecoverable_error_title : String?
-    let issuedate : String?
     let issue_date : String?
     let link_service_add_confirmation_body : String?
     let link_service_add_confirmation_title : String?
@@ -436,7 +403,6 @@ class LocalizationStringsModel : NSObject, Codable {
     let link_service_remove_confirmation_title : String?
     let link_service_sub_title : String?
     let link_service_title : String?
-    let loadingbutton : String?
     let loading_error_message : String?
     let loading_error_message_help_phone_1 : String?
     let loading_error_message_help_phone_2 : String?
@@ -472,14 +438,12 @@ class LocalizationStringsModel : NSObject, Codable {
     let manage_data_control : String?
     let manage_subscription : String?
     let manage_subscription_one_item : String?
-    let mobno : String?
     let monthly_plan_costs : String?
-    let msg : String?
-    let mycreditdescription : String?
     let my_credit_bonus : String?
     let my_credit_bonus_dollars : String?
     let my_credit_empty_state_msg : String?
     let my_credit_error_msg : String?
+    let my_credit_error_title : String?
     let my_credit_expires : String?
     let my_credit_expiring_on : String?
     let my_credit_header_error_sub_title : String?
@@ -492,15 +456,22 @@ class LocalizationStringsModel : NSObject, Codable {
     let my_credit_max_state_msg : String?
     let my_credit_max_state_sub_msg : String?
     let my_credit_no_enough_credit_error_msg : String?
+    let my_credit_no_enough_credit_text : String?
     let my_credit_pay_with_credit_card_title : String?
     let my_credit_pay_with_new_credit_card_title : String?
+    let my_credit_recharge_error_msg : String?
+    let my_credit_recharge_now_button_title : String?
     let my_credit_reenter_credit_card_details_button_title : String?
     let my_credit_retrieve_credit_card_details_error_msg : String?
     let my_credit_review_and_pay_success_overlay_submessage : String?
     let my_credit_standard_dollars : String?
+    let my_credit_success_overlay_new_balance_submessage : String?
+    let my_credit_success_overlay_remaining_balance_submessage : String?
+    let my_credit_title : String?
     let my_credit_title_beta : String?
     let my_credit_top_up_my_credit_button_title : String?
     let my_credit_top_up_primary_button_title : String?
+    let my_credit_top_up_secondary_button_title : String?
     let my_credit_top_up_successful_msg : String?
     let my_credit_top_up_with_saved_card_primary_button_title : String?
     let my_credit_view_history_button_title : String?
@@ -547,7 +518,6 @@ class LocalizationStringsModel : NSObject, Codable {
     let netperform_grant_permission_overlay_title : String?
     let netperform_learn_more_header : String?
     let netperform_more_about_speed_checker : String?
-    let newcardheader : String?
     let new_plan_summary_change_plan : String?
     let new_plan_summary_choose_another_plan : String?
     let new_plan_summary_exit_fee_label : String?
@@ -569,7 +539,6 @@ class LocalizationStringsModel : NSObject, Codable {
     let new_plan_summary_success_overlay_title : String?
     let new_plan_summary_warning : String?
     let new_plan_summmary_rate_overlay_description : String?
-    let nextcharge : String?
     let offers_empty_state_message_label : String?
     let offers_empty_state_title_label : String?
     let offers_title : String?
@@ -650,13 +619,6 @@ class LocalizationStringsModel : NSObject, Codable {
     let orpc_shared_user_error_view_title : String?
     let orpc_show_available_plans_button_title : String?
     let orpc_user_already_requested_change_plan_error_message : String?
-    let overdue : String?
-    let overlaytitle : String?
-    let owing : String?
-    let paid : String?
-    let paypalmsg : String?
-    let paywithnewcardheader : String?
-    let paymentoptionheader : String?
     let pending_order_button_title : String?
     let personalise_your_service_hero_empty_name_placeholder : String?
     let personalize_service_all_spaces_warning : String?
@@ -675,6 +637,7 @@ class LocalizationStringsModel : NSObject, Codable {
     let plan_contract_monthly_without_device_payment_title : String?
     let plan_summary_failure_title : String?
     let please_choose_different_option : String?
+    let poadtpaid_bill_issued_title : String?
     let pospaid_account_settings_header : String?
     let post_paid_account_settings_edit_profile : String?
     let post_paid_account_settings_header : String?
@@ -724,9 +687,23 @@ class LocalizationStringsModel : NSObject, Codable {
     let postpaid_all_usage_your_issue_date : String?
     let postpaid_amoumt_description : String?
     let postpaid_available_addons_international_voice : String?
+    let postpaid_bill_credit_next_bill : String?
+    let postpaid_bill_next_charge : String?
+    let postpaid_bill_and_payment_older_bills_customer_care_message : String?
+    let postpaid_bill_and_payment_overdue_title : String?
+    let postpaid_bill_and_payment_owing_title : String?
+    let postpaid_bill_and_payment_paid_title : String?
+    let postpaid_bill_bills_payment_header : String?
+    let postpaid_bill_invoice_number : String?
+    let postpaid_bill_need_more_title : String?
+    let postpaid_bill_overdue : String?
     let postpaid_bill_overdue_message : String?
+    let postpaid_bill_update_direct_debit : String?
     let postpaid_bill_zero_amount : String?
     let postpaid_billing_options_signed_as : String?
+    let postpaid_bills_account_balance : String?
+    let postpaid_bills_download_bill : String?
+    let postpaid_bills_dueby : String?
     let postpaid_bills_make_payment : String?
     let postpaid_bills_call_now : String?
     let postpaid_bills_download_button_title : String?
@@ -736,9 +713,12 @@ class LocalizationStringsModel : NSObject, Codable {
     let postpaid_bills_filter_finantial_year : String?
     let postpaid_bills_filter_last_month : String?
     let postpaid_bills_filter_six_months : String?
+    let postpaid_bills_need_more_message : String?
+    let postpaid_bills_overlay_back : String?
     let postpaid_bills_payment_bill_overdue_status_message : String?
     let postpaid_bills_payment_paid_title : String?
     let postpaid_bills_see_detailed_usage_title : String?
+    let postpaid_bills_setup_direct_debit : String?
     let postpaid_bills_your_bill_header : String?
     let postpaid_call_and_service_international_call_rate_link : String?
     let postpaid_call_and_service_terms_and_conditions_title : String?
@@ -887,7 +867,6 @@ class LocalizationStringsModel : NSObject, Codable {
     let pre_paid_account_settings_privacy : String?
     let pre_paid_account_settings_swap_sim : String?
     let pre_paid_account_settings_transaction_history : String?
-    let prepaidccupdationlisttransactionmsg : String?
     let prepaid_account_settings_header : String?
     let prepaid_adjustment_history_empty_state_text : String?
     let prepaid_adjustment_history_title : String?
@@ -1070,11 +1049,7 @@ class LocalizationStringsModel : NSObject, Codable {
     let purchase_history_past_month_text : String?
     let purchase_history_title : String?
     let purchase_history_usage_title : String?
-    let receiptnotext : String?
     let rechage_my_mix : String?
-    let rechargenowbtn : String?
-    let rechargeoptions : String?
-    let rechargewithmycreditbtn : String?
     let recharge_btn_choose_something_else : String?
     let recharge_btn_same_again : String?
     let recharge_card_boost : String?
@@ -1092,6 +1067,7 @@ class LocalizationStringsModel : NSObject, Codable {
     let recharge_change_service_number_subtitle : String?
     let recharge_change_service_number_title : String?
     let recharge_change_service_number_voucher_button_title : String?
+    let recharge_change_service_number_warning_message : String?
     let recharge_data_combo : String?
     let recharge_flexi_cap : String?
     let recharge_fragment_title : String?
@@ -1103,21 +1079,30 @@ class LocalizationStringsModel : NSObject, Codable {
     let recharge_plan_not_available : String?
     let recharge_prepaid : String?
     let recharge_talk_combo : String?
-    let recharged : String?
-    let rechargedtext : String?
-    let redeemnowbtn : String?
-    let remcreditbaltext : String?
-    let restartlabel : String?
     let review_and_pay : String?
     let review_and_pay_credit_card_unavailable : String?
     let review_and_pay_help_me_recharge_links : String?
+    let review_and_pay_how_would_you_pay : String?
+    let review_and_pay_overlay_warning_text : String?
+    let review_and_pay_payment_option_credit_card : String?
     let review_and_pay_payment_option_paypal : String?
     let review_and_pay_payment_option_wallet : String?
+    let review_and_pay_paypal_accordion_warning_text : String?
+    let review_and_pay_recharge_now : String?
     let review_and_pay_recharge_with_paypal : String?
     let review_and_pay_recharge_with_paypal_guest : String?
     let review_and_pay_recharge_with_paypal_user : String?
     let review_and_pay_success_overlay_message : String?
+    let review_and_pay_success_overlay_receipt_number_submessage : String?
     let review_and_pay_success_overlay_submessage : String?
+    let review_and_pay_success_overlay_title : String?
+    let review_and_pay_success_overlay_you_have_recharged_submessage : String?
+    let review_and_pay_unsuccesfull_overlay_submessage : String?
+    let review_and_pay_unsuccessfull_overlay_help_me_recharge : String?
+    let review_and_pay_unsuccessfull_overlay_message : String?
+    let review_and_pay_unsuccessfull_overlay_title : String?
+    let review_and_pay_use_new_card : String?
+    let review_pay_available_title : String?
     let review_pay_credit_btn_cancel_button : String?
     let review_pay_credit_btn_recharge_paypal_account_button : String?
     let review_pay_credit_card_expire_title : String?
@@ -1125,19 +1110,22 @@ class LocalizationStringsModel : NSObject, Codable {
     let review_pay_credit_card_title : String?
     let review_pay_credit_warning_description : String?
     let review_pay_credit_warning_title : String?
+    let review_pay_credit_warning_unavailable_title : String?
+    let review_pay_critical_inf_summary_title : String?
+    let review_pay_mycredit_card_detail : String?
     let review_pay_recharge_plan_hint : String?
     let review_pay_success_dialog_body_description : String?
     let review_pay_success_dialog_dashboard_btn : String?
     let review_pay_success_dialog_subtitle : String?
+    let review_pay_terms_condition_title : String?
     let review_pay_txt_authorise_credit_description : String?
     let review_pay_txt_payments : String?
     let review_pay_txt_save_credit : String?
     let review_pay_txt_save_credit_description : String?
     let review_pay_unsuccess_dialog_dashboard_btn : String?
-    let safepaymentmsg : String?
-    let sameagainbtn : String?
+    let review_pay_with_card_title : String?
+    let review_pay_with_new_card_title : String?
     let save_settings : String?
-    let savedcardheader : String?
     let secondary_user_linked_message : String?
     let secondary_user_remove_card : String?
     let secondary_user_unlink_confirm_body : String?
@@ -1214,17 +1202,12 @@ class LocalizationStringsModel : NSObject, Codable {
     let subscription_end_period : String?
     let subscription_monthly_title : String?
     let subscription_with_renewal_date : String?
-    let successfultitle : String?
-    let termsandconditionlabel : String?
     let terms_and_conditions_btn_txt : String?
     let terms_and_conditions_title : String?
     let terms_close_button_title : String?
     let toggler_view_default_subtitle_active_message : String?
     let toggler_view_default_subtitle_inactive_message : String?
     let tv_postpaid_call_service_terms_and_conditions : String?
-    let unsuccessfultitle : String?
-    let updatebtn : String?
-    let updatedirectbtnlabel : String?
     let upgrade_eligibilty : String?
     let upgrade_eligibilty_change_plan : String?
     let upgrade_eligiblity_equest_callback : String?
@@ -1237,9 +1220,6 @@ class LocalizationStringsModel : NSObject, Codable {
     let vfau_switch_item_active : String?
     let vfau_switch_item_inactive : String?
     let view_detailed_usage_btn_title : String?
-    let voucherbtn : String?
-    let voucherheader : String?
-    let vouchertitle : String?
     let voucher_already_used_error : String?
     let voucher_btn_cancel : String?
     let voucher_btn_continue : String?
@@ -1259,11 +1239,9 @@ class LocalizationStringsModel : NSObject, Codable {
     let voucher_reported_stolen_error : String?
     let voucher_technical_mishap_error : String?
     let vouchrer_max_digits : String?
-    let walletheader : String?
-    let walletsubmissiondetailsdescription : String?
     let webview_progressbar_wait : String?
     
-    //generated lowercased only.
+    //generated lowercased only
     enum CodingKeys: String, CodingKey, CaseIterable {
         case data_usage_detail_screen_title = "Data_usage_detail_screen_title"
         case incorrect_pin_title = "Incorrect_pin_title"
@@ -1273,9 +1251,6 @@ class LocalizationStringsModel : NSObject, Codable {
         case vov_evening_message = "VOV_Evening_Message"
         case vov_greeting_message = "VOV_Greeting_Message"
         case vov_morning_message = "VOV_Morning_Message"
-        case accbalancetxt = "accBalanceTxt"
-        case accountname = "accountName"
-        case accountnum = "accountNum"
         case account_settings_account_header = "account_settings_account_header"
         case account_settings_account_section_title = "account_settings_account_section_title"
         case account_settings_adjustment_history_cell = "account_settings_adjustment_history_cell"
@@ -1305,7 +1280,6 @@ class LocalizationStringsModel : NSObject, Codable {
         case active = "active"
         case add_on_replace_message = "add_on_replace_message"
         case additional_usage = "additional_usage"
-        case addontitle = "addonTitle"
         case addon_accept_terms_statement = "addon_accept_terms_statement"
         case addon_active_card_manage = "addon_active_card_manage"
         case addon_added_to_account_message = "addon_added_to_account_message"
@@ -1350,14 +1324,14 @@ class LocalizationStringsModel : NSObject, Codable {
         case adjustment_history_reason_title = "adjustment_history_reason_title"
         case adjustment_history_time_title = "adjustment_history_time_title"
         case adjustment_history_usage_period = "adjustment_history_usage_period"
-        case agreementmsg = "agreementMsg"
-        case alertheading = "alertHeading"
         case all_current_spend_title = "all_current_spend_title"
         case all_data_usage_title = "all_data_usage_title"
         case all_usage_footer_past_days_title = "all_usage_footer_past_days_title"
-        case anothercontent = "anotherContent"
-        case anotherpaymentbtn = "anotherPaymentBtn"
         case automatic_payment_bank_account_cancel_success_msg = "automatic_payment_bank_account_cancel_success_msg"
+        case automatic_payment_bank_account_details_bsb = "automatic_payment_bank_account_details_bsb"
+        case automatic_payment_bank_account_details_name = "automatic_payment_bank_account_details_name"
+        case automatic_payment_bank_account_details_number = "automatic_payment_bank_account_details_number"
+        case automatic_payment_bank_account_details_title = "automatic_payment_bank_account_details_title"
         case automatic_payment_bank_account_placeholder_bsb = "automatic_payment_bank_account_placeholder_bsb"
         case automatic_payment_bank_account_placeholder_name = "automatic_payment_bank_account_placeholder_name"
         case automatic_payment_bank_account_placeholder_number = "automatic_payment_bank_account_placeholder_number"
@@ -1366,24 +1340,33 @@ class LocalizationStringsModel : NSObject, Codable {
         case automatic_payment_bank_account_warning_account_name = "automatic_payment_bank_account_warning_account_name"
         case automatic_payment_bank_account_warning_account_number = "automatic_payment_bank_account_warning_account_number"
         case automatic_payment_bank_account_warning_bsb = "automatic_payment_bank_account_warning_bsb"
+        case automatic_payment_cancel_button_title = "automatic_payment_cancel_button_title"
+        case automatic_payment_cancel_confirmation_body = "automatic_payment_cancel_confirmation_body"
         case automatic_payment_cancel_confirmation_button_title = "automatic_payment_cancel_confirmation_button_title"
         case automatic_payment_cancel_confirmation_title = "automatic_payment_cancel_confirmation_title"
+        case automatic_payment_cancel_update_button_title = "automatic_payment_cancel_update_button_title"
         case automatic_payment_credit_card_cancel_success_msg = "automatic_payment_credit_card_cancel_success_msg"
         case automatic_payment_credit_card_details_end_number = "automatic_payment_credit_card_details_end_number"
         case automatic_payment_credit_card_details_expire_date = "automatic_payment_credit_card_details_expire_date"
+        case automatic_payment_credit_card_details_title = "automatic_payment_credit_card_details_title"
         case automatic_payment_credit_card_link = "automatic_payment_credit_card_link"
         case automatic_payment_credit_card_title = "automatic_payment_credit_card_title"
         case automatic_payment_credit_card_update_success_msg = "automatic_payment_credit_card_update_success_msg"
+        case automatic_payment_description_body = "automatic_payment_description_body"
+        case automatic_payment_description_title = "automatic_payment_description_title"
         case automatic_payment_header = "automatic_payment_header"
         case automatic_payment_set_up_credit_card_success_msg = "automatic_payment_set_up_credit_card_success_msg"
         case automatic_payment_set_up_success_body = "automatic_payment_set_up_success_body"
         case automatic_payment_set_up_success_msg = "automatic_payment_set_up_success_msg"
         case automatic_payment_set_up_success_subtitle = "automatic_payment_set_up_success_subtitle"
         case automatic_payment_set_up_sucess_title = "automatic_payment_set_up_sucess_title"
+        case automatic_payment_setup_button_title = "automatic_payment_setup_button_title"
+        case automatic_payment_subtitle = "automatic_payment_subtitle"
         case automatic_payment_terms_and_conditions = "automatic_payment_terms_and_conditions"
+        case automatic_payment_title = "automatic_payment_title"
         case automatic_payment_update_bank_account_success_subtitle = "automatic_payment_update_bank_account_success_subtitle"
+        case automatic_payment_update_button_title = "automatic_payment_update_button_title"
         case automatic_payment_update_credit_card_success_subtitle = "automatic_payment_update_credit_card_success_subtitle"
-        case availablebalanceheader = "availableBalanceHeader"
         case available_addon_all_tab = "available_addon_all_tab"
         case available_addon_booster_tab = "available_addon_booster_tab"
         case available_addon_choose_expiry = "available_addon_choose_expiry"
@@ -1398,13 +1381,8 @@ class LocalizationStringsModel : NSObject, Codable {
         case available_addon_list_intro = "available_addon_list_intro"
         case available_addon_list_title = "available_addon_list_title"
         case available_addon_recurring_tab = "available_addon_recurring_tab"
-        case back = "back"
-        case bankaccdetailslbl = "bankAccDetailsLbl"
-        case billsandpayments = "billsAndPayments"
         case bills_and_payments = "bills_and_payments"
         case boosters = "boosters"
-        case bsb = "bsb"
-        case buyaddonbtn = "buyAddonBtn"
         case call_and_service_allow_call_conference_active = "call_and_service_allow_call_conference_active"
         case call_and_service_allow_call_conference_header = "call_and_service_allow_call_conference_header"
         case call_and_service_allow_call_conference_inactive = "call_and_service_allow_call_conference_inactive"
@@ -1448,51 +1426,28 @@ class LocalizationStringsModel : NSObject, Codable {
         case call_forwarding_title_for_sepcific = "call_forwarding_title_for_sepcific"
         case call_forwarding_toggler_view_title = "call_forwarding_toggler_view_title"
         case call_now_button = "call_now_button"
-        case cancelbtn = "cancelBtn"
-        case cancelbutton = "cancelButton"
-        case canceldirectdebit = "cancelDirectDebit"
-        case canceldirectdebitqtn = "cancelDirectDebitQtn"
-        case cardunavailablemsg = "cardUnavailableMsg"
-        case ccdetails = "ccDetails"
         case change_plan_addon_back_btn_title = "change_plan_addon_back_btn_title"
         case change_plan_addon_keep_btn_title = "change_plan_addon_keep_btn_title"
         case change_plan_addon_remove_btn_title = "change_plan_addon_remove_btn_title"
         case change_plan_addon_screen_title = "change_plan_addon_screen_title"
         case change_plan_addon_title = "change_plan_addon_title"
-        case charges_taken_from = "charges_taken_from"
         case chart_title = "chart_title"
         case chart_today_bar = "chart_today_bar"
-        case chooseanotherbtn = "chooseAnotherBtn"
-        case choosebtn = "chooseBtn"
-        case choosepaymentmethod = "choosePaymentMethod"
-        case choosesomethingelsebtn = "chooseSomethingelseBtn"
         case christmas_offers_bonus_data_offer = "christmas_offers_bonus_data_offer"
         case connectivity_lost_error = "connectivity_lost_error"
-        case contactmsg = "contactMsg"
-        case content = "content"
-        case continuebtn = "continueBtn"
         case contract_end_date_12_24_month = "contract_end_date_12_24_month"
         case control_attention_message = "control_attention_message"
-        case creditcard = "creditCard"
-        case credittxt = "creditTxt"
-        case criticalinfo = "criticalInfo"
         case current_spend_additional_charges = "current_spend_additional_charges"
         case current_spend_charges_info_message = "current_spend_charges_info_message"
         case current_spend_charges_info_title = "current_spend_charges_info_title"
         case current_spend_title = "current_spend_title"
         case current_spend_value_card_title = "current_spend_value_card_title"
-        case customercare = "customerCare"
         case daily_breakdown_usage_title = "daily_breakdown_usage_title"
         case dashboard_gauge_addon_button_title = "dashboard_gauge_addon_button_title"
         case dashboard_gauge_manage_addon_button_title = "dashboard_gauge_manage_addon_button_title"
         case dashboard_information_updated_at_label_text = "dashboard_information_updated_at_label_text"
         case dashboard_recharge_btn = "dashboard_recharge_btn"
         case dashboard_remianing_days_label_text = "dashboard_remianing_days_label_text"
-        case differentpaymentmethodtxt = "differentPaymentMethodTxt"
-        case directdebitbtnlabel = "directDebitBtnLabel"
-        case directdebit = "directdebit"
-        case downloadbill = "downloadBill"
-        case duedate = "dueDate"
         case edit_profile_add_both_unit_name_and_number = "edit_profile_add_both_unit_name_and_number"
         case edit_profile_address_care_title = "edit_profile_address_care_title"
         case edit_profile_address_email_hint = "edit_profile_address_email_hint"
@@ -1543,14 +1498,9 @@ class LocalizationStringsModel : NSObject, Codable {
         case edit_profile_unit_title = "edit_profile_unit_title"
         case edit_profile_view_current_plan_info_title = "edit_profile_view_current_plan_info_title"
         case enable_touchid_title = "enable_touchid_title"
-        case entertext = "enterText"
         case enter_your_correct_pin_title = "enter_your_correct_pin_title"
         case enter_your_pin_button = "enter_your_pin_button"
         case enter_your_pin_title = "enter_your_pin_title"
-        case errormsgforexpressrecharge = "errorMsgForExpressRecharge"
-        case expresshead = "expressHead"
-        case expresssecondhead = "expressSecondHead"
-        case extensionmessage = "extensionMessage"
         case filter_title_after_filteration = "filter_title_after_filteration"
         case filter_title_postpaid = "filter_title_postpaid"
         case filter_title_prepaid = "filter_title_prepaid"
@@ -1651,26 +1601,18 @@ class LocalizationStringsModel : NSObject, Codable {
         case fixed_db_wifi_hub_setup_message = "fixed_db_wifi_hub_setup_message"
         case fixed_db_wifi_hub_setup_title = "fixed_db_wifi_hub_setup_title"
         case forgotten_your_pin = "forgotten_your_pin"
-        case gotodashboardbtn = "goTODashboardBtn"
-        case helpmerechargebtn = "helpMeRechargeBtn"
-        case helpmessage = "helpMessage"
         case hide_other_users = "hide_other_users"
-        case insufficienterrmsg = "inSufficientErrMsg"
         case inactive = "inactive"
         case including_additional_charges = "including_additional_charges"
         case incorrect_pin_message = "incorrect_pin_message"
-        case individual_error_message_body = "individual_error_message_body"
-        case inputplaceholder = "inputPlaceholder"
         case insurance_description = "insurance_description"
         case international_countries_screen_title = "international_countries_screen_title"
-        case invoicenumber = "invoiceNumber"
         case irrecoverable_error_message = "irrecoverable_error_message"
         case irrecoverable_error_message_help_phone_1 = "irrecoverable_error_message_help_phone_1"
         case irrecoverable_error_message_help_phone_2 = "irrecoverable_error_message_help_phone_2"
         case irrecoverable_error_message_title = "irrecoverable_error_message_title"
         case irrecoverable_error_negative_button_title = "irrecoverable_error_negative_button_title"
         case irrecoverable_error_title = "irrecoverable_error_title"
-        case issuedate = "issueDate"
         case issue_date = "issue_date"
         case link_service_add_confirmation_body = "link_service_add_confirmation_body"
         case link_service_add_confirmation_title = "link_service_add_confirmation_title"
@@ -1694,7 +1636,6 @@ class LocalizationStringsModel : NSObject, Codable {
         case link_service_remove_confirmation_title = "link_service_remove_confirmation_title"
         case link_service_sub_title = "link_service_sub_title"
         case link_service_title = "link_service_title"
-        case loadingbutton = "loadingButton"
         case loading_error_message = "loading_error_message"
         case loading_error_message_help_phone_1 = "loading_error_message_help_phone_1"
         case loading_error_message_help_phone_2 = "loading_error_message_help_phone_2"
@@ -1730,14 +1671,12 @@ class LocalizationStringsModel : NSObject, Codable {
         case manage_data_control = "manage_data_control"
         case manage_subscription = "manage_subscription"
         case manage_subscription_one_item = "manage_subscription_one_item"
-        case mobno = "mobNo"
         case monthly_plan_costs = "monthly_plan_costs"
-        case msg = "msg"
-        case mycreditdescription = "myCreditDescription"
         case my_credit_bonus = "my_credit_bonus"
         case my_credit_bonus_dollars = "my_credit_bonus_dollars"
         case my_credit_empty_state_msg = "my_credit_empty_state_msg"
         case my_credit_error_msg = "my_credit_error_msg"
+        case my_credit_error_title = "my_credit_error_title"
         case my_credit_expires = "my_credit_expires"
         case my_credit_expiring_on = "my_credit_expiring_on"
         case my_credit_header_error_sub_title = "my_credit_header_error_sub_title"
@@ -1750,15 +1689,22 @@ class LocalizationStringsModel : NSObject, Codable {
         case my_credit_max_state_msg = "my_credit_max_state_msg"
         case my_credit_max_state_sub_msg = "my_credit_max_state_sub_msg"
         case my_credit_no_enough_credit_error_msg = "my_credit_no_enough_credit_error_msg"
+        case my_credit_no_enough_credit_text = "my_credit_no_enough_credit_text"
         case my_credit_pay_with_credit_card_title = "my_credit_pay_with_credit_card_title"
         case my_credit_pay_with_new_credit_card_title = "my_credit_pay_with_new_credit_card_title"
+        case my_credit_recharge_error_msg = "my_credit_recharge_error_msg"
+        case my_credit_recharge_now_button_title = "my_credit_recharge_now_button_title"
         case my_credit_reenter_credit_card_details_button_title = "my_credit_reenter_credit_card_details_button_title"
         case my_credit_retrieve_credit_card_details_error_msg = "my_credit_retrieve_credit_card_details_error_msg"
         case my_credit_review_and_pay_success_overlay_submessage = "my_credit_review_and_pay_success_overlay_submessage"
         case my_credit_standard_dollars = "my_credit_standard_dollars"
+        case my_credit_success_overlay_new_balance_submessage = "my_credit_success_overlay_new_balance_submessage"
+        case my_credit_success_overlay_remaining_balance_submessage = "my_credit_success_overlay_remaining_balance_submessage"
+        case my_credit_title = "my_credit_title"
         case my_credit_title_beta = "my_credit_title_beta"
         case my_credit_top_up_my_credit_button_title = "my_credit_top_up_my_credit_button_title"
         case my_credit_top_up_primary_button_title = "my_credit_top_up_primary_button_title"
+        case my_credit_top_up_secondary_button_title = "my_credit_top_up_secondary_button_title"
         case my_credit_top_up_successful_msg = "my_credit_top_up_successful_msg"
         case my_credit_top_up_with_saved_card_primary_button_title = "my_credit_top_up_with_saved_card_primary_button_title"
         case my_credit_view_history_button_title = "my_credit_view_history_Button_title"
@@ -1805,7 +1751,6 @@ class LocalizationStringsModel : NSObject, Codable {
         case netperform_grant_permission_overlay_title = "netperform_grant_permission_overlay_title"
         case netperform_learn_more_header = "netperform_learn_more_header"
         case netperform_more_about_speed_checker = "netperform_more_about_speed_checker"
-        case newcardheader = "newCardHeader"
         case new_plan_summary_change_plan = "new_plan_summary_change_plan"
         case new_plan_summary_choose_another_plan = "new_plan_summary_choose_another_plan"
         case new_plan_summary_exit_fee_label = "new_plan_summary_exit_fee_label"
@@ -1827,7 +1772,6 @@ class LocalizationStringsModel : NSObject, Codable {
         case new_plan_summary_success_overlay_title = "new_plan_summary_success_overlay_title"
         case new_plan_summary_warning = "new_plan_summary_warning"
         case new_plan_summmary_rate_overlay_description = "new_plan_summmary_rate_overlay_description"
-        case nextcharge = "nextCharge"
         case offers_empty_state_message_label = "offers_empty_state_message_label"
         case offers_empty_state_title_label = "offers_empty_state_title_label"
         case offers_title = "offers_title"
@@ -1908,13 +1852,6 @@ class LocalizationStringsModel : NSObject, Codable {
         case orpc_shared_user_error_view_title = "orpc_shared_user_error_view_title"
         case orpc_show_available_plans_button_title = "orpc_show_available_plans_button_title"
         case orpc_user_already_requested_change_plan_error_message = "orpc_user_already_requested_change_plan_error_message"
-        case overdue = "overDue"
-        case overlaytitle = "overlayTitle"
-        case owing = "owing"
-        case paid = "paid"
-        case paypalmsg = "payPalMsg"
-        case paywithnewcardheader = "payWithNewCardHeader"
-        case paymentoptionheader = "paymentOptionHeader"
         case pending_order_button_title = "pending_order_button_title"
         case personalise_your_service_hero_empty_name_placeholder = "personalise_your_service_hero_empty_name_placeholder"
         case personalize_service_all_spaces_warning = "personalize_service_all_spaces_warning"
@@ -1933,6 +1870,7 @@ class LocalizationStringsModel : NSObject, Codable {
         case plan_contract_monthly_without_device_payment_title = "plan_contract_monthly_without_device_payment_title"
         case plan_summary_failure_title = "plan_summary_failure_title"
         case please_choose_different_option = "please_choose_different_option"
+        case poadtpaid_bill_issued_title = "poadtpaid_bill_Issued_title"
         case pospaid_account_settings_header = "pospaid_account_settings_header"
         case post_paid_account_settings_edit_profile = "post_paid_account_settings_edit_profile"
         case post_paid_account_settings_header = "post_paid_account_settings_header"
@@ -1982,9 +1920,23 @@ class LocalizationStringsModel : NSObject, Codable {
         case postpaid_all_usage_your_issue_date = "postpaid_all_usage_your_issue_date"
         case postpaid_amoumt_description = "postpaid_amoumt_description"
         case postpaid_available_addons_international_voice = "postpaid_available_addons_International_voice"
+        case postpaid_bill_credit_next_bill = "postpaid_bill_Credit_next_bill"
+        case postpaid_bill_next_charge = "postpaid_bill_Next_Charge"
+        case postpaid_bill_and_payment_older_bills_customer_care_message = "postpaid_bill_and_payment_older_bills_customer_care_message"
+        case postpaid_bill_and_payment_overdue_title = "postpaid_bill_and_payment_overdue_title"
+        case postpaid_bill_and_payment_owing_title = "postpaid_bill_and_payment_owing_title"
+        case postpaid_bill_and_payment_paid_title = "postpaid_bill_and_payment_paid_title"
+        case postpaid_bill_bills_payment_header = "postpaid_bill_bills_payment_header"
+        case postpaid_bill_invoice_number = "postpaid_bill_invoice_number"
+        case postpaid_bill_need_more_title = "postpaid_bill_need_more_title"
+        case postpaid_bill_overdue = "postpaid_bill_overdue"
         case postpaid_bill_overdue_message = "postpaid_bill_overdue_message"
+        case postpaid_bill_update_direct_debit = "postpaid_bill_update_direct_debit"
         case postpaid_bill_zero_amount = "postpaid_bill_zero_amount"
         case postpaid_billing_options_signed_as = "postpaid_billing_options_signed_as"
+        case postpaid_bills_account_balance = "postpaid_bills_Account_balance"
+        case postpaid_bills_download_bill = "postpaid_bills_Download_Bill"
+        case postpaid_bills_dueby = "postpaid_bills_Dueby"
         case postpaid_bills_make_payment = "postpaid_bills_Make_Payment"
         case postpaid_bills_call_now = "postpaid_bills_call_now"
         case postpaid_bills_download_button_title = "postpaid_bills_download_button_title"
@@ -1994,9 +1946,12 @@ class LocalizationStringsModel : NSObject, Codable {
         case postpaid_bills_filter_finantial_year = "postpaid_bills_filter_finantial_year"
         case postpaid_bills_filter_last_month = "postpaid_bills_filter_last_month"
         case postpaid_bills_filter_six_months = "postpaid_bills_filter_six_months"
+        case postpaid_bills_need_more_message = "postpaid_bills_need_more_message"
+        case postpaid_bills_overlay_back = "postpaid_bills_overlay_back"
         case postpaid_bills_payment_bill_overdue_status_message = "postpaid_bills_payment_bill_overdue_status_message"
         case postpaid_bills_payment_paid_title = "postpaid_bills_payment_paid_title"
         case postpaid_bills_see_detailed_usage_title = "postpaid_bills_see_detailed_usage_title"
+        case postpaid_bills_setup_direct_debit = "postpaid_bills_setup_direct_debit"
         case postpaid_bills_your_bill_header = "postpaid_bills_your_bill_header"
         case postpaid_call_and_service_international_call_rate_link = "postpaid_call_and_service_international_call_rate_link"
         case postpaid_call_and_service_terms_and_conditions_title = "postpaid_call_and_service_terms_and_conditions_title"
@@ -2145,7 +2100,6 @@ class LocalizationStringsModel : NSObject, Codable {
         case pre_paid_account_settings_privacy = "pre_paid_account_settings_privacy"
         case pre_paid_account_settings_swap_sim = "pre_paid_account_settings_swap_sim"
         case pre_paid_account_settings_transaction_history = "pre_paid_account_settings_transaction_history"
-        case prepaidccupdationlisttransactionmsg = "prepaidCCUpdationListTransactionMsg"
         case prepaid_account_settings_header = "prepaid_account_settings_header"
         case prepaid_adjustment_history_empty_state_text = "prepaid_adjustment_history_empty_state_text"
         case prepaid_adjustment_history_title = "prepaid_adjustment_history_title"
@@ -2328,11 +2282,7 @@ class LocalizationStringsModel : NSObject, Codable {
         case purchase_history_past_month_text = "purchase_history_past_month_text"
         case purchase_history_title = "purchase_history_title"
         case purchase_history_usage_title = "purchase_history_usage_title"
-        case receiptnotext = "receiptNoText"
         case rechage_my_mix = "rechage_my_mix"
-        case rechargenowbtn = "rechargeNowBtn"
-        case rechargeoptions = "rechargeOptions"
-        case rechargewithmycreditbtn = "rechargeWithMyCreditBtn"
         case recharge_btn_choose_something_else = "recharge_btn_choose_something_else"
         case recharge_btn_same_again = "recharge_btn_same_again"
         case recharge_card_boost = "recharge_card_boost"
@@ -2350,6 +2300,7 @@ class LocalizationStringsModel : NSObject, Codable {
         case recharge_change_service_number_subtitle = "recharge_change_service_number_subtitle"
         case recharge_change_service_number_title = "recharge_change_service_number_title"
         case recharge_change_service_number_voucher_button_title = "recharge_change_service_number_voucher_button_title"
+        case recharge_change_service_number_warning_message = "recharge_change_service_number_warning_message"
         case recharge_data_combo = "recharge_data_combo"
         case recharge_flexi_cap = "recharge_flexi_cap"
         case recharge_fragment_title = "recharge_fragment_title"
@@ -2361,21 +2312,30 @@ class LocalizationStringsModel : NSObject, Codable {
         case recharge_plan_not_available = "recharge_plan_not_available"
         case recharge_prepaid = "recharge_prepaid"
         case recharge_talk_combo = "recharge_talk_combo"
-        case recharged = "recharged"
-        case rechargedtext = "rechargedText"
-        case redeemnowbtn = "redeemNowBtn"
-        case remcreditbaltext = "remCreditBalText"
-        case restartlabel = "restartLabel"
         case review_and_pay = "review_and_pay"
         case review_and_pay_credit_card_unavailable = "review_and_pay_credit_card_unavailable"
         case review_and_pay_help_me_recharge_links = "review_and_pay_help_me_recharge_links"
+        case review_and_pay_how_would_you_pay = "review_and_pay_how_would_you_pay"
+        case review_and_pay_overlay_warning_text = "review_and_pay_overlay_warning_text"
+        case review_and_pay_payment_option_credit_card = "review_and_pay_payment_option_credit_card"
         case review_and_pay_payment_option_paypal = "review_and_pay_payment_option_paypal"
         case review_and_pay_payment_option_wallet = "review_and_pay_payment_option_wallet"
+        case review_and_pay_paypal_accordion_warning_text = "review_and_pay_paypal_accordion_warning_text"
+        case review_and_pay_recharge_now = "review_and_pay_recharge_now"
         case review_and_pay_recharge_with_paypal = "review_and_pay_recharge_with_paypal"
         case review_and_pay_recharge_with_paypal_guest = "review_and_pay_recharge_with_paypal_guest"
         case review_and_pay_recharge_with_paypal_user = "review_and_pay_recharge_with_paypal_user"
         case review_and_pay_success_overlay_message = "review_and_pay_success_overlay_message"
+        case review_and_pay_success_overlay_receipt_number_submessage = "review_and_pay_success_overlay_receipt_number_submessage"
         case review_and_pay_success_overlay_submessage = "review_and_pay_success_overlay_submessage"
+        case review_and_pay_success_overlay_title = "review_and_pay_success_overlay_title"
+        case review_and_pay_success_overlay_you_have_recharged_submessage = "review_and_pay_success_overlay_you_have_recharged_submessage"
+        case review_and_pay_unsuccesfull_overlay_submessage = "review_and_pay_unsuccesfull_overlay_submessage"
+        case review_and_pay_unsuccessfull_overlay_help_me_recharge = "review_and_pay_unsuccessfull_overlay_help_me_recharge"
+        case review_and_pay_unsuccessfull_overlay_message = "review_and_pay_unsuccessfull_overlay_message"
+        case review_and_pay_unsuccessfull_overlay_title = "review_and_pay_unsuccessfull_overlay_title"
+        case review_and_pay_use_new_card = "review_and_pay_use_new_card"
+        case review_pay_available_title = "review_pay_available_title"
         case review_pay_credit_btn_cancel_button = "review_pay_credit_btn_cancel_button"
         case review_pay_credit_btn_recharge_paypal_account_button = "review_pay_credit_btn_recharge_paypal_account_button"
         case review_pay_credit_card_expire_title = "review_pay_credit_card_expire_title"
@@ -2383,19 +2343,22 @@ class LocalizationStringsModel : NSObject, Codable {
         case review_pay_credit_card_title = "review_pay_credit_card_title"
         case review_pay_credit_warning_description = "review_pay_credit_warning_description"
         case review_pay_credit_warning_title = "review_pay_credit_warning_title"
+        case review_pay_credit_warning_unavailable_title = "review_pay_credit_warning_unavailable_title"
+        case review_pay_critical_inf_summary_title = "review_pay_critical_inf_summary_title"
+        case review_pay_mycredit_card_detail = "review_pay_mycredit_card_detail"
         case review_pay_recharge_plan_hint = "review_pay_recharge_plan_hint"
         case review_pay_success_dialog_body_description = "review_pay_success_dialog_body_description"
         case review_pay_success_dialog_dashboard_btn = "review_pay_success_dialog_dashboard_btn"
         case review_pay_success_dialog_subtitle = "review_pay_success_dialog_subtitle"
+        case review_pay_terms_condition_title = "review_pay_terms_condition_title"
         case review_pay_txt_authorise_credit_description = "review_pay_txt_authorise_credit_description"
         case review_pay_txt_payments = "review_pay_txt_payments"
         case review_pay_txt_save_credit = "review_pay_txt_save_credit"
         case review_pay_txt_save_credit_description = "review_pay_txt_save_credit_description"
         case review_pay_unsuccess_dialog_dashboard_btn = "review_pay_unsuccess_dialog_dashboard_btn"
-        case safepaymentmsg = "safePaymentMsg"
-        case sameagainbtn = "sameAgainBtn"
+        case review_pay_with_card_title = "review_pay_with_card_title"
+        case review_pay_with_new_card_title = "review_pay_with_new_card_title"
         case save_settings = "save_settings"
-        case savedcardheader = "savedCardHeader"
         case secondary_user_linked_message = "secondary_user_linked_message"
         case secondary_user_remove_card = "secondary_user_remove_card"
         case secondary_user_unlink_confirm_body = "secondary_user_unlink_confirm_body"
@@ -2472,17 +2435,12 @@ class LocalizationStringsModel : NSObject, Codable {
         case subscription_end_period = "subscription_end_period"
         case subscription_monthly_title = "subscription_monthly_title"
         case subscription_with_renewal_date = "subscription_with_renewal_date"
-        case successfultitle = "successfulTitle"
-        case termsandconditionlabel = "termsAndConditionLabel"
         case terms_and_conditions_btn_txt = "terms_and_conditions_btn_txt"
         case terms_and_conditions_title = "terms_and_conditions_title"
         case terms_close_button_title = "terms_close_button_title"
         case toggler_view_default_subtitle_active_message = "toggler_view_default_subtitle_active_message"
         case toggler_view_default_subtitle_inactive_message = "toggler_view_default_subtitle_inactive_message"
         case tv_postpaid_call_service_terms_and_conditions = "tv_postpaid_call_service_terms_and_conditions"
-        case unsuccessfultitle = "unsuccessfulTitle"
-        case updatebtn = "updateBtn"
-        case updatedirectbtnlabel = "updateDirectBtnLabel"
         case upgrade_eligibilty = "upgrade_eligibilty"
         case upgrade_eligibilty_change_plan = "upgrade_eligibilty_change_plan"
         case upgrade_eligiblity_equest_callback = "upgrade_eligiblity_equest_callback"
@@ -2495,9 +2453,6 @@ class LocalizationStringsModel : NSObject, Codable {
         case vfau_switch_item_active = "vfau_switch_item_active"
         case vfau_switch_item_inactive = "vfau_switch_item_inactive"
         case view_detailed_usage_btn_title = "view_detailed_usage_btn_title"
-        case voucherbtn = "voucherBtn"
-        case voucherheader = "voucherHeader"
-        case vouchertitle = "voucherTitle"
         case voucher_already_used_error = "voucher_already_used_error"
         case voucher_btn_cancel = "voucher_btn_cancel"
         case voucher_btn_continue = "voucher_btn_continue"
@@ -2517,8 +2472,6 @@ class LocalizationStringsModel : NSObject, Codable {
         case voucher_reported_stolen_error = "voucher_reported_stolen_error"
         case voucher_technical_mishap_error = "voucher_technical_mishap_error"
         case vouchrer_max_digits = "vouchrer_max_digits"
-        case walletheader = "walletHeader"
-        case walletsubmissiondetailsdescription = "walletSubmissionDetailsDescription"
         case webview_progressbar_wait = "webview_progressbar_wait"
     }
     required init(from decoder: Decoder) throws {
@@ -2531,9 +2484,6 @@ class LocalizationStringsModel : NSObject, Codable {
         vov_evening_message = try values.decodeIfPresent(String.self, forKey: .vov_evening_message)
         vov_greeting_message = try values.decodeIfPresent(String.self, forKey: .vov_greeting_message)
         vov_morning_message = try values.decodeIfPresent(String.self, forKey: .vov_morning_message)
-        accbalancetxt = try values.decodeIfPresent(String.self, forKey: .accbalancetxt)
-        accountname = try values.decodeIfPresent(String.self, forKey: .accountname)
-        accountnum = try values.decodeIfPresent(String.self, forKey: .accountnum)
         account_settings_account_header = try values.decodeIfPresent(String.self, forKey: .account_settings_account_header)
         account_settings_account_section_title = try values.decodeIfPresent(String.self, forKey: .account_settings_account_section_title)
         account_settings_adjustment_history_cell = try values.decodeIfPresent(String.self, forKey: .account_settings_adjustment_history_cell)
@@ -2563,7 +2513,6 @@ class LocalizationStringsModel : NSObject, Codable {
         active = try values.decodeIfPresent(String.self, forKey: .active)
         add_on_replace_message = try values.decodeIfPresent(String.self, forKey: .add_on_replace_message)
         additional_usage = try values.decodeIfPresent(String.self, forKey: .additional_usage)
-        addontitle = try values.decodeIfPresent(String.self, forKey: .addontitle)
         addon_accept_terms_statement = try values.decodeIfPresent(String.self, forKey: .addon_accept_terms_statement)
         addon_active_card_manage = try values.decodeIfPresent(String.self, forKey: .addon_active_card_manage)
         addon_added_to_account_message = try values.decodeIfPresent(String.self, forKey: .addon_added_to_account_message)
@@ -2608,14 +2557,14 @@ class LocalizationStringsModel : NSObject, Codable {
         adjustment_history_reason_title = try values.decodeIfPresent(String.self, forKey: .adjustment_history_reason_title)
         adjustment_history_time_title = try values.decodeIfPresent(String.self, forKey: .adjustment_history_time_title)
         adjustment_history_usage_period = try values.decodeIfPresent(String.self, forKey: .adjustment_history_usage_period)
-        agreementmsg = try values.decodeIfPresent(String.self, forKey: .agreementmsg)
-        alertheading = try values.decodeIfPresent(String.self, forKey: .alertheading)
         all_current_spend_title = try values.decodeIfPresent(String.self, forKey: .all_current_spend_title)
         all_data_usage_title = try values.decodeIfPresent(String.self, forKey: .all_data_usage_title)
         all_usage_footer_past_days_title = try values.decodeIfPresent(String.self, forKey: .all_usage_footer_past_days_title)
-        anothercontent = try values.decodeIfPresent(String.self, forKey: .anothercontent)
-        anotherpaymentbtn = try values.decodeIfPresent(String.self, forKey: .anotherpaymentbtn)
         automatic_payment_bank_account_cancel_success_msg = try values.decodeIfPresent(String.self, forKey: .automatic_payment_bank_account_cancel_success_msg)
+        automatic_payment_bank_account_details_bsb = try values.decodeIfPresent(String.self, forKey: .automatic_payment_bank_account_details_bsb)
+        automatic_payment_bank_account_details_name = try values.decodeIfPresent(String.self, forKey: .automatic_payment_bank_account_details_name)
+        automatic_payment_bank_account_details_number = try values.decodeIfPresent(String.self, forKey: .automatic_payment_bank_account_details_number)
+        automatic_payment_bank_account_details_title = try values.decodeIfPresent(String.self, forKey: .automatic_payment_bank_account_details_title)
         automatic_payment_bank_account_placeholder_bsb = try values.decodeIfPresent(String.self, forKey: .automatic_payment_bank_account_placeholder_bsb)
         automatic_payment_bank_account_placeholder_name = try values.decodeIfPresent(String.self, forKey: .automatic_payment_bank_account_placeholder_name)
         automatic_payment_bank_account_placeholder_number = try values.decodeIfPresent(String.self, forKey: .automatic_payment_bank_account_placeholder_number)
@@ -2624,24 +2573,33 @@ class LocalizationStringsModel : NSObject, Codable {
         automatic_payment_bank_account_warning_account_name = try values.decodeIfPresent(String.self, forKey: .automatic_payment_bank_account_warning_account_name)
         automatic_payment_bank_account_warning_account_number = try values.decodeIfPresent(String.self, forKey: .automatic_payment_bank_account_warning_account_number)
         automatic_payment_bank_account_warning_bsb = try values.decodeIfPresent(String.self, forKey: .automatic_payment_bank_account_warning_bsb)
+        automatic_payment_cancel_button_title = try values.decodeIfPresent(String.self, forKey: .automatic_payment_cancel_button_title)
+        automatic_payment_cancel_confirmation_body = try values.decodeIfPresent(String.self, forKey: .automatic_payment_cancel_confirmation_body)
         automatic_payment_cancel_confirmation_button_title = try values.decodeIfPresent(String.self, forKey: .automatic_payment_cancel_confirmation_button_title)
         automatic_payment_cancel_confirmation_title = try values.decodeIfPresent(String.self, forKey: .automatic_payment_cancel_confirmation_title)
+        automatic_payment_cancel_update_button_title = try values.decodeIfPresent(String.self, forKey: .automatic_payment_cancel_update_button_title)
         automatic_payment_credit_card_cancel_success_msg = try values.decodeIfPresent(String.self, forKey: .automatic_payment_credit_card_cancel_success_msg)
         automatic_payment_credit_card_details_end_number = try values.decodeIfPresent(String.self, forKey: .automatic_payment_credit_card_details_end_number)
         automatic_payment_credit_card_details_expire_date = try values.decodeIfPresent(String.self, forKey: .automatic_payment_credit_card_details_expire_date)
+        automatic_payment_credit_card_details_title = try values.decodeIfPresent(String.self, forKey: .automatic_payment_credit_card_details_title)
         automatic_payment_credit_card_link = try values.decodeIfPresent(String.self, forKey: .automatic_payment_credit_card_link)
         automatic_payment_credit_card_title = try values.decodeIfPresent(String.self, forKey: .automatic_payment_credit_card_title)
         automatic_payment_credit_card_update_success_msg = try values.decodeIfPresent(String.self, forKey: .automatic_payment_credit_card_update_success_msg)
+        automatic_payment_description_body = try values.decodeIfPresent(String.self, forKey: .automatic_payment_description_body)
+        automatic_payment_description_title = try values.decodeIfPresent(String.self, forKey: .automatic_payment_description_title)
         automatic_payment_header = try values.decodeIfPresent(String.self, forKey: .automatic_payment_header)
         automatic_payment_set_up_credit_card_success_msg = try values.decodeIfPresent(String.self, forKey: .automatic_payment_set_up_credit_card_success_msg)
         automatic_payment_set_up_success_body = try values.decodeIfPresent(String.self, forKey: .automatic_payment_set_up_success_body)
         automatic_payment_set_up_success_msg = try values.decodeIfPresent(String.self, forKey: .automatic_payment_set_up_success_msg)
         automatic_payment_set_up_success_subtitle = try values.decodeIfPresent(String.self, forKey: .automatic_payment_set_up_success_subtitle)
         automatic_payment_set_up_sucess_title = try values.decodeIfPresent(String.self, forKey: .automatic_payment_set_up_sucess_title)
+        automatic_payment_setup_button_title = try values.decodeIfPresent(String.self, forKey: .automatic_payment_setup_button_title)
+        automatic_payment_subtitle = try values.decodeIfPresent(String.self, forKey: .automatic_payment_subtitle)
         automatic_payment_terms_and_conditions = try values.decodeIfPresent(String.self, forKey: .automatic_payment_terms_and_conditions)
+        automatic_payment_title = try values.decodeIfPresent(String.self, forKey: .automatic_payment_title)
         automatic_payment_update_bank_account_success_subtitle = try values.decodeIfPresent(String.self, forKey: .automatic_payment_update_bank_account_success_subtitle)
+        automatic_payment_update_button_title = try values.decodeIfPresent(String.self, forKey: .automatic_payment_update_button_title)
         automatic_payment_update_credit_card_success_subtitle = try values.decodeIfPresent(String.self, forKey: .automatic_payment_update_credit_card_success_subtitle)
-        availablebalanceheader = try values.decodeIfPresent(String.self, forKey: .availablebalanceheader)
         available_addon_all_tab = try values.decodeIfPresent(String.self, forKey: .available_addon_all_tab)
         available_addon_booster_tab = try values.decodeIfPresent(String.self, forKey: .available_addon_booster_tab)
         available_addon_choose_expiry = try values.decodeIfPresent(String.self, forKey: .available_addon_choose_expiry)
@@ -2656,13 +2614,8 @@ class LocalizationStringsModel : NSObject, Codable {
         available_addon_list_intro = try values.decodeIfPresent(String.self, forKey: .available_addon_list_intro)
         available_addon_list_title = try values.decodeIfPresent(String.self, forKey: .available_addon_list_title)
         available_addon_recurring_tab = try values.decodeIfPresent(String.self, forKey: .available_addon_recurring_tab)
-        back = try values.decodeIfPresent(String.self, forKey: .back)
-        bankaccdetailslbl = try values.decodeIfPresent(String.self, forKey: .bankaccdetailslbl)
-        billsandpayments = try values.decodeIfPresent(String.self, forKey: .billsandpayments)
         bills_and_payments = try values.decodeIfPresent(String.self, forKey: .bills_and_payments)
         boosters = try values.decodeIfPresent(String.self, forKey: .boosters)
-        bsb = try values.decodeIfPresent(String.self, forKey: .bsb)
-        buyaddonbtn = try values.decodeIfPresent(String.self, forKey: .buyaddonbtn)
         call_and_service_allow_call_conference_active = try values.decodeIfPresent(String.self, forKey: .call_and_service_allow_call_conference_active)
         call_and_service_allow_call_conference_header = try values.decodeIfPresent(String.self, forKey: .call_and_service_allow_call_conference_header)
         call_and_service_allow_call_conference_inactive = try values.decodeIfPresent(String.self, forKey: .call_and_service_allow_call_conference_inactive)
@@ -2706,51 +2659,28 @@ class LocalizationStringsModel : NSObject, Codable {
         call_forwarding_title_for_sepcific = try values.decodeIfPresent(String.self, forKey: .call_forwarding_title_for_sepcific)
         call_forwarding_toggler_view_title = try values.decodeIfPresent(String.self, forKey: .call_forwarding_toggler_view_title)
         call_now_button = try values.decodeIfPresent(String.self, forKey: .call_now_button)
-        cancelbtn = try values.decodeIfPresent(String.self, forKey: .cancelbtn)
-        cancelbutton = try values.decodeIfPresent(String.self, forKey: .cancelbutton)
-        canceldirectdebit = try values.decodeIfPresent(String.self, forKey: .canceldirectdebit)
-        canceldirectdebitqtn = try values.decodeIfPresent(String.self, forKey: .canceldirectdebitqtn)
-        cardunavailablemsg = try values.decodeIfPresent(String.self, forKey: .cardunavailablemsg)
-        ccdetails = try values.decodeIfPresent(String.self, forKey: .ccdetails)
         change_plan_addon_back_btn_title = try values.decodeIfPresent(String.self, forKey: .change_plan_addon_back_btn_title)
         change_plan_addon_keep_btn_title = try values.decodeIfPresent(String.self, forKey: .change_plan_addon_keep_btn_title)
         change_plan_addon_remove_btn_title = try values.decodeIfPresent(String.self, forKey: .change_plan_addon_remove_btn_title)
         change_plan_addon_screen_title = try values.decodeIfPresent(String.self, forKey: .change_plan_addon_screen_title)
         change_plan_addon_title = try values.decodeIfPresent(String.self, forKey: .change_plan_addon_title)
-        charges_taken_from = try values.decodeIfPresent(String.self, forKey: .charges_taken_from)
         chart_title = try values.decodeIfPresent(String.self, forKey: .chart_title)
         chart_today_bar = try values.decodeIfPresent(String.self, forKey: .chart_today_bar)
-        chooseanotherbtn = try values.decodeIfPresent(String.self, forKey: .chooseanotherbtn)
-        choosebtn = try values.decodeIfPresent(String.self, forKey: .choosebtn)
-        choosepaymentmethod = try values.decodeIfPresent(String.self, forKey: .choosepaymentmethod)
-        choosesomethingelsebtn = try values.decodeIfPresent(String.self, forKey: .choosesomethingelsebtn)
         christmas_offers_bonus_data_offer = try values.decodeIfPresent(String.self, forKey: .christmas_offers_bonus_data_offer)
         connectivity_lost_error = try values.decodeIfPresent(String.self, forKey: .connectivity_lost_error)
-        contactmsg = try values.decodeIfPresent(String.self, forKey: .contactmsg)
-        content = try values.decodeIfPresent(String.self, forKey: .content)
-        continuebtn = try values.decodeIfPresent(String.self, forKey: .continuebtn)
         contract_end_date_12_24_month = try values.decodeIfPresent(String.self, forKey: .contract_end_date_12_24_month)
         control_attention_message = try values.decodeIfPresent(String.self, forKey: .control_attention_message)
-        creditcard = try values.decodeIfPresent(String.self, forKey: .creditcard)
-        credittxt = try values.decodeIfPresent(String.self, forKey: .credittxt)
-        criticalinfo = try values.decodeIfPresent(String.self, forKey: .criticalinfo)
         current_spend_additional_charges = try values.decodeIfPresent(String.self, forKey: .current_spend_additional_charges)
         current_spend_charges_info_message = try values.decodeIfPresent(String.self, forKey: .current_spend_charges_info_message)
         current_spend_charges_info_title = try values.decodeIfPresent(String.self, forKey: .current_spend_charges_info_title)
         current_spend_title = try values.decodeIfPresent(String.self, forKey: .current_spend_title)
         current_spend_value_card_title = try values.decodeIfPresent(String.self, forKey: .current_spend_value_card_title)
-        customercare = try values.decodeIfPresent(String.self, forKey: .customercare)
         daily_breakdown_usage_title = try values.decodeIfPresent(String.self, forKey: .daily_breakdown_usage_title)
         dashboard_gauge_addon_button_title = try values.decodeIfPresent(String.self, forKey: .dashboard_gauge_addon_button_title)
         dashboard_gauge_manage_addon_button_title = try values.decodeIfPresent(String.self, forKey: .dashboard_gauge_manage_addon_button_title)
         dashboard_information_updated_at_label_text = try values.decodeIfPresent(String.self, forKey: .dashboard_information_updated_at_label_text)
         dashboard_recharge_btn = try values.decodeIfPresent(String.self, forKey: .dashboard_recharge_btn)
         dashboard_remianing_days_label_text = try values.decodeIfPresent(String.self, forKey: .dashboard_remianing_days_label_text)
-        differentpaymentmethodtxt = try values.decodeIfPresent(String.self, forKey: .differentpaymentmethodtxt)
-        directdebitbtnlabel = try values.decodeIfPresent(String.self, forKey: .directdebitbtnlabel)
-        directdebit = try values.decodeIfPresent(String.self, forKey: .directdebit)
-        downloadbill = try values.decodeIfPresent(String.self, forKey: .downloadbill)
-        duedate = try values.decodeIfPresent(String.self, forKey: .duedate)
         edit_profile_add_both_unit_name_and_number = try values.decodeIfPresent(String.self, forKey: .edit_profile_add_both_unit_name_and_number)
         edit_profile_address_care_title = try values.decodeIfPresent(String.self, forKey: .edit_profile_address_care_title)
         edit_profile_address_email_hint = try values.decodeIfPresent(String.self, forKey: .edit_profile_address_email_hint)
@@ -2801,14 +2731,9 @@ class LocalizationStringsModel : NSObject, Codable {
         edit_profile_unit_title = try values.decodeIfPresent(String.self, forKey: .edit_profile_unit_title)
         edit_profile_view_current_plan_info_title = try values.decodeIfPresent(String.self, forKey: .edit_profile_view_current_plan_info_title)
         enable_touchid_title = try values.decodeIfPresent(String.self, forKey: .enable_touchid_title)
-        entertext = try values.decodeIfPresent(String.self, forKey: .entertext)
         enter_your_correct_pin_title = try values.decodeIfPresent(String.self, forKey: .enter_your_correct_pin_title)
         enter_your_pin_button = try values.decodeIfPresent(String.self, forKey: .enter_your_pin_button)
         enter_your_pin_title = try values.decodeIfPresent(String.self, forKey: .enter_your_pin_title)
-        errormsgforexpressrecharge = try values.decodeIfPresent(String.self, forKey: .errormsgforexpressrecharge)
-        expresshead = try values.decodeIfPresent(String.self, forKey: .expresshead)
-        expresssecondhead = try values.decodeIfPresent(String.self, forKey: .expresssecondhead)
-        extensionmessage = try values.decodeIfPresent(String.self, forKey: .extensionmessage)
         filter_title_after_filteration = try values.decodeIfPresent(String.self, forKey: .filter_title_after_filteration)
         filter_title_postpaid = try values.decodeIfPresent(String.self, forKey: .filter_title_postpaid)
         filter_title_prepaid = try values.decodeIfPresent(String.self, forKey: .filter_title_prepaid)
@@ -2909,26 +2834,18 @@ class LocalizationStringsModel : NSObject, Codable {
         fixed_db_wifi_hub_setup_message = try values.decodeIfPresent(String.self, forKey: .fixed_db_wifi_hub_setup_message)
         fixed_db_wifi_hub_setup_title = try values.decodeIfPresent(String.self, forKey: .fixed_db_wifi_hub_setup_title)
         forgotten_your_pin = try values.decodeIfPresent(String.self, forKey: .forgotten_your_pin)
-        gotodashboardbtn = try values.decodeIfPresent(String.self, forKey: .gotodashboardbtn)
-        helpmerechargebtn = try values.decodeIfPresent(String.self, forKey: .helpmerechargebtn)
-        helpmessage = try values.decodeIfPresent(String.self, forKey: .helpmessage)
         hide_other_users = try values.decodeIfPresent(String.self, forKey: .hide_other_users)
-        insufficienterrmsg = try values.decodeIfPresent(String.self, forKey: .insufficienterrmsg)
         inactive = try values.decodeIfPresent(String.self, forKey: .inactive)
         including_additional_charges = try values.decodeIfPresent(String.self, forKey: .including_additional_charges)
         incorrect_pin_message = try values.decodeIfPresent(String.self, forKey: .incorrect_pin_message)
-        individual_error_message_body = try values.decodeIfPresent(String.self, forKey: .individual_error_message_body)
-        inputplaceholder = try values.decodeIfPresent(String.self, forKey: .inputplaceholder)
         insurance_description = try values.decodeIfPresent(String.self, forKey: .insurance_description)
         international_countries_screen_title = try values.decodeIfPresent(String.self, forKey: .international_countries_screen_title)
-        invoicenumber = try values.decodeIfPresent(String.self, forKey: .invoicenumber)
         irrecoverable_error_message = try values.decodeIfPresent(String.self, forKey: .irrecoverable_error_message)
         irrecoverable_error_message_help_phone_1 = try values.decodeIfPresent(String.self, forKey: .irrecoverable_error_message_help_phone_1)
         irrecoverable_error_message_help_phone_2 = try values.decodeIfPresent(String.self, forKey: .irrecoverable_error_message_help_phone_2)
         irrecoverable_error_message_title = try values.decodeIfPresent(String.self, forKey: .irrecoverable_error_message_title)
         irrecoverable_error_negative_button_title = try values.decodeIfPresent(String.self, forKey: .irrecoverable_error_negative_button_title)
         irrecoverable_error_title = try values.decodeIfPresent(String.self, forKey: .irrecoverable_error_title)
-        issuedate = try values.decodeIfPresent(String.self, forKey: .issuedate)
         issue_date = try values.decodeIfPresent(String.self, forKey: .issue_date)
         link_service_add_confirmation_body = try values.decodeIfPresent(String.self, forKey: .link_service_add_confirmation_body)
         link_service_add_confirmation_title = try values.decodeIfPresent(String.self, forKey: .link_service_add_confirmation_title)
@@ -2952,7 +2869,6 @@ class LocalizationStringsModel : NSObject, Codable {
         link_service_remove_confirmation_title = try values.decodeIfPresent(String.self, forKey: .link_service_remove_confirmation_title)
         link_service_sub_title = try values.decodeIfPresent(String.self, forKey: .link_service_sub_title)
         link_service_title = try values.decodeIfPresent(String.self, forKey: .link_service_title)
-        loadingbutton = try values.decodeIfPresent(String.self, forKey: .loadingbutton)
         loading_error_message = try values.decodeIfPresent(String.self, forKey: .loading_error_message)
         loading_error_message_help_phone_1 = try values.decodeIfPresent(String.self, forKey: .loading_error_message_help_phone_1)
         loading_error_message_help_phone_2 = try values.decodeIfPresent(String.self, forKey: .loading_error_message_help_phone_2)
@@ -2988,14 +2904,12 @@ class LocalizationStringsModel : NSObject, Codable {
         manage_data_control = try values.decodeIfPresent(String.self, forKey: .manage_data_control)
         manage_subscription = try values.decodeIfPresent(String.self, forKey: .manage_subscription)
         manage_subscription_one_item = try values.decodeIfPresent(String.self, forKey: .manage_subscription_one_item)
-        mobno = try values.decodeIfPresent(String.self, forKey: .mobno)
         monthly_plan_costs = try values.decodeIfPresent(String.self, forKey: .monthly_plan_costs)
-        msg = try values.decodeIfPresent(String.self, forKey: .msg)
-        mycreditdescription = try values.decodeIfPresent(String.self, forKey: .mycreditdescription)
         my_credit_bonus = try values.decodeIfPresent(String.self, forKey: .my_credit_bonus)
         my_credit_bonus_dollars = try values.decodeIfPresent(String.self, forKey: .my_credit_bonus_dollars)
         my_credit_empty_state_msg = try values.decodeIfPresent(String.self, forKey: .my_credit_empty_state_msg)
         my_credit_error_msg = try values.decodeIfPresent(String.self, forKey: .my_credit_error_msg)
+        my_credit_error_title = try values.decodeIfPresent(String.self, forKey: .my_credit_error_title)
         my_credit_expires = try values.decodeIfPresent(String.self, forKey: .my_credit_expires)
         my_credit_expiring_on = try values.decodeIfPresent(String.self, forKey: .my_credit_expiring_on)
         my_credit_header_error_sub_title = try values.decodeIfPresent(String.self, forKey: .my_credit_header_error_sub_title)
@@ -3008,15 +2922,22 @@ class LocalizationStringsModel : NSObject, Codable {
         my_credit_max_state_msg = try values.decodeIfPresent(String.self, forKey: .my_credit_max_state_msg)
         my_credit_max_state_sub_msg = try values.decodeIfPresent(String.self, forKey: .my_credit_max_state_sub_msg)
         my_credit_no_enough_credit_error_msg = try values.decodeIfPresent(String.self, forKey: .my_credit_no_enough_credit_error_msg)
+        my_credit_no_enough_credit_text = try values.decodeIfPresent(String.self, forKey: .my_credit_no_enough_credit_text)
         my_credit_pay_with_credit_card_title = try values.decodeIfPresent(String.self, forKey: .my_credit_pay_with_credit_card_title)
         my_credit_pay_with_new_credit_card_title = try values.decodeIfPresent(String.self, forKey: .my_credit_pay_with_new_credit_card_title)
+        my_credit_recharge_error_msg = try values.decodeIfPresent(String.self, forKey: .my_credit_recharge_error_msg)
+        my_credit_recharge_now_button_title = try values.decodeIfPresent(String.self, forKey: .my_credit_recharge_now_button_title)
         my_credit_reenter_credit_card_details_button_title = try values.decodeIfPresent(String.self, forKey: .my_credit_reenter_credit_card_details_button_title)
         my_credit_retrieve_credit_card_details_error_msg = try values.decodeIfPresent(String.self, forKey: .my_credit_retrieve_credit_card_details_error_msg)
         my_credit_review_and_pay_success_overlay_submessage = try values.decodeIfPresent(String.self, forKey: .my_credit_review_and_pay_success_overlay_submessage)
         my_credit_standard_dollars = try values.decodeIfPresent(String.self, forKey: .my_credit_standard_dollars)
+        my_credit_success_overlay_new_balance_submessage = try values.decodeIfPresent(String.self, forKey: .my_credit_success_overlay_new_balance_submessage)
+        my_credit_success_overlay_remaining_balance_submessage = try values.decodeIfPresent(String.self, forKey: .my_credit_success_overlay_remaining_balance_submessage)
+        my_credit_title = try values.decodeIfPresent(String.self, forKey: .my_credit_title)
         my_credit_title_beta = try values.decodeIfPresent(String.self, forKey: .my_credit_title_beta)
         my_credit_top_up_my_credit_button_title = try values.decodeIfPresent(String.self, forKey: .my_credit_top_up_my_credit_button_title)
         my_credit_top_up_primary_button_title = try values.decodeIfPresent(String.self, forKey: .my_credit_top_up_primary_button_title)
+        my_credit_top_up_secondary_button_title = try values.decodeIfPresent(String.self, forKey: .my_credit_top_up_secondary_button_title)
         my_credit_top_up_successful_msg = try values.decodeIfPresent(String.self, forKey: .my_credit_top_up_successful_msg)
         my_credit_top_up_with_saved_card_primary_button_title = try values.decodeIfPresent(String.self, forKey: .my_credit_top_up_with_saved_card_primary_button_title)
         my_credit_view_history_button_title = try values.decodeIfPresent(String.self, forKey: .my_credit_view_history_button_title)
@@ -3063,7 +2984,6 @@ class LocalizationStringsModel : NSObject, Codable {
         netperform_grant_permission_overlay_title = try values.decodeIfPresent(String.self, forKey: .netperform_grant_permission_overlay_title)
         netperform_learn_more_header = try values.decodeIfPresent(String.self, forKey: .netperform_learn_more_header)
         netperform_more_about_speed_checker = try values.decodeIfPresent(String.self, forKey: .netperform_more_about_speed_checker)
-        newcardheader = try values.decodeIfPresent(String.self, forKey: .newcardheader)
         new_plan_summary_change_plan = try values.decodeIfPresent(String.self, forKey: .new_plan_summary_change_plan)
         new_plan_summary_choose_another_plan = try values.decodeIfPresent(String.self, forKey: .new_plan_summary_choose_another_plan)
         new_plan_summary_exit_fee_label = try values.decodeIfPresent(String.self, forKey: .new_plan_summary_exit_fee_label)
@@ -3085,7 +3005,6 @@ class LocalizationStringsModel : NSObject, Codable {
         new_plan_summary_success_overlay_title = try values.decodeIfPresent(String.self, forKey: .new_plan_summary_success_overlay_title)
         new_plan_summary_warning = try values.decodeIfPresent(String.self, forKey: .new_plan_summary_warning)
         new_plan_summmary_rate_overlay_description = try values.decodeIfPresent(String.self, forKey: .new_plan_summmary_rate_overlay_description)
-        nextcharge = try values.decodeIfPresent(String.self, forKey: .nextcharge)
         offers_empty_state_message_label = try values.decodeIfPresent(String.self, forKey: .offers_empty_state_message_label)
         offers_empty_state_title_label = try values.decodeIfPresent(String.self, forKey: .offers_empty_state_title_label)
         offers_title = try values.decodeIfPresent(String.self, forKey: .offers_title)
@@ -3166,13 +3085,6 @@ class LocalizationStringsModel : NSObject, Codable {
         orpc_shared_user_error_view_title = try values.decodeIfPresent(String.self, forKey: .orpc_shared_user_error_view_title)
         orpc_show_available_plans_button_title = try values.decodeIfPresent(String.self, forKey: .orpc_show_available_plans_button_title)
         orpc_user_already_requested_change_plan_error_message = try values.decodeIfPresent(String.self, forKey: .orpc_user_already_requested_change_plan_error_message)
-        overdue = try values.decodeIfPresent(String.self, forKey: .overdue)
-        overlaytitle = try values.decodeIfPresent(String.self, forKey: .overlaytitle)
-        owing = try values.decodeIfPresent(String.self, forKey: .owing)
-        paid = try values.decodeIfPresent(String.self, forKey: .paid)
-        paypalmsg = try values.decodeIfPresent(String.self, forKey: .paypalmsg)
-        paywithnewcardheader = try values.decodeIfPresent(String.self, forKey: .paywithnewcardheader)
-        paymentoptionheader = try values.decodeIfPresent(String.self, forKey: .paymentoptionheader)
         pending_order_button_title = try values.decodeIfPresent(String.self, forKey: .pending_order_button_title)
         personalise_your_service_hero_empty_name_placeholder = try values.decodeIfPresent(String.self, forKey: .personalise_your_service_hero_empty_name_placeholder)
         personalize_service_all_spaces_warning = try values.decodeIfPresent(String.self, forKey: .personalize_service_all_spaces_warning)
@@ -3191,6 +3103,7 @@ class LocalizationStringsModel : NSObject, Codable {
         plan_contract_monthly_without_device_payment_title = try values.decodeIfPresent(String.self, forKey: .plan_contract_monthly_without_device_payment_title)
         plan_summary_failure_title = try values.decodeIfPresent(String.self, forKey: .plan_summary_failure_title)
         please_choose_different_option = try values.decodeIfPresent(String.self, forKey: .please_choose_different_option)
+        poadtpaid_bill_issued_title = try values.decodeIfPresent(String.self, forKey: .poadtpaid_bill_issued_title)
         pospaid_account_settings_header = try values.decodeIfPresent(String.self, forKey: .pospaid_account_settings_header)
         post_paid_account_settings_edit_profile = try values.decodeIfPresent(String.self, forKey: .post_paid_account_settings_edit_profile)
         post_paid_account_settings_header = try values.decodeIfPresent(String.self, forKey: .post_paid_account_settings_header)
@@ -3240,9 +3153,23 @@ class LocalizationStringsModel : NSObject, Codable {
         postpaid_all_usage_your_issue_date = try values.decodeIfPresent(String.self, forKey: .postpaid_all_usage_your_issue_date)
         postpaid_amoumt_description = try values.decodeIfPresent(String.self, forKey: .postpaid_amoumt_description)
         postpaid_available_addons_international_voice = try values.decodeIfPresent(String.self, forKey: .postpaid_available_addons_international_voice)
+        postpaid_bill_credit_next_bill = try values.decodeIfPresent(String.self, forKey: .postpaid_bill_credit_next_bill)
+        postpaid_bill_next_charge = try values.decodeIfPresent(String.self, forKey: .postpaid_bill_next_charge)
+        postpaid_bill_and_payment_older_bills_customer_care_message = try values.decodeIfPresent(String.self, forKey: .postpaid_bill_and_payment_older_bills_customer_care_message)
+        postpaid_bill_and_payment_overdue_title = try values.decodeIfPresent(String.self, forKey: .postpaid_bill_and_payment_overdue_title)
+        postpaid_bill_and_payment_owing_title = try values.decodeIfPresent(String.self, forKey: .postpaid_bill_and_payment_owing_title)
+        postpaid_bill_and_payment_paid_title = try values.decodeIfPresent(String.self, forKey: .postpaid_bill_and_payment_paid_title)
+        postpaid_bill_bills_payment_header = try values.decodeIfPresent(String.self, forKey: .postpaid_bill_bills_payment_header)
+        postpaid_bill_invoice_number = try values.decodeIfPresent(String.self, forKey: .postpaid_bill_invoice_number)
+        postpaid_bill_need_more_title = try values.decodeIfPresent(String.self, forKey: .postpaid_bill_need_more_title)
+        postpaid_bill_overdue = try values.decodeIfPresent(String.self, forKey: .postpaid_bill_overdue)
         postpaid_bill_overdue_message = try values.decodeIfPresent(String.self, forKey: .postpaid_bill_overdue_message)
+        postpaid_bill_update_direct_debit = try values.decodeIfPresent(String.self, forKey: .postpaid_bill_update_direct_debit)
         postpaid_bill_zero_amount = try values.decodeIfPresent(String.self, forKey: .postpaid_bill_zero_amount)
         postpaid_billing_options_signed_as = try values.decodeIfPresent(String.self, forKey: .postpaid_billing_options_signed_as)
+        postpaid_bills_account_balance = try values.decodeIfPresent(String.self, forKey: .postpaid_bills_account_balance)
+        postpaid_bills_download_bill = try values.decodeIfPresent(String.self, forKey: .postpaid_bills_download_bill)
+        postpaid_bills_dueby = try values.decodeIfPresent(String.self, forKey: .postpaid_bills_dueby)
         postpaid_bills_make_payment = try values.decodeIfPresent(String.self, forKey: .postpaid_bills_make_payment)
         postpaid_bills_call_now = try values.decodeIfPresent(String.self, forKey: .postpaid_bills_call_now)
         postpaid_bills_download_button_title = try values.decodeIfPresent(String.self, forKey: .postpaid_bills_download_button_title)
@@ -3252,9 +3179,12 @@ class LocalizationStringsModel : NSObject, Codable {
         postpaid_bills_filter_finantial_year = try values.decodeIfPresent(String.self, forKey: .postpaid_bills_filter_finantial_year)
         postpaid_bills_filter_last_month = try values.decodeIfPresent(String.self, forKey: .postpaid_bills_filter_last_month)
         postpaid_bills_filter_six_months = try values.decodeIfPresent(String.self, forKey: .postpaid_bills_filter_six_months)
+        postpaid_bills_need_more_message = try values.decodeIfPresent(String.self, forKey: .postpaid_bills_need_more_message)
+        postpaid_bills_overlay_back = try values.decodeIfPresent(String.self, forKey: .postpaid_bills_overlay_back)
         postpaid_bills_payment_bill_overdue_status_message = try values.decodeIfPresent(String.self, forKey: .postpaid_bills_payment_bill_overdue_status_message)
         postpaid_bills_payment_paid_title = try values.decodeIfPresent(String.self, forKey: .postpaid_bills_payment_paid_title)
         postpaid_bills_see_detailed_usage_title = try values.decodeIfPresent(String.self, forKey: .postpaid_bills_see_detailed_usage_title)
+        postpaid_bills_setup_direct_debit = try values.decodeIfPresent(String.self, forKey: .postpaid_bills_setup_direct_debit)
         postpaid_bills_your_bill_header = try values.decodeIfPresent(String.self, forKey: .postpaid_bills_your_bill_header)
         postpaid_call_and_service_international_call_rate_link = try values.decodeIfPresent(String.self, forKey: .postpaid_call_and_service_international_call_rate_link)
         postpaid_call_and_service_terms_and_conditions_title = try values.decodeIfPresent(String.self, forKey: .postpaid_call_and_service_terms_and_conditions_title)
@@ -3403,7 +3333,6 @@ class LocalizationStringsModel : NSObject, Codable {
         pre_paid_account_settings_privacy = try values.decodeIfPresent(String.self, forKey: .pre_paid_account_settings_privacy)
         pre_paid_account_settings_swap_sim = try values.decodeIfPresent(String.self, forKey: .pre_paid_account_settings_swap_sim)
         pre_paid_account_settings_transaction_history = try values.decodeIfPresent(String.self, forKey: .pre_paid_account_settings_transaction_history)
-        prepaidccupdationlisttransactionmsg = try values.decodeIfPresent(String.self, forKey: .prepaidccupdationlisttransactionmsg)
         prepaid_account_settings_header = try values.decodeIfPresent(String.self, forKey: .prepaid_account_settings_header)
         prepaid_adjustment_history_empty_state_text = try values.decodeIfPresent(String.self, forKey: .prepaid_adjustment_history_empty_state_text)
         prepaid_adjustment_history_title = try values.decodeIfPresent(String.self, forKey: .prepaid_adjustment_history_title)
@@ -3586,11 +3515,7 @@ class LocalizationStringsModel : NSObject, Codable {
         purchase_history_past_month_text = try values.decodeIfPresent(String.self, forKey: .purchase_history_past_month_text)
         purchase_history_title = try values.decodeIfPresent(String.self, forKey: .purchase_history_title)
         purchase_history_usage_title = try values.decodeIfPresent(String.self, forKey: .purchase_history_usage_title)
-        receiptnotext = try values.decodeIfPresent(String.self, forKey: .receiptnotext)
         rechage_my_mix = try values.decodeIfPresent(String.self, forKey: .rechage_my_mix)
-        rechargenowbtn = try values.decodeIfPresent(String.self, forKey: .rechargenowbtn)
-        rechargeoptions = try values.decodeIfPresent(String.self, forKey: .rechargeoptions)
-        rechargewithmycreditbtn = try values.decodeIfPresent(String.self, forKey: .rechargewithmycreditbtn)
         recharge_btn_choose_something_else = try values.decodeIfPresent(String.self, forKey: .recharge_btn_choose_something_else)
         recharge_btn_same_again = try values.decodeIfPresent(String.self, forKey: .recharge_btn_same_again)
         recharge_card_boost = try values.decodeIfPresent(String.self, forKey: .recharge_card_boost)
@@ -3608,6 +3533,7 @@ class LocalizationStringsModel : NSObject, Codable {
         recharge_change_service_number_subtitle = try values.decodeIfPresent(String.self, forKey: .recharge_change_service_number_subtitle)
         recharge_change_service_number_title = try values.decodeIfPresent(String.self, forKey: .recharge_change_service_number_title)
         recharge_change_service_number_voucher_button_title = try values.decodeIfPresent(String.self, forKey: .recharge_change_service_number_voucher_button_title)
+        recharge_change_service_number_warning_message = try values.decodeIfPresent(String.self, forKey: .recharge_change_service_number_warning_message)
         recharge_data_combo = try values.decodeIfPresent(String.self, forKey: .recharge_data_combo)
         recharge_flexi_cap = try values.decodeIfPresent(String.self, forKey: .recharge_flexi_cap)
         recharge_fragment_title = try values.decodeIfPresent(String.self, forKey: .recharge_fragment_title)
@@ -3619,21 +3545,30 @@ class LocalizationStringsModel : NSObject, Codable {
         recharge_plan_not_available = try values.decodeIfPresent(String.self, forKey: .recharge_plan_not_available)
         recharge_prepaid = try values.decodeIfPresent(String.self, forKey: .recharge_prepaid)
         recharge_talk_combo = try values.decodeIfPresent(String.self, forKey: .recharge_talk_combo)
-        recharged = try values.decodeIfPresent(String.self, forKey: .recharged)
-        rechargedtext = try values.decodeIfPresent(String.self, forKey: .rechargedtext)
-        redeemnowbtn = try values.decodeIfPresent(String.self, forKey: .redeemnowbtn)
-        remcreditbaltext = try values.decodeIfPresent(String.self, forKey: .remcreditbaltext)
-        restartlabel = try values.decodeIfPresent(String.self, forKey: .restartlabel)
         review_and_pay = try values.decodeIfPresent(String.self, forKey: .review_and_pay)
         review_and_pay_credit_card_unavailable = try values.decodeIfPresent(String.self, forKey: .review_and_pay_credit_card_unavailable)
         review_and_pay_help_me_recharge_links = try values.decodeIfPresent(String.self, forKey: .review_and_pay_help_me_recharge_links)
+        review_and_pay_how_would_you_pay = try values.decodeIfPresent(String.self, forKey: .review_and_pay_how_would_you_pay)
+        review_and_pay_overlay_warning_text = try values.decodeIfPresent(String.self, forKey: .review_and_pay_overlay_warning_text)
+        review_and_pay_payment_option_credit_card = try values.decodeIfPresent(String.self, forKey: .review_and_pay_payment_option_credit_card)
         review_and_pay_payment_option_paypal = try values.decodeIfPresent(String.self, forKey: .review_and_pay_payment_option_paypal)
         review_and_pay_payment_option_wallet = try values.decodeIfPresent(String.self, forKey: .review_and_pay_payment_option_wallet)
+        review_and_pay_paypal_accordion_warning_text = try values.decodeIfPresent(String.self, forKey: .review_and_pay_paypal_accordion_warning_text)
+        review_and_pay_recharge_now = try values.decodeIfPresent(String.self, forKey: .review_and_pay_recharge_now)
         review_and_pay_recharge_with_paypal = try values.decodeIfPresent(String.self, forKey: .review_and_pay_recharge_with_paypal)
         review_and_pay_recharge_with_paypal_guest = try values.decodeIfPresent(String.self, forKey: .review_and_pay_recharge_with_paypal_guest)
         review_and_pay_recharge_with_paypal_user = try values.decodeIfPresent(String.self, forKey: .review_and_pay_recharge_with_paypal_user)
         review_and_pay_success_overlay_message = try values.decodeIfPresent(String.self, forKey: .review_and_pay_success_overlay_message)
+        review_and_pay_success_overlay_receipt_number_submessage = try values.decodeIfPresent(String.self, forKey: .review_and_pay_success_overlay_receipt_number_submessage)
         review_and_pay_success_overlay_submessage = try values.decodeIfPresent(String.self, forKey: .review_and_pay_success_overlay_submessage)
+        review_and_pay_success_overlay_title = try values.decodeIfPresent(String.self, forKey: .review_and_pay_success_overlay_title)
+        review_and_pay_success_overlay_you_have_recharged_submessage = try values.decodeIfPresent(String.self, forKey: .review_and_pay_success_overlay_you_have_recharged_submessage)
+        review_and_pay_unsuccesfull_overlay_submessage = try values.decodeIfPresent(String.self, forKey: .review_and_pay_unsuccesfull_overlay_submessage)
+        review_and_pay_unsuccessfull_overlay_help_me_recharge = try values.decodeIfPresent(String.self, forKey: .review_and_pay_unsuccessfull_overlay_help_me_recharge)
+        review_and_pay_unsuccessfull_overlay_message = try values.decodeIfPresent(String.self, forKey: .review_and_pay_unsuccessfull_overlay_message)
+        review_and_pay_unsuccessfull_overlay_title = try values.decodeIfPresent(String.self, forKey: .review_and_pay_unsuccessfull_overlay_title)
+        review_and_pay_use_new_card = try values.decodeIfPresent(String.self, forKey: .review_and_pay_use_new_card)
+        review_pay_available_title = try values.decodeIfPresent(String.self, forKey: .review_pay_available_title)
         review_pay_credit_btn_cancel_button = try values.decodeIfPresent(String.self, forKey: .review_pay_credit_btn_cancel_button)
         review_pay_credit_btn_recharge_paypal_account_button = try values.decodeIfPresent(String.self, forKey: .review_pay_credit_btn_recharge_paypal_account_button)
         review_pay_credit_card_expire_title = try values.decodeIfPresent(String.self, forKey: .review_pay_credit_card_expire_title)
@@ -3641,19 +3576,22 @@ class LocalizationStringsModel : NSObject, Codable {
         review_pay_credit_card_title = try values.decodeIfPresent(String.self, forKey: .review_pay_credit_card_title)
         review_pay_credit_warning_description = try values.decodeIfPresent(String.self, forKey: .review_pay_credit_warning_description)
         review_pay_credit_warning_title = try values.decodeIfPresent(String.self, forKey: .review_pay_credit_warning_title)
+        review_pay_credit_warning_unavailable_title = try values.decodeIfPresent(String.self, forKey: .review_pay_credit_warning_unavailable_title)
+        review_pay_critical_inf_summary_title = try values.decodeIfPresent(String.self, forKey: .review_pay_critical_inf_summary_title)
+        review_pay_mycredit_card_detail = try values.decodeIfPresent(String.self, forKey: .review_pay_mycredit_card_detail)
         review_pay_recharge_plan_hint = try values.decodeIfPresent(String.self, forKey: .review_pay_recharge_plan_hint)
         review_pay_success_dialog_body_description = try values.decodeIfPresent(String.self, forKey: .review_pay_success_dialog_body_description)
         review_pay_success_dialog_dashboard_btn = try values.decodeIfPresent(String.self, forKey: .review_pay_success_dialog_dashboard_btn)
         review_pay_success_dialog_subtitle = try values.decodeIfPresent(String.self, forKey: .review_pay_success_dialog_subtitle)
+        review_pay_terms_condition_title = try values.decodeIfPresent(String.self, forKey: .review_pay_terms_condition_title)
         review_pay_txt_authorise_credit_description = try values.decodeIfPresent(String.self, forKey: .review_pay_txt_authorise_credit_description)
         review_pay_txt_payments = try values.decodeIfPresent(String.self, forKey: .review_pay_txt_payments)
         review_pay_txt_save_credit = try values.decodeIfPresent(String.self, forKey: .review_pay_txt_save_credit)
         review_pay_txt_save_credit_description = try values.decodeIfPresent(String.self, forKey: .review_pay_txt_save_credit_description)
         review_pay_unsuccess_dialog_dashboard_btn = try values.decodeIfPresent(String.self, forKey: .review_pay_unsuccess_dialog_dashboard_btn)
-        safepaymentmsg = try values.decodeIfPresent(String.self, forKey: .safepaymentmsg)
-        sameagainbtn = try values.decodeIfPresent(String.self, forKey: .sameagainbtn)
+        review_pay_with_card_title = try values.decodeIfPresent(String.self, forKey: .review_pay_with_card_title)
+        review_pay_with_new_card_title = try values.decodeIfPresent(String.self, forKey: .review_pay_with_new_card_title)
         save_settings = try values.decodeIfPresent(String.self, forKey: .save_settings)
-        savedcardheader = try values.decodeIfPresent(String.self, forKey: .savedcardheader)
         secondary_user_linked_message = try values.decodeIfPresent(String.self, forKey: .secondary_user_linked_message)
         secondary_user_remove_card = try values.decodeIfPresent(String.self, forKey: .secondary_user_remove_card)
         secondary_user_unlink_confirm_body = try values.decodeIfPresent(String.self, forKey: .secondary_user_unlink_confirm_body)
@@ -3730,17 +3668,12 @@ class LocalizationStringsModel : NSObject, Codable {
         subscription_end_period = try values.decodeIfPresent(String.self, forKey: .subscription_end_period)
         subscription_monthly_title = try values.decodeIfPresent(String.self, forKey: .subscription_monthly_title)
         subscription_with_renewal_date = try values.decodeIfPresent(String.self, forKey: .subscription_with_renewal_date)
-        successfultitle = try values.decodeIfPresent(String.self, forKey: .successfultitle)
-        termsandconditionlabel = try values.decodeIfPresent(String.self, forKey: .termsandconditionlabel)
         terms_and_conditions_btn_txt = try values.decodeIfPresent(String.self, forKey: .terms_and_conditions_btn_txt)
         terms_and_conditions_title = try values.decodeIfPresent(String.self, forKey: .terms_and_conditions_title)
         terms_close_button_title = try values.decodeIfPresent(String.self, forKey: .terms_close_button_title)
         toggler_view_default_subtitle_active_message = try values.decodeIfPresent(String.self, forKey: .toggler_view_default_subtitle_active_message)
         toggler_view_default_subtitle_inactive_message = try values.decodeIfPresent(String.self, forKey: .toggler_view_default_subtitle_inactive_message)
         tv_postpaid_call_service_terms_and_conditions = try values.decodeIfPresent(String.self, forKey: .tv_postpaid_call_service_terms_and_conditions)
-        unsuccessfultitle = try values.decodeIfPresent(String.self, forKey: .unsuccessfultitle)
-        updatebtn = try values.decodeIfPresent(String.self, forKey: .updatebtn)
-        updatedirectbtnlabel = try values.decodeIfPresent(String.self, forKey: .updatedirectbtnlabel)
         upgrade_eligibilty = try values.decodeIfPresent(String.self, forKey: .upgrade_eligibilty)
         upgrade_eligibilty_change_plan = try values.decodeIfPresent(String.self, forKey: .upgrade_eligibilty_change_plan)
         upgrade_eligiblity_equest_callback = try values.decodeIfPresent(String.self, forKey: .upgrade_eligiblity_equest_callback)
@@ -3753,9 +3686,6 @@ class LocalizationStringsModel : NSObject, Codable {
         vfau_switch_item_active = try values.decodeIfPresent(String.self, forKey: .vfau_switch_item_active)
         vfau_switch_item_inactive = try values.decodeIfPresent(String.self, forKey: .vfau_switch_item_inactive)
         view_detailed_usage_btn_title = try values.decodeIfPresent(String.self, forKey: .view_detailed_usage_btn_title)
-        voucherbtn = try values.decodeIfPresent(String.self, forKey: .voucherbtn)
-        voucherheader = try values.decodeIfPresent(String.self, forKey: .voucherheader)
-        vouchertitle = try values.decodeIfPresent(String.self, forKey: .vouchertitle)
         voucher_already_used_error = try values.decodeIfPresent(String.self, forKey: .voucher_already_used_error)
         voucher_btn_cancel = try values.decodeIfPresent(String.self, forKey: .voucher_btn_cancel)
         voucher_btn_continue = try values.decodeIfPresent(String.self, forKey: .voucher_btn_continue)
@@ -3775,8 +3705,6 @@ class LocalizationStringsModel : NSObject, Codable {
         voucher_reported_stolen_error = try values.decodeIfPresent(String.self, forKey: .voucher_reported_stolen_error)
         voucher_technical_mishap_error = try values.decodeIfPresent(String.self, forKey: .voucher_technical_mishap_error)
         vouchrer_max_digits = try values.decodeIfPresent(String.self, forKey: .vouchrer_max_digits)
-        walletheader = try values.decodeIfPresent(String.self, forKey: .walletheader)
-        walletsubmissiondetailsdescription = try values.decodeIfPresent(String.self, forKey: .walletsubmissiondetailsdescription)
         webview_progressbar_wait = try values.decodeIfPresent(String.self, forKey: .webview_progressbar_wait)
     }
     

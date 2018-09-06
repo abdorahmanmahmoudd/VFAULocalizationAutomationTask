@@ -321,11 +321,10 @@ class ViewController: NSViewController, NSTextFieldDelegate {
         let mirror = Mirror.init(reflecting: decodedNewFileJSONUsingOldModel)
         var missedKeys = ""
         for (attribute, value) in mirror.children {
-    
             guard let v = (value as? String) else {
                 continue
             }
-            missedKeys = missedKeys.appending("key: \"\(attribute?.lowercased() ?? "invalid_key")\", value: \"\(v)\" \n")
+            missedKeys = missedKeys.appending("key: \"\(attribute?.lowercased() ?? "invalid_key")\", value: \"\(v)\",\n")
         }
         if let desktopDir = ProcessInfo.init().environment["HOME"]?.appending("/Desktop"){
             try? missedKeys.write(toFile: desktopDir + "/missedKeys", atomically: false, encoding: .utf8)
