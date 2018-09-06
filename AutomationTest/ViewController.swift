@@ -10,8 +10,9 @@ import Cocoa
 
 class ViewController: NSViewController, NSTextFieldDelegate {
     
-    @IBOutlet weak var pathTextField: NSTextField?
-
+    @IBOutlet weak var pathTextField: NSTextField!
+    @IBOutlet weak var rootClassNameTextField: NSTextField!
+    
     func getFileData(Named name: String) -> Data?{
         
         guard let filePath = Bundle.main.path(forResource: name, ofType: nil) else {
@@ -127,7 +128,6 @@ class ViewController: NSViewController, NSTextFieldDelegate {
     func startProcess(withModelName modelName: String, andPath projectPath: String){
         
         let localizationFileName = "localized.json"
-        let modelName = "OfferConfiguration"
         
         //read and parse strings json file
         guard let localizedStringsData = getFileData(Named: localizationFileName) else {
@@ -182,7 +182,6 @@ class ViewController: NSViewController, NSTextFieldDelegate {
             }
             
             var updateFiles = false
-            
             let projectLocalizationFilePath = "/Users/mac/Documents/VFAU-iOS/MyVodafone-Gold/en-AU.lproj/Localizable.strings"
             guard var projectLocalizationFileContent = getFileContent(Named: projectLocalizationFilePath)else{
                 print("Couldn't open project localization file . strings and i will stop\n")
@@ -266,9 +265,8 @@ class ViewController: NSViewController, NSTextFieldDelegate {
     func removeOccurence(fromFilePath path: String){
         
         guard let fileContent = getFileContent(Named: path) else {
-            print("ERROR: Can not get file content")
-            print("I will EXIST NOW")
-            exit(0)
+            showAlert(withTitle: nil, andMessage: "Couldn't read file")
+            return
         }
         
         let fileLines = fileContent.components(separatedBy: "\n")
@@ -289,38 +287,77 @@ class ViewController: NSViewController, NSTextFieldDelegate {
             print("\(path) updated.")
             
         }catch{
-            print("ERROR: couldn't update file : \(path)! - description: \(error.localizedDescription)\n")
-            print("I will EXIST NOW")
-            exit(0)
+            showAlert(withTitle: nil, andMessage: "ERROR: couldn't update file : \(path)! - description: \(error.localizedDescription)\n")
+            return
         }
         
+    }
+    
+    func showAlert(withTitle title: String?, andMessage message: String?) {
+        let alert = NSAlert.init()
+        alert.informativeText = title ?? ""
+        alert.messageText = message ?? ""
+        alert.alertStyle = .warning
+        alert.runModal()
+    }
+    
+    func getMissingKeys(againstFile filePath: String ){
+        
+        guard let newFileContent = getFileContent(Named: filePath) else {
+            showAlert(withTitle: nil, andMessage: "Couldn't read file")
+            return
+        }
+        
+        guard let newFileData = newFileContent.data(using: .utf8) else  {
+            showAlert(withTitle: nil, andMessage: "Couldn't convert file content to Data")
+            return
+        }
+        
+        guard let decodedNewFileJSONUsingOldModel = try? JSONDecoder().decode(LocalizationStringsModel.self, from: newFileData) else {
+            showAlert(withTitle: nil, andMessage: "Error while decoding..")
+            return
+        }
+        
+        let mirror = Mirror.init(reflecting: decodedNewFileJSONUsingOldModel)
+        var missedKeys = ""
+        for (attribute, value) in mirror.children {
+    
+            guard let v = (value as? String) else {
+                continue
+            }
+            missedKeys = missedKeys.appending("key: \"\(attribute?.lowercased() ?? "invalid_key")\", value: \"\(v)\" \n")
+        }
+        if let desktopDir = ProcessInfo.init().environment["HOME"]?.appending("/Desktop"){
+            try? missedKeys.write(toFile: desktopDir + "/missedKeys", atomically: false, encoding: .utf8)
+        }else {
+            showAlert(withTitle: nil, andMessage: "Couldn't get desktop directory")
+        }
     }
     
     //MARK: IBActions
     
     @IBAction func btnStartClicked(_ sender: NSButton) {
-        
-        if pathTextField?.stringValue != ""{
-            
-            let path = pathTextField?.stringValue ?? "/Users/mac/Documents/VFAU-iOS/MyVodafone-Gold"
-            let modelName = "OfferConfiguration"
-            startProcess(withModelName: modelName, andPath: path)
-            
+        if !pathTextField.stringValue.isEmpty && !rootClassNameTextField.stringValue.isEmpty{
+            startProcess(withModelName: rootClassNameTextField.stringValue, andPath: pathTextField.stringValue)
         }else{
-            print("Please enter project path!")
+            showAlert(withTitle: nil, andMessage: "Please enter project path and model name")
         }
-        
     }
     
     @IBAction func btnRemoveOccurenceClicked(_ sender: NSButton) {
-        if pathTextField?.stringValue != ""{
-            
-            let path = pathTextField?.stringValue ?? "-"
-            removeOccurence(fromFilePath: path)
+        if !pathTextField.stringValue.isEmpty {
+            removeOccurence(fromFilePath: pathTextField.stringValue)
         }else{
-            print("Please enter file path!")
+            showAlert(withTitle: nil, andMessage: "Please enter file path")
         }
     }
 
+    @IBAction func btnGetMissingKeyClicked(_ sender: NSButton) {
+        if !pathTextField.stringValue.isEmpty {
+            getMissingKeys(againstFile: pathTextField.stringValue)
+        }else{
+            showAlert(withTitle: nil, andMessage: "Please enter file path")
+        }
+    }
 }
 

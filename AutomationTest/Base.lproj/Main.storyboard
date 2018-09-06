@@ -709,7 +709,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kqM-bP-bh0">
+                            <button toolTip="start the task of converting your source code from using &quot;R.swift.localizable&quot; to use configuration API JSON object." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kqM-bP-bh0">
                                 <rect key="frame" x="34" y="202" width="70" height="32"/>
                                 <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0Jl-zD-2DO">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -719,7 +719,7 @@
                                     <action selector="btnStartClicked:" target="XfG-lQ-9wD" id="Vek-up-zA0"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="V7t-qd-vwM">
+                            <button toolTip="remove occurence lines in the below file path" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="V7t-qd-vwM">
                                 <rect key="frame" x="283" y="202" width="163" height="32"/>
                                 <buttonCell key="cell" type="push" title="Remove Occurrence" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="odl-yu-oOK">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -745,22 +745,57 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button toolTip="put your new json localization path below to validate old one against it" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3f2-SX-URz">
+                                <rect key="frame" x="293" y="161" width="144" height="32"/>
+                                <buttonCell key="cell" type="push" title="Get Missing Keys" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="2d9-yr-JkV">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="btnGetMissingKeyClicked:" target="XfG-lQ-9wD" id="fuI-Wk-f0l"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="78j-9O-i7K">
+                                <rect key="frame" x="40" y="101" width="400" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Root Class name" bezelStyle="round" id="k1o-CK-ab4">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7Dc-DK-PZl">
+                                <rect key="frame" x="38" y="139" width="107" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Model root name" id="EjU-Yd-igu">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="3f2-SX-URz" firstAttribute="centerX" secondItem="V7t-qd-vwM" secondAttribute="centerX" id="0HX-ly-xTY"/>
                             <constraint firstItem="V7t-qd-vwM" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="40" id="Caq-TS-ats"/>
                             <constraint firstItem="XzL-1E-Xht" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="40" id="Dzg-tw-NPX"/>
                             <constraint firstAttribute="bottom" secondItem="H9n-Up-hHy" secondAttribute="bottom" constant="16" id="FD3-sG-s8A"/>
                             <constraint firstItem="kqM-bP-bh0" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="40" id="VxG-7J-sm0"/>
                             <constraint firstItem="H9n-Up-hHy" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="40" id="aT5-4x-0ED"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3f2-SX-URz" secondAttribute="trailing" constant="16" id="adW-Kj-Qec"/>
+                            <constraint firstAttribute="trailing" secondItem="78j-9O-i7K" secondAttribute="trailing" constant="40" id="az2-uV-n8R"/>
                             <constraint firstItem="kqM-bP-bh0" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="40" id="bEB-Lu-Xei"/>
+                            <constraint firstItem="78j-9O-i7K" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="40" id="jAi-dC-00J"/>
                             <constraint firstItem="H9n-Up-hHy" firstAttribute="top" secondItem="XzL-1E-Xht" secondAttribute="bottom" constant="16" id="lYJ-YM-pmo"/>
                             <constraint firstAttribute="trailing" secondItem="H9n-Up-hHy" secondAttribute="trailing" constant="40" id="oyQ-zf-wdX"/>
+                            <constraint firstItem="78j-9O-i7K" firstAttribute="top" secondItem="7Dc-DK-PZl" secondAttribute="bottom" constant="16" id="qNV-aC-U2O"/>
                             <constraint firstAttribute="trailing" secondItem="V7t-qd-vwM" secondAttribute="trailing" constant="40" id="r8C-gj-Bm4"/>
+                            <constraint firstItem="XzL-1E-Xht" firstAttribute="top" secondItem="78j-9O-i7K" secondAttribute="bottom" constant="30" id="rNE-Cc-ZaA"/>
+                            <constraint firstItem="3f2-SX-URz" firstAttribute="top" secondItem="V7t-qd-vwM" secondAttribute="bottom" constant="20" id="sB5-Y3-4HX"/>
+                            <constraint firstItem="7Dc-DK-PZl" firstAttribute="leading" secondItem="kqM-bP-bh0" secondAttribute="leading" id="uYe-Bu-NIj"/>
                             <constraint firstItem="H9n-Up-hHy" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="wlI-q9-Mb6"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="pathTextField" destination="H9n-Up-hHy" id="yXf-O6-J6A"/>
+                        <outlet property="rootClassNameTextField" destination="78j-9O-i7K" id="DM8-uI-JZu"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
