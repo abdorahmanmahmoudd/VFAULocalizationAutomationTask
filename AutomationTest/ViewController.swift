@@ -219,11 +219,12 @@ class ViewController: NSViewController, NSTextFieldDelegate {
                     return value == localizationValue}?.key)
                 {
                     let key = (configurationValuePath.contains(".") ? (configurationValuePath.components(separatedBy: ".").last ?? "corrupted_key") : configurationValuePath)
-                    print("key = \(key), and localizationkey = \(localizationKeys[i])\n")
+                    
                     if key == localizationKeys[i]{
+                        print("!!!redandunt match: \(key) == \(localizationKeys[i])\n")
                         continue
                     }
-                    projectLocalizationFileContent = projectLocalizationFileContent.replacingOccurrences(of: localizationKeys[i], with: key, options: .literal, range: nil)
+                    projectLocalizationFileContent = projectLocalizationFileContent.replacingOccurrences(of: "\"\(localizationKeys[i])\"", with: "\"\(key)\"", options: .literal, range: nil)
                     
                     //update configuration file
                     if let matchedLine = (localizationLines.first(where: { (line) -> Bool in
@@ -234,7 +235,7 @@ class ViewController: NSViewController, NSTextFieldDelegate {
                         if var configurationValuePath = (configurationMatches.first { (key,value) -> Bool in
                             return value == localizationValue}?.key)
                         {
-                            let key = (configurationValuePath.contains(".") ? (configurationValuePath.lowercased().components(separatedBy: ".").last ?? "corrupted_key") : configurationValuePath.lowercased())
+                            let key = (configurationValuePath.contains(".") ? (configurationValuePath.components(separatedBy: ".").last ?? "corrupted_key") : configurationValuePath)
                             
                             let codeSnippet = "getStringForView(ofConfigurationKey: R.string.localizable.\(key).key, andConfigurationValue: \(modelName).sharedInstance?.\(configurationValuePath.attributePath()), andLocalString: R.string.localizable.\(key)())"
                             
