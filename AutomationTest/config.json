@@ -1,926 +1,779 @@
 {
-    "proofOfPurchaseData": {
-        "receiverEmailAddress": "onlinewebrequests@TechMahindra.com",
-        "senderEmailAddress": "service.request@vodafone.com.au",
-        "subject": "Proof of purchase request â€“ HSS/WSS",
-        "MainLabel": "A proof of purchase may be required if your device is being repaired under warranty or if youâ€™re submitting an insurance claim. Weâ€™ll email your document by the end of the next business day.",
-        "FullName": "Enter your full name",
-        "phonenum": "Enter your phone number",
-        "emailAddress": "Enter your email address",
-        "DetailsOfPhone": "Details about where you purchased your phone",
-        "ExRepair": "e.g. repair/insurance purposes",
-        "IMEInum": "Enter your IMEI number",
-        "mobileName": "e.g. iPhone 8",
-        "NameLbl": "Your name",
-        "ContactLbl": "Contact number (optional)",
-        "EmailLbl": "Email to receive the proof of purchase",
-        "purchaseLbl": "About your purchase",
-        "detailsLbl": "Details",
-        "ReasonLbl": "Reason for proof of purchase",
-        "IMEILbl": "IMEI number for this handset (dial *#06# on your handset)",
-        "HandsetLbl": "Handset make / model"
+    "Generic": {
+        "DOLLAR": "$",
+        "selectBtn": "Select",
+        "legacyPlan": 1,
+        "grandFatherPlan": 0,
+        "backBtn": "Back"
     },
-    "generic": {
-        "tryagainLabel": "Something didnâ€™t go as planned",
-        "tryagainDescLabel": "Please try again later to see any new offers.",
-        "tryagainBtnLabel": "Try again"
-    },
-    
-    "offersLoading": {
-        "title": "Please don't leave this page",
-        "header": "Offers and extras for you"
-    },
-    "offers": {
-        "Wallet_Topup": {
-            "offerTypeKey":"rechargeOfferType",
-            "topupKey":"wallet_topup"
-        },
-        "Recharge_and_Get": {
-            "key": "Recharge and Get",
-            "offerTypeKey":"rechargeOfferType",
-            "topupKey":"wallet_topup",
-            "topupBtnLabel":"Top up now",
-            "btnLabel": "Recharge now",
-            "tandc": "http://vfau.co/inppc"
-        },
-        "Upgrade": {
-            "key": "Upgrade",
-            "btnLabel": "Find out more",
-            "phoneandPlanUpgradeURL": "https://shop.vodafone.com.au/upgrades/userlogin",
-            "SIMOUpgradeURL":"https://shop.vodafone.com.au/upgrades/userlogin",
-            "tandc": "http://vfau.co/inppc"
-        },
-        "NPEY": {
-            "btnLabel": "Find out more",
-            "key": "NPEY",
-            "url": "https://shop.vodafone.com.au/upgrades/npey",
-            "tandc": "http://vfau.co/inppc"
-        },
-        "ORPC": {
-            "key": "ORPC",
-            "btnLabel": "Compare the plan",
-            "tandc": "http://vfau.co/inppc"
-        },
-        "Prepaid_Addon": {
-            "key": "Prepaid Addon",
-            "btnLabel": "Add Data",
-            "tandc": "http://vfau.co/inppc"
-        },
-        "Content": {
-            "key": "Content",
-            "btnLabel": "Find out more",
-            "freeKey":"free",
-            "freeURL":"https://subscriptions.services.vodafone.com.au/subscriptions/user_selection/new",
-            "otherURL":"https://subscriptions.services.vodafone.com.au/subscriptions/spotify/user_confirmation/new_chargeable",
-            "tandc": "http://vfau.co/inppc"
-        },
-        "Recharge_and_Select": {
-            "key": "Recharge and Select",
-            "btnLabel": "Recharge now",
-            "tandc": "http://vfau.co/inppc"
-        },
-        "iamnotInterestedLabel": "I'm not interested"
-    },
-    "offersBody": {
-        "RechargeButton": "Recharge now",
-        "ImNotIntrestedButton": "I'm not interested",
-        "FinoutButton": "Find out more",
-        "AdddataButton": "Add Data",
-        "RechargeandSelect": "Recharge and Select",
-        "Mb200": "200MB",
-        "Credit40": "$40 credit",
-        "Dollar40": "$40",
-        "Gb6": "6GB",
-        "Days35": "35 days",
-        "Content": "Content",
-        "PrepaidAddon": "Prepaid Addon",
-        "Upgrade": "Upgrade",
-        "Gb8": "8 GB",
-        "Datadiv": "Data",
-        "Dollar60": "$60",
-        "Dollar70": "$70",
-        "Premonth": "per month",
-        "Npey": "NPEY",
-        "Orpc": "ORPC",
-        "RecommendedPlan": "Recommended Plan",
-        "RechargeandGet": "Recharge and Get",
-        "noOffersHead": "We donâ€™t have any offers for you right now",
-        "checkBackLabel": "Check back soon to see new offers as theyâ€™re posted."
-    },
-    "simswap": {
-        "dropdown": [{
-                     "name": "- select -",
-                     "id": "0"
-                     },
-                     {
-                     "name": "New device",
-                     "request":"Lost / Stolen SIM",
-                     "id": "1"
-                     },
-                     {
-                     "name": "Lost or stolen",
-                     "request":"Faulty SIM",
-                     "id": "2"
-                     },
-                     {
-                     "name": "Faulty",
-                     "request":"Blocked SIM",
-                     "id": "3"
-                     },
-                     {
-                     "name": "Blocked",
-                     "request":"Upgrade to SIM",
-                     "id": "4"
-                     }
-                     ],
-        "titleLabel": "Transfer your existing Vodafone number to your new SIM",
-        "mobileNumberLabel": "Your mobile number",
-        "reasonLabel": "Reason for replacement",
-        "enterSimLabel": "Enter your new SIM number",
-        "simNumberFirst": "89610 30000",
-        "simNumberPlaceholder": "Next 10 digits",
-        "errorCantFind": "Canâ€™t find your SIM number?",
-        "canHighlightedLabel": "You can find the SIM number highlighted below.",
+    "Last_Recharge": {
+        "rechargeTitle": "You last recharged",
+        "LoadingTitle": "We're having trouble confirming your details",
+        "recharged": "Recharged on",
+        "voucherTitle": "You have a voucher ?",
+        "addonTitle": "Need a quick boost ?",
+        "dashboardBtn": "Go to dashboard",
+        "sameAgainBtn": "Same again",
+        "chooseSomethingelseBtn": "Choose something else",
+        "redeemNowBtn": "Redeem now",
+        "buyAddonBtn": "Buy an Add-on",
+        "legacyPlanAlert": "If you choose to recharge on any of these plans, you won’t be able to return to your current plan. You can however continue to recharge on any of these new plans.",
+        "grandFatherPlanAlert": "Your current plan is no longer available. Please choose from one of our new plans.",
+        "legacyPlanAlertRP":"If you choose to recharge on this plan, you won’t be able to return to your current plan. You can however continue to recharge on this new plan."
         
-        "success": {
-            "title1": "Good news, youâ€™re almost done!",
-            "button": "Go to dashboard",
-            "query1": "How long does it take?",
-            "response1": "Your service should be ready in about 15 minutes.",
-            "query2": "What happens next?",
-            "response2": "Once your existing SIM stops working, insert your Vodafone SIM into your device and youâ€™ll be ready to go.",
-            "tip1": "Tip: If it doesnâ€™t connect after 15 minutes, try switching your phone off and on."
-        }
     },
-    "postPaidProductAndServices": {
-        "data": "Data",
-        "includedDataPlan": "Included data - plan",
-        "starterData": "Starter Data",
-        "nationalCallsAndTXT": "National calls and TXT",
-        "standardTXTToOverseas": "Standard TXT here and to overseas",
+    "Select_Recharge_Type": {
+        "voucherHeader": "Using a voucher for MyMix",
+        "content": "With MyMix you can choose your own recharge inclusions. As the value of your voucher is fixed there will be limited choices available.",
+        "anotherContent": "You’ll be able to get the most out of MyMix by using a credit card or PayPal.",
+        "continueBtn": "Continue",
+        "chooseAnotherBtn": "Choose another recharge option",
+        "topPick": "HERO_PLAN"
+    },
+    "Voucher_Recharge": {
+        "voucherSpinnerTitle": "Checking your PIN",
+        "voucherSpinnerMsg": "Please don’t leave this page",
+        "voucherHeader": "Recharge with a voucher",
+        "enterText": "Enter your voucher PIN",
+        "cancelBtn": "Cancel",
+        "inputPlaceholder": "Enter 12 digits",
+        "voucher": "Voucher"
+    },
+    "Express_Recharge": {
+        "attemptsError": "You've made too many attempts. Please call us on 1300 650 410 for help with your one-time code.",
+        "expressSpinnerTitle": "Checking your number",
+        "expressHeading": "Recharge a prepaid service",
+        "expressHead": "Recharge your prepaid service",
+        "expressSecondHeading": "To recharge a prepaid service, enter the mobile number that you want to recharge.",
+        "expressSecondHead": "To recharge your prepaid service, enter the mobile number that you want to recharge.",
+        "mobileNo": "Enter a mobile number",
+        "mobNo": "Enter your mobile number",
+        "voucherBtn": "Recharge with a voucher",
+        "getContent": "Get",
+        "bonusContent": "Score",
+        "bonusData": "bonus data",
+        "bonusDataContent": "When you recharge with a credit card online. Data in Oz. T&C apply.",
+        "bonusDataContentInOz": "In Oz when you recharge with a credit card online. T&C apply.",
+        "primaryPhoneNum": "Phone number",
+        "inputVoucherNo": "PIN number",
+        "errorMsgForExpressRecharge": "Invalid number entered.",
+        "voucherErrMsg": "This offer is no longer available. For help, call 1555 free from your vodafone mobile or 1300 650 410 from another phone (standard call rates apply).",
+        "addonTopupVoucherErr": "This offer is no longer available. For help,call 1555 from your Vodafone mobile or 1300 852 410 (standard call rates apply).",
+        "rechargeTopupVoucherErr": "The value of this voucher can’t be used to top up your My Credit. However, you can still use this voucher to recharge your service.",
+        "inSufficientErrMsg": "You don’t have enough My Credit to complete this purchase. Please top up your My Credit with",
+        "insufficientTopupVoucherErr": "The voucher amount must match the amount you select to top up your My Credit. Please select a different payment option.",
+        "walletNotEnabled": "We've just had a technical mishap with your account. Give it another go or call us on 1555 from your Vodafone mobile or 1300 650 410 from other phones.",
+        "addedCreditMsg":" has been added to your My Credit balance.",
+        "placeHolder":"e.g 0414123123"
+    },
+    "Landing_RechargeMBB": {
+        "creditOrPaypal": "Use a Credit card or PayPal",
+        "rechargeNowBtn": "Recharge now",
+        "haveVoucher": "You have a voucher?"
+    },
+    "Landing_Recharge": {
+        "rechargeOptions": "Recharge options",
+        "comboSub": "Loaded with data to access internet.",
+        "chooseBtn": "Choose",
+        "changeBtn": "Change",
+        "toppingUpHeader": "You're topping up: ",
+        "rechargeHeader": "You're recharging: ",
+        "comboSubInternational": "Loaded with international standard minutes to call selected countries.",
+        "comboSubPrepaid": "Access our great prepaid rates over a year.",
+        "comboSubOwnPrepaid": "Design your own prepaid plan."
+    },
+    "Maintenance": {
+        "maintenanceHeader": "We’re sorry - My Vodafone is currently unavailable.",
+        "maintenanceError": "Our team are working on fixing the technical issue. Please try again later."
+    },
+    "Gold_Titles": {
+        "addons": "Add-ons",
+        "dataaddons": "Data Add-ons",
+        "home": "Your Add-on",
+        "dashboard": "My Vodafone",
+        "errorhandling": "Error",
+        "expressRecharge" : "Express Recharge",
+        "review": "Review and pay",
+        "recharge": "Recharge ",
+        "express": "Express Recharge",
+        "select": "Select Recharge",
+        "voucher": "Redeem voucher",
+        "terms": "Terms and conditions",
+        "changemsisdn": "Change Number",
+        "selectAddon": "Select Add-on",
+        "reviewAndPay": "Review and pay",
+        "topupMyCredit": "Top up My Credit",
+        "expressTopUp": "Express Topup",
+        "maintenance": "Maintenance",
+        "offers": "Offers and extras for you",
+        "selectAddOn": "Select Add-on",
+        "homePage": "Home",
+        "myVodafone":"My Vodafone"
+    },
+    "My_Mix_Selector": {
+        "spinnerTitle": "Processing payment",
+        "spinnerMessage": "Please don’t leave this page",
+        "unsuccessfulTitle": "Recharge unsuccessful",
+        "description": "Unfortunately, your financial provider has declined your payment. Please try another card or choose another payment option.",
+        "transactionMsg": "Your payment has not gone through",
+        "successfulTitle": "Recharge successful",
+        "msg": "Your new balance will be updated in few minutes",
+        "criticalInfoSummary": "Critical Information Summary",
+        "downloadCriticalInfoSummary": "Download Critical Information Summary",
+        "attempting": "Attempting your recharge..",
+        "expiry": "Expiry period",
+        "dataForUse": "Data for use within Australia",
+        "standardMins": "Standard national minutes",
+        "internationalMins": "Standard international minutes to",
+        "myMixUrl": "http://www.vodafone.com.au/idd",
+        "countries": "Selected Countries",
+        "standardTxt": "Standard national TXT",
         "unlimited": "Unlimited",
-        "standardNationalMin": "Standard national minutes",
-        "internationalCalls": "Int'l calls",
-        "stdInternationalMins": "Standard international mins to",
-        "selectedCountries": "Selected Countries",
-        "stdInternationalGlobalMins": "Standard international Global Minutes to",
-        "eligibleCountries": "Eligible Countries",
-        "NewPhoneEveryYear": "New Phone Every Year",
-        "thisplanEligibleNPEY": "This plan is eligible for New Phone Every Year.",
-        "button_1": "Find out more",
-        "button_Manage": " Manage subscriptions",
-        "GB5bonusData": "5GB bonus data for your first month.",
-        "TandCApply": "T&C apply.",
-        "changeYourPlan": "Change your plan",
-        "changeYourPlanDesc": "If you're still under contract, you can change to a higher value plan.",
-        "add_onsBoosters": "Your Add-ons and Boosters",
-        "add_onsBoosters_label": "Make the most of your plan with an Add-on or a Booster.",
-        "browseAdd_onsBoosters": "Browse Add-ons and Boosters",
-        "manageRoamingsetting": "Manage your Roaming settings",
-        "manageAdd_on": "Manage Add-on",
-        "hotOffers": "Hot offers on your plan",
-        "hotOffersMobile": "Hot offers",
-        "yourPlanSummary": "Your plan summary",
-        "resetsOn": "Resets on",
-        "resetsDate": "01/07/17",
-        "expiresOn": "Expires on",
-        "expiresDate": "01/07/17",
-        "plan": "Plan",
-        "swapSIM": "Swap my SIM",
-        "proofOfPurchase": "Request proof of purchase",
-        "cis": "Critical information summary",
-        "planDetails": "Plan details",
-        "newphoneContent": " You're eligible for a new phone from",
-        "MonthPlanContract":"You're on a month to month plan, which doesn't have a plan contract end date. ",
-        "MonthPlanContractMPP":"However your device is still in contract. See device payment plan section for the end date. ",
-        "planContractEndDate": " For your contract end date, call our team on 1300 650 410.",
-        "PlanContratTeamHelpline": "Contact our team to find out more about your current plan by calling 1300 650 410.",
-        "insuranceCover": "Vodafone Cover me Mobile Insurance",
-        "InsuranceDesc": "For more information call the Vodafone Cover me Mobile Insurance team on 1800 371 713 or",
-        "button_clickHere": "click here",
-        "Accessory": "Accessory",
-        "eligibleUpgrade": "You're eligible for an upgrade.",
-        "upgradeHelpline": "You can upgrade online or call our team on 1300 650 410. When upgrading, fees may apply",
-        "Upgradenow_button": "Upgrade now",
-        "notupgradeEligible": "You're not eligible for an upgrade.",
-        "notupgradeHelpline":"Please contact our team to find out when you're eligible for an upgrade by calling 1300 650 410.",
-        "requestCallback_button": "Request a Callback",
-        "changePlan": "Change plan",
-        "withoutChangingYourCurrentPhone": "You can change your plan without changing your current phone",
-        "inclusionsRefresh": "Inclusions refresh on",
-        "inclusionsDate": "1 July",
-        "starterDataExpires": "Expires:",
-        "starterDataExpiresDate": "05/08/18",
-        "httpNPEY": "http://vodafone.com.au/plans/new-phone-every-year",
-        "httpSubscriptions": "http://subscriptions-portal-sit2.test.services.vodafone.com.au/logins/new",
-        "httpsUpgrade": "http://qa9.test.estore.aws.vodafone.com.au/upgrades",
-        "httprequestCallBack": "http://www.vodafone.com.au/personal/request-a-callback?queue=VF_UPGRADES",
-        "npeyDiff": 11,
-        "entitlementIdsArr" : [
-                               {
-                               "id":"3002001",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3000044",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3000005",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3000003",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3000002",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3000001",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002169",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3500023",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3500050",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002144",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002162",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002168",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002167",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002173",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002172",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002171",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002170",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3500029",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3500027",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3500026",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3500101",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3500033",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3500055",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3500069",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3500068",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3500067",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3500066",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3500036",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3500034",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3500104",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3500039",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002149",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002128",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002127",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002126",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002125",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002112",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002108",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002092",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002085",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002080",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002079",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3002078",
-                               "title":"Data"
-                               },
-                               {
-                               "id":"3500064",
-                               "title":"Dollar"
-                               },
-                               {
-                               "id":"3000024",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500032",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500051",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500049",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500057",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500054",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500074",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500072",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500071",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500070",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3002130",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500028",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500058",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500063",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500061",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500060",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500059",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500037",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500035",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500038",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500046",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500044",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500042",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500084",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500083",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500082",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500081",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500080",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500079",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500078",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3500073",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3002084",
-                               "title":"IntlCalls"
-                               },
-                               {
-                               "id":"3000041",
-                               "title":"Talk"
-                               },
-                               {
-                               "id":"3000030",
-                               "title":"Talk"
-                               },
-                               {
-                               "id":"3000023",
-                               "title":"Talk"
-                               },
-                               {
-                               "id":"3000022",
-                               "title":"Talk"
-                               },
-                               {
-                               "id":"3000020",
-                               "title":"Talk"
-                               },
-                               {
-                               "id":"3000017",
-                               "title":"Talk"
-                               },
-                               {
-                               "id":"3000016",
-                               "title":"Talk"
-                               },
-                               {
-                               "id":"3000012",
-                               "title":"Talk"
-                               },
-                               {
-                               "id":"3000008",
-                               "title":"Talk"
-                               },
-                               {
-                               "id":"3000007",
-                               "title":"Talk"
-                               },
-                               {
-                               "id":"3002131",
-                               "title":"Talk"
-                               },
-                               {
-                               "id":"3002087",
-                               "title":"Talk"
-                               },
-                               {
-                               "id":"3002086",
-                               "title":"Talk"
-                               },
-                               {
-                               "id":"3002083",
-                               "title":"Talk"
-                               },
-                               {
-                               "id":"3002081",
-                               "title":"Talk"
-                               },
-                               {
-                               "id":"3000042",
-                               "title":"Txt"
-                               },
-                               {
-                               "id":"3000040",
-                               "title":"Txt"
-                               },
-                               {
-                               "id":"3000021",
-                               "title":"Txt"
-                               },
-                               {
-                               "id":"3000013",
-                               "title":"Txt"
-                               },
-                               {
-                               "id":"3002142",
-                               "title":"Txt"
-                               },
-                               {
-                               "id":"3002141",
-                               "title":"Txt"
-                               },
-                               {
-                               "id":"3002140",
-                               "title":"Txt"
-                               },
-                               {
-                               "id":"3002129",
-                               "title":"Txt"
-                               },
-                               {
-                               "id":"3002102",
-                               "title":"Txt"
-                               },
-                               {
-                               "id":"3002101",
-                               "title":"Txt"
-                               },
-                               {
-                               "id":"3002100",
-                               "title":"Txt"
-                               },
-                               {
-                               "id":"3002099",
-                               "title":"Txt"
-                               },
-                               {
-                               "id":"3002089",
-                               "title":"Txt"
-                               },
-                               {
-                               "id":"3002082",
-                               "title":"Txt"
-                               }
-                               ],
-        "entitlementIds": {
-            "Data": [
-                     3002001,
-                     3000044,
-                     3000005,
-                     3000003,
-                     3000002,
-                     3000001,
-                     3002169,
-                     3500023,
-                     3500050,
-                     3002144,
-                     3002162,
-                     3002168,
-                     3002167,
-                     3002173,
-                     3002172,
-                     3002171,
-                     3002170,
-                     3500029,
-                     3500027,
-                     3500026,
-                     3500101,
-                     3500033,
-                     3500055,
-                     3500069,
-                     3500068,
-                     3500067,
-                     3500066,
-                     3500036,
-                     3500034,
-                     3500104,
-                     3500039,
-                     3002149,
-                     3002128,
-                     3002127,
-                     3002126,
-                     3002125,
-                     3002112,
-                     3002108,
-                     3002092,
-                     3002085,
-                     3002080,
-                     3002079,
-                     3002078
-                     ],
-            "Dollar": [3500064],
-            "IntlCalls": [
-                          3000024,
-                          3500032,
-                          3500051,
-                          3500049,
-                          3500057,
-                          3500054,
-                          3500074,
-                          3500072,
-                          3500071,
-                          3500070,
-                          3002130,
-                          3500028,
-                          3500058,
-                          3500063,
-                          3500061,
-                          3500060,
-                          3500059,
-                          3500037,
-                          3500035,
-                          3500038,
-                          3500046,
-                          3500044,
-                          3500042,
-                          3500084,
-                          3500083,
-                          3500082,
-                          3500081,
-                          3500080,
-                          3500079,
-                          3500078,
-                          3500073,
-                          3002084
-                          ],
-            "Talk": [
-                     3000041,
-                     3000030,
-                     3000023,
-                     3000022,
-                     3000020,
-                     3000017,
-                     3000016,
-                     3000012,
-                     3000008,
-                     3000007,
-                     3002131,
-                     3002087,
-                     3002086,
-                     3002083,
-                     3002081
-                     ],
-            "Txt": [
-                    3000042,
-                    3000040,
-                    3000021,
-                    3000013,
-                    3002142,
-                    3002141,
-                    3002140,
-                    3002129,
-                    3002102,
-                    3002101,
-                    3002100,
-                    3002099,
-                    3002089,
-                    3002082
-                    ]
-        }
+        "standardInternationalTxt": "Standard international TXT",
+        "price": "50",
+        "inclusion": "Excludes premium services. All for use in Australia.",
+        "terms_conditions": "Terms and conditions",
+        "refreshText": "Refresh",
+        "myMixErrorMsg": "This combination is not available for the value of your voucher. Please reselect and try again.",
+        "standardInternationalMins":"Standard international minutes to selected countries",
+        "selectExpiry":"Select expiry",
+        "selectMins":"Select mins",
+        "selectData":"Select data",
+        "dataForUseInOz":"Data for use in Oz"
     },
-    "productandServices" : {
-        "thinkToKnowContent": "Please regard the balances shown here as a usage guide only as not all charges can be updated instantly. All prices are inclusive of GST where applicable.",
-        "thinkToKnowHeading": "Things you need to know",
-        "whatiscredit": "What is My Credit?",
-        "creditDescp": "At the moment, if you last recharged with MyMix or Combo, you will be able to use My Credit to make calls and send text when in Oz at pay as you go rates.",
-        "lastRechrgeText": "If your last recharge was with Prepaid 365 Plus, you can also use My Credit to access data when in Oz at pay as you go rates.",
-        "creditHeading": "We are currently beta testing My Credit.",
-        "myCredit": "My Credit",
-        "beta": "Beta",
-        "noCredit": "You don't have any My Credit",
-        "topupButton": "Top up My Credit",
-        "purchaseButton": "View purchase history",
-        "maxCredit": "Youâ€™ve reached the maximum amount for My Credit.",
-        "rechargeAgainTxt": "You can top again when youâ€™ve used the current available credit",
-        "standardDollar": "Standard Dollars",
-        "bonusDollar": "Bonus Dollars",
-        "remaining": "remaining",
-        "Unlimited": "Unlimited",
-        "expiresLabel": "Expires:",
-        "rechargeServicesTxt": "Recharge today with one of our Prepaid Services",
-        "rechargePlanButton": "Recharge my plan",
-        "addonButton": "Buy an Add-on",
-        "rechargeNowButton": "Recharge now",
-        "summaryHeading": "Your plan summary"
-    },
-    "ProductPlanDetails": {
-        "planHeading": "Plan details",
-        "planDetails": [
-                        {
-                        "titleName": "Subscriptions",
-                        "id": "",
-                        "url": "http://subscriptions-portal-sit2.test.services.vodafone.com.au/logins/new"
-                        },
-                        {
-                        "titleName": "Request proof of purchase",
-                        "id": "Proof",
-                        "url": "/settings/proof_of_purchase"
-                        }
-                        ]
-    },
-    "maintenancePage" :
-    {
-        "maintenanceHeading"  : "Weâ€™re sorry - this feature is currently unavailable.",
-        "tryLaterMsg"  : "Our team are working on fixing the technical issue. Please try again later."
-    },
-    "phonenumber": [
-                    {
-                    "number" : "0422 757 781"
-                    }],
-    "genericError": [
-                     {
-                     "errorCode": "BF020",
-                     "title": "Please check your number.",
-                     "message":
-                     "We're unable to validate your number. Please check the number and try again."
-                     },
-                     {
-                     "errorCode": "BF021",
-                     "title": "You've made too many attempts.",
-                     "message": "Please call us on 1300 650 410."
-                     },
-                     {
-                     "errorCode": "BF022",
-                     "message": "Sorry, we're unable to validate your SIM number. Please check the SIM number and try again."
-                     },
-                     {
-                     "errorCode": "BF023",
-                     "title": "This service is currently unavailable for your number.",
-                     "message": "Please try again later or call us on 1300 650 410 for help with your SIM replacement."
-                     }
-                     ],
-    "genericErrorOffers": [
-                           {
-                           "errorCode": "GF003",
-                           "title": "Something didn't go as planned.",
-                           "message": "Please try again later to see any new offers.",
-                           "button": "Try again"
-                           },
-                           {
-                           "errorCode": "GF005",
-                           "title": "Something didn't go as planned.",
-                           "message": "Please try again later to see any new offers.",
-                           "button": "Try again"
-                           },
-                           {
-                           "errorCode": "GF001",
-                           "title": "Something didn't go as planned.",
-                           "message": "Please try again later to see any new offers.",
-                           "button": "Try again"
-                           },
-                           {
-                           "errorCode": "BF002",
-                           "title": "Something didn't go as planned.",
-                           "message": "Please try again later to see any new offers.",
-                           "button": "Try again"
-                           },
-                           {
-                           "errorCode": "EE0500",
-                           "title": "Something didn't go as planned.",
-                           "message": "Please try again later to see any new offers.",
-                           "button": "Try again"
-                           }
-                           ],
-    "genericErrorInclusions" : [
-                                {
-                                "errorCode": "BF003",
-                                "title": "We can't find this number.",
-                                "message": "Please check your number and try again. Alternatively, call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
-                                },
-                                {
-                                "errorCode": "BF004",
-                                "title": "This service is inactive.",
-                                "message": "Please call us on 1300 650 410."
-                                }
-                                ],
-    "genericErrorValidation" : [
-                                {
-                                "errorCode": "BF002",
-                                "title": "We're having trouble confirming your details.",
-                                "message": "Please try again or use another payment method."
-                                }
-                                ],
-    "genericErrorLastRecharge" : [
-                                  {
-                                  "errorCode": "BF002",
-                                  "title": "We're having trouble confirming your details.",
-                                  "message": "Please try again, or use another payment method."
-                                  }
-                                  ],
-    "defaultError": [
+    "Recharge_Land": [
                       {
-                      "title": "Something didn't go as planned.",
-                      "message":"Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone.",
-                      "button": "Try again"
+                      "currentMsisdn": "0422 876 987",
+                      "dataCombo": "Data Combo",
+                      "talkCombo": "Talk Combo",
+                      "prepaidCombo": "Prepaid 365 Plus",
+                      "myMixCombo": "MyMix"
                       }
                       ],
-    "unknownError":{
-        "pageNotfoundTitle":"We canâ€™t find that page",
-        "pageNotfoundMessage":"We want you to find what youâ€™re looking for.Head to the dashboard or go back to the previous page.",
-        "dashboardButton":" Go to dashboard",
-        "gobackButton":"Go back",
-        "unauthorizederrorTitle":"Login to My Vodafone",
-        "unauthorizederrorMessage":"Login to My Vodafone with your username and password",
-        "loginButton":"Login now",
-        "VodafonehomeButton":"Vodafone home",
-        "ForbiddenerrorTitle":"You donâ€™t have access to this page",
-        "ForbiddenerrorMessage":"We want you to find what youâ€™re looking for.Head to the dashboard or go back to the previous page."
+    "Review_And_Pay": {
+        "loadingTitle": "Critical Information Summary",
+        "loadingDescription": "Download Critical Information Summary",
+        "unsuccessfulTitle": "Recharge unsuccessful",
+        "PrepaidCCUpdationListdescription": "Please try another card or choose another payment option.",
+        "prepaidCCUpdationListTransactionMsg": "Your payment has not gone through",
+        "walletSubmissionDetailsDescription": "Unfortunately, your financial provider has declined your payment. Please try another card or choose another payment option.",
+        "successfulTitle": "Recharge successful",
+        "restartLabel": "Please restart your phone to use your Recharge.",
+        "loadingButton": "Go to dashboard",
+        "walletLoadingDescription": "Your new balance will be updated in few minutes.",
+        "ccUpdationFailed":"Sorry, we were unable to save your credit card this time. This credit card is already linked to another account. You’ll need to unlink your card in My Vodafone before you can add it to this account.",
+        "reviewAndPaySpinnerTitle": "Processing payment",
+        "reviewAndPayDescription": "Please don’t leave this page",
+        "termsAndConditionLabel": "Terms and conditions",
+        "criticalInfo": "Critical Information Summary",
+        "paymentOptionHeader": "How would you like to pay?",
+        "cancelButton": "Cancel",
+        "addonSuccessful": "Add-on purchased",
+        "addonSuccessfulMsg": "Please restart your phone to use your Add-on.",
+        "helpMeRecharge": "https://www.vodafone.com.au/support/prepaid/recharge",
+        "cardDetails": "Enter card details",
+        "creditCard": "Credit card",
+        "saveCard": "Save credit card",
+        "rechargeText": "For quick and secure future recharges online and by TXT.",
+        "authorizationMsg": "I authorise Vodafone to charge my nominated credit card and have read and agreed to the terms and conditions.",
+        "topupNow": "Top up now",
+        "cardUnavailableMsg": "Credit card unavailable.",
+        "fallbackErrorMsg": "Our payment system is currently unavailable. However, you can pay with a credit or debit card through PayPal. You can either login to PayPal or continue as a PayPal guest.",
+        "alertHeading": "Something didn’t go as planned.",
+        "helpText": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone.",
+        "paypalGuest": "Top up as PayPal guest",
+        "paypalAccount": "Top up using your PayPal account",
+        "differentPaymentMethodTxt": "We couldn’t complete your recharge. Please try again using a different payment method",
+        "acceptedPayments":"Accepted payments",
+        "rechargeAsPayPalGuest":"Recharge as PayPal guest",
+        "rechargeWithPayPal":"Recharge with PayPal",
+        "topUpWithPayPal":"Top up with PayPal",
+        "rechargeUsingPayPalAccount":"Recharge using your PayPal account",
+        "topUpUsingYourPayPalAccount":"Top up using your PayPal account"
     },
-    "simSwapOTP":{
-        "Heading":"Transfer your existing Vodafone number to your new SIM.",
-        "NeedHelp": "Need help?",
-        "HelpLine":"Contact our team on",
-        "HelpLineNumber":"1300 788 055",
-        "LoginOTP":"Login with one-time code",
-        "LoginPassword":"Login with password",
-        "MobileNumberbLabel":"Enter your mobile number",
-        "GetOTPButton":"Get one-time code by TXT",
-        "ContinueButton":"Continue",
-        "NewCodeButton":"Get a new code",
-        "EnterOTPCode":"Enter one-time code",
-        "AlertTXT":"Weâ€™ve sent you an SMS with a one-time code to",
-        "ResentTXT": "Weâ€™ve re-sent you an SMS with a one-time code to",
-        "AlertMsg":"If your code doesn't arrive within 2 minutes, please get a new code.",
-        "LoginButton":"Login now",
-        "LoadingMsg": "Please donâ€™t leave this page",
-        "AttemptsError": "You've made too many attempts. Please call us on 1300 650 410 for help with your one-time code."
+    "Add_On_Review": {
+        "countryLabel": "selected countries",
+        "roamingAddonTitle": "Roaming Add-ons",
+        "alertRoamingAddonMsg": "To use Roaming Add-ons, activate roaming in My Vodafone through account settings. Once you’ve purchased the Add-on, you can use it immediately however the expiry period will begin from midnight AEST.",
+        "addonUnsuccessfulMsg": "Add-on purchase unsuccessful",
+        "chooseYourExpiry":"Choose your expiry",
+        "standardInternationalCallsTo":"Standard international calls to",
+        "addonTabArray": [
+                          "Data Add-ons",
+                          "50 Countries Add-ons",
+                          "Roaming Add-ons",
+                          "Talk Add-ons"
+                          ],
+        "selectRechargeTabArray": [
+                                   "365 Day",
+                                   "Flexi Cap",
+                                   "Prepaid Cap",
+                                   "Pay As You Go",
+                                   "Combo",
+                                   "TXT &  Talk",
+                                   "Mobile Broadband",
+                                   "Data Combo",
+                                   "Talk Combo",
+                                   "Combo Plus",
+                                   "Prepaid 365 Plus",
+                                   "365 Plus",
+                                   "MyMix"
+                                   ]
     },
-    "appTogglerTime": 5,
-    "creditBonus":["VF_WALLET_RW_DOL_BDL","VF_WALLET_DOL_BDL","VF_RWD_COUNTER2_BDL","VF_RWD_COUNTER1_BDL","VF_RWD_COUNTER3_BDL"]
+    "LoginWith_OTP_Password": {
+        "heading": "Login with one-time code",
+        "subHeading": "Choose your Login options",
+        "loginWithPassword": "Login with Password",
+        "rechargeWithMyCredit": "Recharge now using My Credit",
+        "newCode": "Get a new code",
+        "enterOnetimeCode": "Enter one-time code",
+        "oneTimeCode": "One-time code",
+        "alertMessage": "We’ve sent you an SMS with a one-time code to",
+        "getOTPText": "We’ve re-sent you an SMS with a one-time code to",
+        "alertSubMessage": "If your code doesn't arrive within 2 minutes, please get a new code."
+    },
+    "Topup_My_Credit": {
+        "topupAmount": "Select your Top up amount",
+        "or": "Or",
+        "topupVoucher": "Top up with a voucher",
+        "topupNowBtn": "Top up now",
+        "creditToNumber": "Add credit to this number",
+        "unsuccessfulMsg": ". Please try another card or choose another payment option.",
+        "topupUnsuccessfulMsg": "Top up unsuccessful",
+        "topupSuccessfulMsg": "Top up successful",
+        "walletSuccessMsg": "My Credit has been successfully added to your account.",
+        "walletHeader": "My Credit",
+        "dashboardButton": "Go to dashboard",
+        "showRestartMsg": "Please restart your phone to use your Add-on.",
+        "myCreditHeader": "My Credit (Beta)",
+        "availableBalanceHeader": "Available balance",
+        "overlayTitle": "Top up My Credit",
+        "savedCardHeader": "Pay with saved card",
+        "savedExCCLabel": " Confirm the last four digits and expiry date",
+        "savedExCCNumber": "Enter the last 4 digits of your card",
+        "expiryDateHeading": "Expiry date",
+        "topUpNowBtn": "Top up now",
+        "anotherPaymentBtn": "Use another payment type",
+        "add$Label": "Add $",
+        "addToMyCredit": " to My Credit using:",
+        "myCreditDescription": "will be deducted from My Credit to pay for this recharge.",
+        "newCardHeader": "Use new card",
+        "payWithNewCardHeader": "Pay with new card",
+        "rechargeWithMyCreditBtn": "Recharge now with My Credit",
+        "payPalMsg": "You'll be temporarily taken to the PayPal website.",
+        "startingIn":"starting in",
+        "expires":"Expires",
+        "topUp":"Top up $",
+        "usingSavedCreditCard":" using saved credit card",
+        "payPal": "PayPal",
+        "mmyy": "MM/YY",
+        "fourDigits":"4 digits",
+        "topUpCaption":"Top up"
+    },
+    "Error_handler": {
+        "errorDetails": "We want you to find what you’re looking for. Head to the dashboard or go back to the previous page.",
+        "goBackDashboard": "Go to dashboard",
+        "goBackPreviousPage": "Go back",
+        "loginHeading": " Login to My Vodafone",
+        "loginDescription": "Login to My Vodafone with your username and password",
+        "loginNowBtn": "Login now",
+        "vodafoneHomeBtn": "Vodafone home",
+        "goBackBtn": "Go back",
+        "errorHeading": "You don’t have access to this page",
+        "errorMessage": "This offer is no longer available",
+        "helpMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone.",
+        "tryAgainBtn": "Try again",
+        "errorHeadingOverlay": "Unfortunately we couldn't process your payment.",
+        "errorMessageOverlay": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone.",
+        "notFoundPage": "We can’t find that page",
+        "validateNumber": "Sorry we couldn’t validate your number. Please check the number and try again."
+    },
+    "Loading_page": {
+        "goTODashboardBtn": "Go to dashboard",
+        "loginVodafoneBtn": "Login to My Vodafone",
+        "helpMeRechargeBtn": "Help me recharge",
+        "receiptNoText": "Your Vodafone receipt number is:",
+        "creditBalanceText": "Your new My Credit balance is $",
+        "accountNoText": "Your account receipt number is:",
+        "remCreditBalText": "Your remaining My Credit balance is $",
+        "backToRechargeBtn": "Back to Recharge",
+        "backToTopup": "Back to Top up",
+        "addOnPurchasedText": "You have purchased an Add-on for ",
+        "rechargedText": "You have recharged ",
+        "myCreditTitle": "Topping up My Credit",
+        "myCreditPrepaid365Content": "By topping up your My Credit Balance you’re joining a Prepaid 365 Plus Plan for 365 days.",
+        "myCreditAddonPurchaseDesc": "You can use your My Credit to purchase Add-ons or other prepaid recharge plans.",
+        "myCreditWalletDescription": "When you run out of other inclusions My Credit will be used to make calls, use data and send texts in Australia at pay as you go rates, <span class='vodafone-RgBd'>unless you have purchased a MyMix or Combo recharge.</span> If you purchase a MyMix or Combo recharge, you will not be able to use My Credit for data, except when you’re roaming in selected countries.",
+        "myCreditWalletSupportMsg": "Our <a class='color_white' target='_blank' href='https://www.vodafone.com.au/prepaid/plans/my-credit'>My Credit support page</a> has more information.",
+        "download":"Download"
+    },
+    "International_Call_Overlay": {
+        "internationalCallRatesUrl": "https://www.vodafone.com.au/support/prepaid/international-call-rates",
+        "internationalCallHeading": "International Call countries",
+        "internationalCallDescription": "You can use our International Call Add-ons to call these countries.Calls to all other counties are charged at our ",
+        "prepaidCallHeading": "Prepaid Call rates.",
+        "internationalCountries": [
+                                   {
+                                   "id": "argentina",
+                                   "country": "Argentina"
+                                   },
+                                   {
+                                   "id": "austria",
+                                   "country": "Austria"
+                                   },
+                                   {
+                                   "id": "bangladesh",
+                                   "country": "Bangladesh"
+                                   },
+                                   {
+                                   "id": "bermuda",
+                                   "country": "Bermuda"
+                                   },
+                                   {
+                                   "id": "brazil",
+                                   "country": "Brazil"
+                                   },
+                                   {
+                                   "id": "brunei",
+                                   "country": "Brunei Darussalam"
+                                   },
+                                   {
+                                   "id": "cambodia",
+                                   "country": "Cambodia"
+                                   },
+                                   {
+                                   "id": "canada",
+                                   "country": "Canada"
+                                   },
+                                   {
+                                   "id": "chile",
+                                   "country": "Chile"
+                                   },
+                                   {
+                                   "id": "china",
+                                   "country": "China"
+                                   },
+                                   {
+                                   "id": "colombia",
+                                   "country": "Colombia"
+                                   },
+                                   {
+                                   "id": "costa rica",
+                                   "country": "Costa Rica"
+                                   },
+                                   {
+                                   "id": "dominican republic",
+                                   "country": "Dominican Republic"
+                                   },
+                                   {
+                                   "id": "finland",
+                                   "country": "Finland"
+                                   },
+                                   {
+                                   "id": "france",
+                                   "country": "France"
+                                   },
+                                   {
+                                   "id": "germany",
+                                   "country": "Germany"
+                                   },
+                                   {
+                                   "id": "greece",
+                                   "country": "Greece"
+                                   },
+                                   {
+                                   "id": "guam",
+                                   "country": "Guam"
+                                   },
+                                   {
+                                   "id": "hong kong",
+                                   "country": "Hong Kong"
+                                   },
+                                   {
+                                   "id": "iceland",
+                                   "country": "Iceland"
+                                   },
+                                   {
+                                   "id": "india",
+                                   "country": "India"
+                                   },
+                                   {
+                                   "id": "indonesia",
+                                   "country": "Indonesia"
+                                   },
+                                   {
+                                   "id": "ireland",
+                                   "country": "Ireland"
+                                   },
+                                   {
+                                   "id": "israel",
+                                   "country": "Israel"
+                                   },
+                                   {
+                                   "id": "italy",
+                                   "country": "Italy"
+                                   },
+                                   {
+                                   "id": "japan",
+                                   "country": "Japan"
+                                   },
+                                   {
+                                   "id": "kuwait",
+                                   "country": "Kuwait"
+                                   },
+                                   {
+                                   "id": "laos",
+                                   "country": "Laos"
+                                   },
+                                   {
+                                   "id": "malaysia",
+                                   "country": "Malaysia"
+                                   },
+                                   {
+                                   "id": "mexico",
+                                   "country": "Mexico"
+                                   },
+                                   {
+                                   "id": "netherlands",
+                                   "country": "Netherlands"
+                                   },
+                                   {
+                                   "id": "new zealand",
+                                   "country": "New Zealand"
+                                   },
+                                   {
+                                   "id": "nigeria",
+                                   "country": "Nigeria"
+                                   },
+                                   {
+                                   "id": "nomarianas",
+                                   "country": "Northern Marianas Islands"
+                                   },
+                                   {
+                                   "id": "norway",
+                                   "country": "Norway"
+                                   },
+                                   {
+                                   "id": "pakistan",
+                                   "country": "Pakistan"
+                                   },
+                                   {
+                                   "id": "paraguay",
+                                   "country": "Paraguay"
+                                   },
+                                   {
+                                   "id": "peru",
+                                   "country": "Peru"
+                                   },
+                                   {
+                                   "id": "philippines",
+                                   "country": "Philippines"
+                                   },
+                                   {
+                                   "id": "poland",
+                                   "country": "Poland"
+                                   },
+                                   {
+                                   "id": "portugal",
+                                   "country": "Portugal"
+                                   },
+                                   {
+                                   "id": "puerto rico",
+                                   "country": "Puerto Rico"
+                                   },
+                                   {
+                                   "id": "romania",
+                                   "country": "Romania"
+                                   },
+                                   {
+                                   "id": "russia",
+                                   "country": "Russia"
+                                   },
+                                   {
+                                   "id": "singapore",
+                                   "country": "Singapore"
+                                   },
+                                   {
+                                   "id": "south africa",
+                                   "country": "South Africa"
+                                   },
+                                   {
+                                   "id": "south korea",
+                                   "country": "South Korea"
+                                   },
+                                   {
+                                   "id": "spain",
+                                   "country": "Spain"
+                                   },
+                                   {
+                                   "id": "sweden",
+                                   "country": "Sweden"
+                                   },
+                                   {
+                                   "id": "taiwan",
+                                   "country": "Taiwan"
+                                   },
+                                   {
+                                   "id": "thailand",
+                                   "country": "Thailand"
+                                   },
+                                   {
+                                   "id": "turkey",
+                                   "country": "Turkey"
+                                   },
+                                   {
+                                   "id": "uk",
+                                   "country": "UK"
+                                   },
+                                   {
+                                   "id": "us",
+                                   "country": "USA"
+                                   },
+                                   {
+                                   "id": "vatican city",
+                                   "country": "Vatican City"
+                                   },
+                                   {
+                                   "id": "venezuela",
+                                   "country": "Venezuela"
+                                   },
+                                   {
+                                   "id": "vietnam",
+                                   "country": "Vietnam"
+                                   }
+                                   ]
+    },
+    "LastRecharge": [
+                     {
+                     "errorCode": "BF002",
+                     "errorHeading": "We're having trouble confirming your details.",
+                     "errorMessage": "Please try again or use another payment method."
+                     }
+                     ],
+    "Validation": [
+                   {
+                   "errorCode": "BF001",
+                   "errorHeading": "Something didn't go as planned.",
+                   "errorMessage": " Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                   },
+                   {
+                   "errorCode": "VE040",
+                   "errorHeading": "Something didn't go as planned.",
+                   "errorMessage": " Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                   },
+                   {
+                   "errorCode": "VE041",
+                   "errorHeading": "Something didn't go as planned.",
+                   "errorMessage": " Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                   },
+                   {
+                   "errorCode": "VE000",
+                   "errorHeading": "Something didn't go as planned.",
+                   "errorMessage": " Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                   },
+                   {
+                   "errorCode": "BF004",
+                   "errorHeading": "Something didn't go as planned.",
+                   "errorMessage": " Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                   }
+                   ],
+    "CustomerServiceRecharge": [
+                                {
+                                "errorCode": "VE043",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "GF000",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "VE051",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "VE052",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "VE142",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "VE059",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "VE060",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "VE053",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "VE055",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "VE127",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "VE056",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "VE082",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "GF002",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF003",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF001",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF059",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF036",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF037",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF038",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF039",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF040",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF041",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF042",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF043",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF053",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please try again or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF044",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                
+                                {
+                                "errorCode": "BF002",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please try again or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                
+                                {
+                                "errorCode": "BF046",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "TE500",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": " Please try again or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                
+                                {
+                                "errorCode": "GF007",
+                                "errorHeading": "Unfortunately this recharge is no longer available.",
+                                "errorMessage": "Please try again or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF055",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "GF008",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "GF009",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                }
+                                
+                                ],
+    "CreditCardInitialization": [
+                                 {
+                                 "errorCode": "BF002",
+                                 "errorHeading": "Unfortunately we couldn't save your credit card details.",
+                                 "errorMessage": "Please select another payment option and try again."
+                                 }
+                                 ],
+    "CreditCardCompletion": [
+                             {
+                             "errorCode": "BF002",
+                             "errorHeading": "Unfortunately we couldn't save your credit card details.",
+                             "errorMessage": "Please select another payment option and try again."
+                             }
+                             ],
+    "appTogglerTime":5,
+    "landingPlanName":["VF_COMBO_DATA_CO","VF_COMBO_TALK_CO","VF_PAYGPLUS_CO","VF_MYPICK_CO"],
+    "rechargePlanDet":{
+        "VF_COMBO_TALK_CO":"TalkCombo",
+        "VF_COMBO_DATA_CO":"DataCombo",
+        "VF_PAYGPLUS_CO":"Prepaid365Plus",
+        "VF_MYPICK_CO":"MyMix"
+    },
+    "addonsPlanDet":{
+        "data":"DataAdd-ons",
+        "talk":"TalkAdd-ons",
+        "intl":"Int'lAdd-ons",
+        "roaming":"RoamingAdd-ons"
+    }
 }

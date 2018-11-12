@@ -127,34 +127,35 @@ class ViewController: NSViewController, NSTextFieldDelegate {
     
     func startProcess(withModelName modelName: String, andPath projectPath: String){
         
-        let localizationFileName = "localized.json"
+        let localizationFileName = "localized.json" // this file should contains old Localizable.strings
+        let configurationJson = "config.json" // This file should contains the new model Json
         
         //read and parse strings json file
-        guard let localizedStringsData = getFileData(Named: localizationFileName) else {
+        guard let localizedData = getFileData(Named: localizationFileName) else {
             print("ERROR: Can not find localized.json")
             print("I will EXIST NOW")
             exit(0)
         }
         
-        guard let localizationModelObject = try? JSONDecoder().decode(LocalizationStringsModel.self, from: localizedStringsData) else {
+        guard let localizedModel = try? JSONDecoder().decode(LocalizedModel.self, from: localizedData) else {
             print("ERROR: Can not decode localized.json")
             print("I will EXIST NOW")
             exit(0)
         }
         
         //read and parse configuration json file
-        guard let configurationFileData = getFileData(Named: "config.json") else {
+        guard let configurationData = getFileData(Named: configurationJson) else {
             print("ERROR: Can not find config.json")
             print("I will EXIST NOW")
             exit(0)
         }
-        guard let configurationModelObject = try? JSONSerialization.jsonObject(with: configurationFileData, options: []) as? [String: AnyObject] else {
+        guard let configurationModel = try? JSONSerialization.jsonObject(with: configurationData, options: []) as? [String: AnyObject] else {
             print("ERROR: Can not decode config.json")
             print("I will EXIST NOW")
             exit(0)
         }
         
-        guard let configurationDictionary = configurationModelObject else {
+        guard let configurationDictionary = configurationModel else {
             print("ERROR: Configuration Model could not be a dictionary!")
             print("I will EXIST NOW")
             exit(0)
@@ -182,9 +183,9 @@ class ViewController: NSViewController, NSTextFieldDelegate {
             }
             
             var updateFiles = false
-            let projectLocalizationFilePath = "/Users/mac/Documents/VFAU-iOS/MyVodafone-Gold/en-AU.lproj/Localizable.strings"
+            let projectLocalizationFilePath = "/Users/abdorahman/GitHub/VFAU-iOS/MyVodafone-Gold/en-AU.lproj/Localizable.strings"
             guard var projectLocalizationFileContent = getFileContent(Named: projectLocalizationFilePath)else{
-                print("Couldn't open project localization file . strings and i will stop\n")
+                print("Couldn't open project localization file .strings and i will stop\n")
                 print("I will EXIST NOW")
                 exit(0)
             }
@@ -193,11 +194,14 @@ class ViewController: NSViewController, NSTextFieldDelegate {
             var totalConfigurationMatches = Dictionary<String,String>()
             for i in 0..<localizationKeys.count{
                 
-                guard localizationModelObject.responds(to: Selector(localizationKeys[i].lowercased())) else{
+                guard localizedModel.responds(to: Selector(localizationKeys[i].lowercased())) else{
                     //                    print("Most probably that the key: \(localizationKeys[i]) which you are looking for is configuration key, so localization model can't find it. so we will continue with next keys ^_^\n")
                     continue
                 }
-                let localizationValue = localizationModelObject.value(forKey: localizationKeys[i].lowercased()) as? String ?? "corrupted_value"
+                guard let localizationValue = localizedModel.value(forKey: localizationKeys[i].lowercased()) as? String else {
+                    print("Couldn't fetch the value of \(localizationKeys[i].lowercased()) key\n")
+                    continue
+                }
                 
                 var configurationMatches = Dictionary<String,String>()
                 getValueMatches(fromDic: configurationDictionary, forValue: localizationValue, intoDic: &configurationMatches, withRoot: "")
@@ -211,29 +215,32 @@ class ViewController: NSViewController, NSTextFieldDelegate {
                 updateFiles = true
                 
                 //update project localization file
-                if let mappedConfigurationPath = (configurationMatches.first { (key,value) -> Bool in
+                if let configurationValuePath = (configurationMatches.first { (key,value) -> Bool in
                     return value == localizationValue}?.key)
                 {
-                    let key = (mappedConfigurationPath.contains(".") ? (mappedConfigurationPath.components(separatedBy: ".").last ?? "corrupted_key") : mappedConfigurationPath)
-                    
+                    let key = (configurationValuePath.contains(".") ? (configurationValuePath.components(separatedBy: ".").last ?? "corrupted_key") : configurationValuePath)
+                    print("key = \(key), and localizationkey = \(localizationKeys[i])\n")
+                    if key == localizationKeys[i]{
+                        continue
+                    }
                     projectLocalizationFileContent = projectLocalizationFileContent.replacingOccurrences(of: localizationKeys[i], with: key, options: .literal, range: nil)
-                }
-                
-                //update configuration file
-                if let matchedLine = (localizationLines.first(where: { (line) -> Bool in
                     
-                    return String.init(line.split(separator: ".")[3].dropLast(2)) == localizationKeys[i]
-                }))
-                {
-                    if var mappedConfigurationPath = (configurationMatches.first { (key,value) -> Bool in
-                        return value == localizationValue}?.key)
+                    //update configuration file
+                    if let matchedLine = (localizationLines.first(where: { (line) -> Bool in
+                        
+                        return String.init(line.split(separator: ".")[3].dropLast(2)) == localizationKeys[i]
+                    }))
                     {
-                        let key = (mappedConfigurationPath.contains(".") ? (mappedConfigurationPath.lowercased().components(separatedBy: ".").last ?? "corrupted_key") : mappedConfigurationPath.lowercased())
-                        
-                        let codeSnippet = "getStringForView(ofConfigurationKey: R.string.localizable.\(key).key, andConfigurationValue: \(modelName).sharedInstance?.\(mappedConfigurationPath.attributePath()), andLocalString: R.string.localizable.\(key)())"
-                        
-                        sourceCodefileContent = sourceCodefileContent.replacingOccurrences(of: matchedLine, with: codeSnippet)
-                        print("Replaced: \(matchedLine), of key: \(localizationKeys[i]), with snippet of Configuration Key: \(key)\n")
+                        if var configurationValuePath = (configurationMatches.first { (key,value) -> Bool in
+                            return value == localizationValue}?.key)
+                        {
+                            let key = (configurationValuePath.contains(".") ? (configurationValuePath.lowercased().components(separatedBy: ".").last ?? "corrupted_key") : configurationValuePath.lowercased())
+                            
+                            let codeSnippet = "getStringForView(ofConfigurationKey: R.string.localizable.\(key).key, andConfigurationValue: \(modelName).sharedInstance?.\(configurationValuePath.attributePath()), andLocalString: R.string.localizable.\(key)())"
+                            
+                            sourceCodefileContent = sourceCodefileContent.replacingOccurrences(of: matchedLine, with: codeSnippet)
+                            print("Replaced: \(matchedLine), of key: \(localizationKeys[i]), with snippet of Configuration Key: \(key)\n")
+                        }
                     }
                 }
             }
@@ -313,7 +320,7 @@ class ViewController: NSViewController, NSTextFieldDelegate {
             return
         }
         
-        guard let decodedNewFileJSONUsingOldModel = try? JSONDecoder().decode(LocalizationStringsModel.self, from: newFileData) else {
+        guard let decodedNewFileJSONUsingOldModel = try? JSONDecoder().decode(LocalizedModel.self, from: newFileData) else {
             showAlert(withTitle: nil, andMessage: "Error while decoding..")
             return
         }
@@ -334,7 +341,6 @@ class ViewController: NSViewController, NSTextFieldDelegate {
     }
     
     //MARK: IBActions
-    
     @IBAction func btnStartClicked(_ sender: NSButton) {
         if !pathTextField.stringValue.isEmpty && !rootClassNameTextField.stringValue.isEmpty{
             startProcess(withModelName: rootClassNameTextField.stringValue, andPath: pathTextField.stringValue)
