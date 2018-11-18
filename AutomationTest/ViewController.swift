@@ -416,6 +416,19 @@ class ViewController: NSViewController, NSTextFieldDelegate {
                     print("Replaced: \(localizationValues[i]) value, of key: \(key), with snippet code\n")
                 }
             }
+            do {
+                let emptyString = ""
+                
+                try emptyString.write(toFile: filePath, atomically: false, encoding: .utf8)
+                try sourceCodefileContent.write(toFile: filePath, atomically: false, encoding: .utf8)
+                
+                print("\(filePath) updated")
+                
+            }catch{
+                print("ERROR: couldn't update localization file or source code file named: \(filePath)! - description: \(error.localizedDescription)\n")
+                print("I will EXIST NOW")
+                exit(0)
+            }
         }
     }
     
