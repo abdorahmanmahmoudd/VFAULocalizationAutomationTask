@@ -351,12 +351,6 @@ class ViewController: NSViewController, NSTextFieldDelegate {
             print("I will EXIST NOW")
             exit(0)
         }
-//
-//        guard let localizedModel = try? JSONDecoder().decode(LocalizedModel.self, from: localizedData) else {
-//            print("ERROR: Can not decode localized.json")
-//            print("I will EXIST NOW")
-//            exit(0)
-//        }
         
         //convert localizable json to dictionary
         guard let tempLocalizationDictionary = try? JSONSerialization.jsonObject(with: localizedData, options: []) as? [String: AnyObject] else {
@@ -412,7 +406,7 @@ class ViewController: NSViewController, NSTextFieldDelegate {
                     
                     let codeSnippet = "NSLocalizedString(@\"\(key)\",nil)"
                     
-                    sourceCodefileContent = sourceCodefileContent.replacingOccurrences(of: localizationValues[i], with: codeSnippet)
+                    sourceCodefileContent = sourceCodefileContent.replacingOccurrences(of: "@\"\(localizationValues[i])\"", with: codeSnippet)
                     print("Replaced: \(localizationValues[i]) value, of key: \(key), with snippet code\n")
                 }
             }
