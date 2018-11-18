@@ -39,7 +39,7 @@ class ViewController: NSViewController, NSTextFieldDelegate {
                     
                 } else {
                     //file exists and is not a directory
-                    if path.contains(".swift"){
+                    if path.contains(".m"){
                         array.append(path)
                     }
                 }
@@ -381,7 +381,7 @@ class ViewController: NSViewController, NSTextFieldDelegate {
                 continue
             }
             
-            let fullLocalizationLineOfCodeRegex = "\"[a-zA-Z0-9_-]+\""
+            let fullLocalizationLineOfCodeRegex = "@\"[\\sa-zA-Z0-9$?€ăîșț.&!<>:|%*]+\""
             let hardcodedStrings = matches(forRegex: fullLocalizationLineOfCodeRegex, inText: sourceCodefileContent)
             if hardcodedStrings.count == 0{
                 print("Couldn't find matches at \(filePath) and i will continue to the next file\n")
@@ -389,7 +389,7 @@ class ViewController: NSViewController, NSTextFieldDelegate {
             }
             
             let localizationValues = hardcodedStrings.map { (line) -> String in
-                return String.init(line.dropFirst(1).dropLast(1))
+                return String.init(line.dropFirst(2).dropLast(1))
             }
             
             for i in 0..<localizationValues.count{
@@ -410,13 +410,14 @@ class ViewController: NSViewController, NSTextFieldDelegate {
                 {
                     key = (key.contains(".") ? (key.components(separatedBy: ".").last ?? "corrupted_key") : key)
                     
-                    let codeSnippet = "NSLocalizedString(\"\(key)\")"
+                    let codeSnippet = "NSLocalizedString(@\"\(key)\",nil)"
                     
                     sourceCodefileContent = sourceCodefileContent.replacingOccurrences(of: localizationValues[i], with: codeSnippet)
                     print("Replaced: \(localizationValues[i]) value, of key: \(key), with snippet code\n")
                 }
             }
         }
+        print("hooof.. Done El7")
     }
     
     //MARK: IBActions
