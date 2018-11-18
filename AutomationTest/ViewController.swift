@@ -39,7 +39,7 @@ class ViewController: NSViewController, NSTextFieldDelegate {
                     
                 } else {
                     //file exists and is not a directory
-                    if path.contains(".m"){
+                    if path.contains(".m") || path.contains(".swift"){
                         array.append(path)
                     }
                 }
