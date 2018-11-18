@@ -125,7 +125,7 @@ class ViewController: NSViewController, NSTextFieldDelegate {
     }
     
     
-    func startProcess(withModelName modelName: String, andPath projectPath: String){
+    func convertRSwiftToS3API(withModelName modelName: String, andPath projectPath: String){
         
         let localizationFileName = "localized.json" // this file should contains old Localizable.strings
         let configurationJson = "config.json" // This file should contains the new model Json
@@ -341,10 +341,88 @@ class ViewController: NSViewController, NSTextFieldDelegate {
         }
     }
     
+    func convertHardCodeToLocalizableStrings(inProjectPath projectPath: String){
+        
+        let localizationFileName = "localized.json" // this file should contains all Localizable.strings
+        
+        //read and parse localizable json file
+        guard let localizedData = getFileData(Named: localizationFileName) else {
+            print("ERROR: Can not find localized.json")
+            print("I will EXIST NOW")
+            exit(0)
+        }
+//
+//        guard let localizedModel = try? JSONDecoder().decode(LocalizedModel.self, from: localizedData) else {
+//            print("ERROR: Can not decode localized.json")
+//            print("I will EXIST NOW")
+//            exit(0)
+//        }
+        
+        //convert localizable json to dictionary
+        guard let tempLocalizationDictionary = try? JSONSerialization.jsonObject(with: localizedData, options: []) as? [String: AnyObject] else {
+            print("ERROR: Can not convert localizable.json to dictionary")
+            print("I will EXIST NOW")
+            exit(0)
+        }
+        
+        guard let localizationDictionary = tempLocalizationDictionary else {
+            print("ERROR: localization dictionary is equal to nil")
+            print("I will EXIST NOW")
+            exit(0)
+        }
+        
+        var filesToOperateOn = [String]()
+        getValidFiles(withPath: projectPath, inArray: &filesToOperateOn)
+        
+        for filePath in filesToOperateOn{
+            
+            guard var sourceCodefileContent = getFileContent(Named: filePath) else{
+                print("Warning: couldn't read \(filePath) content! but i will continue to the next file\n")
+                continue
+            }
+            
+            let fullLocalizationLineOfCodeRegex = "\"[a-zA-Z0-9_-]+\""
+            let hardcodedStrings = matches(forRegex: fullLocalizationLineOfCodeRegex, inText: sourceCodefileContent)
+            if hardcodedStrings.count == 0{
+                print("Couldn't find matches at \(filePath) and i will continue to the next file\n")
+                continue
+            }
+            
+            let localizationValues = hardcodedStrings.map { (line) -> String in
+                return String.init(line.dropFirst(1).dropLast(1))
+            }
+            
+            for i in 0..<localizationValues.count{
+                
+                var localizationMatches = Dictionary<String,String>()
+                getValueMatches(fromDic: localizationDictionary, forValue: localizationValues[i], intoDic: &localizationMatches, withRoot: "")
+                guard localizationMatches.count > 0 else{
+                    print("Couldn't find a match for value: \(localizationValues[i])\n")
+                    continue
+                }
+                localizationMatches.merge(localizationMatches, uniquingKeysWith: { (v1, v2) -> String in
+                    return v1
+                })
+                
+                //update project localization file
+                if var key = (localizationMatches.first { (key,value) -> Bool in
+                    return value == localizationValues[i]}?.key)
+                {
+                    key = (key.contains(".") ? (key.components(separatedBy: ".").last ?? "corrupted_key") : key)
+                    
+                    let codeSnippet = "NSLocalizedString(\"\(key)\")"
+                    
+                    sourceCodefileContent = sourceCodefileContent.replacingOccurrences(of: localizationValues[i], with: codeSnippet)
+                    print("Replaced: \(localizationValues[i]) value, of key: \(key), with snippet code\n")
+                }
+            }
+        }
+    }
+    
     //MARK: IBActions
-    @IBAction func btnStartClicked(_ sender: NSButton) {
+    @IBAction func RSwiftToS3APIButtonClicked(_ sender: NSButton) {
         if !pathTextField.stringValue.isEmpty && !rootClassNameTextField.stringValue.isEmpty{
-            startProcess(withModelName: rootClassNameTextField.stringValue, andPath: pathTextField.stringValue)
+            convertRSwiftToS3API(withModelName: rootClassNameTextField.stringValue, andPath: pathTextField.stringValue)
         }else{
             showAlert(withTitle: nil, andMessage: "Please enter project path and model name")
         }
@@ -363,6 +441,14 @@ class ViewController: NSViewController, NSTextFieldDelegate {
             getMissingKeys(againstFile: pathTextField.stringValue)
         }else{
             showAlert(withTitle: nil, andMessage: "Please enter file path")
+        }
+    }
+    
+    @IBAction func HardCodedToLocalizableStringsBtnClicked(_ sender: NSButton) {
+        if !pathTextField.stringValue.isEmpty {
+            convertHardCodeToLocalizableStrings(inProjectPath: pathTextField.stringValue)
+        }else{
+            showAlert(withTitle: nil, andMessage: "Please enter project path")
         }
     }
 }

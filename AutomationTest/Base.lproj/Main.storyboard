@@ -710,13 +710,13 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button toolTip="start the task of converting your source code from using &quot;R.swift.localizable&quot; to use configuration API JSON object." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kqM-bP-bh0">
-                                <rect key="frame" x="34" y="202" width="70" height="32"/>
-                                <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0Jl-zD-2DO">
+                                <rect key="frame" x="34" y="202" width="141" height="32"/>
+                                <buttonCell key="cell" type="push" title="R.swift to S3 API" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0Jl-zD-2DO">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="btnStartClicked:" target="XfG-lQ-9wD" id="Vek-up-zA0"/>
+                                    <action selector="RSwiftToS3APIButtonClicked:" target="XfG-lQ-9wD" id="Vek-up-zA0"/>
                                 </connections>
                             </button>
                             <button toolTip="remove occurence lines in the below file path" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="V7t-qd-vwM">
@@ -726,7 +726,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="btnRemoveOccurenceClicked:" target="XfG-lQ-9wD" id="zCV-95-taH"/>
+                                    <action selector="RSwiftToS3APIButtonClicked:" target="XfG-lQ-9wD" id="zCV-95-taH"/>
                                 </connections>
                             </button>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="H9n-Up-hHy">
@@ -752,7 +752,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="btnGetMissingKeyClicked:" target="XfG-lQ-9wD" id="fuI-Wk-f0l"/>
+                                    <action selector="RSwiftToS3APIButtonClicked:" target="XfG-lQ-9wD" id="fuI-Wk-f0l"/>
                                 </connections>
                             </button>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="78j-9O-i7K">
@@ -771,12 +771,25 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AKD-1c-xzZ">
+                                <rect key="frame" x="34" y="157" width="176" height="32"/>
+                                <buttonCell key="cell" type="push" title="Hard coded to .strings" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ue1-gc-Vd3">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="RSwiftToS3APIButtonClicked:" target="XfG-lQ-9wD" id="OBP-wA-E9k"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="3f2-SX-URz" firstAttribute="centerX" secondItem="V7t-qd-vwM" secondAttribute="centerX" id="0HX-ly-xTY"/>
+                            <constraint firstItem="AKD-1c-xzZ" firstAttribute="top" secondItem="kqM-bP-bh0" secondAttribute="bottom" constant="24" id="2Ea-dh-Sah"/>
                             <constraint firstItem="V7t-qd-vwM" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="40" id="Caq-TS-ats"/>
                             <constraint firstItem="XzL-1E-Xht" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="40" id="Dzg-tw-NPX"/>
                             <constraint firstAttribute="bottom" secondItem="H9n-Up-hHy" secondAttribute="bottom" constant="16" id="FD3-sG-s8A"/>
+                            <constraint firstItem="7Dc-DK-PZl" firstAttribute="top" secondItem="AKD-1c-xzZ" secondAttribute="bottom" constant="8" id="S7c-FY-GgZ"/>
+                            <constraint firstItem="AKD-1c-xzZ" firstAttribute="leading" secondItem="kqM-bP-bh0" secondAttribute="leading" id="VmI-gC-DUg"/>
                             <constraint firstItem="kqM-bP-bh0" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="40" id="VxG-7J-sm0"/>
                             <constraint firstItem="H9n-Up-hHy" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="40" id="aT5-4x-0ED"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3f2-SX-URz" secondAttribute="trailing" constant="16" id="adW-Kj-Qec"/>
