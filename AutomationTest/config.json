@@ -1,0 +1,779 @@
+{
+    "Generic": {
+        "DOLLAR": "$",
+        "selectBtn": "Select",
+        "legacyPlan": 1,
+        "grandFatherPlan": 0,
+        "backBtn": "Back"
+    },
+    "Last_Recharge": {
+        "rechargeTitle": "You last recharged",
+        "LoadingTitle": "We're having trouble confirming your details",
+        "recharged": "Recharged on",
+        "voucherTitle": "You have a voucher ?",
+        "addonTitle": "Need a quick boost ?",
+        "dashboardBtn": "Go to dashboard",
+        "sameAgainBtn": "Same again",
+        "chooseSomethingelseBtn": "Choose something else",
+        "redeemNowBtn": "Redeem now",
+        "buyAddonBtn": "Buy an Add-on",
+        "legacyPlanAlert": "If you choose to recharge on any of these plans, you won’t be able to return to your current plan. You can however continue to recharge on any of these new plans.",
+        "grandFatherPlanAlert": "Your current plan is no longer available. Please choose from one of our new plans.",
+        "legacyPlanAlertRP":"If you choose to recharge on this plan, you won’t be able to return to your current plan. You can however continue to recharge on this new plan."
+        
+    }, 
+    "Select_Recharge_Type": {
+        "voucherHeader": "Using a voucher for MyMix",
+        "content": "With MyMix you can choose your own recharge inclusions. As the value of your voucher is fixed there will be limited choices available.",
+        "anotherContent": "You’ll be able to get the most out of MyMix by using a credit card or PayPal.",
+        "continueBtn": "Continue",
+        "chooseAnotherBtn": "Choose another recharge option",
+        "topPick": "HERO_PLAN"
+    },
+    "Voucher_Recharge": {
+        "voucherSpinnerTitle": "Checking your PIN",
+        "voucherSpinnerMsg": "Please don’t leave this page",
+        "voucherHeader": "Recharge with a voucher",
+        "enterText": "Enter your voucher PIN",
+        "cancelBtn": "Cancel",
+        "inputPlaceholder": "Enter 12 digits",
+        "voucher": "Voucher"
+    },
+    "Express_Recharge": {
+        "attemptsError": "You've made too many attempts. Please call us on 1300 650 410 for help with your one-time code.",
+        "expressSpinnerTitle": "Checking your number",
+        "expressHeading": "Recharge a prepaid service",
+        "expressHead": "Recharge your prepaid service",
+        "expressSecondHeading": "To recharge a prepaid service, enter the mobile number that you want to recharge.",
+        "expressSecondHead": "To recharge your prepaid service, enter the mobile number that you want to recharge.",
+        "mobileNo": "Enter a mobile number",
+        "mobNo": "Enter your mobile number",
+        "voucherBtn": "Recharge with a voucher",
+        "getContent": "Get",
+        "bonusContent": "Score",
+        "bonusData": "bonus data",
+        "bonusDataContent": "When you recharge with a credit card online. Data in Oz. T&C apply.",
+        "bonusDataContentInOz": "In Oz when you recharge with a credit card online. T&C apply.",
+        "primaryPhoneNum": "Phone number",
+        "inputVoucherNo": "PIN number",
+        "errorMsgForExpressRecharge": "Invalid number entered.",
+        "voucherErrMsg": "This offer is no longer available. For help, call 1555 free from your vodafone mobile or 1300 650 410 from another phone (standard call rates apply).",
+        "addonTopupVoucherErr": "This offer is no longer available. For help,call 1555 from your Vodafone mobile or 1300 852 410 (standard call rates apply).",
+        "rechargeTopupVoucherErr": "The value of this voucher can’t be used to top up your My Credit. However, you can still use this voucher to recharge your service.",
+        "inSufficientErrMsg": "You don’t have enough My Credit to complete this purchase. Please top up your My Credit with",
+        "insufficientTopupVoucherErr": "The voucher amount must match the amount you select to top up your My Credit. Please select a different payment option.",
+        "walletNotEnabled": "We've just had a technical mishap with your account. Give it another go or call us on 1555 from your Vodafone mobile or 1300 650 410 from other phones.",
+        "addedCreditMsg":" has been added to your My Credit balance.",
+        "placeHolder":"e.g 0414123123"
+    },
+    "Landing_RechargeMBB": {
+        "creditOrPaypal": "Use a Credit card or PayPal",
+        "rechargeNowBtn": "Recharge now",
+        "haveVoucher": "You have a voucher?"
+    },
+    "Landing_Recharge": {
+        "rechargeOptions": "Recharge options",
+        "comboSub": "Loaded with data to access internet.",
+        "chooseBtn": "Choose",
+        "changeBtn": "Change",
+        "toppingUpHeader": "You're topping up: ",
+        "rechargeHeader": "You're recharging: ",
+        "comboSubInternational": "Loaded with international standard minutes to call selected countries.",
+        "comboSubPrepaid": "Access our great prepaid rates over a year.",
+        "comboSubOwnPrepaid": "Design your own prepaid plan."
+    },
+    "Maintenance": {
+        "maintenanceHeader": "We’re sorry - My Vodafone is currently unavailable.",
+        "maintenanceError": "Our team are working on fixing the technical issue. Please try again later."
+    },
+    "Gold_Titles": {
+        "addons": "Add-ons",
+        "dataaddons": "Data Add-ons",
+        "home": "Your Add-on",
+        "dashboard": "My Vodafone",
+        "errorhandling": "Error",
+        "expressRecharge" : "Express Recharge",
+        "review": "Review and pay",
+        "recharge": "Recharge ",
+        "express": "Express Recharge",
+        "select": "Select Recharge",
+        "voucher": "Redeem voucher",
+        "terms": "Terms and conditions",
+        "changemsisdn": "Change Number",
+        "selectAddon": "Select Add-on",
+        "reviewAndPay": "Review and pay",
+        "topupMyCredit": "Top up My Credit",
+        "expressTopUp": "Express Topup",
+        "maintenance": "Maintenance",
+        "offers": "Offers and extras for you",
+        "selectAddOn": "Select Add-on",
+        "homePage": "Home",
+        "myVodafone":"My Vodafone"
+    },
+    "My_Mix_Selector": {
+        "spinnerTitle": "Processing payment",
+        "spinnerMessage": "Please don’t leave this page",
+        "unsuccessfulTitle": "Recharge unsuccessful",
+        "description": "Unfortunately, your financial provider has declined your payment. Please try another card or choose another payment option.",
+        "transactionMsg": "Your payment has not gone through",
+        "successfulTitle": "Recharge successful",
+        "msg": "Your new balance will be updated in few minutes",
+        "criticalInfoSummary": "Critical Information Summary",
+        "downloadCriticalInfoSummary": "Download Critical Information Summary",
+        "attempting": "Attempting your recharge..",
+        "expiry": "Expiry period",
+        "dataForUse": "Data for use within Australia",
+        "standardMins": "Standard national minutes",
+        "internationalMins": "Standard international minutes to",
+        "myMixUrl": "http://www.vodafone.com.au/idd",
+        "countries": "Selected Countries",
+        "standardTxt": "Standard national TXT",
+        "unlimited": "Unlimited",
+        "standardInternationalTxt": "Standard international TXT",
+        "price": "50",
+        "inclusion": "Excludes premium services. All for use in Australia.",
+        "terms_conditions": "Terms and conditions",
+        "refreshText": "Refresh",
+        "myMixErrorMsg": "This combination is not available for the value of your voucher. Please reselect and try again.",
+        "standardInternationalMins":"Standard international minutes to selected countries",
+        "selectExpiry":"Select expiry",
+        "selectMins":"Select mins",
+        "selectData":"Select data",
+        "dataForUseInOz":"Data for use in Oz"
+    },
+    "Recharge_Land": [
+                      {
+                      "currentMsisdn": "0422 876 987",
+                      "dataCombo": "Data Combo",
+                      "talkCombo": "Talk Combo",
+                      "prepaidCombo": "Prepaid 365 Plus",
+                      "myMixCombo": "MyMix"
+                      }
+                      ],
+    "Review_And_Pay": {
+        "loadingTitle": "Critical Information Summary",
+        "loadingDescription": "Download Critical Information Summary",
+        "unsuccessfulTitle": "Recharge unsuccessful",
+        "PrepaidCCUpdationListdescription": "Please try another card or choose another payment option.",
+        "prepaidCCUpdationListTransactionMsg": "Your payment has not gone through",
+        "walletSubmissionDetailsDescription": "Unfortunately, your financial provider has declined your payment. Please try another card or choose another payment option.",
+        "successfulTitle": "Recharge successful",
+        "restartLabel": "Please restart your phone to use your Recharge.",
+        "loadingButton": "Go to dashboard",
+        "walletLoadingDescription": "Your new balance will be updated in few minutes.",
+        "ccUpdationFailed":"Sorry, we were unable to save your credit card this time. This credit card is already linked to another account. You’ll need to unlink your card in My Vodafone before you can add it to this account.",
+        "reviewAndPaySpinnerTitle": "Processing payment",
+        "reviewAndPayDescription": "Please don’t leave this page",
+        "termsAndConditionLabel": "Terms and conditions",
+        "criticalInfo": "Critical Information Summary",
+        "paymentOptionHeader": "How would you like to pay?",
+        "cancelButton": "Cancel",
+        "addonSuccessful": "Add-on purchased",
+        "addonSuccessfulMsg": "Please restart your phone to use your Add-on.",
+        "helpMeRecharge": "https://www.vodafone.com.au/support/prepaid/recharge",
+        "cardDetails": "Enter card details",
+        "creditCard": "Credit card",
+        "saveCard": "Save credit card",
+        "rechargeText": "For quick and secure future recharges online and by TXT.",
+        "authorizationMsg": "I authorise Vodafone to charge my nominated credit card and have read and agreed to the terms and conditions.",
+        "topupNow": "Top up now",
+        "cardUnavailableMsg": "Credit card unavailable.",
+        "fallbackErrorMsg": "Our payment system is currently unavailable. However, you can pay with a credit or debit card through PayPal. You can either login to PayPal or continue as a PayPal guest.",
+        "alertHeading": "Something didn’t go as planned.",
+        "helpText": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone.",
+        "paypalGuest": "Top up as PayPal guest",
+        "paypalAccount": "Top up using your PayPal account",
+        "differentPaymentMethodTxt": "We couldn’t complete your recharge. Please try again using a different payment method",
+        "acceptedPayments":"Accepted payments",
+        "rechargeAsPayPalGuest":"Recharge as PayPal guest",
+        "rechargeWithPayPal":"Recharge with PayPal",
+        "topUpWithPayPal":"Top up with PayPal",
+        "rechargeUsingPayPalAccount":"Recharge using your PayPal account",
+        "topUpUsingYourPayPalAccount":"Top up using your PayPal account"
+    },
+    "Add_On_Review": {
+        "countryLabel": "selected countries",
+        "roamingAddonTitle": "Roaming Add-ons",
+        "alertRoamingAddonMsg": "To use Roaming Add-ons, activate roaming in My Vodafone through account settings. Once you’ve purchased the Add-on, you can use it immediately however the expiry period will begin from midnight AEST.",
+        "addonUnsuccessfulMsg": "Add-on purchase unsuccessful",
+        "chooseYourExpiry":"Choose your expiry",
+        "standardInternationalCallsTo":"Standard international calls to",
+        "addonTabArray": [
+                          "Data Add-ons",
+                          "50 Countries Add-ons",
+                          "Roaming Add-ons",
+                          "Talk Add-ons"
+                          ],
+        "selectRechargeTabArray": [
+                                   "365 Day",
+                                   "Flexi Cap",
+                                   "Prepaid Cap",
+                                   "Pay As You Go",
+                                   "Combo",
+                                   "TXT &  Talk",
+                                   "Mobile Broadband",
+                                   "Data Combo",
+                                   "Talk Combo",
+                                   "Combo Plus",
+                                   "Prepaid 365 Plus",
+                                   "365 Plus",
+                                   "MyMix"
+                                   ]
+    },
+    "LoginWith_OTP_Password": {
+        "heading": "Login with one-time code",
+        "subHeading": "Choose your Login options",
+        "loginWithPassword": "Login with Password",
+        "rechargeWithMyCredit": "Recharge now using My Credit",
+        "newCode": "Get a new code",
+        "enterOnetimeCode": "Enter one-time code",
+        "oneTimeCode": "One-time code",
+        "alertMessage": "We’ve sent you an SMS with a one-time code to",
+        "getOTPText": "We’ve re-sent you an SMS with a one-time code to",
+        "alertSubMessage": "If your code doesn't arrive within 2 minutes, please get a new code."
+    },
+    "Topup_My_Credit": {
+        "topupAmount": "Select your Top up amount",
+        "or": "Or",
+        "topupVoucher": "Top up with a voucher",
+        "topupNowBtn": "Top up now",
+        "creditToNumber": "Add credit to this number",
+        "unsuccessfulMsg": ". Please try another card or choose another payment option.",
+        "topupUnsuccessfulMsg": "Top up unsuccessful",
+        "topupSuccessfulMsg": "Top up successful",
+        "walletSuccessMsg": "My Credit has been successfully added to your account.",
+        "walletHeader": "My Credit",
+        "dashboardButton": "Go to dashboard",
+        "showRestartMsg": "Please restart your phone to use your Add-on.",
+        "myCreditHeader": "My Credit (Beta)",
+        "availableBalanceHeader": "Available balance",
+        "overlayTitle": "Top up My Credit",
+        "savedCardHeader": "Pay with saved card",
+        "savedExCCLabel": " Confirm the last four digits and expiry date",
+        "savedExCCNumber": "Enter the last 4 digits of your card",
+        "expiryDateHeading": "Expiry date",
+        "topUpNowBtn": "Top up now",
+        "anotherPaymentBtn": "Use another payment type",
+        "add$Label": "Add $",
+        "addToMyCredit": " to My Credit using:",
+        "myCreditDescription": "will be deducted from My Credit to pay for this recharge.",
+        "newCardHeader": "Use new card",
+        "payWithNewCardHeader": "Pay with new card",
+        "rechargeWithMyCreditBtn": "Recharge now with My Credit",
+        "payPalMsg": "You'll be temporarily taken to the PayPal website.",
+        "startingIn":"starting in",
+        "expires":"Expires",
+        "topUp":"Top up $",
+        "usingSavedCreditCard":" using saved credit card",
+        "payPal": "PayPal",
+        "mmyy": "MM/YY",
+        "fourDigits":"4 digits",
+        "topUpCaption":"Top up"
+    },
+    "Error_handler": {
+        "errorDetails": "We want you to find what you’re looking for. Head to the dashboard or go back to the previous page.",
+        "goBackDashboard": "Go to dashboard",
+        "goBackPreviousPage": "Go back",
+        "loginHeading": " Login to My Vodafone",
+        "loginDescription": "Login to My Vodafone with your username and password",
+        "loginNowBtn": "Login now",
+        "vodafoneHomeBtn": "Vodafone home",
+        "goBackBtn": "Go back",
+        "errorHeading": "You don’t have access to this page",
+        "errorMessage": "This offer is no longer available",
+        "helpMessage": "Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone.",
+        "tryAgainBtn": "Try again",
+        "errorHeadingOverlay": "Unfortunately we couldn't process your payment.",
+        "errorMessageOverlay": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone.",
+        "notFoundPage": "We can’t find that page",
+        "validateNumber": "Sorry we couldn’t validate your number. Please check the number and try again."
+    },
+    "Loading_page": {
+        "goTODashboardBtn": "Go to dashboard",
+        "loginVodafoneBtn": "Login to My Vodafone",
+        "helpMeRechargeBtn": "Help me recharge",
+        "receiptNoText": "Your Vodafone receipt number is:",
+        "creditBalanceText": "Your new My Credit balance is $",
+        "accountNoText": "Your account receipt number is:",
+        "remCreditBalText": "Your remaining My Credit balance is $",
+        "backToRechargeBtn": "Back to Recharge",
+        "backToTopup": "Back to Top up",
+        "addOnPurchasedText": "You have purchased an Add-on for ",
+        "rechargedText": "You have recharged ",
+        "myCreditTitle": "Topping up My Credit",
+        "myCreditPrepaid365Content": "By topping up your My Credit Balance you’re joining a Prepaid 365 Plus Plan for 365 days.",
+        "myCreditAddonPurchaseDesc": "You can use your My Credit to purchase Add-ons or other prepaid recharge plans.",
+        "myCreditWalletDescription": "When you run out of other inclusions My Credit will be used to make calls, use data and send texts in Australia at pay as you go rates, <span class='vodafone-RgBd'>unless you have purchased a MyMix or Combo recharge.</span> If you purchase a MyMix or Combo recharge, you will not be able to use My Credit for data, except when you’re roaming in selected countries.",
+        "myCreditWalletSupportMsg": "Our <a class='color_white' target='_blank' href='https://www.vodafone.com.au/prepaid/plans/my-credit'>My Credit support page</a> has more information.",
+        "download":"Download"
+    },
+    "International_Call_Overlay": {
+        "internationalCallRatesUrl": "https://www.vodafone.com.au/support/prepaid/international-call-rates",
+        "internationalCallHeading": "International Call countries",
+        "internationalCallDescription": "You can use our International Call Add-ons to call these countries.Calls to all other counties are charged at our ",
+        "prepaidCallHeading": "Prepaid Call rates.",
+        "internationalCountries": [
+                                   {
+                                   "id": "argentina",
+                                   "country": "Argentina"
+                                   },
+                                   {
+                                   "id": "austria",
+                                   "country": "Austria"
+                                   },
+                                   {
+                                   "id": "bangladesh",
+                                   "country": "Bangladesh"
+                                   },
+                                   {
+                                   "id": "bermuda",
+                                   "country": "Bermuda"
+                                   },
+                                   {
+                                   "id": "brazil",
+                                   "country": "Brazil"
+                                   },
+                                   {
+                                   "id": "brunei",
+                                   "country": "Brunei Darussalam"
+                                   },
+                                   {
+                                   "id": "cambodia",
+                                   "country": "Cambodia"
+                                   },
+                                   {
+                                   "id": "canada",
+                                   "country": "Canada"
+                                   },
+                                   {
+                                   "id": "chile",
+                                   "country": "Chile"
+                                   },
+                                   {
+                                   "id": "china",
+                                   "country": "China"
+                                   },
+                                   {
+                                   "id": "colombia",
+                                   "country": "Colombia"
+                                   },
+                                   {
+                                   "id": "costa rica",
+                                   "country": "Costa Rica"
+                                   },
+                                   {
+                                   "id": "dominican republic",
+                                   "country": "Dominican Republic"
+                                   },
+                                   {
+                                   "id": "finland",
+                                   "country": "Finland"
+                                   },
+                                   {
+                                   "id": "france",
+                                   "country": "France"
+                                   },
+                                   {
+                                   "id": "germany",
+                                   "country": "Germany"
+                                   },
+                                   {
+                                   "id": "greece",
+                                   "country": "Greece"
+                                   },
+                                   {
+                                   "id": "guam",
+                                   "country": "Guam"
+                                   },
+                                   {
+                                   "id": "hong kong",
+                                   "country": "Hong Kong"
+                                   },
+                                   {
+                                   "id": "iceland",
+                                   "country": "Iceland"
+                                   },
+                                   {
+                                   "id": "india",
+                                   "country": "India"
+                                   },
+                                   {
+                                   "id": "indonesia",
+                                   "country": "Indonesia"
+                                   },
+                                   {
+                                   "id": "ireland",
+                                   "country": "Ireland"
+                                   },
+                                   {
+                                   "id": "israel",
+                                   "country": "Israel"
+                                   },
+                                   {
+                                   "id": "italy",
+                                   "country": "Italy"
+                                   },
+                                   {
+                                   "id": "japan",
+                                   "country": "Japan"
+                                   },
+                                   {
+                                   "id": "kuwait",
+                                   "country": "Kuwait"
+                                   },
+                                   {
+                                   "id": "laos",
+                                   "country": "Laos"
+                                   },
+                                   {
+                                   "id": "malaysia",
+                                   "country": "Malaysia"
+                                   },
+                                   {
+                                   "id": "mexico",
+                                   "country": "Mexico"
+                                   },
+                                   {
+                                   "id": "netherlands",
+                                   "country": "Netherlands"
+                                   },
+                                   {
+                                   "id": "new zealand",
+                                   "country": "New Zealand"
+                                   },
+                                   {
+                                   "id": "nigeria",
+                                   "country": "Nigeria"
+                                   },
+                                   {
+                                   "id": "nomarianas",
+                                   "country": "Northern Marianas Islands"
+                                   },
+                                   {
+                                   "id": "norway",
+                                   "country": "Norway"
+                                   },
+                                   {
+                                   "id": "pakistan",
+                                   "country": "Pakistan"
+                                   },
+                                   {
+                                   "id": "paraguay",
+                                   "country": "Paraguay"
+                                   },
+                                   {
+                                   "id": "peru",
+                                   "country": "Peru"
+                                   },
+                                   {
+                                   "id": "philippines",
+                                   "country": "Philippines"
+                                   },
+                                   {
+                                   "id": "poland",
+                                   "country": "Poland"
+                                   },
+                                   {
+                                   "id": "portugal",
+                                   "country": "Portugal"
+                                   },
+                                   {
+                                   "id": "puerto rico",
+                                   "country": "Puerto Rico"
+                                   },
+                                   {
+                                   "id": "romania",
+                                   "country": "Romania"
+                                   },
+                                   {
+                                   "id": "russia",
+                                   "country": "Russia"
+                                   },
+                                   {
+                                   "id": "singapore",
+                                   "country": "Singapore"
+                                   },
+                                   {
+                                   "id": "south africa",
+                                   "country": "South Africa"
+                                   },
+                                   {
+                                   "id": "south korea",
+                                   "country": "South Korea"
+                                   },
+                                   {
+                                   "id": "spain",
+                                   "country": "Spain"
+                                   },
+                                   {
+                                   "id": "sweden",
+                                   "country": "Sweden"
+                                   },
+                                   {
+                                   "id": "taiwan",
+                                   "country": "Taiwan"
+                                   },
+                                   {
+                                   "id": "thailand",
+                                   "country": "Thailand"
+                                   },
+                                   {
+                                   "id": "turkey",
+                                   "country": "Turkey"
+                                   },
+                                   {
+                                   "id": "uk",
+                                   "country": "UK"
+                                   },
+                                   {
+                                   "id": "us",
+                                   "country": "USA"
+                                   },
+                                   {
+                                   "id": "vatican city",
+                                   "country": "Vatican City"
+                                   },
+                                   {
+                                   "id": "venezuela",
+                                   "country": "Venezuela"
+                                   },
+                                   {
+                                   "id": "vietnam",
+                                   "country": "Vietnam"
+                                   }
+                                   ]
+    },
+    "LastRecharge": [
+                     {
+                     "errorCode": "BF002",
+                     "errorHeading": "We're having trouble confirming your details.",
+                     "errorMessage": "Please try again or use another payment method."
+                     }
+                     ],
+    "Validation": [
+                   {
+                   "errorCode": "BF001",
+                   "errorHeading": "Something didn't go as planned.",
+                   "errorMessage": " Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                   },
+                   {
+                   "errorCode": "VE040",
+                   "errorHeading": "Something didn't go as planned.",
+                   "errorMessage": " Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                   },
+                   {
+                   "errorCode": "VE041",
+                   "errorHeading": "Something didn't go as planned.",
+                   "errorMessage": " Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                   },
+                   {
+                   "errorCode": "VE000",
+                   "errorHeading": "Something didn't go as planned.",
+                   "errorMessage": " Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                   },
+                   {
+                   "errorCode": "BF004",
+                   "errorHeading": "Something didn't go as planned.",
+                   "errorMessage": " Please try again later or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                   }
+                   ],
+    "CustomerServiceRecharge": [
+                                {
+                                "errorCode": "VE043",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "GF000",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "VE051",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "VE052",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "VE142",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "VE059",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "VE060",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "VE053",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "VE055",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "VE127",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "VE056",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "VE082",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "GF002",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF003",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF001",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF059",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF036",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF037",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF038",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF039",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF040",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF041",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF042",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF043",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF053",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please try again or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF044",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                
+                                {
+                                "errorCode": "BF002",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please try again or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                
+                                {
+                                "errorCode": "BF046",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "TE500",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": " Please try again or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                
+                                {
+                                "errorCode": "GF007",
+                                "errorHeading": "Unfortunately this recharge is no longer available.",
+                                "errorMessage": "Please try again or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "BF055",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "GF008",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                },
+                                {
+                                "errorCode": "GF009",
+                                "errorHeading": "Unfortunately we couldn't process your payment.",
+                                "errorMessage": "Please use another recharge payment option, or call us on 1555 from your Vodafone mobile or 1300 650 410 from any phone."
+                                }
+                                
+                                ],
+    "CreditCardInitialization": [
+                                 {
+                                 "errorCode": "BF002",
+                                 "errorHeading": "Unfortunately we couldn't save your credit card details.",
+                                 "errorMessage": "Please select another payment option and try again."
+                                 }
+                                 ],
+    "CreditCardCompletion": [
+                             {
+                             "errorCode": "BF002",
+                             "errorHeading": "Unfortunately we couldn't save your credit card details.",
+                             "errorMessage": "Please select another payment option and try again."
+                             }
+                             ],
+    "appTogglerTime":5,
+    "landingPlanName":["VF_COMBO_DATA_CO","VF_COMBO_TALK_CO","VF_PAYGPLUS_CO","VF_MYPICK_CO"],
+    "rechargePlanDet":{
+        "VF_COMBO_TALK_CO":"TalkCombo",
+        "VF_COMBO_DATA_CO":"DataCombo",
+        "VF_PAYGPLUS_CO":"Prepaid365Plus",
+        "VF_MYPICK_CO":"MyMix"
+    },
+    "addonsPlanDet":{
+        "data":"DataAdd-ons",
+        "talk":"TalkAdd-ons",
+        "intl":"Int'lAdd-ons",
+        "roaming":"RoamingAdd-ons"
+    }
+}
