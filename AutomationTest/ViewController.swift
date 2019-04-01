@@ -130,7 +130,7 @@ class ViewController: NSViewController, NSTextFieldDelegate {
         let localizationFileName = "localized.json" // this file should contains old Localizable.strings
         let configurationJson = "config.json" // This file should contains the new model Json
         
-        //read and parse strings json file
+        //read and parse localizable.strings json file
         guard let localizedData = getFileData(Named: localizationFileName) else {
             print("ERROR: Can not find localized.json")
             print("I will EXIST NOW")
@@ -143,7 +143,7 @@ class ViewController: NSViewController, NSTextFieldDelegate {
             exit(0)
         }
         
-        //read and parse configuration json file
+        //read and parse S3 configuration json file
         guard let configurationData = getFileData(Named: configurationJson) else {
             print("ERROR: Can not find config.json")
             print("I will EXIST NOW")
@@ -183,18 +183,18 @@ class ViewController: NSViewController, NSTextFieldDelegate {
             }
             
             var updateFiles = false
-            let projectLocalizationFilePath = "/Users/abdorahman/GitHub/VFAU-iOS/MyVodafone-Gold/en-AU.lproj/Localizable.strings"
+            let projectLocalizationFilePath = "/Users/abdorahman/VFAU-UPGRADE-iOS/MyVodafone-Gold/en-AU.lproj/Localizable.strings"
             guard var projectLocalizationFileContent = getFileContent(Named: projectLocalizationFilePath)else{
-                print("Couldn't open project localization file .strings and i will stop\n")
+                print("Couldn't open project localization file .strings to update it with the new strings \n")
                 print("I will EXIST NOW")
                 exit(0)
             }
-            print("File: \(filePath), impacted by the following configuration: \(modelName)")
+            print("File: \(filePath), impacted by the following S3 configuration: \(modelName)")
             //check if the localization value has a match in the configuration file and update files if exists
             var totalConfigurationMatches = Dictionary<String,String>()
             for i in 0..<localizationKeys.count{
                 
-                guard localizedModel.responds(to: Selector(localizationKeys[i].lowercased())) else{
+                guard localizedModel.responds(to: Selector(localizationKeys[i].lowercased())) && localizationKeys[i].lowercased().contains("_") else{
                     //                    print("Most probably that the key: \(localizationKeys[i]) which you are looking for is configuration key, so localization model can't find it. so we will continue with next keys ^_^\n")
                     continue
                 }
